@@ -1,0 +1,7 @@
+repository: lua/lua
+commit: c6b484823806e08e1756b1a6066a3ace6f080fae
+language: c
+difficulty: medium
+gold_sha256: 56c87d948e1fa58d5854c40259e15dc974997fdd8515e2353e37a95ef404926a
+eval_clean_hashes:
+- 56c87d948e1fa58d5854c40259e15dc974997fdd8515e2353e37a95ef404926a

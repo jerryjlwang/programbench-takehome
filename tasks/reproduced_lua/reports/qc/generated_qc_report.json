@@ -1,0 +1,1463 @@
+{
+  "generated_at": "2026-06-30T06:21:14.080227+00:00",
+  "status": "passed",
+  "failed_blocking_checks": [],
+  "catalog": {
+    "branches": 11,
+    "listed": 1387,
+    "ignored": 49,
+    "active": 1338,
+    "per_branch": [
+      {
+        "branch": "4d4bd22aed81",
+        "listed": 147,
+        "ignored": 2,
+        "active": 145
+      },
+      {
+        "branch": "575678ec4820",
+        "listed": 10,
+        "ignored": 0,
+        "active": 10
+      },
+      {
+        "branch": "616be107aed0",
+        "listed": 9,
+        "ignored": 1,
+        "active": 8
+      },
+      {
+        "branch": "85942a39cf48",
+        "listed": 13,
+        "ignored": 2,
+        "active": 11
+      },
+      {
+        "branch": "8c7790936d34",
+        "listed": 20,
+        "ignored": 3,
+        "active": 17
+      },
+      {
+        "branch": "b9729b57ee68",
+        "listed": 99,
+        "ignored": 12,
+        "active": 87
+      },
+      {
+        "branch": "cdcdd206bd8c",
+        "listed": 23,
+        "ignored": 4,
+        "active": 19
+      },
+      {
+        "branch": "d549f80b25ef",
+        "listed": 694,
+        "ignored": 9,
+        "active": 685
+      },
+      {
+        "branch": "da10ccf83a2c",
+        "listed": 256,
+        "ignored": 15,
+        "active": 241
+      },
+      {
+        "branch": "e33416c41190",
+        "listed": 99,
+        "ignored": 1,
+        "active": 98
+      },
+      {
+        "branch": "ef6bfcdc25b5",
+        "listed": 17,
+        "ignored": 0,
+        "active": 17
+      }
+    ],
+    "source": "/Users/jerrywang/programbench-takehome/programbench/src/programbench/data/tasks/lua__lua.c6b4848/tests.json"
+  },
+  "quality": {
+    "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/quality_generated/quality_report.json",
+    "gold": {
+      "returncode": 0,
+      "passed": 1338,
+      "failed": 0,
+      "failed_tests": [],
+      "output_tail": "........................................................................ [  5%]\n........................................................................ [ 10%]\n........................................................................ [ 16%]\n........................................................................ [ 21%]\n........................................................................ [ 26%]\n........................................................................ [ 32%]\n........................................................................ [ 37%]\n........................................................................ [ 43%]\n........................................................................ [ 48%]\n........................................................................ [ 53%]\n........................................................................ [ 59%]\n........................................................................ [ 64%]\n........................................................................ [ 69%]\n........................................................................ [ 75%]\n........................................................................ [ 80%]\n........................................................................ [ 86%]\n........................................................................ [ 91%]\n........................................................................ [ 96%]\n..........................................                               [100%]\n1338 passed in 20.95s\n"
+    },
+    "dummy": {
+      "returncode": 1,
+      "passed": 0,
+      "failed": 1338,
+      "passed_tests": [],
+      "output_tail": "ng_sub_141]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_format_141]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_upper_142]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_reverse_142]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_sub_142]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_format_142]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_upper_143]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_reverse_143]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_sub_143]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_format_143]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_upper_144]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_reverse_144]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_sub_144]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_format_144]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_upper_145]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_reverse_145]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_sub_145]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_format_145]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_upper_146]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_reverse_146]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_version_and_unrecognized_help_option\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_stdin_dash_keeps_later_dash_argument\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_e_option_runs_chunks_in_order\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_script_with_utf8_bom_and_bad_bom\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_environment_paths_and_versioned_overrides\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_lua_init_string_file_and_E_ignores_environment\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_l_option_loads_libraries_and_assigns_globals\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_arg_table_for_script_after_options\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_warning_controls_with_W\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args0-unrecognized option '---'-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args1-unrecognized option '-Ex'-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args2-unrecognized option '-vv'-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args3-unrecognized option '-iv'-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args4-'-e' needs argument-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args5-(command line):1: syntax error near <eof>-False]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args6-'-l' needs argument-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args7-cannot open -i: No such file or directory-False]\nFAILED workspace/eval/tests/test_upstream_user_suite.py::test_upstream_user_mode_suite_passes\n1338 failed in 28.99s\n"
+    },
+    "static_findings": [],
+    "blocking_static_findings": []
+  },
+  "linter_checks": [
+    {
+      "id": "no_assertions",
+      "severity": "HIGH",
+      "description": "Test function contains no pytest assertions.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "trivially_true",
+      "severity": "HIGH",
+      "description": "Assertion is always true, such as assert True or assert X or True.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "sole_returncode",
+      "severity": "HIGH",
+      "description": "Only assertion checks returncode == 0.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "returncode_in_list",
+      "severity": "HIGH",
+      "description": "Assertion allows non-zero exits with returncode in a list.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "pass_body",
+      "severity": "HIGH",
+      "description": "Test body is just pass.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "assertion_disjunction",
+      "severity": "HIGH",
+      "description": "Assertion uses A or B instead of asserting an exact outcome.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "if_no_else",
+      "severity": "HIGH",
+      "description": "If branch asserts with no else, silently passing when false.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "if_else_both_assert",
+      "severity": "HIGH",
+      "description": "Both if and else branches assert, suggesting non-deterministic behavior.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "try_except_swallow",
+      "severity": "HIGH",
+      "description": "Except handler with pass swallows failures.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "all_assertions_weak",
+      "severity": "HIGH",
+      "description": "All assertions only check returncode, len, or isdigit.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "short_substring",
+      "severity": "HIGH",
+      "description": "Substring check is shorter than 15 characters.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "golden_written_in_test",
+      "severity": "HIGH",
+      "description": "Test writes to its own golden file.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "golden_no_equality",
+      "severity": "HIGH",
+      "description": "Golden file is referenced in docstring but never compared with ==.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "golden_docstring",
+      "severity": "HIGH",
+      "description": "Golden file is mentioned in docstring but not found in the test body.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "for_no_guard",
+      "severity": "MED",
+      "description": "Loop-only assertions have no pre-loop length check.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "weak_sole_assertion",
+      "severity": "MED",
+      "description": "Sole assertion is len(x) > N.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "relative_length_assertion",
+      "severity": "MED",
+      "description": "Assertion uses len(x) >= N, a relative bound that verifies no content.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "any_all_no_guard",
+      "severity": "MED",
+      "description": "any()/all() assertion has no non-empty guard.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "file_exists_no_content",
+      "severity": "MED",
+      "description": "path.exists() assertion has no content assertion.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "only_negative_assertions",
+      "severity": "MED",
+      "description": "All assertions are negative checks such as not in or !=.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "catches",
+      "severity": "LOW",
+      "description": "Missing or too-short CATCHES docstring.",
+      "blocking": false,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "informational"
+    }
+  ],
+  "dynamic_checks": [
+    {
+      "id": "no_blocking_static_linter_findings",
+      "blocking": true,
+      "status": "passed",
+      "observed": 0
+    },
+    {
+      "id": "gold_suite_passes",
+      "blocking": true,
+      "status": "passed",
+      "passed": 1338,
+      "failed": 0,
+      "returncode": 0
+    },
+    {
+      "id": "dummy_suite_rejects",
+      "blocking": true,
+      "status": "passed",
+      "passed": 0,
+      "failed": 1338,
+      "returncode": 1
+    }
+  ],
+  "coverage_line_checks": [
+    {
+      "id": "generated_line_coverage_meets_local_target",
+      "blocking": true,
+      "target_line_percent": 95.0,
+      "observed_line_percent": 95.6,
+      "status": "passed"
+    },
+    {
+      "id": "generated_line_coverage_not_lower_than_harvested",
+      "blocking": true,
+      "harvested_line_percent": 94.3,
+      "generated_line_percent": 95.6,
+      "delta_line_percent": 1.3,
+      "status": "passed"
+    },
+    {
+      "id": "generated_file_line_metrics_logged",
+      "blocking": true,
+      "files": 32,
+      "status": "passed"
+    },
+    {
+      "id": "generated_full_line_coverage_json_logged",
+      "blocking": true,
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/coverage_generated/coverage.json",
+      "status": "passed"
+    },
+    {
+      "id": "harvested_full_line_coverage_json_logged",
+      "blocking": true,
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/coverage_harvested/coverage.json",
+      "status": "passed"
+    }
+  ],
+  "lm_as_judge_review": {
+    "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/lm_as_judge_review.json",
+    "generated_at": "2026-06-30T06:08:36Z",
+    "reviewer": "Codex LM-as-judge with independent explorer review",
+    "independent_agent": {
+      "id": "019f1720-3b3f-7e71-9408-3de2c35f40b1",
+      "nickname": "Epicurus",
+      "verdict": "Latest run is fair to score and failed; previous wrapper run was correctly rejected."
+    },
+    "subject_run": "lua_miniswe_20260629_225007",
+    "verdict": "latest_run_valid_but_failed_behavioral_eval",
+    "latest_eval": {
+      "run": "lua_miniswe_20260629_225007",
+      "status": "failed",
+      "returncode": 1,
+      "tests": 1338,
+      "passed": 7,
+      "failures": 1331,
+      "errors": 0,
+      "skipped": 0,
+      "candidate_executable_hash": "88f29dfdefdabc9845d28682e4732e2051df0b41981d38804864e44e101d7fff",
+      "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_225007/summary.json",
+      "pytest_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_225007/pytest.log"
+    },
+    "previous_wrapper_eval": {
+      "run": "lua_miniswe_20260629_223354",
+      "status": "rejected_wrapper_or_oracle",
+      "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_223354/summary.json",
+      "findings_count": 9
+    },
+    "hashes": {
+      "gold_hash": "56c87d948e1fa58d5854c40259e15dc974997fdd8515e2353e37a95ef404926a",
+      "latest_submission_sha256": "f88b225b667bc4e32ae7423801aa53ee7c74c0fb3811e0f58baa6bd6c3124748",
+      "previous_wrapper_submission_sha256": "b72484b300f4905e062118eb2054dd0cef44aaf03086a6a9781fef570e45ba0f",
+      "solver_env_file_hashes": {
+        "task_env/compile.sh": "086f5e38ca3aea9b6b1048fd0e17c2e62a96e0a5dc5efad2e86396381e8cd7af",
+        "task_env/docs/USAGE.md": "0e7f5ee1dce0fc55c583d95c64e5dd1c7fe589607973347f8a2b783cf21cd50b",
+        "task_env/docs/help.txt": "aa514ebc7d70d3ab3a88465454afd122f1e9c123d545973fe8081960f3f3e6ba",
+        "task_env/executable": "56c87d948e1fa58d5854c40259e15dc974997fdd8515e2353e37a95ef404926a"
+      }
+    },
+    "solver_env_manifest": [
+      "task_env/compile.sh",
+      "task_env/docs/USAGE.md",
+      "task_env/docs/help.txt",
+      "task_env/executable"
+    ],
+    "strict_trace_warnings": [
+      {
+        "id": "unsuccessful_local_source_discovery_probe",
+        "severity": "MED",
+        "status": "warning",
+        "message_indexes": [
+          24,
+          32,
+          42,
+          56,
+          62,
+          84,
+          98,
+          165,
+          173
+        ],
+        "evidence": "/Users/jerrywang/programbench-takehome/runs/lua_miniswe_20260629_225007/lua__lua.c6b4848/lua__lua.c6b4848.traj.json",
+        "details": "The trajectory contains unsuccessful checks for installed Lua commands, headers, packages, and local source locations. The judge did not find evidence that source was found or used."
+      }
+    ],
+    "checks": [
+      {
+        "id": "independent_lm_as_judge_review_completed",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "Explorer 019f1720-3b3f-7e71-9408-3de2c35f40b1 returned a verdict."
+      },
+      {
+        "id": "latest_submission_not_disqualified_by_oracle_gate",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_225007/summary.json"
+      },
+      {
+        "id": "latest_submission_behavioral_eval_recorded",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "7/1338 tests passed; status failed."
+      },
+      {
+        "id": "known_wrapper_submission_rejected",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_223354/summary.json"
+      },
+      {
+        "id": "solver_facing_task_env_has_no_tests_or_source",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "task_env contains only compile.sh, docs, and executable."
+      },
+      {
+        "id": "solver_facing_task_env_has_no_git_directory",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "find task_env for .git returned no paths."
+      },
+      {
+        "id": "test_suite_not_solver_facing",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "tests_generated is outside task_env and mounted only by evaluate_submission.sh."
+      },
+      {
+        "id": "solve_network_disabled",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/run_miniswe_lua.py:87"
+      },
+      {
+        "id": "compile_network_disabled",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:87"
+      },
+      {
+        "id": "test_network_disabled",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:141"
+      },
+      {
+        "id": "prebuilt_submission_executable_ignored_before_compile",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:84"
+      },
+      {
+        "id": "stale_junit_results_removed_before_scoring",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:37"
+      },
+      {
+        "id": "trajectory_hidden_test_access_not_detected",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "No model-visible use of tests_generated/eval/tests paths found in the latest trajectory."
+      },
+      {
+        "id": "trajectory_source_discovery_probe_absent",
+        "blocking": false,
+        "status": "warning",
+        "evidence": "Unsuccessful local package/header/source probes present; see strict_trace_warnings."
+      },
+      {
+        "id": "wrapper_pattern_scan_is_complete",
+        "blocking": false,
+        "status": "risk",
+        "evidence": "Exact gold-byte and known-string scans are heuristic and should be supplemented by strict packaging."
+      }
+    ],
+    "findings": [
+      {
+        "severity": "HIGH",
+        "status": "resolved",
+        "finding": "The previous 36-call submission embedded and executed the gold oracle; the evaluator now rejects it before scoring.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_223354/summary.json"
+      },
+      {
+        "severity": "MED",
+        "status": "warning",
+        "finding": "The latest trajectory tried local package/header/source discovery commands, but no Lua source was found or used. Score the run as failed with a trace warning, not as disqualified.",
+        "evidence": "/Users/jerrywang/programbench-takehome/runs/lua_miniswe_20260629_225007/lua__lua.c6b4848/lua__lua.c6b4848.traj.json"
+      },
+      {
+        "severity": "MED",
+        "status": "resolved",
+        "finding": "The scoring container originally lacked explicit network isolation. The evaluator now uses an offline pytest image and reran the latest submission with --network none during scoring.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:141"
+      },
+      {
+        "severity": "LOW",
+        "status": "risk",
+        "finding": "Wrapper detection catches exact embedded gold bytes and known wrapper strings, but transformed encodings could evade static heuristics. Strict task packaging remains the primary defense.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:43"
+      },
+      {
+        "severity": "LOW",
+        "status": "accepted",
+        "finding": "Solver-facing docs identify Lua 5.5.1 behavior, which is necessary documentation rather than original source leakage.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/task_env/docs/USAGE.md"
+      },
+      {
+        "severity": "INFO",
+        "status": "observed",
+        "finding": "The latest scored run is a plausible failed reimplementation stub rather than a shortcut: it passed 7 of 1338 behavioral tests.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_225007/summary.json"
+      }
+    ],
+    "recommended_qc_fields": [
+      "solve_run_id",
+      "trajectory_path",
+      "submission_sha256",
+      "candidate_executable_hash",
+      "gold_hash",
+      "eval_status",
+      "tests_total",
+      "failures",
+      "errors",
+      "skipped",
+      "wrapper_or_oracle_findings",
+      "strict_trace_warnings",
+      "solver_env_manifest",
+      "solver_env_file_hashes",
+      "compile_network_disabled",
+      "test_network_disabled",
+      "test_suite_mount_scope",
+      "previous_wrapper_rejection_confirmed",
+      "fairness_judge_verdict"
+    ]
+  },
+  "lm_as_judge_checks": [
+    {
+      "id": "lm_as_judge_review_present",
+      "blocking": true,
+      "status": "passed",
+      "observed": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/lm_as_judge_review.json"
+    },
+    {
+      "id": "independent_lm_as_judge_review_completed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Explorer 019f1720-3b3f-7e71-9408-3de2c35f40b1 returned a verdict."
+    },
+    {
+      "id": "latest_submission_not_disqualified_by_oracle_gate",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_225007/summary.json"
+    },
+    {
+      "id": "latest_submission_behavioral_eval_recorded",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "7/1338 tests passed; status failed."
+    },
+    {
+      "id": "known_wrapper_submission_rejected",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_223354/summary.json"
+    },
+    {
+      "id": "solver_facing_task_env_has_no_tests_or_source",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "task_env contains only compile.sh, docs, and executable."
+    },
+    {
+      "id": "solver_facing_task_env_has_no_git_directory",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "find task_env for .git returned no paths."
+    },
+    {
+      "id": "test_suite_not_solver_facing",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "tests_generated is outside task_env and mounted only by evaluate_submission.sh."
+    },
+    {
+      "id": "solve_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/run_miniswe_lua.py:87"
+    },
+    {
+      "id": "compile_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:87"
+    },
+    {
+      "id": "test_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:141"
+    },
+    {
+      "id": "prebuilt_submission_executable_ignored_before_compile",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:84"
+    },
+    {
+      "id": "stale_junit_results_removed_before_scoring",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:37"
+    },
+    {
+      "id": "trajectory_hidden_test_access_not_detected",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "No model-visible use of tests_generated/eval/tests paths found in the latest trajectory."
+    },
+    {
+      "id": "trajectory_source_discovery_probe_absent",
+      "blocking": false,
+      "status": "warning",
+      "evidence": "Unsuccessful local package/header/source probes present; see strict_trace_warnings."
+    },
+    {
+      "id": "wrapper_pattern_scan_is_complete",
+      "blocking": false,
+      "status": "risk",
+      "evidence": "Exact gold-byte and known-string scans are heuristic and should be supplemented by strict packaging."
+    }
+  ],
+  "coverage": {
+    "harvested": {
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/coverage_harvested/coverage_summary.json",
+      "line_percent": 94.3,
+      "line_covered": 11107,
+      "line_total": 11774,
+      "branch_percent": 88.6,
+      "branch_covered": 5666,
+      "branch_total": 6394,
+      "files": [
+        {
+          "filename": "lapi.c",
+          "line_percent": 93.0,
+          "line_covered": 629,
+          "line_total": 676,
+          "branch_percent": 79.7,
+          "branch_covered": 298,
+          "branch_total": 374
+        },
+        {
+          "filename": "lauxlib.c",
+          "line_percent": 89.0,
+          "line_covered": 504,
+          "line_total": 566,
+          "branch_percent": 84.0,
+          "branch_covered": 205,
+          "branch_total": 244
+        },
+        {
+          "filename": "lbaselib.c",
+          "line_percent": 99.6,
+          "line_covered": 280,
+          "line_total": 281,
+          "branch_percent": 89.1,
+          "branch_covered": 114,
+          "branch_total": 128
+        },
+        {
+          "filename": "lcode.c",
+          "line_percent": 98.8,
+          "line_covered": 925,
+          "line_total": 936,
+          "branch_percent": 95.3,
+          "branch_covered": 383,
+          "branch_total": 402
+        },
+        {
+          "filename": "lcorolib.c",
+          "line_percent": 93.5,
+          "line_covered": 100,
+          "line_total": 107,
+          "branch_percent": 86.4,
+          "branch_covered": 38,
+          "branch_total": 44
+        },
+        {
+          "filename": "ldblib.c",
+          "line_percent": 92.0,
+          "line_covered": 230,
+          "line_total": 250,
+          "branch_percent": 80.9,
+          "branch_covered": 89,
+          "branch_total": 110
+        },
+        {
+          "filename": "ldebug.c",
+          "line_percent": 97.0,
+          "line_covered": 477,
+          "line_total": 492,
+          "branch_percent": 94.3,
+          "branch_covered": 280,
+          "branch_total": 297
+        },
+        {
+          "filename": "ldo.c",
+          "line_percent": 93.5,
+          "line_covered": 448,
+          "line_total": 479,
+          "branch_percent": 86.6,
+          "branch_covered": 188,
+          "branch_total": 217
+        },
+        {
+          "filename": "ldump.c",
+          "line_percent": 100.0,
+          "line_covered": 149,
+          "line_total": 149,
+          "branch_percent": 97.6,
+          "branch_covered": 41,
+          "branch_total": 42
+        },
+        {
+          "filename": "lfunc.c",
+          "line_percent": 100.0,
+          "line_covered": 170,
+          "line_total": 170,
+          "branch_percent": 91.3,
+          "branch_covered": 63,
+          "branch_total": 69
+        },
+        {
+          "filename": "lgc.c",
+          "line_percent": 97.2,
+          "line_covered": 798,
+          "line_total": 821,
+          "branch_percent": 90.2,
+          "branch_covered": 435,
+          "branch_total": 482
+        },
+        {
+          "filename": "linit.c",
+          "line_percent": 72.7,
+          "line_covered": 8,
+          "line_total": 11,
+          "branch_percent": 60.0,
+          "branch_covered": 3,
+          "branch_total": 5
+        },
+        {
+          "filename": "liolib.c",
+          "line_percent": 96.0,
+          "line_covered": 339,
+          "line_total": 353,
+          "branch_percent": 88.6,
+          "branch_covered": 132,
+          "branch_total": 149
+        },
+        {
+          "filename": "llex.c",
+          "line_percent": 99.1,
+          "line_covered": 327,
+          "line_total": 330,
+          "branch_percent": 92.8,
+          "branch_covered": 233,
+          "branch_total": 251
+        },
+        {
+          "filename": "lmathlib.c",
+          "line_percent": 99.5,
+          "line_covered": 217,
+          "line_total": 218,
+          "branch_percent": 93.1,
+          "branch_covered": 67,
+          "branch_total": 72
+        },
+        {
+          "filename": "lmem.c",
+          "line_percent": 72.9,
+          "line_covered": 43,
+          "line_total": 59,
+          "branch_percent": 64.3,
+          "branch_covered": 18,
+          "branch_total": 28
+        },
+        {
+          "filename": "loadlib.c",
+          "line_percent": 64.1,
+          "line_covered": 159,
+          "line_total": 248,
+          "branch_percent": 61.0,
+          "branch_covered": 47,
+          "branch_total": 77
+        },
+        {
+          "filename": "lobject.c",
+          "line_percent": 84.7,
+          "line_covered": 254,
+          "line_total": 300,
+          "branch_percent": 84.5,
+          "branch_covered": 158,
+          "branch_total": 187
+        },
+        {
+          "filename": "lopcodes.c",
+          "line_percent": 53.8,
+          "line_covered": 7,
+          "line_total": 13,
+          "branch_percent": 69.2,
+          "branch_covered": 9,
+          "branch_total": 13
+        },
+        {
+          "filename": "loslib.c",
+          "line_percent": 85.6,
+          "line_covered": 125,
+          "line_total": 146,
+          "branch_percent": 80.0,
+          "branch_covered": 40,
+          "branch_total": 50
+        },
+        {
+          "filename": "lparser.c",
+          "line_percent": 99.6,
+          "line_covered": 1205,
+          "line_total": 1210,
+          "branch_percent": 94.1,
+          "branch_covered": 447,
+          "branch_total": 475
+        },
+        {
+          "filename": "lstate.c",
+          "line_percent": 92.5,
+          "line_covered": 222,
+          "line_total": 240,
+          "branch_percent": 75.5,
+          "branch_covered": 37,
+          "branch_total": 49
+        },
+        {
+          "filename": "lstring.c",
+          "line_percent": 93.1,
+          "line_covered": 163,
+          "line_total": 175,
+          "branch_percent": 84.0,
+          "branch_covered": 68,
+          "branch_total": 81
+        },
+        {
+          "filename": "lstrlib.c",
+          "line_percent": 99.2,
+          "line_covered": 923,
+          "line_total": 930,
+          "branch_percent": 91.1,
+          "branch_covered": 554,
+          "branch_total": 608
+        },
+        {
+          "filename": "ltable.c",
+          "line_percent": 98.4,
+          "line_covered": 540,
+          "line_total": 549,
+          "branch_percent": 95.8,
+          "branch_covered": 296,
+          "branch_total": 309
+        },
+        {
+          "filename": "ltablib.c",
+          "line_percent": 92.7,
+          "line_covered": 178,
+          "line_total": 192,
+          "branch_percent": 85.3,
+          "branch_covered": 99,
+          "branch_total": 116
+        },
+        {
+          "filename": "ltm.c",
+          "line_percent": 100.0,
+          "line_covered": 167,
+          "line_total": 167,
+          "branch_percent": 92.8,
+          "branch_covered": 90,
+          "branch_total": 97
+        },
+        {
+          "filename": "lua.c",
+          "line_percent": 60.1,
+          "line_covered": 203,
+          "line_total": 338,
+          "branch_percent": 64.1,
+          "branch_covered": 91,
+          "branch_total": 142
+        },
+        {
+          "filename": "lundump.c",
+          "line_percent": 91.2,
+          "line_covered": 219,
+          "line_total": 240,
+          "branch_percent": 75.5,
+          "branch_covered": 77,
+          "branch_total": 102
+        },
+        {
+          "filename": "lutf8lib.c",
+          "line_percent": 99.3,
+          "line_covered": 138,
+          "line_total": 139,
+          "branch_percent": 90.6,
+          "branch_covered": 106,
+          "branch_total": 117
+        },
+        {
+          "filename": "lvm.c",
+          "line_percent": 97.9,
+          "line_covered": 927,
+          "line_total": 947,
+          "branch_percent": 90.9,
+          "branch_covered": 948,
+          "branch_total": 1043
+        },
+        {
+          "filename": "lzio.c",
+          "line_percent": 78.6,
+          "line_covered": 33,
+          "line_total": 42,
+          "branch_percent": 85.7,
+          "branch_covered": 12,
+          "branch_total": 14
+        }
+      ],
+      "lowest_line_files": [
+        {
+          "filename": "lopcodes.c",
+          "line_percent": 53.8,
+          "line_covered": 7,
+          "line_total": 13,
+          "branch_percent": 69.2,
+          "branch_covered": 9,
+          "branch_total": 13
+        },
+        {
+          "filename": "lua.c",
+          "line_percent": 60.1,
+          "line_covered": 203,
+          "line_total": 338,
+          "branch_percent": 64.1,
+          "branch_covered": 91,
+          "branch_total": 142
+        },
+        {
+          "filename": "loadlib.c",
+          "line_percent": 64.1,
+          "line_covered": 159,
+          "line_total": 248,
+          "branch_percent": 61.0,
+          "branch_covered": 47,
+          "branch_total": 77
+        },
+        {
+          "filename": "linit.c",
+          "line_percent": 72.7,
+          "line_covered": 8,
+          "line_total": 11,
+          "branch_percent": 60.0,
+          "branch_covered": 3,
+          "branch_total": 5
+        },
+        {
+          "filename": "lmem.c",
+          "line_percent": 72.9,
+          "line_covered": 43,
+          "line_total": 59,
+          "branch_percent": 64.3,
+          "branch_covered": 18,
+          "branch_total": 28
+        },
+        {
+          "filename": "lzio.c",
+          "line_percent": 78.6,
+          "line_covered": 33,
+          "line_total": 42,
+          "branch_percent": 85.7,
+          "branch_covered": 12,
+          "branch_total": 14
+        },
+        {
+          "filename": "lobject.c",
+          "line_percent": 84.7,
+          "line_covered": 254,
+          "line_total": 300,
+          "branch_percent": 84.5,
+          "branch_covered": 158,
+          "branch_total": 187
+        },
+        {
+          "filename": "loslib.c",
+          "line_percent": 85.6,
+          "line_covered": 125,
+          "line_total": 146,
+          "branch_percent": 80.0,
+          "branch_covered": 40,
+          "branch_total": 50
+        },
+        {
+          "filename": "lauxlib.c",
+          "line_percent": 89.0,
+          "line_covered": 504,
+          "line_total": 566,
+          "branch_percent": 84.0,
+          "branch_covered": 205,
+          "branch_total": 244
+        },
+        {
+          "filename": "lundump.c",
+          "line_percent": 91.2,
+          "line_covered": 219,
+          "line_total": 240,
+          "branch_percent": 75.5,
+          "branch_covered": 77,
+          "branch_total": 102
+        }
+      ]
+    },
+    "generated": {
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/coverage_generated/coverage_summary.json",
+      "line_percent": 95.6,
+      "line_covered": 11259,
+      "line_total": 11779,
+      "branch_percent": 89.1,
+      "branch_covered": 5735,
+      "branch_total": 6435,
+      "files": [
+        {
+          "filename": "lapi.c",
+          "line_percent": 93.0,
+          "line_covered": 629,
+          "line_total": 676,
+          "branch_percent": 79.9,
+          "branch_covered": 299,
+          "branch_total": 374
+        },
+        {
+          "filename": "lauxlib.c",
+          "line_percent": 89.9,
+          "line_covered": 509,
+          "line_total": 566,
+          "branch_percent": 84.0,
+          "branch_covered": 205,
+          "branch_total": 244
+        },
+        {
+          "filename": "lbaselib.c",
+          "line_percent": 99.6,
+          "line_covered": 280,
+          "line_total": 281,
+          "branch_percent": 89.1,
+          "branch_covered": 114,
+          "branch_total": 128
+        },
+        {
+          "filename": "lcode.c",
+          "line_percent": 98.8,
+          "line_covered": 925,
+          "line_total": 936,
+          "branch_percent": 95.3,
+          "branch_covered": 383,
+          "branch_total": 402
+        },
+        {
+          "filename": "lcorolib.c",
+          "line_percent": 93.5,
+          "line_covered": 100,
+          "line_total": 107,
+          "branch_percent": 86.4,
+          "branch_covered": 38,
+          "branch_total": 44
+        },
+        {
+          "filename": "ldblib.c",
+          "line_percent": 92.0,
+          "line_covered": 230,
+          "line_total": 250,
+          "branch_percent": 80.9,
+          "branch_covered": 89,
+          "branch_total": 110
+        },
+        {
+          "filename": "ldebug.c",
+          "line_percent": 97.0,
+          "line_covered": 477,
+          "line_total": 492,
+          "branch_percent": 94.3,
+          "branch_covered": 280,
+          "branch_total": 297
+        },
+        {
+          "filename": "ldo.c",
+          "line_percent": 93.5,
+          "line_covered": 448,
+          "line_total": 479,
+          "branch_percent": 86.6,
+          "branch_covered": 188,
+          "branch_total": 217
+        },
+        {
+          "filename": "ldump.c",
+          "line_percent": 100.0,
+          "line_covered": 149,
+          "line_total": 149,
+          "branch_percent": 97.6,
+          "branch_covered": 41,
+          "branch_total": 42
+        },
+        {
+          "filename": "lfunc.c",
+          "line_percent": 100.0,
+          "line_covered": 170,
+          "line_total": 170,
+          "branch_percent": 91.3,
+          "branch_covered": 63,
+          "branch_total": 69
+        },
+        {
+          "filename": "lgc.c",
+          "line_percent": 97.2,
+          "line_covered": 798,
+          "line_total": 821,
+          "branch_percent": 90.2,
+          "branch_covered": 435,
+          "branch_total": 482
+        },
+        {
+          "filename": "linit.c",
+          "line_percent": 72.7,
+          "line_covered": 8,
+          "line_total": 11,
+          "branch_percent": 60.0,
+          "branch_covered": 3,
+          "branch_total": 5
+        },
+        {
+          "filename": "liolib.c",
+          "line_percent": 96.0,
+          "line_covered": 339,
+          "line_total": 353,
+          "branch_percent": 88.6,
+          "branch_covered": 132,
+          "branch_total": 149
+        },
+        {
+          "filename": "llex.c",
+          "line_percent": 99.1,
+          "line_covered": 327,
+          "line_total": 330,
+          "branch_percent": 93.2,
+          "branch_covered": 234,
+          "branch_total": 251
+        },
+        {
+          "filename": "lmathlib.c",
+          "line_percent": 99.5,
+          "line_covered": 217,
+          "line_total": 218,
+          "branch_percent": 93.1,
+          "branch_covered": 67,
+          "branch_total": 72
+        },
+        {
+          "filename": "lmem.c",
+          "line_percent": 72.9,
+          "line_covered": 43,
+          "line_total": 59,
+          "branch_percent": 64.3,
+          "branch_covered": 18,
+          "branch_total": 28
+        },
+        {
+          "filename": "loadlib.c",
+          "line_percent": 75.4,
+          "line_covered": 187,
+          "line_total": 248,
+          "branch_percent": 69.9,
+          "branch_covered": 58,
+          "branch_total": 83
+        },
+        {
+          "filename": "lobject.c",
+          "line_percent": 84.7,
+          "line_covered": 254,
+          "line_total": 300,
+          "branch_percent": 84.5,
+          "branch_covered": 158,
+          "branch_total": 187
+        },
+        {
+          "filename": "lopcodes.c",
+          "line_percent": 53.8,
+          "line_covered": 7,
+          "line_total": 13,
+          "branch_percent": 69.2,
+          "branch_covered": 9,
+          "branch_total": 13
+        },
+        {
+          "filename": "loslib.c",
+          "line_percent": 89.7,
+          "line_covered": 131,
+          "line_total": 146,
+          "branch_percent": 81.1,
+          "branch_covered": 43,
+          "branch_total": 53
+        },
+        {
+          "filename": "lparser.c",
+          "line_percent": 99.6,
+          "line_covered": 1205,
+          "line_total": 1210,
+          "branch_percent": 94.1,
+          "branch_covered": 447,
+          "branch_total": 475
+        },
+        {
+          "filename": "lstate.c",
+          "line_percent": 92.5,
+          "line_covered": 222,
+          "line_total": 240,
+          "branch_percent": 75.5,
+          "branch_covered": 37,
+          "branch_total": 49
+        },
+        {
+          "filename": "lstring.c",
+          "line_percent": 93.1,
+          "line_covered": 163,
+          "line_total": 175,
+          "branch_percent": 84.0,
+          "branch_covered": 68,
+          "branch_total": 81
+        },
+        {
+          "filename": "lstrlib.c",
+          "line_percent": 99.2,
+          "line_covered": 923,
+          "line_total": 930,
+          "branch_percent": 91.1,
+          "branch_covered": 554,
+          "branch_total": 608
+        },
+        {
+          "filename": "ltable.c",
+          "line_percent": 98.4,
+          "line_covered": 540,
+          "line_total": 549,
+          "branch_percent": 95.8,
+          "branch_covered": 296,
+          "branch_total": 309
+        },
+        {
+          "filename": "ltablib.c",
+          "line_percent": 92.7,
+          "line_covered": 178,
+          "line_total": 192,
+          "branch_percent": 85.3,
+          "branch_covered": 99,
+          "branch_total": 116
+        },
+        {
+          "filename": "ltm.c",
+          "line_percent": 100.0,
+          "line_covered": 167,
+          "line_total": 167,
+          "branch_percent": 92.8,
+          "branch_covered": 90,
+          "branch_total": 97
+        },
+        {
+          "filename": "lua.c",
+          "line_percent": 92.1,
+          "line_covered": 316,
+          "line_total": 343,
+          "branch_percent": 82.8,
+          "branch_covered": 144,
+          "branch_total": 174
+        },
+        {
+          "filename": "lundump.c",
+          "line_percent": 91.2,
+          "line_covered": 219,
+          "line_total": 240,
+          "branch_percent": 75.5,
+          "branch_covered": 77,
+          "branch_total": 102
+        },
+        {
+          "filename": "lutf8lib.c",
+          "line_percent": 99.3,
+          "line_covered": 138,
+          "line_total": 139,
+          "branch_percent": 90.6,
+          "branch_covered": 106,
+          "branch_total": 117
+        },
+        {
+          "filename": "lvm.c",
+          "line_percent": 97.9,
+          "line_covered": 927,
+          "line_total": 947,
+          "branch_percent": 90.9,
+          "branch_covered": 948,
+          "branch_total": 1043
+        },
+        {
+          "filename": "lzio.c",
+          "line_percent": 78.6,
+          "line_covered": 33,
+          "line_total": 42,
+          "branch_percent": 85.7,
+          "branch_covered": 12,
+          "branch_total": 14
+        }
+      ],
+      "lowest_line_files": [
+        {
+          "filename": "lopcodes.c",
+          "line_percent": 53.8,
+          "line_covered": 7,
+          "line_total": 13,
+          "branch_percent": 69.2,
+          "branch_covered": 9,
+          "branch_total": 13
+        },
+        {
+          "filename": "linit.c",
+          "line_percent": 72.7,
+          "line_covered": 8,
+          "line_total": 11,
+          "branch_percent": 60.0,
+          "branch_covered": 3,
+          "branch_total": 5
+        },
+        {
+          "filename": "lmem.c",
+          "line_percent": 72.9,
+          "line_covered": 43,
+          "line_total": 59,
+          "branch_percent": 64.3,
+          "branch_covered": 18,
+          "branch_total": 28
+        },
+        {
+          "filename": "loadlib.c",
+          "line_percent": 75.4,
+          "line_covered": 187,
+          "line_total": 248,
+          "branch_percent": 69.9,
+          "branch_covered": 58,
+          "branch_total": 83
+        },
+        {
+          "filename": "lzio.c",
+          "line_percent": 78.6,
+          "line_covered": 33,
+          "line_total": 42,
+          "branch_percent": 85.7,
+          "branch_covered": 12,
+          "branch_total": 14
+        },
+        {
+          "filename": "lobject.c",
+          "line_percent": 84.7,
+          "line_covered": 254,
+          "line_total": 300,
+          "branch_percent": 84.5,
+          "branch_covered": 158,
+          "branch_total": 187
+        },
+        {
+          "filename": "loslib.c",
+          "line_percent": 89.7,
+          "line_covered": 131,
+          "line_total": 146,
+          "branch_percent": 81.1,
+          "branch_covered": 43,
+          "branch_total": 53
+        },
+        {
+          "filename": "lauxlib.c",
+          "line_percent": 89.9,
+          "line_covered": 509,
+          "line_total": 566,
+          "branch_percent": 84.0,
+          "branch_covered": 205,
+          "branch_total": 244
+        },
+        {
+          "filename": "lundump.c",
+          "line_percent": 91.2,
+          "line_covered": 219,
+          "line_total": 240,
+          "branch_percent": 75.5,
+          "branch_covered": 77,
+          "branch_total": 102
+        },
+        {
+          "filename": "ldblib.c",
+          "line_percent": 92.0,
+          "line_covered": 230,
+          "line_total": 250,
+          "branch_percent": 80.9,
+          "branch_covered": 89,
+          "branch_total": 110
+        }
+      ]
+    }
+  },
+  "artifacts": {
+    "quality_report": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/quality_generated/quality_report.json",
+    "quality_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/logs/quality_generated.log",
+    "gold_junit": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/quality_generated/gold_results.xml",
+    "dummy_junit": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/quality_generated/dummy_results.xml",
+    "coverage_generated_summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/coverage_generated/coverage_summary.json",
+    "coverage_generated_full": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/coverage_generated/coverage.json",
+    "coverage_generated_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/logs/coverage_generated.log",
+    "coverage_harvested_summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/coverage_harvested/coverage_summary.json",
+    "coverage_harvested_full": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/coverage_harvested/coverage.json",
+    "coverage_harvested_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/logs/coverage_harvested.log",
+    "lm_as_judge_review": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/lm_as_judge_review.json"
+  }
+}

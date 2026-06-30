@@ -1,0 +1,41 @@
+{
+  "status": "rejected_wrapper_or_oracle",
+  "findings": [
+    {
+      "file": "executable",
+      "reason": "contains_gold_oracle_bytes"
+    },
+    {
+      "file": "executable",
+      "reason": "wrapper_pattern:memfd_create"
+    },
+    {
+      "file": "executable",
+      "reason": "wrapper_pattern:/proc/self/fd"
+    },
+    {
+      "file": "executable",
+      "reason": "wrapper_pattern:binary_data"
+    },
+    {
+      "file": "compile.sh",
+      "reason": "wrapper_pattern:memfd_create"
+    },
+    {
+      "file": "compile.sh",
+      "reason": "wrapper_pattern:/proc/self/fd"
+    },
+    {
+      "file": "compile.sh",
+      "reason": "wrapper_pattern:orig_executable"
+    },
+    {
+      "file": "compile.sh",
+      "reason": "wrapper_pattern:binary_data"
+    },
+    {
+      "file": "compile.sh",
+      "reason": "wrapper_pattern:cp executable"
+    }
+  ]
+}

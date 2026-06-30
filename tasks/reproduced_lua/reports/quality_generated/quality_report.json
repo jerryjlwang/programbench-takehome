@@ -1,0 +1,158 @@
+{
+  "static_check_catalog": [
+    {
+      "id": "no_assertions",
+      "severity": "HIGH",
+      "description": "Test function contains no pytest assertions.",
+      "blocking": true
+    },
+    {
+      "id": "trivially_true",
+      "severity": "HIGH",
+      "description": "Assertion is always true, such as assert True or assert X or True.",
+      "blocking": true
+    },
+    {
+      "id": "sole_returncode",
+      "severity": "HIGH",
+      "description": "Only assertion checks returncode == 0.",
+      "blocking": true
+    },
+    {
+      "id": "returncode_in_list",
+      "severity": "HIGH",
+      "description": "Assertion allows non-zero exits with returncode in a list.",
+      "blocking": true
+    },
+    {
+      "id": "pass_body",
+      "severity": "HIGH",
+      "description": "Test body is just pass.",
+      "blocking": true
+    },
+    {
+      "id": "assertion_disjunction",
+      "severity": "HIGH",
+      "description": "Assertion uses A or B instead of asserting an exact outcome.",
+      "blocking": true
+    },
+    {
+      "id": "if_no_else",
+      "severity": "HIGH",
+      "description": "If branch asserts with no else, silently passing when false.",
+      "blocking": true
+    },
+    {
+      "id": "if_else_both_assert",
+      "severity": "HIGH",
+      "description": "Both if and else branches assert, suggesting non-deterministic behavior.",
+      "blocking": true
+    },
+    {
+      "id": "try_except_swallow",
+      "severity": "HIGH",
+      "description": "Except handler with pass swallows failures.",
+      "blocking": true
+    },
+    {
+      "id": "all_assertions_weak",
+      "severity": "HIGH",
+      "description": "All assertions only check returncode, len, or isdigit.",
+      "blocking": true
+    },
+    {
+      "id": "short_substring",
+      "severity": "HIGH",
+      "description": "Substring check is shorter than 15 characters.",
+      "blocking": true
+    },
+    {
+      "id": "golden_written_in_test",
+      "severity": "HIGH",
+      "description": "Test writes to its own golden file.",
+      "blocking": true
+    },
+    {
+      "id": "golden_no_equality",
+      "severity": "HIGH",
+      "description": "Golden file is referenced in docstring but never compared with ==.",
+      "blocking": true
+    },
+    {
+      "id": "golden_docstring",
+      "severity": "HIGH",
+      "description": "Golden file is mentioned in docstring but not found in the test body.",
+      "blocking": true
+    },
+    {
+      "id": "for_no_guard",
+      "severity": "MED",
+      "description": "Loop-only assertions have no pre-loop length check.",
+      "blocking": true
+    },
+    {
+      "id": "weak_sole_assertion",
+      "severity": "MED",
+      "description": "Sole assertion is len(x) > N.",
+      "blocking": true
+    },
+    {
+      "id": "relative_length_assertion",
+      "severity": "MED",
+      "description": "Assertion uses len(x) >= N, a relative bound that verifies no content.",
+      "blocking": true
+    },
+    {
+      "id": "any_all_no_guard",
+      "severity": "MED",
+      "description": "any()/all() assertion has no non-empty guard.",
+      "blocking": true
+    },
+    {
+      "id": "file_exists_no_content",
+      "severity": "MED",
+      "description": "path.exists() assertion has no content assertion.",
+      "blocking": true
+    },
+    {
+      "id": "only_negative_assertions",
+      "severity": "MED",
+      "description": "All assertions are negative checks such as not in or !=.",
+      "blocking": true
+    },
+    {
+      "id": "catches",
+      "severity": "LOW",
+      "description": "Missing or too-short CATCHES docstring.",
+      "blocking": false
+    }
+  ],
+  "dynamic_check_catalog": [
+    {
+      "id": "gold_suite_passes",
+      "description": "Every generated test passes against the gold executable.",
+      "blocking": true
+    },
+    {
+      "id": "dummy_suite_rejects",
+      "description": "No generated test passes against a dummy executable.",
+      "blocking": true
+    }
+  ],
+  "static_findings": [],
+  "blocking_static_findings": [],
+  "gold": {
+    "returncode": 0,
+    "passed": 1338,
+    "failed": 0,
+    "failed_tests": [],
+    "output_tail": "........................................................................ [  5%]\n........................................................................ [ 10%]\n........................................................................ [ 16%]\n........................................................................ [ 21%]\n........................................................................ [ 26%]\n........................................................................ [ 32%]\n........................................................................ [ 37%]\n........................................................................ [ 43%]\n........................................................................ [ 48%]\n........................................................................ [ 53%]\n........................................................................ [ 59%]\n........................................................................ [ 64%]\n........................................................................ [ 69%]\n........................................................................ [ 75%]\n........................................................................ [ 80%]\n........................................................................ [ 86%]\n........................................................................ [ 91%]\n........................................................................ [ 96%]\n..........................................                               [100%]\n1338 passed in 20.95s\n"
+  },
+  "dummy": {
+    "returncode": 1,
+    "passed": 0,
+    "failed": 1338,
+    "passed_tests": [],
+    "output_tail": "ng_sub_141]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_format_141]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_upper_142]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_reverse_142]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_sub_142]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_format_142]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_upper_143]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_reverse_143]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_sub_143]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_format_143]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_upper_144]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_reverse_144]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_sub_144]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_format_144]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_upper_145]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_reverse_145]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_sub_145]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_format_145]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_upper_146]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[string_reverse_146]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_version_and_unrecognized_help_option\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_stdin_dash_keeps_later_dash_argument\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_e_option_runs_chunks_in_order\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_script_with_utf8_bom_and_bad_bom\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_environment_paths_and_versioned_overrides\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_lua_init_string_file_and_E_ignores_environment\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_l_option_loads_libraries_and_assigns_globals\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_arg_table_for_script_after_options\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_warning_controls_with_W\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args0-unrecognized option '---'-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args1-unrecognized option '-Ex'-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args2-unrecognized option '-vv'-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args3-unrecognized option '-iv'-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args4-'-e' needs argument-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args5-(command line):1: syntax error near <eof>-False]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args6-'-l' needs argument-True]\nFAILED workspace/eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args7-cannot open -i: No such file or directory-False]\nFAILED workspace/eval/tests/test_upstream_user_suite.py::test_upstream_user_mode_suite_passes\n1338 failed in 28.99s\n"
+  }
+}

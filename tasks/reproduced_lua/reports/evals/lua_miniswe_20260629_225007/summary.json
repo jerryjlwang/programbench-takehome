@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "returncode": 1,
+  "executable_hash": "88f29dfdefdabc9845d28682e4732e2051df0b41981d38804864e44e101d7fff",
+  "tests": 1338,
+  "failures": 1331,
+  "errors": 0,
+  "skipped": 0,
+  "time": 29.53
+}

@@ -1,0 +1,209 @@
+{
+  "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/lm_as_judge_review.json",
+  "generated_at": "2026-06-30T06:08:36Z",
+  "reviewer": "Codex LM-as-judge with independent explorer review",
+  "independent_agent": {
+    "id": "019f1720-3b3f-7e71-9408-3de2c35f40b1",
+    "nickname": "Epicurus",
+    "verdict": "Latest run is fair to score and failed; previous wrapper run was correctly rejected."
+  },
+  "subject_run": "lua_miniswe_20260629_225007",
+  "verdict": "latest_run_valid_but_failed_behavioral_eval",
+  "latest_eval": {
+    "run": "lua_miniswe_20260629_225007",
+    "status": "failed",
+    "returncode": 1,
+    "tests": 1338,
+    "passed": 7,
+    "failures": 1331,
+    "errors": 0,
+    "skipped": 0,
+    "candidate_executable_hash": "88f29dfdefdabc9845d28682e4732e2051df0b41981d38804864e44e101d7fff",
+    "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_225007/summary.json",
+    "pytest_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_225007/pytest.log"
+  },
+  "previous_wrapper_eval": {
+    "run": "lua_miniswe_20260629_223354",
+    "status": "rejected_wrapper_or_oracle",
+    "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_223354/summary.json",
+    "findings_count": 9
+  },
+  "hashes": {
+    "gold_hash": "56c87d948e1fa58d5854c40259e15dc974997fdd8515e2353e37a95ef404926a",
+    "latest_submission_sha256": "f88b225b667bc4e32ae7423801aa53ee7c74c0fb3811e0f58baa6bd6c3124748",
+    "previous_wrapper_submission_sha256": "b72484b300f4905e062118eb2054dd0cef44aaf03086a6a9781fef570e45ba0f",
+    "solver_env_file_hashes": {
+      "task_env/compile.sh": "086f5e38ca3aea9b6b1048fd0e17c2e62a96e0a5dc5efad2e86396381e8cd7af",
+      "task_env/docs/USAGE.md": "0e7f5ee1dce0fc55c583d95c64e5dd1c7fe589607973347f8a2b783cf21cd50b",
+      "task_env/docs/help.txt": "aa514ebc7d70d3ab3a88465454afd122f1e9c123d545973fe8081960f3f3e6ba",
+      "task_env/executable": "56c87d948e1fa58d5854c40259e15dc974997fdd8515e2353e37a95ef404926a"
+    }
+  },
+  "solver_env_manifest": [
+    "task_env/compile.sh",
+    "task_env/docs/USAGE.md",
+    "task_env/docs/help.txt",
+    "task_env/executable"
+  ],
+  "strict_trace_warnings": [
+    {
+      "id": "unsuccessful_local_source_discovery_probe",
+      "severity": "MED",
+      "status": "warning",
+      "message_indexes": [24, 32, 42, 56, 62, 84, 98, 165, 173],
+      "evidence": "/Users/jerrywang/programbench-takehome/runs/lua_miniswe_20260629_225007/lua__lua.c6b4848/lua__lua.c6b4848.traj.json",
+      "details": "The trajectory contains unsuccessful checks for installed Lua commands, headers, packages, and local source locations. The judge did not find evidence that source was found or used."
+    }
+  ],
+  "checks": [
+    {
+      "id": "independent_lm_as_judge_review_completed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Explorer 019f1720-3b3f-7e71-9408-3de2c35f40b1 returned a verdict."
+    },
+    {
+      "id": "latest_submission_not_disqualified_by_oracle_gate",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_225007/summary.json"
+    },
+    {
+      "id": "latest_submission_behavioral_eval_recorded",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "7/1338 tests passed; status failed."
+    },
+    {
+      "id": "known_wrapper_submission_rejected",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_223354/summary.json"
+    },
+    {
+      "id": "solver_facing_task_env_has_no_tests_or_source",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "task_env contains only compile.sh, docs, and executable."
+    },
+    {
+      "id": "solver_facing_task_env_has_no_git_directory",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "find task_env for .git returned no paths."
+    },
+    {
+      "id": "test_suite_not_solver_facing",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "tests_generated is outside task_env and mounted only by evaluate_submission.sh."
+    },
+    {
+      "id": "solve_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/run_miniswe_lua.py:87"
+    },
+    {
+      "id": "compile_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:87"
+    },
+    {
+      "id": "test_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:141"
+    },
+    {
+      "id": "prebuilt_submission_executable_ignored_before_compile",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:84"
+    },
+    {
+      "id": "stale_junit_results_removed_before_scoring",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:37"
+    },
+    {
+      "id": "trajectory_hidden_test_access_not_detected",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "No model-visible use of tests_generated/eval/tests paths found in the latest trajectory."
+    },
+    {
+      "id": "trajectory_source_discovery_probe_absent",
+      "blocking": false,
+      "status": "warning",
+      "evidence": "Unsuccessful local package/header/source probes present; see strict_trace_warnings."
+    },
+    {
+      "id": "wrapper_pattern_scan_is_complete",
+      "blocking": false,
+      "status": "risk",
+      "evidence": "Exact gold-byte and known-string scans are heuristic and should be supplemented by strict packaging."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "HIGH",
+      "status": "resolved",
+      "finding": "The previous 36-call submission embedded and executed the gold oracle; the evaluator now rejects it before scoring.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_223354/summary.json"
+    },
+    {
+      "severity": "MED",
+      "status": "warning",
+      "finding": "The latest trajectory tried local package/header/source discovery commands, but no Lua source was found or used. Score the run as failed with a trace warning, not as disqualified.",
+      "evidence": "/Users/jerrywang/programbench-takehome/runs/lua_miniswe_20260629_225007/lua__lua.c6b4848/lua__lua.c6b4848.traj.json"
+    },
+    {
+      "severity": "MED",
+      "status": "resolved",
+      "finding": "The scoring container originally lacked explicit network isolation. The evaluator now uses an offline pytest image and reran the latest submission with --network none during scoring.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:141"
+    },
+    {
+      "severity": "LOW",
+      "status": "risk",
+      "finding": "Wrapper detection catches exact embedded gold bytes and known wrapper strings, but transformed encodings could evade static heuristics. Strict task packaging remains the primary defense.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/evaluate_submission.sh:43"
+    },
+    {
+      "severity": "LOW",
+      "status": "accepted",
+      "finding": "Solver-facing docs identify Lua 5.5.1 behavior, which is necessary documentation rather than original source leakage.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/task_env/docs/USAGE.md"
+    },
+    {
+      "severity": "INFO",
+      "status": "observed",
+      "finding": "The latest scored run is a plausible failed reimplementation stub rather than a shortcut: it passed 7 of 1338 behavioral tests.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/evals/lua_miniswe_20260629_225007/summary.json"
+    }
+  ],
+  "recommended_qc_fields": [
+    "solve_run_id",
+    "trajectory_path",
+    "submission_sha256",
+    "candidate_executable_hash",
+    "gold_hash",
+    "eval_status",
+    "tests_total",
+    "failures",
+    "errors",
+    "skipped",
+    "wrapper_or_oracle_findings",
+    "strict_trace_warnings",
+    "solver_env_manifest",
+    "solver_env_file_hashes",
+    "compile_network_disabled",
+    "test_network_disabled",
+    "test_suite_mount_scope",
+    "previous_wrapper_rejection_confirmed",
+    "fairness_judge_verdict"
+  ]
+}

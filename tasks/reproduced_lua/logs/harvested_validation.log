@@ -1,0 +1,26 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python3
+cachedir: .pytest_cache
+rootdir: /workspace
+collecting ... collected 18 items
+
+eval/tests/test_harvested_main_cli.py::test_version_and_unrecognized_help_option PASSED [  5%]
+eval/tests/test_harvested_main_cli.py::test_stdin_dash_keeps_later_dash_argument PASSED [ 11%]
+eval/tests/test_harvested_main_cli.py::test_e_option_runs_chunks_in_order PASSED [ 16%]
+eval/tests/test_harvested_main_cli.py::test_script_with_utf8_bom_and_bad_bom PASSED [ 22%]
+eval/tests/test_harvested_main_cli.py::test_environment_paths_and_versioned_overrides PASSED [ 27%]
+eval/tests/test_harvested_main_cli.py::test_lua_init_string_file_and_E_ignores_environment PASSED [ 33%]
+eval/tests/test_harvested_main_cli.py::test_l_option_loads_libraries_and_assigns_globals PASSED [ 38%]
+eval/tests/test_harvested_main_cli.py::test_arg_table_for_script_after_options PASSED [ 44%]
+eval/tests/test_harvested_main_cli.py::test_warning_controls_with_W PASSED [ 50%]
+eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args0-unrecognized option '---'] PASSED [ 55%]
+eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args1-unrecognized option '-Ex'] PASSED [ 61%]
+eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args2-unrecognized option '-vv'] PASSED [ 66%]
+eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args3-unrecognized option '-iv'] PASSED [ 72%]
+eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args4-'-e' needs argument] PASSED [ 77%]
+eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args5-syntax error] PASSED [ 83%]
+eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args6-'-l' needs argument] PASSED [ 88%]
+eval/tests/test_harvested_main_cli.py::test_invalid_option_and_startup_errors[args7--i] PASSED [ 94%]
+eval/tests/test_upstream_user_suite.py::test_upstream_user_mode_suite_passes PASSED [100%]
+
+============================== 18 passed in 0.88s ==============================

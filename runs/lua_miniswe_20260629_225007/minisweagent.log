@@ -1,0 +1,2 @@
+2026-06-29 22:50:10,168 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-4ffe4f38 -w /workspace --platform linux/amd64 --rm --network none --cpus 4 --memory 8g --memory-swap 8g --user agent --cap-drop SYS_PTRACE programbench-lua-cleanroom:local sleep 7h
+2026-06-29 22:50:10,325 - minisweagent.environment - INFO - Started container minisweagent-4ffe4f38 with ID b8ebade7561907a9bc8535bd0ef06bab91002f6ba5cc12d3585b43ff1202938c
