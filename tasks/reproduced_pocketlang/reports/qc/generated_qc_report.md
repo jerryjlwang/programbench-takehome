@@ -100,7 +100,7 @@
 | exact_gold_hash_rejection_configured | passed | True | `/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh` |
 | embedded_gold_oracle_scan_configured | passed | True | `/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh` |
 | downstream_miniswe_runner_imports_and_help_work | passed | True | `/tmp/pocketlang_miniswe_help.log` |
-| downstream_miniswe_solve_not_yet_run | not_applicable | False | `PocketLang mini-SWE solve is ready but has not been started.` |
+| downstream_miniswe_solve_completed | passed | True | `pocketlang_miniswe_20260702_021259: 3/421 tests passed (418 failed, returncode 1) — solver compiled but could not reproduce PocketLang behavior.` |
 
 ### LM judge findings
 
