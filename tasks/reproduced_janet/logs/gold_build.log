@@ -1,0 +1,58 @@
+rm -rf build vgcore.* callgrind.*
+rm -rf test/install/build test/install/modpath
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/abstract.boot.o -c src/core/abstract.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/array.boot.o -c src/core/array.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/asm.boot.o -c src/core/asm.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/buffer.boot.o -c src/core/buffer.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/bytecode.boot.o -c src/core/bytecode.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/capi.boot.o -c src/core/capi.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/cfuns.boot.o -c src/core/cfuns.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/compile.boot.o -c src/core/compile.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/corelib.boot.o -c src/core/corelib.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/debug.boot.o -c src/core/debug.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/emit.boot.o -c src/core/emit.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/ev.boot.o -c src/core/ev.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/ffi.boot.o -c src/core/ffi.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/fiber.boot.o -c src/core/fiber.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/filewatch.boot.o -c src/core/filewatch.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/gc.boot.o -c src/core/gc.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/inttypes.boot.o -c src/core/inttypes.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/io.boot.o -c src/core/io.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/marsh.boot.o -c src/core/marsh.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/math.boot.o -c src/core/math.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/net.boot.o -c src/core/net.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/os.boot.o -c src/core/os.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/parse.boot.o -c src/core/parse.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/peg.boot.o -c src/core/peg.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/pp.boot.o -c src/core/pp.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/regalloc.boot.o -c src/core/regalloc.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/run.boot.o -c src/core/run.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/specials.boot.o -c src/core/specials.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/state.boot.o -c src/core/state.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/string.boot.o -c src/core/string.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/strtod.boot.o -c src/core/strtod.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/struct.boot.o -c src/core/struct.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/symcache.boot.o -c src/core/symcache.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/table.boot.o -c src/core/table.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/tuple.boot.o -c src/core/tuple.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/util.boot.o -c src/core/util.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/value.boot.o -c src/core/value.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/vector.boot.o -c src/core/vector.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/vm.boot.o -c src/core/vm.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/core/wrap.boot.o -c src/core/wrap.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/boot/array_test.boot.o -c src/boot/array_test.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/boot/boot.boot.o -c src/boot/boot.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/boot/buffer_test.boot.o -c src/boot/buffer_test.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/boot/number_test.boot.o -c src/boot/number_test.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/boot/system_test.boot.o -c src/boot/system_test.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/boot/table_test.boot.o -c src/boot/table_test.c
+cc -DJANET_BOOTSTRAP -DJANET_BUILD=\"0fea20c8\" -O0 -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -g -o build/janet_boot build/core/abstract.boot.o build/core/array.boot.o build/core/asm.boot.o build/core/buffer.boot.o build/core/bytecode.boot.o build/core/capi.boot.o build/core/cfuns.boot.o build/core/compile.boot.o build/core/corelib.boot.o build/core/debug.boot.o build/core/emit.boot.o build/core/ev.boot.o build/core/ffi.boot.o build/core/fiber.boot.o build/core/filewatch.boot.o build/core/gc.boot.o build/core/inttypes.boot.o build/core/io.boot.o build/core/marsh.boot.o build/core/math.boot.o build/core/net.boot.o build/core/os.boot.o build/core/parse.boot.o build/core/peg.boot.o build/core/pp.boot.o build/core/regalloc.boot.o build/core/run.boot.o build/core/specials.boot.o build/core/state.boot.o build/core/string.boot.o build/core/strtod.boot.o build/core/struct.boot.o build/core/symcache.boot.o build/core/table.boot.o build/core/tuple.boot.o build/core/util.boot.o build/core/value.boot.o build/core/vector.boot.o build/core/vm.boot.o build/core/wrap.boot.o build/boot/array_test.boot.o build/boot/boot.boot.o build/boot/buffer_test.boot.o build/boot/number_test.boot.o build/boot/system_test.boot.o build/boot/table_test.boot.o -lm -lpthread -lrt -ldl
+build/janet_boot . JANET_PATH '/usr/local/lib/janet' > build/c/janet.c
+cksum build/c/janet.c
+2629870496 3317891 build/c/janet.c
+cc -O2 -g -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -c build/c/janet.c -o build/janet.o
+cp src/mainclient/shell.c build/c/shell.c
+cc -O2 -g -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -c build/c/shell.c -o build/shell.o
+cc -rdynamic -O2 -g -std=c99 -Wall -Wextra -Isrc/include -Isrc/conf -fvisibility=hidden -fPIC -o build/janet build/janet.o build/shell.o -lm -lpthread -lrt -ldl
+0803a73d40bcce61c07950d509d023d40ccc896fff3ca57571a4194377678235  /out/janet
+/out/janet: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, with debug_info, not stripped

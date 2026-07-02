@@ -1,0 +1,7 @@
+tmp_cov*/
+__pycache__/
+*.pyc
+_src/janet/build/
+_src/janet/*.gcov
+_src/janet/**/*.gcda
+_src/janet/**/*.gcno

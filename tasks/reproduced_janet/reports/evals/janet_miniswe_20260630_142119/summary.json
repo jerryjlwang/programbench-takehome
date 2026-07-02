@@ -1,0 +1,21 @@
+{
+  "status": "rejected_wrapper_or_oracle",
+  "findings": [
+    {
+      "file": "executable",
+      "reason": "contains_gold_oracle_bytes"
+    },
+    {
+      "file": "executable",
+      "reason": "wrapper_pattern:binary_data"
+    },
+    {
+      "file": "main.c",
+      "reason": "wrapper_pattern:binary_data"
+    },
+    {
+      "file": "data.c",
+      "reason": "wrapper_pattern:binary_data"
+    }
+  ]
+}

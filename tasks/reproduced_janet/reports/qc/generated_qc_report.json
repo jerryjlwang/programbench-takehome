@@ -1,0 +1,1785 @@
+{
+  "generated_at": "2026-07-02T09:40:40.674609+00:00",
+  "status": "passed",
+  "failed_blocking_checks": [],
+  "catalog": {
+    "source": "local Janet recreation; no ProgramBench catalog entry",
+    "catalog_task": false,
+    "generated_cases": 307,
+    "active": 381,
+    "listed": 381,
+    "ignored": 0
+  },
+  "quality": {
+    "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/quality_generated/quality_report.json",
+    "gold": {
+      "returncode": 0,
+      "passed": 381,
+      "failed": 0,
+      "failed_tests": [],
+      "output_tail": "........................................................................ [ 18%]\n........................................................................ [ 37%]\n........................................................................ [ 56%]\n........................................................................ [ 75%]\n........................................................................ [ 94%]\n.....................                                                    [100%]\n381 passed in 10.72s\n"
+    },
+    "dummy": {
+      "returncode": 1,
+      "passed": 0,
+      "failed": 381,
+      "passed_tests": [],
+      "output_tail": "y::test_upstream_suite_passes_with_expected_count[suite-vm.janet-36]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[3sum.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[abstract-unix-socket.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[assembly.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[async-execute.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[channel.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[chatserver.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[colors.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[debug.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[debugger.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[echoclient.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[echoserve.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[error.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[evlocks.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[evsleep.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[fizzbuzz.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[hello.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[iterate-fiber.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[lazyseqs.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[life.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[lineloop.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[marshal-stress.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[maxtriangle.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[posix-exec.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[primes.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[rtest.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[select.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[select2.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[sigaction.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[tcpclient.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[tcpserver.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[threaded-channels.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[udpclient.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[udpserver.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[urlloader.janet]\nFAILED workspace/eval/tests/test_upstream_suite.py::test_upstream_example_compiles_with_marker[weak-tables.janet]\n381 failed in 8.49s\n"
+    },
+    "static_findings": [],
+    "blocking_static_findings": []
+  },
+  "linter_checks": [
+    {
+      "id": "no_assertions",
+      "severity": "HIGH",
+      "description": "Test function contains no pytest assertions.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "trivially_true",
+      "severity": "HIGH",
+      "description": "Assertion is always true, such as assert True or assert X or True.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "sole_returncode",
+      "severity": "HIGH",
+      "description": "Only assertion checks returncode == 0.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "returncode_in_list",
+      "severity": "HIGH",
+      "description": "Assertion allows non-zero exits with returncode in a list.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "pass_body",
+      "severity": "HIGH",
+      "description": "Test body is just pass.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "assertion_disjunction",
+      "severity": "HIGH",
+      "description": "Assertion uses A or B instead of asserting an exact outcome.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "if_no_else",
+      "severity": "HIGH",
+      "description": "If branch asserts with no else, silently passing when false.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "if_else_both_assert",
+      "severity": "HIGH",
+      "description": "Both if and else branches assert, suggesting non-deterministic behavior.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "try_except_swallow",
+      "severity": "HIGH",
+      "description": "Except handler with pass swallows failures.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "all_assertions_weak",
+      "severity": "HIGH",
+      "description": "All assertions only check returncode, len, or isdigit.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "short_substring",
+      "severity": "HIGH",
+      "description": "Substring check is shorter than 15 characters.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "golden_written_in_test",
+      "severity": "HIGH",
+      "description": "Test writes to its own golden file.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "golden_no_equality",
+      "severity": "HIGH",
+      "description": "Golden file is referenced in docstring but never compared with ==.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "golden_docstring",
+      "severity": "HIGH",
+      "description": "Golden file is mentioned in docstring but not found in the test body.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "for_no_guard",
+      "severity": "MED",
+      "description": "Loop-only assertions have no pre-loop length check.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "weak_sole_assertion",
+      "severity": "MED",
+      "description": "Sole assertion is len(x) > N.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "relative_length_assertion",
+      "severity": "MED",
+      "description": "Assertion uses len(x) >= N, a relative bound that verifies no content.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "any_all_no_guard",
+      "severity": "MED",
+      "description": "any()/all() assertion has no non-empty guard.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "file_exists_no_content",
+      "severity": "MED",
+      "description": "path.exists() assertion has no content assertion.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "only_negative_assertions",
+      "severity": "MED",
+      "description": "All assertions are negative checks such as not in or !=.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "catches",
+      "severity": "LOW",
+      "description": "Missing or too-short CATCHES docstring.",
+      "blocking": false,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "informational"
+    }
+  ],
+  "dynamic_checks": [
+    {
+      "id": "no_blocking_static_linter_findings",
+      "blocking": true,
+      "status": "passed",
+      "observed": 0
+    },
+    {
+      "id": "gold_suite_passes",
+      "blocking": true,
+      "status": "passed",
+      "passed": 381,
+      "failed": 0,
+      "returncode": 0
+    },
+    {
+      "id": "dummy_suite_rejects",
+      "blocking": true,
+      "status": "passed",
+      "passed": 0,
+      "failed": 381,
+      "returncode": 1
+    }
+  ],
+  "coverage_line_checks": [
+    {
+      "id": "generated_line_coverage_meets_local_target",
+      "blocking": true,
+      "target_line_percent": 75.0,
+      "observed_line_percent": 75.3,
+      "status": "passed"
+    },
+    {
+      "id": "generated_line_coverage_not_lower_than_harvested",
+      "blocking": true,
+      "harvested_line_percent": 75.1,
+      "generated_line_percent": 75.3,
+      "delta_line_percent": 0.2,
+      "status": "passed"
+    },
+    {
+      "id": "generated_file_line_metrics_logged",
+      "blocking": true,
+      "files": 41,
+      "status": "passed"
+    },
+    {
+      "id": "generated_full_line_coverage_json_logged",
+      "blocking": true,
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/coverage_generated/coverage.json",
+      "status": "passed"
+    },
+    {
+      "id": "harvested_full_line_coverage_json_logged",
+      "blocking": true,
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/coverage_harvested/coverage.json",
+      "status": "passed"
+    }
+  ],
+  "fairness_report_checks": [
+    {
+      "id": "fairness_report_present",
+      "blocking": true,
+      "status": "passed",
+      "observed": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/fairness_lm_judge.md"
+    }
+  ],
+  "deterministic_fairness_review": {
+    "verdict": "pass",
+    "blocking_failures": 0,
+    "warnings": 0,
+    "counts": {
+      "generated_case_count": 307,
+      "suite_count": 33,
+      "example_count": 35
+    },
+    "checks": [
+      {
+        "id": "python_wrappers_have_no_workspace_or_source_leaks",
+        "status": "pass",
+        "evidence": "No forbidden workspace/source strings in pytest wrappers."
+      },
+      {
+        "id": "pytest_tests_use_run_janet_black_box_fixture",
+        "status": "pass",
+        "evidence": "Test wrappers avoid direct subprocess/source inspection and route behavior through run_janet."
+      },
+      {
+        "id": "generated_cases_are_self_contained_eval_invocations",
+        "status": "pass",
+        "evidence": "307 generated cases use --eval with explicit stdout/stderr/returncode and no path/env leaks."
+      },
+      {
+        "id": "fixtures_have_no_workspace_absolute_path_leaks",
+        "status": "pass",
+        "evidence": "No local workspace/gold/_src absolute path leaks in hidden fixture files."
+      },
+      {
+        "id": "native_source_fixtures_are_not_invoked_by_hidden_tests",
+        "status": "pass",
+        "evidence": "4 native/example source fixture files exist but none are referenced by pytest parameter lists."
+      },
+      {
+        "id": "upstream_fixtures_are_executable_inputs_not_candidate_introspection",
+        "status": "pass",
+        "evidence": "33 suite scripts and 35 example scripts are passed as executable inputs under cwd, not used to inspect candidate source."
+      },
+      {
+        "id": "solver_docs_name_hidden_behavior_families",
+        "status": "pass",
+        "evidence": "USAGE.md names the CLI and standard library behavior families covered by hidden tests."
+      },
+      {
+        "id": "solver_docs_explain_allowed_observation_boundary",
+        "status": "pass",
+        "evidence": "USAGE.md explains black-box CLI observation and forbids binary/source shortcuts."
+      },
+      {
+        "id": "solver_docs_explain_self_contained_runtime",
+        "status": "pass",
+        "evidence": "USAGE.md states that hidden scoring runs only the compiled executable and requires a self-contained runtime."
+      },
+      {
+        "id": "cleanroom_image_executes_oracle_without_read_permission",
+        "status": "pass",
+        "evidence": "Cleanroom image root-owns the oracle, grants execute-only permission, preserves it during development builds via ./candidate, strips prebuilt executables from submissions, and solve runs with network disabled."
+      },
+      {
+        "id": "solve_runner_enforces_context_budget_and_oracle_command_guards",
+        "status": "pass",
+        "evidence": "Janet mini-SWE runner applies token/reasoning/observation caps, forces the named bash tool by default, recovers parser-raised Gemini FormatErrors into executable bash actions, strips Gemini thought metadata, removes commit instructions, enforces earlier persistent-source/build phases, rejects scratchpad heredocs and placeholder submissions, requires timeout-bounded generalized Janet smoke behavior including long eval/expression flags, rejects literal smoke hardcoding, and blocks oracle-inspection/git/network/package/system-search/repeated-command and repeated-command-cycle stagnation."
+      },
+      {
+        "id": "test_harness_normalizes_environment_and_timing",
+        "status": "pass",
+        "evidence": "Harness sets LC_ALL=C, TZ=UTC, clears Janet path/profile env, and regexes suite duration."
+      }
+    ],
+    "notes": [
+      "This deterministic audit proves the hidden tests are black-box executable interactions, not direct candidate-source checks.",
+      "It cannot prove that a short agent run will infer the full Janet language and standard library; it checks only that the behavior is observable through docs plus normal oracle execution."
+    ],
+    "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/deterministic_fairness_report.json"
+  },
+  "deterministic_fairness_checks": [
+    {
+      "id": "deterministic_fairness_report_present",
+      "blocking": true,
+      "status": "passed",
+      "observed": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/deterministic_fairness_report.json"
+    },
+    {
+      "id": "deterministic_fairness_audit_passed",
+      "blocking": true,
+      "status": "passed",
+      "observed": "pass",
+      "blocking_failures": 0
+    },
+    {
+      "id": "deterministic_python_wrappers_have_no_workspace_or_source_leaks",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "No forbidden workspace/source strings in pytest wrappers."
+    },
+    {
+      "id": "deterministic_pytest_tests_use_run_janet_black_box_fixture",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Test wrappers avoid direct subprocess/source inspection and route behavior through run_janet."
+    },
+    {
+      "id": "deterministic_generated_cases_are_self_contained_eval_invocations",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "307 generated cases use --eval with explicit stdout/stderr/returncode and no path/env leaks."
+    },
+    {
+      "id": "deterministic_fixtures_have_no_workspace_absolute_path_leaks",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "No local workspace/gold/_src absolute path leaks in hidden fixture files."
+    },
+    {
+      "id": "deterministic_native_source_fixtures_are_not_invoked_by_hidden_tests",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "4 native/example source fixture files exist but none are referenced by pytest parameter lists."
+    },
+    {
+      "id": "deterministic_upstream_fixtures_are_executable_inputs_not_candidate_introspection",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "33 suite scripts and 35 example scripts are passed as executable inputs under cwd, not used to inspect candidate source."
+    },
+    {
+      "id": "deterministic_solver_docs_name_hidden_behavior_families",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "USAGE.md names the CLI and standard library behavior families covered by hidden tests."
+    },
+    {
+      "id": "deterministic_solver_docs_explain_allowed_observation_boundary",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "USAGE.md explains black-box CLI observation and forbids binary/source shortcuts."
+    },
+    {
+      "id": "deterministic_solver_docs_explain_self_contained_runtime",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "USAGE.md states that hidden scoring runs only the compiled executable and requires a self-contained runtime."
+    },
+    {
+      "id": "deterministic_cleanroom_image_executes_oracle_without_read_permission",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Cleanroom image root-owns the oracle, grants execute-only permission, preserves it during development builds via ./candidate, strips prebuilt executables from submissions, and solve runs with network disabled."
+    },
+    {
+      "id": "deterministic_solve_runner_enforces_context_budget_and_oracle_command_guards",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Janet mini-SWE runner applies token/reasoning/observation caps, forces the named bash tool by default, recovers parser-raised Gemini FormatErrors into executable bash actions, strips Gemini thought metadata, removes commit instructions, enforces earlier persistent-source/build phases, rejects scratchpad heredocs and placeholder submissions, requires timeout-bounded generalized Janet smoke behavior including long eval/expression flags, rejects literal smoke hardcoding, and blocks oracle-inspection/git/network/package/system-search/repeated-command and repeated-command-cycle stagnation."
+    },
+    {
+      "id": "deterministic_test_harness_normalizes_environment_and_timing",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Harness sets LC_ALL=C, TZ=UTC, clears Janet path/profile env, and regexes suite duration."
+    }
+  ],
+  "lm_as_judge_review": {
+    "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/lm_as_judge_review.json",
+    "generated_at": "2026-06-30T23:15:59Z",
+    "reviewer": "Codex LM-as-judge local fairness audit",
+    "subject_run": "janet_miniswe_20260630_142119",
+    "verdict": "latest_run_disqualified_oracle_embedding_task_fairness_checks_passed",
+    "latest_eval": {
+      "run": "janet_miniswe_20260630_142119",
+      "status": "rejected_wrapper_or_oracle",
+      "returncode": null,
+      "tests": 0,
+      "passed": 0,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "findings_count": 4,
+      "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_142119/summary.json",
+      "pytest_log": "not-run; evaluator rejected the submission before behavioral scoring",
+      "trajectory": "Full trajectory omitted from compact commit; rejection retained in tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_142119/summary.json and summarized in tasks/reproduced_janet/reports/solve_attempts_summary.md.",
+      "submission": "Raw submission archive omitted from compact Janet attempt package."
+    },
+    "previous_wrapper_evals": [
+      {
+        "run": "janet_miniswe_20260630_095804",
+        "status": "rejected_wrapper_or_oracle",
+        "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_095804/summary.json"
+      },
+      {
+        "run": "janet_miniswe_20260630_104423",
+        "status": "rejected_wrapper_or_oracle",
+        "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_104423/summary.json"
+      }
+    ],
+    "hashes": {
+      "gold_hash": "0803a73d40bcce61c07950d509d023d40ccc896fff3ca57571a4194377678235",
+      "latest_submission_sha256": "9fcfc1db32a2aa31d3429dc28920f425b1bb55772a5e46d66d72ad087b763eb9",
+      "solver_env_file_hashes": {
+        "task_env/compile.sh": "c869531aef5a930d4007c5008282c164767be4422129ffc41e7a1649a0b5c672",
+        "task_env/docs/USAGE.md": "ad31ab136b26e5f91ec47c5a51d9fb55a4539b21551d73f6ff425ed0d466bffa",
+        "task_env/docs/help.txt": "7d4085f70513232685f631532dff42e2ea43a9f3dc66fd1ad96698519f432355",
+        "task_env/executable": "0803a73d40bcce61c07950d509d023d40ccc896fff3ca57571a4194377678235"
+      }
+    },
+    "solver_env_manifest": [
+      "task_env/compile.sh",
+      "task_env/docs/USAGE.md",
+      "task_env/docs/help.txt",
+      "task_env/executable"
+    ],
+    "strict_trace_warnings": [
+      {
+        "id": "disallowed_oracle_byte_read_and_embedding",
+        "severity": "HIGH",
+        "status": "disqualified",
+        "evidence": "Full trajectory omitted from compact commit; rejection retained in tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_142119/summary.json and summarized in tasks/reproduced_janet/reports/solve_attempts_summary.md.",
+        "details": "The trajectory reads ./executable as bytes, generates embedded binary data, and builds a delegating wrapper. The evaluator rejected the submission before scoring."
+      }
+    ],
+    "checks": [
+      {
+        "id": "local_lm_as_judge_review_completed",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "Codex reviewed the Janet task recreation artifacts, deterministic fairness report, rejected solve summaries, and retained eval records."
+      },
+      {
+        "id": "deterministic_fairness_audit_passed",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/deterministic_fairness_report.json"
+      },
+      {
+        "id": "latest_submission_rejected_by_oracle_gate",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_142119/summary.json"
+      },
+      {
+        "id": "latest_submission_behavioral_eval_not_scored_after_rejection",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "Rejected wrapper/oracle submissions are stopped before pytest scoring."
+      },
+      {
+        "id": "downstream_miniswe_gemini_solve_attempt_summarized",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "tasks/reproduced_janet/reports/solve_attempts_summary.md"
+      },
+      {
+        "id": "retained_solve_summaries_show_no_hidden_test_leak",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "Retained eval summaries and LM review found no tests_generated/tests_harvested access before compacting raw trajectories."
+      },
+      {
+        "id": "solver_facing_task_env_has_no_tests_or_source",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "task_env contains only compile.sh, docs, and executable."
+      },
+      {
+        "id": "solver_facing_task_env_has_no_git_directory",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "find/rg scan of task_env found no .git paths."
+      },
+      {
+        "id": "test_suite_not_solver_facing",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "tests_harvested and tests_generated are outside task_env and mounted only by evaluator/coverage scripts."
+      },
+      {
+        "id": "task_env_path_leak_scan_clean",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "task_env scan found no GitHub URL, commit id, _src path, hidden tests, coverage path, or workspace path."
+      },
+      {
+        "id": "solver_facing_docs_describe_compile_contract",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/task_env/docs/USAGE.md"
+      },
+      {
+        "id": "solver_facing_docs_describe_behavior_surface",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/task_env/docs/USAGE.md"
+      },
+      {
+        "id": "cleanroom_oracle_execute_only_configured",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/build_miniswe_cleanroom_image.sh"
+      },
+      {
+        "id": "solve_network_disabled",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/run_miniswe_janet.py"
+      },
+      {
+        "id": "compile_network_disabled",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "test_network_disabled",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "prebuilt_submission_executable_ignored_before_compile",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "stale_junit_results_removed_before_scoring",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "exact_gold_hash_rejection_configured",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "embedded_gold_oracle_scan_configured",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "bad_submission_behavioral_eval_recorded",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "Local bad stub submission scored 0/381 and failed, proving the suite rejects a trivial executable."
+      }
+    ],
+    "findings": [
+      {
+        "severity": "HIGH",
+        "status": "resolved_by_evaluator",
+        "finding": "The latest Janet solve trajectory embedded and delegated to the gold oracle; the evaluator rejected it before behavioral scoring.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_142119/summary.json"
+      },
+      {
+        "severity": "INFO",
+        "status": "observed",
+        "finding": "Deterministic hidden-test fairness audit passes for the Janet generated suite and checks black-box test structure plus documentation sufficiency.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/deterministic_fairness_report.json"
+      },
+      {
+        "severity": "INFO",
+        "status": "observed",
+        "finding": "The solver-facing Janet task_env contains only compile.sh, docs, and the oracle executable; hidden tests and source are outside the solve container.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/task_env"
+      },
+      {
+        "severity": "LOW",
+        "status": "accepted",
+        "finding": "Solver-facing docs identify Janet 1.41.2 behavior, the offline compile contract, the oracle observation boundary, and the end-to-end behavior surface.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/task_env/docs/USAGE.md"
+      }
+    ],
+    "recommended_qc_fields": [
+      "solve_run_id",
+      "trajectory_path",
+      "submission_sha256",
+      "candidate_executable_hash",
+      "gold_hash",
+      "eval_status",
+      "tests_total",
+      "failures",
+      "errors",
+      "skipped",
+      "wrapper_or_oracle_findings",
+      "strict_trace_warnings",
+      "solver_env_manifest",
+      "solver_env_file_hashes",
+      "deterministic_fairness_verdict",
+      "compile_network_disabled",
+      "test_network_disabled",
+      "test_suite_mount_scope",
+      "fairness_judge_verdict"
+    ]
+  },
+  "lm_as_judge_checks": [
+    {
+      "id": "lm_as_judge_review_present",
+      "blocking": true,
+      "status": "passed",
+      "observed": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/lm_as_judge_review.json"
+    },
+    {
+      "id": "local_lm_as_judge_review_completed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Codex reviewed the Janet task recreation artifacts, deterministic fairness report, rejected solve summaries, and retained eval records."
+    },
+    {
+      "id": "deterministic_fairness_audit_passed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/deterministic_fairness_report.json"
+    },
+    {
+      "id": "latest_submission_rejected_by_oracle_gate",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_142119/summary.json"
+    },
+    {
+      "id": "latest_submission_behavioral_eval_not_scored_after_rejection",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Rejected wrapper/oracle submissions are stopped before pytest scoring."
+    },
+    {
+      "id": "downstream_miniswe_gemini_solve_attempt_summarized",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "tasks/reproduced_janet/reports/solve_attempts_summary.md"
+    },
+    {
+      "id": "retained_solve_summaries_show_no_hidden_test_leak",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Retained eval summaries and LM review found no tests_generated/tests_harvested access before compacting raw trajectories."
+    },
+    {
+      "id": "solver_facing_task_env_has_no_tests_or_source",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "task_env contains only compile.sh, docs, and executable."
+    },
+    {
+      "id": "solver_facing_task_env_has_no_git_directory",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "find/rg scan of task_env found no .git paths."
+    },
+    {
+      "id": "test_suite_not_solver_facing",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "tests_harvested and tests_generated are outside task_env and mounted only by evaluator/coverage scripts."
+    },
+    {
+      "id": "task_env_path_leak_scan_clean",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "task_env scan found no GitHub URL, commit id, _src path, hidden tests, coverage path, or workspace path."
+    },
+    {
+      "id": "solver_facing_docs_describe_compile_contract",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/task_env/docs/USAGE.md"
+    },
+    {
+      "id": "solver_facing_docs_describe_behavior_surface",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/task_env/docs/USAGE.md"
+    },
+    {
+      "id": "cleanroom_oracle_execute_only_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/build_miniswe_cleanroom_image.sh"
+    },
+    {
+      "id": "solve_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/run_miniswe_janet.py"
+    },
+    {
+      "id": "compile_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "test_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "prebuilt_submission_executable_ignored_before_compile",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "stale_junit_results_removed_before_scoring",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "exact_gold_hash_rejection_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "embedded_gold_oracle_scan_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "bad_submission_behavioral_eval_recorded",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Local bad stub submission scored 0/381 and failed, proving the suite rejects a trivial executable."
+    }
+  ],
+  "coverage": {
+    "harvested": {
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/coverage_harvested/coverage_summary.json",
+      "missing": false,
+      "line_percent": 75.1,
+      "line_covered": 13326,
+      "line_total": 17739,
+      "branch_percent": 68.4,
+      "branch_covered": 6561,
+      "branch_total": 9592,
+      "files": [
+        {
+          "filename": "build/c/shell.c",
+          "line_percent": 6.0,
+          "line_covered": 43,
+          "line_total": 715,
+          "branch_percent": 3.4,
+          "branch_covered": 9,
+          "branch_total": 268
+        },
+        {
+          "filename": "src/core/abstract.c",
+          "line_percent": 76.1,
+          "line_covered": 54,
+          "line_total": 71,
+          "branch_percent": 60.0,
+          "branch_covered": 6,
+          "branch_total": 10
+        },
+        {
+          "filename": "src/core/array.c",
+          "line_percent": 86.9,
+          "line_covered": 192,
+          "line_total": 221,
+          "branch_percent": 75.3,
+          "branch_covered": 61,
+          "branch_total": 81
+        },
+        {
+          "filename": "src/core/asm.c",
+          "line_percent": 68.0,
+          "line_covered": 406,
+          "line_total": 597,
+          "branch_percent": 54.7,
+          "branch_covered": 163,
+          "branch_total": 298
+        },
+        {
+          "filename": "src/core/buffer.c",
+          "line_percent": 81.1,
+          "line_covered": 321,
+          "line_total": 396,
+          "branch_percent": 71.2,
+          "branch_covered": 89,
+          "branch_total": 125
+        },
+        {
+          "filename": "src/core/bytecode.c",
+          "line_percent": 97.5,
+          "line_covered": 199,
+          "line_total": 204,
+          "branch_percent": 76.1,
+          "branch_covered": 86,
+          "branch_total": 113
+        },
+        {
+          "filename": "src/core/capi.c",
+          "line_percent": 68.2,
+          "line_covered": 217,
+          "line_total": 318,
+          "branch_percent": 56.7,
+          "branch_covered": 118,
+          "branch_total": 208
+        },
+        {
+          "filename": "src/core/cfuns.c",
+          "line_percent": 95.3,
+          "line_covered": 201,
+          "line_total": 211,
+          "branch_percent": 74.8,
+          "branch_covered": 98,
+          "branch_total": 131
+        },
+        {
+          "filename": "src/core/compile.c",
+          "line_percent": 93.5,
+          "line_covered": 704,
+          "line_total": 753,
+          "branch_percent": 86.0,
+          "branch_covered": 455,
+          "branch_total": 529
+        },
+        {
+          "filename": "src/core/corelib.c",
+          "line_percent": 77.2,
+          "line_covered": 329,
+          "line_total": 426,
+          "branch_percent": 74.5,
+          "branch_covered": 158,
+          "branch_total": 212
+        },
+        {
+          "filename": "src/core/debug.c",
+          "line_percent": 48.9,
+          "line_covered": 107,
+          "line_total": 219,
+          "branch_percent": 45.2,
+          "branch_covered": 47,
+          "branch_total": 104
+        },
+        {
+          "filename": "src/core/emit.c",
+          "line_percent": 92.1,
+          "line_covered": 187,
+          "line_total": 203,
+          "branch_percent": 87.0,
+          "branch_covered": 107,
+          "branch_total": 123
+        },
+        {
+          "filename": "src/core/ev.c",
+          "line_percent": 69.9,
+          "line_covered": 1064,
+          "line_total": 1522,
+          "branch_percent": 65.0,
+          "branch_covered": 452,
+          "branch_total": 695
+        },
+        {
+          "filename": "src/core/ffi.c",
+          "line_percent": 40.8,
+          "line_covered": 271,
+          "line_total": 664,
+          "branch_percent": 39.3,
+          "branch_covered": 114,
+          "branch_total": 290
+        },
+        {
+          "filename": "src/core/fiber.c",
+          "line_percent": 83.1,
+          "line_covered": 299,
+          "line_total": 360,
+          "branch_percent": 72.5,
+          "branch_covered": 124,
+          "branch_total": 171
+        },
+        {
+          "filename": "src/core/filewatch.c",
+          "line_percent": 92.0,
+          "line_covered": 149,
+          "line_total": 162,
+          "branch_percent": 65.7,
+          "branch_covered": 44,
+          "branch_total": 67
+        },
+        {
+          "filename": "src/core/gc.c",
+          "line_percent": 90.6,
+          "line_covered": 415,
+          "line_total": 458,
+          "branch_percent": 84.0,
+          "branch_covered": 210,
+          "branch_total": 250
+        },
+        {
+          "filename": "src/core/inttypes.c",
+          "line_percent": 84.9,
+          "line_covered": 247,
+          "line_total": 291,
+          "branch_percent": 75.8,
+          "branch_covered": 185,
+          "branch_total": 244
+        },
+        {
+          "filename": "src/core/io.c",
+          "line_percent": 64.6,
+          "line_covered": 286,
+          "line_total": 443,
+          "branch_percent": 56.3,
+          "branch_covered": 107,
+          "branch_total": 190
+        },
+        {
+          "filename": "src/core/marsh.c",
+          "line_percent": 86.5,
+          "line_covered": 857,
+          "line_total": 991,
+          "branch_percent": 74.8,
+          "branch_covered": 446,
+          "branch_total": 596
+        },
+        {
+          "filename": "src/core/math.c",
+          "line_percent": 65.3,
+          "line_covered": 130,
+          "line_total": 199,
+          "branch_percent": 73.8,
+          "branch_covered": 31,
+          "branch_total": 42
+        },
+        {
+          "filename": "src/core/net.c",
+          "line_percent": 57.2,
+          "line_covered": 281,
+          "line_total": 491,
+          "branch_percent": 48.3,
+          "branch_covered": 97,
+          "branch_total": 201
+        },
+        {
+          "filename": "src/core/os.c",
+          "line_percent": 67.4,
+          "line_covered": 653,
+          "line_total": 969,
+          "branch_percent": 60.7,
+          "branch_covered": 314,
+          "branch_total": 517
+        },
+        {
+          "filename": "src/core/parse.c",
+          "line_percent": 85.6,
+          "line_covered": 672,
+          "line_total": 785,
+          "branch_percent": 77.0,
+          "branch_covered": 382,
+          "branch_total": 496
+        },
+        {
+          "filename": "src/core/peg.c",
+          "line_percent": 90.2,
+          "line_covered": 1171,
+          "line_total": 1298,
+          "branch_percent": 78.5,
+          "branch_covered": 492,
+          "branch_total": 627
+        },
+        {
+          "filename": "src/core/pp.c",
+          "line_percent": 75.9,
+          "line_covered": 535,
+          "line_total": 705,
+          "branch_percent": 72.7,
+          "branch_covered": 323,
+          "branch_total": 444
+        },
+        {
+          "filename": "src/core/regalloc.c",
+          "line_percent": 96.4,
+          "line_covered": 80,
+          "line_total": 83,
+          "branch_percent": 89.3,
+          "branch_covered": 25,
+          "branch_total": 28
+        },
+        {
+          "filename": "src/core/run.c",
+          "line_percent": 6.2,
+          "line_covered": 5,
+          "line_total": 80,
+          "branch_percent": 0.0,
+          "branch_covered": 0,
+          "branch_total": 24
+        },
+        {
+          "filename": "src/core/specials.c",
+          "line_percent": 87.0,
+          "line_covered": 623,
+          "line_total": 716,
+          "branch_percent": 76.8,
+          "branch_covered": 400,
+          "branch_total": 521
+        },
+        {
+          "filename": "src/core/state.c",
+          "line_percent": 38.1,
+          "line_covered": 8,
+          "line_total": 21,
+          "branch_percent": 40.0,
+          "branch_covered": 2,
+          "branch_total": 5
+        },
+        {
+          "filename": "src/core/string.c",
+          "line_percent": 93.7,
+          "line_covered": 313,
+          "line_total": 334,
+          "branch_percent": 86.0,
+          "branch_covered": 104,
+          "branch_total": 121
+        },
+        {
+          "filename": "src/core/strtod.c",
+          "line_percent": 93.3,
+          "line_covered": 266,
+          "line_total": 285,
+          "branch_percent": 81.1,
+          "branch_covered": 206,
+          "branch_total": 254
+        },
+        {
+          "filename": "src/core/struct.c",
+          "line_percent": 90.2,
+          "line_covered": 147,
+          "line_total": 163,
+          "branch_percent": 81.7,
+          "branch_covered": 85,
+          "branch_total": 104
+        },
+        {
+          "filename": "src/core/symcache.c",
+          "line_percent": 97.5,
+          "line_covered": 118,
+          "line_total": 121,
+          "branch_percent": 81.2,
+          "branch_covered": 39,
+          "branch_total": 48
+        },
+        {
+          "filename": "src/core/table.c",
+          "line_percent": 95.4,
+          "line_covered": 228,
+          "line_total": 239,
+          "branch_percent": 80.8,
+          "branch_covered": 84,
+          "branch_total": 104
+        },
+        {
+          "filename": "src/core/tuple.c",
+          "line_percent": 96.9,
+          "line_covered": 62,
+          "line_total": 64,
+          "branch_percent": 80.0,
+          "branch_covered": 8,
+          "branch_total": 10
+        },
+        {
+          "filename": "src/core/util.c",
+          "line_percent": 66.7,
+          "line_covered": 322,
+          "line_total": 483,
+          "branch_percent": 66.4,
+          "branch_covered": 200,
+          "branch_total": 301
+        },
+        {
+          "filename": "src/core/value.c",
+          "line_percent": 79.4,
+          "line_covered": 431,
+          "line_total": 543,
+          "branch_percent": 75.1,
+          "branch_covered": 268,
+          "branch_total": 357
+        },
+        {
+          "filename": "src/core/vector.c",
+          "line_percent": 94.1,
+          "line_covered": 16,
+          "line_total": 17,
+          "branch_percent": 91.7,
+          "branch_covered": 11,
+          "branch_total": 12
+        },
+        {
+          "filename": "src/core/vm.c",
+          "line_percent": 84.8,
+          "line_covered": 682,
+          "line_total": 804,
+          "branch_percent": 61.8,
+          "branch_covered": 404,
+          "branch_total": 654
+        },
+        {
+          "filename": "src/core/wrap.c",
+          "line_percent": 30.7,
+          "line_covered": 35,
+          "line_total": 114,
+          "branch_percent": 41.2,
+          "branch_covered": 7,
+          "branch_total": 17
+        }
+      ],
+      "lowest_line_files": [
+        {
+          "filename": "build/c/shell.c",
+          "line_percent": 6.0,
+          "line_covered": 43,
+          "line_total": 715,
+          "branch_percent": 3.4,
+          "branch_covered": 9,
+          "branch_total": 268
+        },
+        {
+          "filename": "src/core/run.c",
+          "line_percent": 6.2,
+          "line_covered": 5,
+          "line_total": 80,
+          "branch_percent": 0.0,
+          "branch_covered": 0,
+          "branch_total": 24
+        },
+        {
+          "filename": "src/core/wrap.c",
+          "line_percent": 30.7,
+          "line_covered": 35,
+          "line_total": 114,
+          "branch_percent": 41.2,
+          "branch_covered": 7,
+          "branch_total": 17
+        },
+        {
+          "filename": "src/core/state.c",
+          "line_percent": 38.1,
+          "line_covered": 8,
+          "line_total": 21,
+          "branch_percent": 40.0,
+          "branch_covered": 2,
+          "branch_total": 5
+        },
+        {
+          "filename": "src/core/ffi.c",
+          "line_percent": 40.8,
+          "line_covered": 271,
+          "line_total": 664,
+          "branch_percent": 39.3,
+          "branch_covered": 114,
+          "branch_total": 290
+        },
+        {
+          "filename": "src/core/debug.c",
+          "line_percent": 48.9,
+          "line_covered": 107,
+          "line_total": 219,
+          "branch_percent": 45.2,
+          "branch_covered": 47,
+          "branch_total": 104
+        },
+        {
+          "filename": "src/core/net.c",
+          "line_percent": 57.2,
+          "line_covered": 281,
+          "line_total": 491,
+          "branch_percent": 48.3,
+          "branch_covered": 97,
+          "branch_total": 201
+        },
+        {
+          "filename": "src/core/io.c",
+          "line_percent": 64.6,
+          "line_covered": 286,
+          "line_total": 443,
+          "branch_percent": 56.3,
+          "branch_covered": 107,
+          "branch_total": 190
+        },
+        {
+          "filename": "src/core/math.c",
+          "line_percent": 65.3,
+          "line_covered": 130,
+          "line_total": 199,
+          "branch_percent": 73.8,
+          "branch_covered": 31,
+          "branch_total": 42
+        },
+        {
+          "filename": "src/core/util.c",
+          "line_percent": 66.7,
+          "line_covered": 322,
+          "line_total": 483,
+          "branch_percent": 66.4,
+          "branch_covered": 200,
+          "branch_total": 301
+        }
+      ]
+    },
+    "generated": {
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/coverage_generated/coverage_summary.json",
+      "missing": false,
+      "line_percent": 75.3,
+      "line_covered": 13360,
+      "line_total": 17739,
+      "branch_percent": 68.5,
+      "branch_covered": 6579,
+      "branch_total": 9602,
+      "files": [
+        {
+          "filename": "build/c/shell.c",
+          "line_percent": 6.0,
+          "line_covered": 43,
+          "line_total": 715,
+          "branch_percent": 3.4,
+          "branch_covered": 9,
+          "branch_total": 268
+        },
+        {
+          "filename": "src/core/abstract.c",
+          "line_percent": 76.1,
+          "line_covered": 54,
+          "line_total": 71,
+          "branch_percent": 60.0,
+          "branch_covered": 6,
+          "branch_total": 10
+        },
+        {
+          "filename": "src/core/array.c",
+          "line_percent": 86.9,
+          "line_covered": 192,
+          "line_total": 221,
+          "branch_percent": 75.3,
+          "branch_covered": 61,
+          "branch_total": 81
+        },
+        {
+          "filename": "src/core/asm.c",
+          "line_percent": 68.0,
+          "line_covered": 406,
+          "line_total": 597,
+          "branch_percent": 54.7,
+          "branch_covered": 163,
+          "branch_total": 298
+        },
+        {
+          "filename": "src/core/buffer.c",
+          "line_percent": 81.1,
+          "line_covered": 321,
+          "line_total": 396,
+          "branch_percent": 71.2,
+          "branch_covered": 89,
+          "branch_total": 125
+        },
+        {
+          "filename": "src/core/bytecode.c",
+          "line_percent": 97.5,
+          "line_covered": 199,
+          "line_total": 204,
+          "branch_percent": 76.1,
+          "branch_covered": 86,
+          "branch_total": 113
+        },
+        {
+          "filename": "src/core/capi.c",
+          "line_percent": 68.2,
+          "line_covered": 217,
+          "line_total": 318,
+          "branch_percent": 56.7,
+          "branch_covered": 118,
+          "branch_total": 208
+        },
+        {
+          "filename": "src/core/cfuns.c",
+          "line_percent": 95.3,
+          "line_covered": 201,
+          "line_total": 211,
+          "branch_percent": 74.8,
+          "branch_covered": 98,
+          "branch_total": 131
+        },
+        {
+          "filename": "src/core/compile.c",
+          "line_percent": 93.5,
+          "line_covered": 704,
+          "line_total": 753,
+          "branch_percent": 86.0,
+          "branch_covered": 455,
+          "branch_total": 529
+        },
+        {
+          "filename": "src/core/corelib.c",
+          "line_percent": 77.2,
+          "line_covered": 329,
+          "line_total": 426,
+          "branch_percent": 74.5,
+          "branch_covered": 158,
+          "branch_total": 212
+        },
+        {
+          "filename": "src/core/debug.c",
+          "line_percent": 58.9,
+          "line_covered": 129,
+          "line_total": 219,
+          "branch_percent": 52.6,
+          "branch_covered": 60,
+          "branch_total": 114
+        },
+        {
+          "filename": "src/core/emit.c",
+          "line_percent": 92.1,
+          "line_covered": 187,
+          "line_total": 203,
+          "branch_percent": 87.0,
+          "branch_covered": 107,
+          "branch_total": 123
+        },
+        {
+          "filename": "src/core/ev.c",
+          "line_percent": 69.8,
+          "line_covered": 1063,
+          "line_total": 1522,
+          "branch_percent": 65.2,
+          "branch_covered": 452,
+          "branch_total": 693
+        },
+        {
+          "filename": "src/core/ffi.c",
+          "line_percent": 40.8,
+          "line_covered": 271,
+          "line_total": 664,
+          "branch_percent": 39.3,
+          "branch_covered": 114,
+          "branch_total": 290
+        },
+        {
+          "filename": "src/core/fiber.c",
+          "line_percent": 83.1,
+          "line_covered": 299,
+          "line_total": 360,
+          "branch_percent": 72.5,
+          "branch_covered": 124,
+          "branch_total": 171
+        },
+        {
+          "filename": "src/core/filewatch.c",
+          "line_percent": 92.0,
+          "line_covered": 149,
+          "line_total": 162,
+          "branch_percent": 65.7,
+          "branch_covered": 44,
+          "branch_total": 67
+        },
+        {
+          "filename": "src/core/gc.c",
+          "line_percent": 90.6,
+          "line_covered": 415,
+          "line_total": 458,
+          "branch_percent": 84.0,
+          "branch_covered": 210,
+          "branch_total": 250
+        },
+        {
+          "filename": "src/core/inttypes.c",
+          "line_percent": 84.9,
+          "line_covered": 247,
+          "line_total": 291,
+          "branch_percent": 75.8,
+          "branch_covered": 185,
+          "branch_total": 244
+        },
+        {
+          "filename": "src/core/io.c",
+          "line_percent": 66.8,
+          "line_covered": 296,
+          "line_total": 443,
+          "branch_percent": 57.8,
+          "branch_covered": 111,
+          "branch_total": 192
+        },
+        {
+          "filename": "src/core/marsh.c",
+          "line_percent": 86.5,
+          "line_covered": 857,
+          "line_total": 991,
+          "branch_percent": 74.8,
+          "branch_covered": 446,
+          "branch_total": 596
+        },
+        {
+          "filename": "src/core/math.c",
+          "line_percent": 65.3,
+          "line_covered": 130,
+          "line_total": 199,
+          "branch_percent": 73.8,
+          "branch_covered": 31,
+          "branch_total": 42
+        },
+        {
+          "filename": "src/core/net.c",
+          "line_percent": 57.2,
+          "line_covered": 281,
+          "line_total": 491,
+          "branch_percent": 48.3,
+          "branch_covered": 97,
+          "branch_total": 201
+        },
+        {
+          "filename": "src/core/os.c",
+          "line_percent": 67.4,
+          "line_covered": 653,
+          "line_total": 969,
+          "branch_percent": 60.7,
+          "branch_covered": 314,
+          "branch_total": 517
+        },
+        {
+          "filename": "src/core/parse.c",
+          "line_percent": 86.0,
+          "line_covered": 675,
+          "line_total": 785,
+          "branch_percent": 77.2,
+          "branch_covered": 383,
+          "branch_total": 496
+        },
+        {
+          "filename": "src/core/peg.c",
+          "line_percent": 90.2,
+          "line_covered": 1171,
+          "line_total": 1298,
+          "branch_percent": 78.5,
+          "branch_covered": 492,
+          "branch_total": 627
+        },
+        {
+          "filename": "src/core/pp.c",
+          "line_percent": 75.9,
+          "line_covered": 535,
+          "line_total": 705,
+          "branch_percent": 72.7,
+          "branch_covered": 323,
+          "branch_total": 444
+        },
+        {
+          "filename": "src/core/regalloc.c",
+          "line_percent": 96.4,
+          "line_covered": 80,
+          "line_total": 83,
+          "branch_percent": 89.3,
+          "branch_covered": 25,
+          "branch_total": 28
+        },
+        {
+          "filename": "src/core/run.c",
+          "line_percent": 6.2,
+          "line_covered": 5,
+          "line_total": 80,
+          "branch_percent": 0.0,
+          "branch_covered": 0,
+          "branch_total": 24
+        },
+        {
+          "filename": "src/core/specials.c",
+          "line_percent": 87.0,
+          "line_covered": 623,
+          "line_total": 716,
+          "branch_percent": 76.8,
+          "branch_covered": 400,
+          "branch_total": 521
+        },
+        {
+          "filename": "src/core/state.c",
+          "line_percent": 38.1,
+          "line_covered": 8,
+          "line_total": 21,
+          "branch_percent": 40.0,
+          "branch_covered": 2,
+          "branch_total": 5
+        },
+        {
+          "filename": "src/core/string.c",
+          "line_percent": 93.7,
+          "line_covered": 313,
+          "line_total": 334,
+          "branch_percent": 86.0,
+          "branch_covered": 104,
+          "branch_total": 121
+        },
+        {
+          "filename": "src/core/strtod.c",
+          "line_percent": 93.3,
+          "line_covered": 266,
+          "line_total": 285,
+          "branch_percent": 81.1,
+          "branch_covered": 206,
+          "branch_total": 254
+        },
+        {
+          "filename": "src/core/struct.c",
+          "line_percent": 90.2,
+          "line_covered": 147,
+          "line_total": 163,
+          "branch_percent": 81.7,
+          "branch_covered": 85,
+          "branch_total": 104
+        },
+        {
+          "filename": "src/core/symcache.c",
+          "line_percent": 97.5,
+          "line_covered": 118,
+          "line_total": 121,
+          "branch_percent": 81.2,
+          "branch_covered": 39,
+          "branch_total": 48
+        },
+        {
+          "filename": "src/core/table.c",
+          "line_percent": 95.4,
+          "line_covered": 228,
+          "line_total": 239,
+          "branch_percent": 80.8,
+          "branch_covered": 84,
+          "branch_total": 104
+        },
+        {
+          "filename": "src/core/tuple.c",
+          "line_percent": 96.9,
+          "line_covered": 62,
+          "line_total": 64,
+          "branch_percent": 80.0,
+          "branch_covered": 8,
+          "branch_total": 10
+        },
+        {
+          "filename": "src/core/util.c",
+          "line_percent": 66.7,
+          "line_covered": 322,
+          "line_total": 483,
+          "branch_percent": 66.4,
+          "branch_covered": 200,
+          "branch_total": 301
+        },
+        {
+          "filename": "src/core/value.c",
+          "line_percent": 79.4,
+          "line_covered": 431,
+          "line_total": 543,
+          "branch_percent": 75.1,
+          "branch_covered": 268,
+          "branch_total": 357
+        },
+        {
+          "filename": "src/core/vector.c",
+          "line_percent": 94.1,
+          "line_covered": 16,
+          "line_total": 17,
+          "branch_percent": 91.7,
+          "branch_covered": 11,
+          "branch_total": 12
+        },
+        {
+          "filename": "src/core/vm.c",
+          "line_percent": 84.8,
+          "line_covered": 682,
+          "line_total": 804,
+          "branch_percent": 61.8,
+          "branch_covered": 404,
+          "branch_total": 654
+        },
+        {
+          "filename": "src/core/wrap.c",
+          "line_percent": 30.7,
+          "line_covered": 35,
+          "line_total": 114,
+          "branch_percent": 41.2,
+          "branch_covered": 7,
+          "branch_total": 17
+        }
+      ],
+      "lowest_line_files": [
+        {
+          "filename": "build/c/shell.c",
+          "line_percent": 6.0,
+          "line_covered": 43,
+          "line_total": 715,
+          "branch_percent": 3.4,
+          "branch_covered": 9,
+          "branch_total": 268
+        },
+        {
+          "filename": "src/core/run.c",
+          "line_percent": 6.2,
+          "line_covered": 5,
+          "line_total": 80,
+          "branch_percent": 0.0,
+          "branch_covered": 0,
+          "branch_total": 24
+        },
+        {
+          "filename": "src/core/wrap.c",
+          "line_percent": 30.7,
+          "line_covered": 35,
+          "line_total": 114,
+          "branch_percent": 41.2,
+          "branch_covered": 7,
+          "branch_total": 17
+        },
+        {
+          "filename": "src/core/state.c",
+          "line_percent": 38.1,
+          "line_covered": 8,
+          "line_total": 21,
+          "branch_percent": 40.0,
+          "branch_covered": 2,
+          "branch_total": 5
+        },
+        {
+          "filename": "src/core/ffi.c",
+          "line_percent": 40.8,
+          "line_covered": 271,
+          "line_total": 664,
+          "branch_percent": 39.3,
+          "branch_covered": 114,
+          "branch_total": 290
+        },
+        {
+          "filename": "src/core/net.c",
+          "line_percent": 57.2,
+          "line_covered": 281,
+          "line_total": 491,
+          "branch_percent": 48.3,
+          "branch_covered": 97,
+          "branch_total": 201
+        },
+        {
+          "filename": "src/core/debug.c",
+          "line_percent": 58.9,
+          "line_covered": 129,
+          "line_total": 219,
+          "branch_percent": 52.6,
+          "branch_covered": 60,
+          "branch_total": 114
+        },
+        {
+          "filename": "src/core/math.c",
+          "line_percent": 65.3,
+          "line_covered": 130,
+          "line_total": 199,
+          "branch_percent": 73.8,
+          "branch_covered": 31,
+          "branch_total": 42
+        },
+        {
+          "filename": "src/core/util.c",
+          "line_percent": 66.7,
+          "line_covered": 322,
+          "line_total": 483,
+          "branch_percent": 66.4,
+          "branch_covered": 200,
+          "branch_total": 301
+        },
+        {
+          "filename": "src/core/io.c",
+          "line_percent": 66.8,
+          "line_covered": 296,
+          "line_total": 443,
+          "branch_percent": 57.8,
+          "branch_covered": 111,
+          "branch_total": 192
+        }
+      ]
+    }
+  },
+  "artifacts": {
+    "quality_report": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/quality_generated/quality_report.json",
+    "quality_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/logs/quality_generated.log",
+    "gold_junit": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/quality_generated/gold_results.xml",
+    "dummy_junit": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/quality_generated/dummy_results.xml",
+    "coverage_generated_summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/coverage_generated/coverage_summary.json",
+    "coverage_generated_full": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/coverage_generated/coverage.json",
+    "coverage_generated_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/logs/coverage_generated.log",
+    "coverage_harvested_summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/coverage_harvested/coverage_summary.json",
+    "coverage_harvested_full": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/coverage_harvested/coverage.json",
+    "coverage_harvested_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/logs/coverage_harvested.log",
+    "fairness_report": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/fairness_lm_judge.md",
+    "deterministic_fairness_report": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/deterministic_fairness_report.json",
+    "lm_as_judge_review": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/lm_as_judge_review.json"
+  }
+}

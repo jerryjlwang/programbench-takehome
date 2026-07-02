@@ -1,0 +1,9 @@
+{
+  "status": "rejected_wrapper_or_oracle",
+  "findings": [
+    {
+      "file": "executable",
+      "reason": "contains_gold_oracle_bytes"
+    }
+  ]
+}

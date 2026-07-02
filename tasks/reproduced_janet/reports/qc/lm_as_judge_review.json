@@ -1,0 +1,234 @@
+{
+  "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/lm_as_judge_review.json",
+  "generated_at": "2026-06-30T23:15:59Z",
+  "reviewer": "Codex LM-as-judge local fairness audit",
+  "subject_run": "janet_miniswe_20260630_142119",
+  "verdict": "latest_run_disqualified_oracle_embedding_task_fairness_checks_passed",
+  "latest_eval": {
+    "run": "janet_miniswe_20260630_142119",
+    "status": "rejected_wrapper_or_oracle",
+    "returncode": null,
+    "tests": 0,
+    "passed": 0,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "findings_count": 4,
+    "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_142119/summary.json",
+    "pytest_log": "not-run; evaluator rejected the submission before behavioral scoring",
+    "trajectory": "Full trajectory omitted from compact commit; rejection retained in tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_142119/summary.json and summarized in tasks/reproduced_janet/reports/solve_attempts_summary.md.",
+    "submission": "Raw submission archive omitted from compact Janet attempt package."
+  },
+  "previous_wrapper_evals": [
+    {
+      "run": "janet_miniswe_20260630_095804",
+      "status": "rejected_wrapper_or_oracle",
+      "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_095804/summary.json"
+    },
+    {
+      "run": "janet_miniswe_20260630_104423",
+      "status": "rejected_wrapper_or_oracle",
+      "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_104423/summary.json"
+    }
+  ],
+  "hashes": {
+    "gold_hash": "0803a73d40bcce61c07950d509d023d40ccc896fff3ca57571a4194377678235",
+    "latest_submission_sha256": "9fcfc1db32a2aa31d3429dc28920f425b1bb55772a5e46d66d72ad087b763eb9",
+    "solver_env_file_hashes": {
+      "task_env/compile.sh": "c869531aef5a930d4007c5008282c164767be4422129ffc41e7a1649a0b5c672",
+      "task_env/docs/USAGE.md": "ad31ab136b26e5f91ec47c5a51d9fb55a4539b21551d73f6ff425ed0d466bffa",
+      "task_env/docs/help.txt": "7d4085f70513232685f631532dff42e2ea43a9f3dc66fd1ad96698519f432355",
+      "task_env/executable": "0803a73d40bcce61c07950d509d023d40ccc896fff3ca57571a4194377678235"
+    }
+  },
+  "solver_env_manifest": [
+    "task_env/compile.sh",
+    "task_env/docs/USAGE.md",
+    "task_env/docs/help.txt",
+    "task_env/executable"
+  ],
+  "strict_trace_warnings": [
+    {
+      "id": "disallowed_oracle_byte_read_and_embedding",
+      "severity": "HIGH",
+      "status": "disqualified",
+      "evidence": "Full trajectory omitted from compact commit; rejection retained in tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_142119/summary.json and summarized in tasks/reproduced_janet/reports/solve_attempts_summary.md.",
+      "details": "The trajectory reads ./executable as bytes, generates embedded binary data, and builds a delegating wrapper. The evaluator rejected the submission before scoring."
+    }
+  ],
+  "checks": [
+    {
+      "id": "local_lm_as_judge_review_completed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Codex reviewed the Janet task recreation artifacts, deterministic fairness report, rejected solve summaries, and retained eval records."
+    },
+    {
+      "id": "deterministic_fairness_audit_passed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/deterministic_fairness_report.json"
+    },
+    {
+      "id": "latest_submission_rejected_by_oracle_gate",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_142119/summary.json"
+    },
+    {
+      "id": "latest_submission_behavioral_eval_not_scored_after_rejection",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Rejected wrapper/oracle submissions are stopped before pytest scoring."
+    },
+    {
+      "id": "downstream_miniswe_gemini_solve_attempt_summarized",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "tasks/reproduced_janet/reports/solve_attempts_summary.md"
+    },
+    {
+      "id": "retained_solve_summaries_show_no_hidden_test_leak",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Retained eval summaries and LM review found no tests_generated/tests_harvested access before compacting raw trajectories."
+    },
+    {
+      "id": "solver_facing_task_env_has_no_tests_or_source",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "task_env contains only compile.sh, docs, and executable."
+    },
+    {
+      "id": "solver_facing_task_env_has_no_git_directory",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "find/rg scan of task_env found no .git paths."
+    },
+    {
+      "id": "test_suite_not_solver_facing",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "tests_harvested and tests_generated are outside task_env and mounted only by evaluator/coverage scripts."
+    },
+    {
+      "id": "task_env_path_leak_scan_clean",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "task_env scan found no GitHub URL, commit id, _src path, hidden tests, coverage path, or workspace path."
+    },
+    {
+      "id": "solver_facing_docs_describe_compile_contract",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/task_env/docs/USAGE.md"
+    },
+    {
+      "id": "solver_facing_docs_describe_behavior_surface",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/task_env/docs/USAGE.md"
+    },
+    {
+      "id": "cleanroom_oracle_execute_only_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/build_miniswe_cleanroom_image.sh"
+    },
+    {
+      "id": "solve_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/run_miniswe_janet.py"
+    },
+    {
+      "id": "compile_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "test_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "prebuilt_submission_executable_ignored_before_compile",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "stale_junit_results_removed_before_scoring",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "exact_gold_hash_rejection_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "embedded_gold_oracle_scan_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "bad_submission_behavioral_eval_recorded",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Local bad stub submission scored 0/381 and failed, proving the suite rejects a trivial executable."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "HIGH",
+      "status": "resolved_by_evaluator",
+      "finding": "The latest Janet solve trajectory embedded and delegated to the gold oracle; the evaluator rejected it before behavioral scoring.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/evals/janet_miniswe_20260630_142119/summary.json"
+    },
+    {
+      "severity": "INFO",
+      "status": "observed",
+      "finding": "Deterministic hidden-test fairness audit passes for the Janet generated suite and checks black-box test structure plus documentation sufficiency.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/reports/qc/deterministic_fairness_report.json"
+    },
+    {
+      "severity": "INFO",
+      "status": "observed",
+      "finding": "The solver-facing Janet task_env contains only compile.sh, docs, and the oracle executable; hidden tests and source are outside the solve container.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/task_env"
+    },
+    {
+      "severity": "LOW",
+      "status": "accepted",
+      "finding": "Solver-facing docs identify Janet 1.41.2 behavior, the offline compile contract, the oracle observation boundary, and the end-to-end behavior surface.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_janet/task_env/docs/USAGE.md"
+    }
+  ],
+  "recommended_qc_fields": [
+    "solve_run_id",
+    "trajectory_path",
+    "submission_sha256",
+    "candidate_executable_hash",
+    "gold_hash",
+    "eval_status",
+    "tests_total",
+    "failures",
+    "errors",
+    "skipped",
+    "wrapper_or_oracle_findings",
+    "strict_trace_warnings",
+    "solver_env_manifest",
+    "solver_env_file_hashes",
+    "deterministic_fairness_verdict",
+    "compile_network_disabled",
+    "test_network_disabled",
+    "test_suite_mount_scope",
+    "fairness_judge_verdict"
+  ]
+}

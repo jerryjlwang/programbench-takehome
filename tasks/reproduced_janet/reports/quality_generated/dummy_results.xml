@@ -1,0 +1,1786 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="381" skipped="0" tests="381" time="8.436" timestamp="2026-06-30T10:13:26.706239+00:00" hostname="05998479297a"><testcase classname="test_generated_cases" name="test_generated_behavior_case[seed_arrays_and_tables]" time="0.024"><failure message="AssertionError: assert '' == 'a:b:c\n20\n'&#10;  &#10;  - a:b:c&#10;  - 20">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'a:b:c\n20\n'
+E     
+E     - a:b:c
+E     - 20</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[seed_buffer_format]" time="0.018"><failure message="AssertionError: assert '' == 'value=0023\n'&#10;  &#10;  - value=0023">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'value=0023\n'
+E     
+E     - value=0023</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[seed_marshal_roundtrip]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[seed_date_format_utc]" time="0.018"><failure message="AssertionError: assert '' == '2014-01-01T20:30:00\n'&#10;  &#10;  - 2014-01-01T20:30:00">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '2014-01-01T20:30:00\n'
+E     
+E     - 2014-01-01T20:30:00</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[seed_parse_multiple_values]" time="0.018"><failure message="AssertionError: assert '' == '3\nkw\n'&#10;  &#10;  - 3&#10;  - kw">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '3\nkw\n'
+E     
+E     - 3
+E     - kw</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[seed_sequence_filter_map]" time="0.018"><failure message="AssertionError: assert '' == '1,3,5,7,9,11,13,15\n'&#10;  &#10;  - 1,3,5,7,9,11,13,15">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1,3,5,7,9,11,13,15\n'
+E     
+E     - 1,3,5,7,9,11,13,15</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[seed_fiber_resume_status]" time="0.018"><failure message="AssertionError: assert '' == 'pause\ndone\ndead\n'&#10;  &#10;  - pause&#10;  - done&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'pause\ndone\ndead\n'
+E     
+E     - pause
+E     - done
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[seed_mutable_table_slots]" time="0.018"><failure message="AssertionError: assert '' == '1122\n'&#10;  &#10;  - 1122">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1122\n'
+E     
+E     - 1122</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[seed_try_catches_error_value]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_00]" time="0.018"><failure message="AssertionError: assert '' == '3\n10\n'&#10;  &#10;  - 3&#10;  - 10">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '3\n10\n'
+E     
+E     - 3
+E     - 10</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_00]" time="0.018"><failure message="AssertionError: assert '' == '2\n8\n'&#10;  &#10;  - 2&#10;  - 8">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '2\n8\n'
+E     
+E     - 2
+E     - 8</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_00]" time="0.017"><failure message="AssertionError: assert '' == '8\ncase-00:0003\n'&#10;  &#10;  - 8&#10;  - case-00:0003">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '8\ncase-00:0003\n'
+E     
+E     - 8
+E     - case-00:0003</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_01]" time="0.017"><failure message="AssertionError: assert '' == '8\n18\n'&#10;  &#10;  - 8&#10;  - 18">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '8\n18\n'
+E     
+E     - 8
+E     - 18</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_01]" time="0.018"><failure message="AssertionError: assert '' == '11\n12\n'&#10;  &#10;  - 11&#10;  - 12">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '11\n12\n'
+E     
+E     - 11
+E     - 12</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_01]" time="0.018"><failure message="AssertionError: assert '' == '27\ncase-01:0007\n'&#10;  &#10;  - 27&#10;  - case-01:0007">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '27\ncase-01:0007\n'
+E     
+E     - 27
+E     - case-01:0007</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_02]" time="0.018"><failure message="AssertionError: assert '' == '13\n28\n'&#10;  &#10;  - 13&#10;  - 28">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '13\n28\n'
+E     
+E     - 13
+E     - 28</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_02]" time="0.019"><failure message="AssertionError: assert '' == '26\n16\n'&#10;  &#10;  - 26&#10;  - 16">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '26\n16\n'
+E     
+E     - 26
+E     - 16</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_02]" time="0.018"><failure message="AssertionError: assert '' == '64\ncase-02:0011\n'&#10;  &#10;  - 64&#10;  - case-02:0011">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '64\ncase-02:0011\n'
+E     
+E     - 64
+E     - case-02:0011</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_03]" time="0.018"><failure message="AssertionError: assert '' == '18\n40\n'&#10;  &#10;  - 18&#10;  - 40">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '18\n40\n'
+E     
+E     - 18
+E     - 40</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_03]" time="0.018"><failure message="AssertionError: assert '' == '47\n20\n'&#10;  &#10;  - 47&#10;  - 20">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '47\n20\n'
+E     
+E     - 47
+E     - 20</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_03]" time="0.018"><failure message="AssertionError: assert '' == '125\ncase-03:0015\n'&#10;  &#10;  - 125&#10;  - case-03:0015">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '125\ncase-03:0015\n'
+E     
+E     - 125
+E     - case-03:0015</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_04]" time="0.018"><failure message="AssertionError: assert '' == '23\n54\n'&#10;  &#10;  - 23&#10;  - 54">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '23\n54\n'
+E     
+E     - 23
+E     - 54</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_04]" time="0.018"><failure message="AssertionError: assert '' == '74\n24\n'&#10;  &#10;  - 74&#10;  - 24">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '74\n24\n'
+E     
+E     - 74
+E     - 24</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_04]" time="0.018"><failure message="AssertionError: assert '' == '216\ncase-04:0019\n'&#10;  &#10;  - 216&#10;  - case-04:0019">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '216\ncase-04:0019\n'
+E     
+E     - 216
+E     - case-04:0019</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_05]" time="0.018"><failure message="AssertionError: assert '' == '28\n70\n'&#10;  &#10;  - 28&#10;  - 70">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '28\n70\n'
+E     
+E     - 28
+E     - 70</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_05]" time="0.017"><failure message="AssertionError: assert '' == '107\n28\n'&#10;  &#10;  - 107&#10;  - 28">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '107\n28\n'
+E     
+E     - 107
+E     - 28</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_05]" time="0.017"><failure message="AssertionError: assert '' == '343\ncase-05:0023\n'&#10;  &#10;  - 343&#10;  - case-05:0023">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '343\ncase-05:0023\n'
+E     
+E     - 343
+E     - case-05:0023</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_06]" time="0.017"><failure message="AssertionError: assert '' == '33\n88\n'&#10;  &#10;  - 33&#10;  - 88">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '33\n88\n'
+E     
+E     - 33
+E     - 88</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_06]" time="0.018"><failure message="AssertionError: assert '' == '146\n32\n'&#10;  &#10;  - 146&#10;  - 32">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '146\n32\n'
+E     
+E     - 146
+E     - 32</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_06]" time="0.017"><failure message="AssertionError: assert '' == '512\ncase-06:0027\n'&#10;  &#10;  - 512&#10;  - case-06:0027">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '512\ncase-06:0027\n'
+E     
+E     - 512
+E     - case-06:0027</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_07]" time="0.020"><failure message="AssertionError: assert '' == '38\n108\n'&#10;  &#10;  - 38&#10;  - 108">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '38\n108\n'
+E     
+E     - 38
+E     - 108</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_07]" time="0.017"><failure message="AssertionError: assert '' == '191\n36\n'&#10;  &#10;  - 191&#10;  - 36">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '191\n36\n'
+E     
+E     - 191
+E     - 36</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_07]" time="0.017"><failure message="AssertionError: assert '' == '8\ncase-07:0031\n'&#10;  &#10;  - 8&#10;  - case-07:0031">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '8\ncase-07:0031\n'
+E     
+E     - 8
+E     - case-07:0031</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_08]" time="0.018"><failure message="AssertionError: assert '' == '43\n130\n'&#10;  &#10;  - 43&#10;  - 130">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '43\n130\n'
+E     
+E     - 43
+E     - 130</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_08]" time="0.017"><failure message="AssertionError: assert '' == '242\n40\n'&#10;  &#10;  - 242&#10;  - 40">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '242\n40\n'
+E     
+E     - 242
+E     - 40</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_08]" time="0.020"><failure message="AssertionError: assert '' == '27\ncase-08:0035\n'&#10;  &#10;  - 27&#10;  - case-08:0035">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '27\ncase-08:0035\n'
+E     
+E     - 27
+E     - case-08:0035</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_09]" time="0.017"><failure message="AssertionError: assert '' == '48\n154\n'&#10;  &#10;  - 48&#10;  - 154">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '48\n154\n'
+E     
+E     - 48
+E     - 154</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_09]" time="0.018"><failure message="AssertionError: assert '' == '299\n44\n'&#10;  &#10;  - 299&#10;  - 44">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '299\n44\n'
+E     
+E     - 299
+E     - 44</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_09]" time="0.018"><failure message="AssertionError: assert '' == '64\ncase-09:0039\n'&#10;  &#10;  - 64&#10;  - case-09:0039">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '64\ncase-09:0039\n'
+E     
+E     - 64
+E     - case-09:0039</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_10]" time="0.018"><failure message="AssertionError: assert '' == '53\n180\n'&#10;  &#10;  - 53&#10;  - 180">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '53\n180\n'
+E     
+E     - 53
+E     - 180</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_10]" time="0.018"><failure message="AssertionError: assert '' == '362\n48\n'&#10;  &#10;  - 362&#10;  - 48">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '362\n48\n'
+E     
+E     - 362
+E     - 48</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_10]" time="0.018"><failure message="AssertionError: assert '' == '125\ncase-10:0043\n'&#10;  &#10;  - 125&#10;  - case-10:0043">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '125\ncase-10:0043\n'
+E     
+E     - 125
+E     - case-10:0043</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_11]" time="0.020"><failure message="AssertionError: assert '' == '58\n208\n'&#10;  &#10;  - 58&#10;  - 208">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '58\n208\n'
+E     
+E     - 58
+E     - 208</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_11]" time="0.018"><failure message="AssertionError: assert '' == '431\n52\n'&#10;  &#10;  - 431&#10;  - 52">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '431\n52\n'
+E     
+E     - 431
+E     - 52</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_11]" time="0.018"><failure message="AssertionError: assert '' == '216\ncase-11:0047\n'&#10;  &#10;  - 216&#10;  - case-11:0047">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '216\ncase-11:0047\n'
+E     
+E     - 216
+E     - case-11:0047</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_12]" time="0.017"><failure message="AssertionError: assert '' == '63\n238\n'&#10;  &#10;  - 63&#10;  - 238">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '63\n238\n'
+E     
+E     - 63
+E     - 238</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_12]" time="0.018"><failure message="AssertionError: assert '' == '506\n56\n'&#10;  &#10;  - 506&#10;  - 56">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '506\n56\n'
+E     
+E     - 506
+E     - 56</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_12]" time="0.018"><failure message="AssertionError: assert '' == '343\ncase-12:0051\n'&#10;  &#10;  - 343&#10;  - case-12:0051">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '343\ncase-12:0051\n'
+E     
+E     - 343
+E     - case-12:0051</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_13]" time="0.018"><failure message="AssertionError: assert '' == '68\n270\n'&#10;  &#10;  - 68&#10;  - 270">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '68\n270\n'
+E     
+E     - 68
+E     - 270</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_13]" time="0.018"><failure message="AssertionError: assert '' == '587\n60\n'&#10;  &#10;  - 587&#10;  - 60">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '587\n60\n'
+E     
+E     - 587
+E     - 60</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_13]" time="0.018"><failure message="AssertionError: assert '' == '512\ncase-13:0055\n'&#10;  &#10;  - 512&#10;  - case-13:0055">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '512\ncase-13:0055\n'
+E     
+E     - 512
+E     - case-13:0055</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_14]" time="0.018"><failure message="AssertionError: assert '' == '73\n304\n'&#10;  &#10;  - 73&#10;  - 304">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '73\n304\n'
+E     
+E     - 73
+E     - 304</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_14]" time="0.017"><failure message="AssertionError: assert '' == '674\n64\n'&#10;  &#10;  - 674&#10;  - 64">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '674\n64\n'
+E     
+E     - 674
+E     - 64</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_14]" time="0.017"><failure message="AssertionError: assert '' == '8\ncase-14:0059\n'&#10;  &#10;  - 8&#10;  - case-14:0059">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '8\ncase-14:0059\n'
+E     
+E     - 8
+E     - case-14:0059</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_15]" time="0.017"><failure message="AssertionError: assert '' == '78\n340\n'&#10;  &#10;  - 78&#10;  - 340">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '78\n340\n'
+E     
+E     - 78
+E     - 340</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_15]" time="0.017"><failure message="AssertionError: assert '' == '767\n68\n'&#10;  &#10;  - 767&#10;  - 68">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '767\n68\n'
+E     
+E     - 767
+E     - 68</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_15]" time="0.017"><failure message="AssertionError: assert '' == '27\ncase-15:0063\n'&#10;  &#10;  - 27&#10;  - case-15:0063">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '27\ncase-15:0063\n'
+E     
+E     - 27
+E     - case-15:0063</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_16]" time="0.017"><failure message="AssertionError: assert '' == '83\n378\n'&#10;  &#10;  - 83&#10;  - 378">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '83\n378\n'
+E     
+E     - 83
+E     - 378</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_16]" time="0.017"><failure message="AssertionError: assert '' == '866\n72\n'&#10;  &#10;  - 866&#10;  - 72">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '866\n72\n'
+E     
+E     - 866
+E     - 72</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_16]" time="0.017"><failure message="AssertionError: assert '' == '64\ncase-16:0067\n'&#10;  &#10;  - 64&#10;  - case-16:0067">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '64\ncase-16:0067\n'
+E     
+E     - 64
+E     - case-16:0067</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_17]" time="0.018"><failure message="AssertionError: assert '' == '88\n418\n'&#10;  &#10;  - 88&#10;  - 418">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '88\n418\n'
+E     
+E     - 88
+E     - 418</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_17]" time="0.018"><failure message="AssertionError: assert '' == '971\n76\n'&#10;  &#10;  - 971&#10;  - 76">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '971\n76\n'
+E     
+E     - 971
+E     - 76</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_17]" time="0.017"><failure message="AssertionError: assert '' == '125\ncase-17:0071\n'&#10;  &#10;  - 125&#10;  - case-17:0071">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '125\ncase-17:0071\n'
+E     
+E     - 125
+E     - case-17:0071</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_18]" time="0.018"><failure message="AssertionError: assert '' == '93\n460\n'&#10;  &#10;  - 93&#10;  - 460">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '93\n460\n'
+E     
+E     - 93
+E     - 460</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_18]" time="0.021"><failure message="AssertionError: assert '' == '1082\n80\n'&#10;  &#10;  - 1082&#10;  - 80">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1082\n80\n'
+E     
+E     - 1082
+E     - 80</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_18]" time="0.022"><failure message="AssertionError: assert '' == '216\ncase-18:0075\n'&#10;  &#10;  - 216&#10;  - case-18:0075">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '216\ncase-18:0075\n'
+E     
+E     - 216
+E     - case-18:0075</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_19]" time="0.018"><failure message="AssertionError: assert '' == '98\n504\n'&#10;  &#10;  - 98&#10;  - 504">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '98\n504\n'
+E     
+E     - 98
+E     - 504</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_19]" time="0.019"><failure message="AssertionError: assert '' == '1199\n84\n'&#10;  &#10;  - 1199&#10;  - 84">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1199\n84\n'
+E     
+E     - 1199
+E     - 84</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_19]" time="0.018"><failure message="AssertionError: assert '' == '343\ncase-19:0079\n'&#10;  &#10;  - 343&#10;  - case-19:0079">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '343\ncase-19:0079\n'
+E     
+E     - 343
+E     - case-19:0079</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_20]" time="0.018"><failure message="AssertionError: assert '' == '103\n550\n'&#10;  &#10;  - 103&#10;  - 550">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '103\n550\n'
+E     
+E     - 103
+E     - 550</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_20]" time="0.018"><failure message="AssertionError: assert '' == '1322\n88\n'&#10;  &#10;  - 1322&#10;  - 88">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1322\n88\n'
+E     
+E     - 1322
+E     - 88</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_20]" time="0.018"><failure message="AssertionError: assert '' == '512\ncase-20:0083\n'&#10;  &#10;  - 512&#10;  - case-20:0083">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '512\ncase-20:0083\n'
+E     
+E     - 512
+E     - case-20:0083</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_21]" time="0.018"><failure message="AssertionError: assert '' == '108\n598\n'&#10;  &#10;  - 108&#10;  - 598">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '108\n598\n'
+E     
+E     - 108
+E     - 598</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_21]" time="0.018"><failure message="AssertionError: assert '' == '1451\n92\n'&#10;  &#10;  - 1451&#10;  - 92">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1451\n92\n'
+E     
+E     - 1451
+E     - 92</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_21]" time="0.018"><failure message="AssertionError: assert '' == '8\ncase-21:0087\n'&#10;  &#10;  - 8&#10;  - case-21:0087">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '8\ncase-21:0087\n'
+E     
+E     - 8
+E     - case-21:0087</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_22]" time="0.018"><failure message="AssertionError: assert '' == '113\n648\n'&#10;  &#10;  - 113&#10;  - 648">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '113\n648\n'
+E     
+E     - 113
+E     - 648</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_22]" time="0.018"><failure message="AssertionError: assert '' == '1586\n96\n'&#10;  &#10;  - 1586&#10;  - 96">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1586\n96\n'
+E     
+E     - 1586
+E     - 96</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_22]" time="0.018"><failure message="AssertionError: assert '' == '27\ncase-22:0091\n'&#10;  &#10;  - 27&#10;  - case-22:0091">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '27\ncase-22:0091\n'
+E     
+E     - 27
+E     - case-22:0091</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_23]" time="0.018"><failure message="AssertionError: assert '' == '118\n700\n'&#10;  &#10;  - 118&#10;  - 700">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '118\n700\n'
+E     
+E     - 118
+E     - 700</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_23]" time="0.018"><failure message="AssertionError: assert '' == '1727\n100\n'&#10;  &#10;  - 1727&#10;  - 100">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1727\n100\n'
+E     
+E     - 1727
+E     - 100</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_23]" time="0.018"><failure message="AssertionError: assert '' == '64\ncase-23:0095\n'&#10;  &#10;  - 64&#10;  - case-23:0095">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '64\ncase-23:0095\n'
+E     
+E     - 64
+E     - case-23:0095</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_24]" time="0.018"><failure message="AssertionError: assert '' == '123\n754\n'&#10;  &#10;  - 123&#10;  - 754">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '123\n754\n'
+E     
+E     - 123
+E     - 754</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_24]" time="0.018"><failure message="AssertionError: assert '' == '1874\n104\n'&#10;  &#10;  - 1874&#10;  - 104">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1874\n104\n'
+E     
+E     - 1874
+E     - 104</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_24]" time="0.018"><failure message="AssertionError: assert '' == '125\ncase-24:0099\n'&#10;  &#10;  - 125&#10;  - case-24:0099">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '125\ncase-24:0099\n'
+E     
+E     - 125
+E     - case-24:0099</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_25]" time="0.018"><failure message="AssertionError: assert '' == '128\n810\n'&#10;  &#10;  - 128&#10;  - 810">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '128\n810\n'
+E     
+E     - 128
+E     - 810</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_25]" time="0.018"><failure message="AssertionError: assert '' == '2027\n108\n'&#10;  &#10;  - 2027&#10;  - 108">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '2027\n108\n'
+E     
+E     - 2027
+E     - 108</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_25]" time="0.020"><failure message="AssertionError: assert '' == '216\ncase-25:0103\n'&#10;  &#10;  - 216&#10;  - case-25:0103">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '216\ncase-25:0103\n'
+E     
+E     - 216
+E     - case-25:0103</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_26]" time="0.018"><failure message="AssertionError: assert '' == '133\n868\n'&#10;  &#10;  - 133&#10;  - 868">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '133\n868\n'
+E     
+E     - 133
+E     - 868</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_26]" time="0.018"><failure message="AssertionError: assert '' == '2186\n112\n'&#10;  &#10;  - 2186&#10;  - 112">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '2186\n112\n'
+E     
+E     - 2186
+E     - 112</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_26]" time="0.018"><failure message="AssertionError: assert '' == '343\ncase-26:0107\n'&#10;  &#10;  - 343&#10;  - case-26:0107">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '343\ncase-26:0107\n'
+E     
+E     - 343
+E     - case-26:0107</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_27]" time="0.018"><failure message="AssertionError: assert '' == '138\n928\n'&#10;  &#10;  - 138&#10;  - 928">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '138\n928\n'
+E     
+E     - 138
+E     - 928</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_27]" time="0.018"><failure message="AssertionError: assert '' == '2351\n116\n'&#10;  &#10;  - 2351&#10;  - 116">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '2351\n116\n'
+E     
+E     - 2351
+E     - 116</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_27]" time="0.018"><failure message="AssertionError: assert '' == '512\ncase-27:0111\n'&#10;  &#10;  - 512&#10;  - case-27:0111">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '512\ncase-27:0111\n'
+E     
+E     - 512
+E     - case-27:0111</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_28]" time="0.018"><failure message="AssertionError: assert '' == '143\n990\n'&#10;  &#10;  - 143&#10;  - 990">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '143\n990\n'
+E     
+E     - 143
+E     - 990</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_28]" time="0.018"><failure message="AssertionError: assert '' == '2522\n120\n'&#10;  &#10;  - 2522&#10;  - 120">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '2522\n120\n'
+E     
+E     - 2522
+E     - 120</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_28]" time="0.019"><failure message="AssertionError: assert '' == '8\ncase-28:0115\n'&#10;  &#10;  - 8&#10;  - case-28:0115">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '8\ncase-28:0115\n'
+E     
+E     - 8
+E     - case-28:0115</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_29]" time="0.018"><failure message="AssertionError: assert '' == '148\n1054\n'&#10;  &#10;  - 148&#10;  - 1054">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '148\n1054\n'
+E     
+E     - 148
+E     - 1054</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_29]" time="0.018"><failure message="AssertionError: assert '' == '2699\n124\n'&#10;  &#10;  - 2699&#10;  - 124">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '2699\n124\n'
+E     
+E     - 2699
+E     - 124</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_29]" time="0.018"><failure message="AssertionError: assert '' == '27\ncase-29:0119\n'&#10;  &#10;  - 27&#10;  - case-29:0119">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '27\ncase-29:0119\n'
+E     
+E     - 27
+E     - case-29:0119</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_30]" time="0.019"><failure message="AssertionError: assert '' == '153\n1120\n'&#10;  &#10;  - 153&#10;  - 1120">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '153\n1120\n'
+E     
+E     - 153
+E     - 1120</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_30]" time="0.018"><failure message="AssertionError: assert '' == '2882\n128\n'&#10;  &#10;  - 2882&#10;  - 128">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '2882\n128\n'
+E     
+E     - 2882
+E     - 128</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_30]" time="0.018"><failure message="AssertionError: assert '' == '64\ncase-30:0123\n'&#10;  &#10;  - 64&#10;  - case-30:0123">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '64\ncase-30:0123\n'
+E     
+E     - 64
+E     - case-30:0123</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_31]" time="0.018"><failure message="AssertionError: assert '' == '158\n1188\n'&#10;  &#10;  - 158&#10;  - 1188">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '158\n1188\n'
+E     
+E     - 158
+E     - 1188</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_31]" time="0.018"><failure message="AssertionError: assert '' == '3071\n132\n'&#10;  &#10;  - 3071&#10;  - 132">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '3071\n132\n'
+E     
+E     - 3071
+E     - 132</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_31]" time="0.018"><failure message="AssertionError: assert '' == '125\ncase-31:0127\n'&#10;  &#10;  - 125&#10;  - case-31:0127">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '125\ncase-31:0127\n'
+E     
+E     - 125
+E     - case-31:0127</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_32]" time="0.018"><failure message="AssertionError: assert '' == '163\n1258\n'&#10;  &#10;  - 163&#10;  - 1258">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '163\n1258\n'
+E     
+E     - 163
+E     - 1258</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_32]" time="0.018"><failure message="AssertionError: assert '' == '3266\n136\n'&#10;  &#10;  - 3266&#10;  - 136">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '3266\n136\n'
+E     
+E     - 3266
+E     - 136</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_32]" time="0.018"><failure message="AssertionError: assert '' == '216\ncase-32:0131\n'&#10;  &#10;  - 216&#10;  - case-32:0131">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '216\ncase-32:0131\n'
+E     
+E     - 216
+E     - case-32:0131</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_33]" time="0.018"><failure message="AssertionError: assert '' == '168\n1330\n'&#10;  &#10;  - 168&#10;  - 1330">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '168\n1330\n'
+E     
+E     - 168
+E     - 1330</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_33]" time="0.018"><failure message="AssertionError: assert '' == '3467\n140\n'&#10;  &#10;  - 3467&#10;  - 140">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '3467\n140\n'
+E     
+E     - 3467
+E     - 140</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_33]" time="0.018"><failure message="AssertionError: assert '' == '343\ncase-33:0135\n'&#10;  &#10;  - 343&#10;  - case-33:0135">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '343\ncase-33:0135\n'
+E     
+E     - 343
+E     - case-33:0135</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_34]" time="0.018"><failure message="AssertionError: assert '' == '173\n1404\n'&#10;  &#10;  - 173&#10;  - 1404">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '173\n1404\n'
+E     
+E     - 173
+E     - 1404</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_34]" time="0.021"><failure message="AssertionError: assert '' == '3674\n144\n'&#10;  &#10;  - 3674&#10;  - 144">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '3674\n144\n'
+E     
+E     - 3674
+E     - 144</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_34]" time="0.019"><failure message="AssertionError: assert '' == '512\ncase-34:0139\n'&#10;  &#10;  - 512&#10;  - case-34:0139">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '512\ncase-34:0139\n'
+E     
+E     - 512
+E     - case-34:0139</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_sum_product_35]" time="0.018"><failure message="AssertionError: assert '' == '178\n1480\n'&#10;  &#10;  - 178&#10;  - 1480">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '178\n1480\n'
+E     
+E     - 178
+E     - 1480</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[arith_difference_ratio_35]" time="0.020"><failure message="AssertionError: assert '' == '3887\n148\n'&#10;  &#10;  - 3887&#10;  - 148">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '3887\n148\n'
+E     
+E     - 3887
+E     - 148</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[math_power_format_35]" time="0.020"><failure message="AssertionError: assert '' == '8\ncase-35:0143\n'&#10;  &#10;  - 8&#10;  - case-35:0143">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '8\ncase-35:0143\n'
+E     
+E     - 8
+E     - case-35:0143</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_00]" time="0.020"><failure message="AssertionError: assert '' == 'ALPHA-00\nalpha-00\n'&#10;  &#10;  - ALPHA-00&#10;  - alpha-00">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'ALPHA-00\nalpha-00\n'
+E     
+E     - ALPHA-00
+E     - alpha-00</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_00]" time="0.019"><failure message="AssertionError: assert '' == 'Alpha|0|done\n8\n'&#10;  &#10;  - Alpha|0|done&#10;  - 8">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Alpha|0|done\n8\n'
+E     
+E     - Alpha|0|done
+E     - 8</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_01]" time="0.018"><failure message="AssertionError: assert '' == 'BETA-01\nbeta-01\n'&#10;  &#10;  - BETA-01&#10;  - beta-01">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'BETA-01\nbeta-01\n'
+E     
+E     - BETA-01
+E     - beta-01</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_01]" time="0.018"><failure message="AssertionError: assert '' == 'Beta|1|done\n7\n'&#10;  &#10;  - Beta|1|done&#10;  - 7">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Beta|1|done\n7\n'
+E     
+E     - Beta|1|done
+E     - 7</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_02]" time="0.018"><failure message="AssertionError: assert '' == 'GAMMA-02\ngamma-02\n'&#10;  &#10;  - GAMMA-02&#10;  - gamma-02">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'GAMMA-02\ngamma-02\n'
+E     
+E     - GAMMA-02
+E     - gamma-02</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_02]" time="0.018"><failure message="AssertionError: assert '' == 'Gamma|2|done\n8\n'&#10;  &#10;  - Gamma|2|done&#10;  - 8">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Gamma|2|done\n8\n'
+E     
+E     - Gamma|2|done
+E     - 8</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_03]" time="0.018"><failure message="AssertionError: assert '' == 'DELTA-03\ndelta-03\n'&#10;  &#10;  - DELTA-03&#10;  - delta-03">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'DELTA-03\ndelta-03\n'
+E     
+E     - DELTA-03
+E     - delta-03</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_03]" time="0.018"><failure message="AssertionError: assert '' == 'Delta|3|done\n8\n'&#10;  &#10;  - Delta|3|done&#10;  - 8">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Delta|3|done\n8\n'
+E     
+E     - Delta|3|done
+E     - 8</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_04]" time="0.018"><failure message="AssertionError: assert '' == 'EPSILON-04\nepsilon-04\n'&#10;  &#10;  - EPSILON-04&#10;  - epsilon-04">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'EPSILON-04\nepsilon-04\n'
+E     
+E     - EPSILON-04
+E     - epsilon-04</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_04]" time="0.018"><failure message="AssertionError: assert '' == 'Epsilon|4|done\n10\n'&#10;  &#10;  - Epsilon|4|done&#10;  - 10">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Epsilon|4|done\n10\n'
+E     
+E     - Epsilon|4|done
+E     - 10</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_05]" time="0.018"><failure message="AssertionError: assert '' == 'ZETA-05\nzeta-05\n'&#10;  &#10;  - ZETA-05&#10;  - zeta-05">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'ZETA-05\nzeta-05\n'
+E     
+E     - ZETA-05
+E     - zeta-05</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_05]" time="0.018"><failure message="AssertionError: assert '' == 'Zeta|5|done\n7\n'&#10;  &#10;  - Zeta|5|done&#10;  - 7">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Zeta|5|done\n7\n'
+E     
+E     - Zeta|5|done
+E     - 7</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_06]" time="0.018"><failure message="AssertionError: assert '' == 'ETA-06\neta-06\n'&#10;  &#10;  - ETA-06&#10;  - eta-06">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'ETA-06\neta-06\n'
+E     
+E     - ETA-06
+E     - eta-06</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_06]" time="0.018"><failure message="AssertionError: assert '' == 'Eta|6|done\n6\n'&#10;  &#10;  - Eta|6|done&#10;  - 6">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Eta|6|done\n6\n'
+E     
+E     - Eta|6|done
+E     - 6</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_07]" time="0.018"><failure message="AssertionError: assert '' == 'THETA-07\ntheta-07\n'&#10;  &#10;  - THETA-07&#10;  - theta-07">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'THETA-07\ntheta-07\n'
+E     
+E     - THETA-07
+E     - theta-07</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_07]" time="0.019"><failure message="AssertionError: assert '' == 'Theta|7|done\n8\n'&#10;  &#10;  - Theta|7|done&#10;  - 8">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Theta|7|done\n8\n'
+E     
+E     - Theta|7|done
+E     - 8</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_08]" time="0.019"><failure message="AssertionError: assert '' == 'IOTA-08\niota-08\n'&#10;  &#10;  - IOTA-08&#10;  - iota-08">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'IOTA-08\niota-08\n'
+E     
+E     - IOTA-08
+E     - iota-08</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_08]" time="0.018"><failure message="AssertionError: assert '' == 'Iota|8|done\n7\n'&#10;  &#10;  - Iota|8|done&#10;  - 7">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Iota|8|done\n7\n'
+E     
+E     - Iota|8|done
+E     - 7</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_09]" time="0.018"><failure message="AssertionError: assert '' == 'KAPPA-09\nkappa-09\n'&#10;  &#10;  - KAPPA-09&#10;  - kappa-09">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'KAPPA-09\nkappa-09\n'
+E     
+E     - KAPPA-09
+E     - kappa-09</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_09]" time="0.018"><failure message="AssertionError: assert '' == 'Kappa|9|done\n8\n'&#10;  &#10;  - Kappa|9|done&#10;  - 8">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Kappa|9|done\n8\n'
+E     
+E     - Kappa|9|done
+E     - 8</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_10]" time="0.018"><failure message="AssertionError: assert '' == 'LAMBDA-10\nlambda-10\n'&#10;  &#10;  - LAMBDA-10&#10;  - lambda-10">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'LAMBDA-10\nlambda-10\n'
+E     
+E     - LAMBDA-10
+E     - lambda-10</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_10]" time="0.018"><failure message="AssertionError: assert '' == 'Lambda|10|done\n9\n'&#10;  &#10;  - Lambda|10|done&#10;  - 9">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Lambda|10|done\n9\n'
+E     
+E     - Lambda|10|done
+E     - 9</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_11]" time="0.018"><failure message="AssertionError: assert '' == 'MU-11\nmu-11\n'&#10;  &#10;  - MU-11&#10;  - mu-11">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'MU-11\nmu-11\n'
+E     
+E     - MU-11
+E     - mu-11</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_11]" time="0.018"><failure message="AssertionError: assert '' == 'Mu|11|done\n5\n'&#10;  &#10;  - Mu|11|done&#10;  - 5">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Mu|11|done\n5\n'
+E     
+E     - Mu|11|done
+E     - 5</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_12]" time="0.018"><failure message="AssertionError: assert '' == 'NU-12\nnu-12\n'&#10;  &#10;  - NU-12&#10;  - nu-12">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'NU-12\nnu-12\n'
+E     
+E     - NU-12
+E     - nu-12</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_12]" time="0.018"><failure message="AssertionError: assert '' == 'Nu|12|done\n5\n'&#10;  &#10;  - Nu|12|done&#10;  - 5">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Nu|12|done\n5\n'
+E     
+E     - Nu|12|done
+E     - 5</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_13]" time="0.018"><failure message="AssertionError: assert '' == 'XI-13\nxi-13\n'&#10;  &#10;  - XI-13&#10;  - xi-13">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'XI-13\nxi-13\n'
+E     
+E     - XI-13
+E     - xi-13</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_13]" time="0.018"><failure message="AssertionError: assert '' == 'Xi|13|done\n5\n'&#10;  &#10;  - Xi|13|done&#10;  - 5">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Xi|13|done\n5\n'
+E     
+E     - Xi|13|done
+E     - 5</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_14]" time="0.018"><failure message="AssertionError: assert '' == 'OMICRON-14\nomicron-14\n'&#10;  &#10;  - OMICRON-14&#10;  - omicron-14">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'OMICRON-14\nomicron-14\n'
+E     
+E     - OMICRON-14
+E     - omicron-14</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_14]" time="0.018"><failure message="AssertionError: assert '' == 'Omicron|14|done\n10\n'&#10;  &#10;  - Omicron|14|done&#10;  - 10">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Omicron|14|done\n10\n'
+E     
+E     - Omicron|14|done
+E     - 10</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_15]" time="0.018"><failure message="AssertionError: assert '' == 'PI-15\npi-15\n'&#10;  &#10;  - PI-15&#10;  - pi-15">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'PI-15\npi-15\n'
+E     
+E     - PI-15
+E     - pi-15</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_15]" time="0.018"><failure message="AssertionError: assert '' == 'Pi|15|done\n5\n'&#10;  &#10;  - Pi|15|done&#10;  - 5">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Pi|15|done\n5\n'
+E     
+E     - Pi|15|done
+E     - 5</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_16]" time="0.018"><failure message="AssertionError: assert '' == 'RHO-16\nrho-16\n'&#10;  &#10;  - RHO-16&#10;  - rho-16">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'RHO-16\nrho-16\n'
+E     
+E     - RHO-16
+E     - rho-16</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_16]" time="0.018"><failure message="AssertionError: assert '' == 'Rho|16|done\n6\n'&#10;  &#10;  - Rho|16|done&#10;  - 6">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Rho|16|done\n6\n'
+E     
+E     - Rho|16|done
+E     - 6</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_17]" time="0.018"><failure message="AssertionError: assert '' == 'SIGMA-17\nsigma-17\n'&#10;  &#10;  - SIGMA-17&#10;  - sigma-17">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'SIGMA-17\nsigma-17\n'
+E     
+E     - SIGMA-17
+E     - sigma-17</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_17]" time="0.018"><failure message="AssertionError: assert '' == 'Sigma|17|done\n8\n'&#10;  &#10;  - Sigma|17|done&#10;  - 8">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Sigma|17|done\n8\n'
+E     
+E     - Sigma|17|done
+E     - 8</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_18]" time="0.017"><failure message="AssertionError: assert '' == 'TAU-18\ntau-18\n'&#10;  &#10;  - TAU-18&#10;  - tau-18">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'TAU-18\ntau-18\n'
+E     
+E     - TAU-18
+E     - tau-18</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_18]" time="0.018"><failure message="AssertionError: assert '' == 'Tau|18|done\n6\n'&#10;  &#10;  - Tau|18|done&#10;  - 6">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Tau|18|done\n6\n'
+E     
+E     - Tau|18|done
+E     - 6</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_19]" time="0.018"><failure message="AssertionError: assert '' == 'UPSILON-19\nupsilon-19\n'&#10;  &#10;  - UPSILON-19&#10;  - upsilon-19">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'UPSILON-19\nupsilon-19\n'
+E     
+E     - UPSILON-19
+E     - upsilon-19</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_19]" time="0.018"><failure message="AssertionError: assert '' == 'Upsilon|19|done\n10\n'&#10;  &#10;  - Upsilon|19|done&#10;  - 10">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Upsilon|19|done\n10\n'
+E     
+E     - Upsilon|19|done
+E     - 10</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_20]" time="0.017"><failure message="AssertionError: assert '' == 'PHI-20\nphi-20\n'&#10;  &#10;  - PHI-20&#10;  - phi-20">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'PHI-20\nphi-20\n'
+E     
+E     - PHI-20
+E     - phi-20</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_20]" time="0.018"><failure message="AssertionError: assert '' == 'Phi|20|done\n6\n'&#10;  &#10;  - Phi|20|done&#10;  - 6">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Phi|20|done\n6\n'
+E     
+E     - Phi|20|done
+E     - 6</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_21]" time="0.017"><failure message="AssertionError: assert '' == 'CHI-21\nchi-21\n'&#10;  &#10;  - CHI-21&#10;  - chi-21">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'CHI-21\nchi-21\n'
+E     
+E     - CHI-21
+E     - chi-21</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_21]" time="0.018"><failure message="AssertionError: assert '' == 'Chi|21|done\n6\n'&#10;  &#10;  - Chi|21|done&#10;  - 6">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Chi|21|done\n6\n'
+E     
+E     - Chi|21|done
+E     - 6</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_22]" time="0.018"><failure message="AssertionError: assert '' == 'PSI-22\npsi-22\n'&#10;  &#10;  - PSI-22&#10;  - psi-22">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'PSI-22\npsi-22\n'
+E     
+E     - PSI-22
+E     - psi-22</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_22]" time="0.018"><failure message="AssertionError: assert '' == 'Psi|22|done\n6\n'&#10;  &#10;  - Psi|22|done&#10;  - 6">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Psi|22|done\n6\n'
+E     
+E     - Psi|22|done
+E     - 6</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_upper_lower_23]" time="0.018"><failure message="AssertionError: assert '' == 'OMEGA-23\nomega-23\n'&#10;  &#10;  - OMEGA-23&#10;  - omega-23">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'OMEGA-23\nomega-23\n'
+E     
+E     - OMEGA-23
+E     - omega-23</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[string_join_length_23]" time="0.040"><failure message="AssertionError: assert '' == 'Omega|23|done\n8\n'&#10;  &#10;  - Omega|23|done&#10;  - 8">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'Omega|23|done\n8\n'
+E     
+E     - Omega|23|done
+E     - 8</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_00]" time="0.038"><failure message="AssertionError: assert '' == '1,4,16,64\n'&#10;  &#10;  - 1,4,16,64">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1,4,16,64\n'
+E     
+E     - 1,4,16,64</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_00]" time="0.019"><failure message="AssertionError: assert '' == '1:3:5:7:9:11:13\n'&#10;  &#10;  - 1:3:5:7:9:11:13">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1:3:5:7:9:11:13\n'
+E     
+E     - 1:3:5:7:9:11:13</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_01]" time="0.019"><failure message="AssertionError: assert '' == '4,9,25,81\n'&#10;  &#10;  - 4,9,25,81">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '4,9,25,81\n'
+E     
+E     - 4,9,25,81</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_01]" time="0.022"><failure message="AssertionError: assert '' == '1:3:5:7:9:11:13\n'&#10;  &#10;  - 1:3:5:7:9:11:13">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1:3:5:7:9:11:13\n'
+E     
+E     - 1:3:5:7:9:11:13</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_02]" time="0.019"><failure message="AssertionError: assert '' == '9,16,36,100\n'&#10;  &#10;  - 9,16,36,100">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '9,16,36,100\n'
+E     
+E     - 9,16,36,100</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_02]" time="0.018"><failure message="AssertionError: assert '' == '3:5:7:9:11:13:15\n'&#10;  &#10;  - 3:5:7:9:11:13:15">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '3:5:7:9:11:13:15\n'
+E     
+E     - 3:5:7:9:11:13:15</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_03]" time="0.018"><failure message="AssertionError: assert '' == '16,25,49,121\n'&#10;  &#10;  - 16,25,49,121">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '16,25,49,121\n'
+E     
+E     - 16,25,49,121</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_03]" time="0.018"><failure message="AssertionError: assert '' == '3:5:7:9:11:13:15\n'&#10;  &#10;  - 3:5:7:9:11:13:15">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '3:5:7:9:11:13:15\n'
+E     
+E     - 3:5:7:9:11:13:15</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_04]" time="0.018"><failure message="AssertionError: assert '' == '25,36,64,144\n'&#10;  &#10;  - 25,36,64,144">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '25,36,64,144\n'
+E     
+E     - 25,36,64,144</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_04]" time="0.018"><failure message="AssertionError: assert '' == '5:7:9:11:13:15:17\n'&#10;  &#10;  - 5:7:9:11:13:15:17">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '5:7:9:11:13:15:17\n'
+E     
+E     - 5:7:9:11:13:15:17</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_05]" time="0.018"><failure message="AssertionError: assert '' == '36,49,81,169\n'&#10;  &#10;  - 36,49,81,169">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '36,49,81,169\n'
+E     
+E     - 36,49,81,169</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_05]" time="0.019"><failure message="AssertionError: assert '' == '5:7:9:11:13:15:17\n'&#10;  &#10;  - 5:7:9:11:13:15:17">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '5:7:9:11:13:15:17\n'
+E     
+E     - 5:7:9:11:13:15:17</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_06]" time="0.018"><failure message="AssertionError: assert '' == '49,64,100,196\n'&#10;  &#10;  - 49,64,100,196">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '49,64,100,196\n'
+E     
+E     - 49,64,100,196</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_06]" time="0.018"><failure message="AssertionError: assert '' == '7:9:11:13:15:17:19\n'&#10;  &#10;  - 7:9:11:13:15:17:19">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '7:9:11:13:15:17:19\n'
+E     
+E     - 7:9:11:13:15:17:19</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_07]" time="0.019"><failure message="AssertionError: assert '' == '64,81,121,225\n'&#10;  &#10;  - 64,81,121,225">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '64,81,121,225\n'
+E     
+E     - 64,81,121,225</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_07]" time="0.018"><failure message="AssertionError: assert '' == '7:9:11:13:15:17:19\n'&#10;  &#10;  - 7:9:11:13:15:17:19">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '7:9:11:13:15:17:19\n'
+E     
+E     - 7:9:11:13:15:17:19</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_08]" time="0.020"><failure message="AssertionError: assert '' == '81,100,144,256\n'&#10;  &#10;  - 81,100,144,256">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '81,100,144,256\n'
+E     
+E     - 81,100,144,256</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_08]" time="0.019"><failure message="AssertionError: assert '' == '9:11:13:15:17:19:21\n'&#10;  &#10;  - 9:11:13:15:17:19:21">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '9:11:13:15:17:19:21\n'
+E     
+E     - 9:11:13:15:17:19:21</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_09]" time="0.019"><failure message="AssertionError: assert '' == '100,121,169,289\n'&#10;  &#10;  - 100,121,169,289">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '100,121,169,289\n'
+E     
+E     - 100,121,169,289</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_09]" time="0.018"><failure message="AssertionError: assert '' == '9:11:13:15:17:19:21\n'&#10;  &#10;  - 9:11:13:15:17:19:21">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '9:11:13:15:17:19:21\n'
+E     
+E     - 9:11:13:15:17:19:21</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_10]" time="0.018"><failure message="AssertionError: assert '' == '121,144,196,324\n'&#10;  &#10;  - 121,144,196,324">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '121,144,196,324\n'
+E     
+E     - 121,144,196,324</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_10]" time="0.018"><failure message="AssertionError: assert '' == '11:13:15:17:19:21:23\n'&#10;  &#10;  - 11:13:15:17:19:21:23">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '11:13:15:17:19:21:23\n'
+E     
+E     - 11:13:15:17:19:21:23</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_11]" time="0.019"><failure message="AssertionError: assert '' == '144,169,225,361\n'&#10;  &#10;  - 144,169,225,361">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '144,169,225,361\n'
+E     
+E     - 144,169,225,361</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_11]" time="0.019"><failure message="AssertionError: assert '' == '11:13:15:17:19:21:23\n'&#10;  &#10;  - 11:13:15:17:19:21:23">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '11:13:15:17:19:21:23\n'
+E     
+E     - 11:13:15:17:19:21:23</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_12]" time="0.019"><failure message="AssertionError: assert '' == '169,196,256,400\n'&#10;  &#10;  - 169,196,256,400">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '169,196,256,400\n'
+E     
+E     - 169,196,256,400</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_12]" time="0.019"><failure message="AssertionError: assert '' == '13:15:17:19:21:23:25\n'&#10;  &#10;  - 13:15:17:19:21:23:25">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '13:15:17:19:21:23:25\n'
+E     
+E     - 13:15:17:19:21:23:25</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_13]" time="0.019"><failure message="AssertionError: assert '' == '196,225,289,441\n'&#10;  &#10;  - 196,225,289,441">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '196,225,289,441\n'
+E     
+E     - 196,225,289,441</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_13]" time="0.018"><failure message="AssertionError: assert '' == '13:15:17:19:21:23:25\n'&#10;  &#10;  - 13:15:17:19:21:23:25">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '13:15:17:19:21:23:25\n'
+E     
+E     - 13:15:17:19:21:23:25</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_14]" time="0.018"><failure message="AssertionError: assert '' == '225,256,324,484\n'&#10;  &#10;  - 225,256,324,484">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '225,256,324,484\n'
+E     
+E     - 225,256,324,484</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_14]" time="0.018"><failure message="AssertionError: assert '' == '15:17:19:21:23:25:27\n'&#10;  &#10;  - 15:17:19:21:23:25:27">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '15:17:19:21:23:25:27\n'
+E     
+E     - 15:17:19:21:23:25:27</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_15]" time="0.018"><failure message="AssertionError: assert '' == '256,289,361,529\n'&#10;  &#10;  - 256,289,361,529">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '256,289,361,529\n'
+E     
+E     - 256,289,361,529</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_15]" time="0.018"><failure message="AssertionError: assert '' == '15:17:19:21:23:25:27\n'&#10;  &#10;  - 15:17:19:21:23:25:27">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '15:17:19:21:23:25:27\n'
+E     
+E     - 15:17:19:21:23:25:27</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_16]" time="0.018"><failure message="AssertionError: assert '' == '289,324,400,576\n'&#10;  &#10;  - 289,324,400,576">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '289,324,400,576\n'
+E     
+E     - 289,324,400,576</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_16]" time="0.018"><failure message="AssertionError: assert '' == '17:19:21:23:25:27:29\n'&#10;  &#10;  - 17:19:21:23:25:27:29">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '17:19:21:23:25:27:29\n'
+E     
+E     - 17:19:21:23:25:27:29</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_17]" time="0.018"><failure message="AssertionError: assert '' == '324,361,441,625\n'&#10;  &#10;  - 324,361,441,625">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '324,361,441,625\n'
+E     
+E     - 324,361,441,625</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_17]" time="0.018"><failure message="AssertionError: assert '' == '17:19:21:23:25:27:29\n'&#10;  &#10;  - 17:19:21:23:25:27:29">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '17:19:21:23:25:27:29\n'
+E     
+E     - 17:19:21:23:25:27:29</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_18]" time="0.018"><failure message="AssertionError: assert '' == '361,400,484,676\n'&#10;  &#10;  - 361,400,484,676">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '361,400,484,676\n'
+E     
+E     - 361,400,484,676</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_18]" time="0.018"><failure message="AssertionError: assert '' == '19:21:23:25:27:29:31\n'&#10;  &#10;  - 19:21:23:25:27:29:31">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '19:21:23:25:27:29:31\n'
+E     
+E     - 19:21:23:25:27:29:31</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_19]" time="0.018"><failure message="AssertionError: assert '' == '400,441,529,729\n'&#10;  &#10;  - 400,441,529,729">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '400,441,529,729\n'
+E     
+E     - 400,441,529,729</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_19]" time="0.019"><failure message="AssertionError: assert '' == '19:21:23:25:27:29:31\n'&#10;  &#10;  - 19:21:23:25:27:29:31">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '19:21:23:25:27:29:31\n'
+E     
+E     - 19:21:23:25:27:29:31</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_20]" time="0.020"><failure message="AssertionError: assert '' == '441,484,576,784\n'&#10;  &#10;  - 441,484,576,784">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '441,484,576,784\n'
+E     
+E     - 441,484,576,784</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_20]" time="0.018"><failure message="AssertionError: assert '' == '21:23:25:27:29:31:33\n'&#10;  &#10;  - 21:23:25:27:29:31:33">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '21:23:25:27:29:31:33\n'
+E     
+E     - 21:23:25:27:29:31:33</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_21]" time="0.018"><failure message="AssertionError: assert '' == '484,529,625,841\n'&#10;  &#10;  - 484,529,625,841">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '484,529,625,841\n'
+E     
+E     - 484,529,625,841</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_21]" time="0.018"><failure message="AssertionError: assert '' == '21:23:25:27:29:31:33\n'&#10;  &#10;  - 21:23:25:27:29:31:33">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '21:23:25:27:29:31:33\n'
+E     
+E     - 21:23:25:27:29:31:33</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_22]" time="0.018"><failure message="AssertionError: assert '' == '529,576,676,900\n'&#10;  &#10;  - 529,576,676,900">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '529,576,676,900\n'
+E     
+E     - 529,576,676,900</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_22]" time="0.018"><failure message="AssertionError: assert '' == '23:25:27:29:31:33:35\n'&#10;  &#10;  - 23:25:27:29:31:33:35">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '23:25:27:29:31:33:35\n'
+E     
+E     - 23:25:27:29:31:33:35</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_23]" time="0.018"><failure message="AssertionError: assert '' == '576,625,729,961\n'&#10;  &#10;  - 576,625,729,961">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '576,625,729,961\n'
+E     
+E     - 576,625,729,961</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_23]" time="0.019"><failure message="AssertionError: assert '' == '23:25:27:29:31:33:35\n'&#10;  &#10;  - 23:25:27:29:31:33:35">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '23:25:27:29:31:33:35\n'
+E     
+E     - 23:25:27:29:31:33:35</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_24]" time="0.018"><failure message="AssertionError: assert '' == '625,676,784,1024\n'&#10;  &#10;  - 625,676,784,1024">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '625,676,784,1024\n'
+E     
+E     - 625,676,784,1024</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_24]" time="0.018"><failure message="AssertionError: assert '' == '25:27:29:31:33:35:37\n'&#10;  &#10;  - 25:27:29:31:33:35:37">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '25:27:29:31:33:35:37\n'
+E     
+E     - 25:27:29:31:33:35:37</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_25]" time="0.018"><failure message="AssertionError: assert '' == '676,729,841,1089\n'&#10;  &#10;  - 676,729,841,1089">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '676,729,841,1089\n'
+E     
+E     - 676,729,841,1089</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_25]" time="0.018"><failure message="AssertionError: assert '' == '25:27:29:31:33:35:37\n'&#10;  &#10;  - 25:27:29:31:33:35:37">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '25:27:29:31:33:35:37\n'
+E     
+E     - 25:27:29:31:33:35:37</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_26]" time="0.021"><failure message="AssertionError: assert '' == '729,784,900,1156\n'&#10;  &#10;  - 729,784,900,1156">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '729,784,900,1156\n'
+E     
+E     - 729,784,900,1156</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_26]" time="0.021"><failure message="AssertionError: assert '' == '27:29:31:33:35:37:39\n'&#10;  &#10;  - 27:29:31:33:35:37:39">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '27:29:31:33:35:37:39\n'
+E     
+E     - 27:29:31:33:35:37:39</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[array_loop_square_join_27]" time="0.021"><failure message="AssertionError: assert '' == '784,841,961,1225\n'&#10;  &#10;  - 784,841,961,1225">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '784,841,961,1225\n'
+E     
+E     - 784,841,961,1225</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[sequence_range_filter_27]" time="0.018"><failure message="AssertionError: assert '' == '27:29:31:33:35:37:39\n'&#10;  &#10;  - 27:29:31:33:35:37:39">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '27:29:31:33:35:37:39\n'
+E     
+E     - 27:29:31:33:35:37:39</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_00]" time="0.018"><failure message="AssertionError: assert '' == '00\n'&#10;  &#10;  - 00">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '00\n'
+E     
+E     - 00</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_00]" time="0.018"><failure message="AssertionError: assert '' == 'n=000 square=0000\n'&#10;  &#10;  - n=000 square=0000">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=000 square=0000\n'
+E     
+E     - n=000 square=0000</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_01]" time="0.018"><failure message="AssertionError: assert '' == '11\n'&#10;  &#10;  - 11">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '11\n'
+E     
+E     - 11</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_01]" time="0.018"><failure message="AssertionError: assert '' == 'n=001 square=0001\n'&#10;  &#10;  - n=001 square=0001">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=001 square=0001\n'
+E     
+E     - n=001 square=0001</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_02]" time="0.018"><failure message="AssertionError: assert '' == '24\n'&#10;  &#10;  - 24">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '24\n'
+E     
+E     - 24</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_02]" time="0.018"><failure message="AssertionError: assert '' == 'n=002 square=0004\n'&#10;  &#10;  - n=002 square=0004">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=002 square=0004\n'
+E     
+E     - n=002 square=0004</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_03]" time="0.018"><failure message="AssertionError: assert '' == '39\n'&#10;  &#10;  - 39">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '39\n'
+E     
+E     - 39</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_03]" time="0.018"><failure message="AssertionError: assert '' == 'n=003 square=0009\n'&#10;  &#10;  - n=003 square=0009">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=003 square=0009\n'
+E     
+E     - n=003 square=0009</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_04]" time="0.018"><failure message="AssertionError: assert '' == '416\n'&#10;  &#10;  - 416">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '416\n'
+E     
+E     - 416</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_04]" time="0.018"><failure message="AssertionError: assert '' == 'n=004 square=0016\n'&#10;  &#10;  - n=004 square=0016">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=004 square=0016\n'
+E     
+E     - n=004 square=0016</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_05]" time="0.018"><failure message="AssertionError: assert '' == '525\n'&#10;  &#10;  - 525">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '525\n'
+E     
+E     - 525</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_05]" time="0.018"><failure message="AssertionError: assert '' == 'n=005 square=0025\n'&#10;  &#10;  - n=005 square=0025">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=005 square=0025\n'
+E     
+E     - n=005 square=0025</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_06]" time="0.018"><failure message="AssertionError: assert '' == '636\n'&#10;  &#10;  - 636">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '636\n'
+E     
+E     - 636</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_06]" time="0.018"><failure message="AssertionError: assert '' == 'n=006 square=0036\n'&#10;  &#10;  - n=006 square=0036">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=006 square=0036\n'
+E     
+E     - n=006 square=0036</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_07]" time="0.020"><failure message="AssertionError: assert '' == '749\n'&#10;  &#10;  - 749">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '749\n'
+E     
+E     - 749</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_07]" time="0.018"><failure message="AssertionError: assert '' == 'n=007 square=0049\n'&#10;  &#10;  - n=007 square=0049">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=007 square=0049\n'
+E     
+E     - n=007 square=0049</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_08]" time="0.018"><failure message="AssertionError: assert '' == '864\n'&#10;  &#10;  - 864">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '864\n'
+E     
+E     - 864</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_08]" time="0.018"><failure message="AssertionError: assert '' == 'n=008 square=0064\n'&#10;  &#10;  - n=008 square=0064">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=008 square=0064\n'
+E     
+E     - n=008 square=0064</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_09]" time="0.018"><failure message="AssertionError: assert '' == '981\n'&#10;  &#10;  - 981">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '981\n'
+E     
+E     - 981</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_09]" time="0.018"><failure message="AssertionError: assert '' == 'n=009 square=0081\n'&#10;  &#10;  - n=009 square=0081">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=009 square=0081\n'
+E     
+E     - n=009 square=0081</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_10]" time="0.018"><failure message="AssertionError: assert '' == '10100\n'&#10;  &#10;  - 10100">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '10100\n'
+E     
+E     - 10100</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_10]" time="0.019"><failure message="AssertionError: assert '' == 'n=010 square=0100\n'&#10;  &#10;  - n=010 square=0100">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=010 square=0100\n'
+E     
+E     - n=010 square=0100</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_11]" time="0.018"><failure message="AssertionError: assert '' == '11121\n'&#10;  &#10;  - 11121">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '11121\n'
+E     
+E     - 11121</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_11]" time="0.018"><failure message="AssertionError: assert '' == 'n=011 square=0121\n'&#10;  &#10;  - n=011 square=0121">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=011 square=0121\n'
+E     
+E     - n=011 square=0121</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_12]" time="0.020"><failure message="AssertionError: assert '' == '12144\n'&#10;  &#10;  - 12144">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '12144\n'
+E     
+E     - 12144</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_12]" time="0.019"><failure message="AssertionError: assert '' == 'n=012 square=0144\n'&#10;  &#10;  - n=012 square=0144">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=012 square=0144\n'
+E     
+E     - n=012 square=0144</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_13]" time="0.019"><failure message="AssertionError: assert '' == '13169\n'&#10;  &#10;  - 13169">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '13169\n'
+E     
+E     - 13169</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_13]" time="0.019"><failure message="AssertionError: assert '' == 'n=013 square=0169\n'&#10;  &#10;  - n=013 square=0169">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=013 square=0169\n'
+E     
+E     - n=013 square=0169</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_14]" time="0.018"><failure message="AssertionError: assert '' == '14196\n'&#10;  &#10;  - 14196">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '14196\n'
+E     
+E     - 14196</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_14]" time="0.018"><failure message="AssertionError: assert '' == 'n=014 square=0196\n'&#10;  &#10;  - n=014 square=0196">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=014 square=0196\n'
+E     
+E     - n=014 square=0196</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_15]" time="0.018"><failure message="AssertionError: assert '' == '15225\n'&#10;  &#10;  - 15225">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '15225\n'
+E     
+E     - 15225</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_15]" time="0.018"><failure message="AssertionError: assert '' == 'n=015 square=0225\n'&#10;  &#10;  - n=015 square=0225">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=015 square=0225\n'
+E     
+E     - n=015 square=0225</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_16]" time="0.018"><failure message="AssertionError: assert '' == '16256\n'&#10;  &#10;  - 16256">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '16256\n'
+E     
+E     - 16256</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_16]" time="0.018"><failure message="AssertionError: assert '' == 'n=016 square=0256\n'&#10;  &#10;  - n=016 square=0256">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=016 square=0256\n'
+E     
+E     - n=016 square=0256</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_17]" time="0.018"><failure message="AssertionError: assert '' == '17289\n'&#10;  &#10;  - 17289">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '17289\n'
+E     
+E     - 17289</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_17]" time="0.018"><failure message="AssertionError: assert '' == 'n=017 square=0289\n'&#10;  &#10;  - n=017 square=0289">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=017 square=0289\n'
+E     
+E     - n=017 square=0289</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_18]" time="0.018"><failure message="AssertionError: assert '' == '18324\n'&#10;  &#10;  - 18324">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '18324\n'
+E     
+E     - 18324</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_18]" time="0.018"><failure message="AssertionError: assert '' == 'n=018 square=0324\n'&#10;  &#10;  - n=018 square=0324">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=018 square=0324\n'
+E     
+E     - n=018 square=0324</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[table_put_get_19]" time="0.018"><failure message="AssertionError: assert '' == '19361\n'&#10;  &#10;  - 19361">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '19361\n'
+E     
+E     - 19361</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[buffer_numeric_format_19]" time="0.018"><failure message="AssertionError: assert '' == 'n=019 square=0361\n'&#10;  &#10;  - n=019 square=0361">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'n=019 square=0361\n'
+E     
+E     - n=019 square=0361</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[parse_form_count_00]" time="0.018"><failure message="AssertionError: assert '' == '1\ntuple\n'&#10;  &#10;  - 1&#10;  - tuple">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1\ntuple\n'
+E     
+E     - 1
+E     - tuple</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[parse_form_count_01]" time="0.018"><failure message="AssertionError: assert '' == '1\ntuple\n'&#10;  &#10;  - 1&#10;  - tuple">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1\ntuple\n'
+E     
+E     - 1
+E     - tuple</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[parse_form_count_02]" time="0.018"><failure message="AssertionError: assert '' == '1\nstruct\n'&#10;  &#10;  - 1&#10;  - struct">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1\nstruct\n'
+E     
+E     - 1
+E     - struct</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[parse_form_count_03]" time="0.018"><failure message="AssertionError: assert '' == '1\ntuple\n'&#10;  &#10;  - 1&#10;  - tuple">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1\ntuple\n'
+E     
+E     - 1
+E     - tuple</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[parse_form_count_04]" time="0.018"><failure message="AssertionError: assert '' == '1\ntuple\n'&#10;  &#10;  - 1&#10;  - tuple">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1\ntuple\n'
+E     
+E     - 1
+E     - tuple</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[parse_form_count_05]" time="0.018"><failure message="AssertionError: assert '' == '1\ntuple\n'&#10;  &#10;  - 1&#10;  - tuple">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1\ntuple\n'
+E     
+E     - 1
+E     - tuple</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[parse_form_count_06]" time="0.018"><failure message="AssertionError: assert '' == '1\ntuple\n'&#10;  &#10;  - 1&#10;  - tuple">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1\ntuple\n'
+E     
+E     - 1
+E     - tuple</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[parse_form_count_07]" time="0.018"><failure message="AssertionError: assert '' == '1\ntuple\n'&#10;  &#10;  - 1&#10;  - tuple">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1\ntuple\n'
+E     
+E     - 1
+E     - tuple</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_00]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_00]" time="0.018"><failure message="AssertionError: assert '' == '0\n1\n2\ndead\n'&#10;  &#10;  - 0&#10;  - 1&#10;  - 2&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '0\n1\n2\ndead\n'
+E     
+E     - 0
+E     - 1
+E     - 2
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_01]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_01]" time="0.018"><failure message="AssertionError: assert '' == '1\n2\n3\ndead\n'&#10;  &#10;  - 1&#10;  - 2&#10;  - 3&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '1\n2\n3\ndead\n'
+E     
+E     - 1
+E     - 2
+E     - 3
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_02]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_02]" time="0.018"><failure message="AssertionError: assert '' == '2\n3\n4\ndead\n'&#10;  &#10;  - 2&#10;  - 3&#10;  - 4&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '2\n3\n4\ndead\n'
+E     
+E     - 2
+E     - 3
+E     - 4
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_03]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_03]" time="0.018"><failure message="AssertionError: assert '' == '3\n4\n5\ndead\n'&#10;  &#10;  - 3&#10;  - 4&#10;  - 5&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '3\n4\n5\ndead\n'
+E     
+E     - 3
+E     - 4
+E     - 5
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_04]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_04]" time="0.018"><failure message="AssertionError: assert '' == '4\n5\n6\ndead\n'&#10;  &#10;  - 4&#10;  - 5&#10;  - 6&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '4\n5\n6\ndead\n'
+E     
+E     - 4
+E     - 5
+E     - 6
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_05]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_05]" time="0.018"><failure message="AssertionError: assert '' == '5\n6\n7\ndead\n'&#10;  &#10;  - 5&#10;  - 6&#10;  - 7&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '5\n6\n7\ndead\n'
+E     
+E     - 5
+E     - 6
+E     - 7
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_06]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_06]" time="0.018"><failure message="AssertionError: assert '' == '6\n7\n8\ndead\n'&#10;  &#10;  - 6&#10;  - 7&#10;  - 8&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '6\n7\n8\ndead\n'
+E     
+E     - 6
+E     - 7
+E     - 8
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_07]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_07]" time="0.018"><failure message="AssertionError: assert '' == '7\n8\n9\ndead\n'&#10;  &#10;  - 7&#10;  - 8&#10;  - 9&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '7\n8\n9\ndead\n'
+E     
+E     - 7
+E     - 8
+E     - 9
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_08]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_08]" time="0.018"><failure message="AssertionError: assert '' == '8\n9\n10\ndead\n'&#10;  &#10;  - 8&#10;  - 9&#10;  - 10&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '8\n9\n10\ndead\n'
+E     
+E     - 8
+E     - 9
+E     - 10
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_09]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_09]" time="0.018"><failure message="AssertionError: assert '' == '9\n10\n11\ndead\n'&#10;  &#10;  - 9&#10;  - 10&#10;  - 11&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '9\n10\n11\ndead\n'
+E     
+E     - 9
+E     - 10
+E     - 11
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_10]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_10]" time="0.018"><failure message="AssertionError: assert '' == '10\n11\n12\ndead\n'&#10;  &#10;  - 10&#10;  - 11&#10;  - 12&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '10\n11\n12\ndead\n'
+E     
+E     - 10
+E     - 11
+E     - 12
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_11]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_11]" time="0.018"><failure message="AssertionError: assert '' == '11\n12\n13\ndead\n'&#10;  &#10;  - 11&#10;  - 12&#10;  - 13&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '11\n12\n13\ndead\n'
+E     
+E     - 11
+E     - 12
+E     - 13
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_12]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_12]" time="0.018"><failure message="AssertionError: assert '' == '12\n13\n14\ndead\n'&#10;  &#10;  - 12&#10;  - 13&#10;  - 14&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '12\n13\n14\ndead\n'
+E     
+E     - 12
+E     - 13
+E     - 14
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_13]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_13]" time="0.018"><failure message="AssertionError: assert '' == '13\n14\n15\ndead\n'&#10;  &#10;  - 13&#10;  - 14&#10;  - 15&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '13\n14\n15\ndead\n'
+E     
+E     - 13
+E     - 14
+E     - 15
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_14]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_14]" time="0.018"><failure message="AssertionError: assert '' == '14\n15\n16\ndead\n'&#10;  &#10;  - 14&#10;  - 15&#10;  - 16&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '14\n15\n16\ndead\n'
+E     
+E     - 14
+E     - 15
+E     - 16
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[marshal_roundtrip_table_15]" time="0.018"><failure message="AssertionError: assert '' == 'true\n'&#10;  &#10;  - true">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == 'true\n'
+E     
+E     - true</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[fiber_yield_resume_15]" time="0.018"><failure message="AssertionError: assert '' == '15\n16\n17\ndead\n'&#10;  &#10;  - 15&#10;  - 16&#10;  - 17&#10;  - dead">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '15\n16\n17\ndead\n'
+E     
+E     - 15
+E     - 16
+E     - 17
+E     - dead</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[stdin_read_transform_00]" time="0.018"><failure message="AssertionError: assert '' == '11\nALPHA\nBETA\n\n'&#10;  &#10;  - 11&#10;  - ALPHA&#10;  - BETA&#10;  -">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '11\nALPHA\nBETA\n\n'
+E     
+E     - 11
+E     - ALPHA
+E     - BETA
+E     -</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[stdin_read_transform_01]" time="0.018"><failure message="AssertionError: assert '' == '11\nMIXED CASE\n\n'&#10;  &#10;  - 11&#10;  - MIXED CASE&#10;  -">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '11\nMIXED CASE\n\n'
+E     
+E     - 11
+E     - MIXED CASE
+E     -</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[stdin_read_transform_02]" time="0.018"><failure message="AssertionError: assert '' == '12\nSYMBOLS !@#\n\n'&#10;  &#10;  - 12&#10;  - SYMBOLS !@#&#10;  -">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '12\nSYMBOLS !@#\n\n'
+E     
+E     - 12
+E     - SYMBOLS !@#
+E     -</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[stdin_read_transform_03]" time="0.018"><failure message="AssertionError: assert '' == '12\n12345\n67890\n\n'&#10;  &#10;  - 12&#10;  - 12345&#10;  - 67890&#10;  -">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '12\n12345\n67890\n\n'
+E     
+E     - 12
+E     - 12345
+E     - 67890
+E     -</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[stdin_read_transform_04]" time="0.018"><failure message="AssertionError: assert '' == '18\nSPACED WORDS HERE\n\n'&#10;  &#10;  - 18&#10;  - SPACED WORDS HERE&#10;  -">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '18\nSPACED WORDS HERE\n\n'
+E     
+E     - 18
+E     - SPACED WORDS HERE
+E     -</failure></testcase><testcase classname="test_generated_cases" name="test_generated_behavior_case[stdin_read_transform_05]" time="0.018"><failure message="AssertionError: assert '' == '9\nLAST-LINE\n'&#10;  &#10;  - 9&#10;  - LAST-LINE">workspace/eval/tests/test_generated_cases.py:24: in test_generated_behavior_case
+    assert result.stdout == case["stdout"]
+E   AssertionError: assert '' == '9\nLAST-LINE\n'
+E     
+E     - 9
+E     - LAST-LINE</failure></testcase><testcase classname="test_generated_cli_modules" name="test_syspath_imports_local_module" time="0.018"><failure message="AssertionError: assert '' == 'module144\n'&#10;  &#10;  - module144">workspace/eval/tests/test_generated_cli_modules.py:12: in test_syspath_imports_local_module
+    assert result.stdout == "module144\n"
+E   AssertionError: assert '' == 'module144\n'
+E     
+E     - module144</failure></testcase><testcase classname="test_generated_cli_modules" name="test_eval_syntax_error_reports_parse_location" time="0.017"><failure message="AssertionError: assert 0 == 1&#10; +  where 0 = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', '--eval', '(defn broken [x] (+ x )'], returncode=0, stdout='', stderr='').returncode">workspace/eval/tests/test_generated_cli_modules.py:20: in test_eval_syntax_error_reports_parse_location
+    assert result.returncode == 1
+E   AssertionError: assert 0 == 1
+E    +  where 0 = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', '--eval', '(defn broken [x] (+ x )'], returncode=0, stdout='', stderr='').returncode</failure></testcase><testcase classname="test_generated_cli_modules" name="test_runtime_error_reports_eval_trace" time="0.017"><failure message="assert 0 == 1&#10; +  where 0 = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', '--eval', '(error &quot;boom-time&quot;)'], returncode=0, stdout='', stderr='').returncode">workspace/eval/tests/test_generated_cli_modules.py:31: in test_runtime_error_reports_eval_trace
+    assert result.returncode == 1
+E   assert 0 == 1
+E    +  where 0 = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', '--eval', '(error "boom-time")'], returncode=0, stdout='', stderr='').returncode</failure></testcase><testcase classname="test_harvested_cli" name="test_version_and_help_text" time="0.017"><failure message="AssertionError: assert '' == '1.41.2-0fea20c8\n'&#10;  &#10;  - 1.41.2-0fea20c8">workspace/eval/tests/test_harvested_cli.py:5: in test_version_and_help_text
+    assert version.stdout == "1.41.2-0fea20c8\n"
+E   AssertionError: assert '' == '1.41.2-0fea20c8\n'
+E     
+E     - 1.41.2-0fea20c8</failure></testcase><testcase classname="test_harvested_cli" name="test_eval_and_script_arguments" time="0.018"><failure message="AssertionError: assert [] == ['from-script...oadalphabeta']&#10;  &#10;  Right contains 3 more items, first extra item: 'from-script37'&#10;  Use -v to get more diff">workspace/eval/tests/test_harvested_cli.py:34: in test_eval_and_script_arguments
+    assert result.stdout.splitlines() == [
+E   AssertionError: assert [] == ['from-script...oadalphabeta']
+E     
+E     Right contains 3 more items, first extra item: 'from-script37'
+E     Use -v to get more diff</failure></testcase><testcase classname="test_harvested_cli" name="test_compile_and_load_image_roundtrip" time="0.018"><failure message="AssertionError: assert '' == 'image-loaded42\n'&#10;  &#10;  - image-loaded42">workspace/eval/tests/test_harvested_cli.py:50: in test_compile_and_load_image_roundtrip
+    assert compiled.stdout == "image-loaded42\n"
+E   AssertionError: assert '' == 'image-loaded42\n'
+E     
+E     - image-loaded42</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-array.janet-49]" time="0.035"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-array.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-array.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-array.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-array.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-asm.janet-6]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-asm.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-asm.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-asm.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-asm.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-boot.janet-1551]" time="0.030"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-boot.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-boot.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-boot.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-boot.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-buffer.janet-77]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-buffer.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-buffer.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-buffer.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-buffer.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-bundle.janet-46]" time="0.030"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-bundle.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-bundle.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-bundle.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-bundle.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-capi.janet-9]" time="0.030"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-capi.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-capi.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-capi.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-capi.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-cfuns.janet-2]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-cfuns.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-cfuns.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-cfuns.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-cfuns.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-compile.janet-36]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-compile.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-compile.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-compile.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-compile.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-corelib.janet-104]" time="0.032"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-corelib.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-corelib.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-corelib.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-corelib.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-debug.janet-1]" time="0.030"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-debug.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-debug.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-debug.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-debug.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-ev.janet-735]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-ev.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-ev.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-ev.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-ev.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-ev2.janet-6]" time="0.034"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-ev2.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-ev2.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-ev2.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-ev2.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-ffi.janet-11]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-ffi.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-ffi.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-ffi.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-ffi.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-filewatch.janet-51]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-filewatch.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-filewatch.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-filewatch.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-filewatch.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-inttypes.janet-381]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-inttypes.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-inttypes.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-inttypes.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-inttypes.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-io.janet-11]" time="0.032"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-io.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-io.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-io.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-io.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-marsh.janet-73]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-marsh.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-marsh.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-marsh.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-marsh.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-math.janet-158]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-math.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-math.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-math.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-math.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-net.janet-2]" time="0.030"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-net.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-net.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-net.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-net.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-os.janet-58]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-os.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-os.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-os.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-os.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-parse.janet-60]" time="0.030"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-parse.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-parse.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-parse.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-parse.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-peg.janet-366]" time="0.030"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-peg.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-peg.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-peg.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-peg.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-pp.janet-12]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-pp.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-pp.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-pp.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-pp.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-specials.janet-58]" time="0.032"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-specials.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-specials.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-specials.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-specials.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-string.janet-69]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-string.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-string.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-string.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-string.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-strtod.janet-3]" time="0.033"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-strtod.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-strtod.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-strtod.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-strtod.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-struct.janet-32]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-struct.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-struct.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-struct.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-struct.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-symcache.janet-4]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-symcache.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-symcache.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-symcache.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-symcache.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-table.janet-15]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-table.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-table.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-table.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-table.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-tuple.janet-4]" time="0.034"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-tuple.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-tuple.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-tuple.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-tuple.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-unknown.janet-67]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-unknown.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-unknown.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-unknown.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-unknown.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-value.janet-23]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-value.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-value.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-value.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-value.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_suite_passes_with_expected_count[suite-vm.janet-36]" time="0.031"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-vm.janet...\n')&#10; +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith&#10; +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-vm.janet'], returncode=0, stdout='', stderr='').stderr">workspace/eval/tests/test_upstream_suite.py:92: in test_upstream_suite_passes_with_expected_count
+    assert result.stderr.startswith(f"Starting suite test/{suite}...\n")
+E   AssertionError: assert False
+E    +  where False = &lt;built-in method startswith of str object at 0x7fffff75e960&gt;('Starting suite test/suite-vm.janet...\n')
+E    +    where &lt;built-in method startswith of str object at 0x7fffff75e960&gt; = ''.startswith
+E    +      where '' = CompletedProcess(args=['/tmp/tmprxwdn9x9/dummy_executable', 'test/suite-vm.janet'], returncode=0, stdout='', stderr='').stderr</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[3sum.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...:3sum.janet\n'&#10;  &#10;  - compiled-example:3sum.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...:3sum.janet\n'
+E     
+E     - compiled-example:3sum.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[abstract-unix-socket.janet]" time="0.037"><failure message="AssertionError: assert '' == 'compiled-exa...ocket.janet\n'&#10;  &#10;  - compiled-example:abstract-unix-socket.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...ocket.janet\n'
+E     
+E     - compiled-example:abstract-unix-socket.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[assembly.janet]" time="0.033"><failure message="AssertionError: assert '' == 'compiled-exa...embly.janet\n'&#10;  &#10;  - compiled-example:assembly.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...embly.janet\n'
+E     
+E     - compiled-example:assembly.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[async-execute.janet]" time="0.033"><failure message="AssertionError: assert '' == 'compiled-exa...ecute.janet\n'&#10;  &#10;  - compiled-example:async-execute.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...ecute.janet\n'
+E     
+E     - compiled-example:async-execute.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[channel.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...annel.janet\n'&#10;  &#10;  - compiled-example:channel.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...annel.janet\n'
+E     
+E     - compiled-example:channel.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[chatserver.janet]" time="0.033"><failure message="AssertionError: assert '' == 'compiled-exa...erver.janet\n'&#10;  &#10;  - compiled-example:chatserver.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...erver.janet\n'
+E     
+E     - compiled-example:chatserver.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[colors.janet]" time="0.030"><failure message="AssertionError: assert '' == 'compiled-exa...olors.janet\n'&#10;  &#10;  - compiled-example:colors.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...olors.janet\n'
+E     
+E     - compiled-example:colors.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[debug.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...debug.janet\n'&#10;  &#10;  - compiled-example:debug.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...debug.janet\n'
+E     
+E     - compiled-example:debug.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[debugger.janet]" time="0.032"><failure message="AssertionError: assert '' == 'compiled-exa...ugger.janet\n'&#10;  &#10;  - compiled-example:debugger.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...ugger.janet\n'
+E     
+E     - compiled-example:debugger.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[echoclient.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...lient.janet\n'&#10;  &#10;  - compiled-example:echoclient.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...lient.janet\n'
+E     
+E     - compiled-example:echoclient.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[echoserve.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...serve.janet\n'&#10;  &#10;  - compiled-example:echoserve.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...serve.janet\n'
+E     
+E     - compiled-example:echoserve.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[error.janet]" time="0.030"><failure message="AssertionError: assert '' == 'compiled-exa...error.janet\n'&#10;  &#10;  - compiled-example:error.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...error.janet\n'
+E     
+E     - compiled-example:error.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[evlocks.janet]" time="0.030"><failure message="AssertionError: assert '' == 'compiled-exa...locks.janet\n'&#10;  &#10;  - compiled-example:evlocks.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...locks.janet\n'
+E     
+E     - compiled-example:evlocks.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[evsleep.janet]" time="0.030"><failure message="AssertionError: assert '' == 'compiled-exa...sleep.janet\n'&#10;  &#10;  - compiled-example:evsleep.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...sleep.janet\n'
+E     
+E     - compiled-example:evsleep.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[fizzbuzz.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...zbuzz.janet\n'&#10;  &#10;  - compiled-example:fizzbuzz.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...zbuzz.janet\n'
+E     
+E     - compiled-example:fizzbuzz.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[hello.janet]" time="0.032"><failure message="AssertionError: assert '' == 'compiled-exa...hello.janet\n'&#10;  &#10;  - compiled-example:hello.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...hello.janet\n'
+E     
+E     - compiled-example:hello.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[iterate-fiber.janet]" time="0.033"><failure message="AssertionError: assert '' == 'compiled-exa...fiber.janet\n'&#10;  &#10;  - compiled-example:iterate-fiber.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...fiber.janet\n'
+E     
+E     - compiled-example:iterate-fiber.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[lazyseqs.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...yseqs.janet\n'&#10;  &#10;  - compiled-example:lazyseqs.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...yseqs.janet\n'
+E     
+E     - compiled-example:lazyseqs.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[life.janet]" time="0.032"><failure message="AssertionError: assert '' == 'compiled-exa...:life.janet\n'&#10;  &#10;  - compiled-example:life.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...:life.janet\n'
+E     
+E     - compiled-example:life.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[lineloop.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...eloop.janet\n'&#10;  &#10;  - compiled-example:lineloop.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...eloop.janet\n'
+E     
+E     - compiled-example:lineloop.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[marshal-stress.janet]" time="0.032"><failure message="AssertionError: assert '' == 'compiled-exa...tress.janet\n'&#10;  &#10;  - compiled-example:marshal-stress.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...tress.janet\n'
+E     
+E     - compiled-example:marshal-stress.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[maxtriangle.janet]" time="0.032"><failure message="AssertionError: assert '' == 'compiled-exa...angle.janet\n'&#10;  &#10;  - compiled-example:maxtriangle.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...angle.janet\n'
+E     
+E     - compiled-example:maxtriangle.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[posix-exec.janet]" time="0.032"><failure message="AssertionError: assert '' == 'compiled-exa...-exec.janet\n'&#10;  &#10;  - compiled-example:posix-exec.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...-exec.janet\n'
+E     
+E     - compiled-example:posix-exec.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[primes.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...rimes.janet\n'&#10;  &#10;  - compiled-example:primes.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...rimes.janet\n'
+E     
+E     - compiled-example:primes.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[rtest.janet]" time="0.032"><failure message="AssertionError: assert '' == 'compiled-exa...rtest.janet\n'&#10;  &#10;  - compiled-example:rtest.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...rtest.janet\n'
+E     
+E     - compiled-example:rtest.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[select.janet]" time="0.030"><failure message="AssertionError: assert '' == 'compiled-exa...elect.janet\n'&#10;  &#10;  - compiled-example:select.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...elect.janet\n'
+E     
+E     - compiled-example:select.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[select2.janet]" time="0.032"><failure message="AssertionError: assert '' == 'compiled-exa...lect2.janet\n'&#10;  &#10;  - compiled-example:select2.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...lect2.janet\n'
+E     
+E     - compiled-example:select2.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[sigaction.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...ction.janet\n'&#10;  &#10;  - compiled-example:sigaction.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...ction.janet\n'
+E     
+E     - compiled-example:sigaction.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[tcpclient.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...lient.janet\n'&#10;  &#10;  - compiled-example:tcpclient.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...lient.janet\n'
+E     
+E     - compiled-example:tcpclient.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[tcpserver.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...erver.janet\n'&#10;  &#10;  - compiled-example:tcpserver.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...erver.janet\n'
+E     
+E     - compiled-example:tcpserver.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[threaded-channels.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...nnels.janet\n'&#10;  &#10;  - compiled-example:threaded-channels.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...nnels.janet\n'
+E     
+E     - compiled-example:threaded-channels.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[udpclient.janet]" time="0.032"><failure message="AssertionError: assert '' == 'compiled-exa...lient.janet\n'&#10;  &#10;  - compiled-example:udpclient.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...lient.janet\n'
+E     
+E     - compiled-example:udpclient.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[udpserver.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...erver.janet\n'&#10;  &#10;  - compiled-example:udpserver.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...erver.janet\n'
+E     
+E     - compiled-example:udpserver.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[urlloader.janet]" time="0.030"><failure message="AssertionError: assert '' == 'compiled-exa...oader.janet\n'&#10;  &#10;  - compiled-example:urlloader.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...oader.janet\n'
+E     
+E     - compiled-example:urlloader.janet</failure></testcase><testcase classname="test_upstream_suite" name="test_upstream_example_compiles_with_marker[weak-tables.janet]" time="0.031"><failure message="AssertionError: assert '' == 'compiled-exa...ables.janet\n'&#10;  &#10;  - compiled-example:weak-tables.janet">workspace/eval/tests/test_upstream_suite.py:111: in test_upstream_example_compiles_with_marker
+    assert result.stdout == f"{marker}\n"
+E   AssertionError: assert '' == 'compiled-exa...ables.janet\n'
+E     
+E     - compiled-example:weak-tables.janet</failure></testcase></testsuite></testsuites>

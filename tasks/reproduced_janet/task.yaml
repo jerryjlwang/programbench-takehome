@@ -1,0 +1,9 @@
+repository: janet-lang/janet
+commit: 0fea20c82182fe661f75b00a8889d801fe2d79b6
+tag: v1.41.2
+instance_id: janet-lang__janet.0fea20c
+language: c
+difficulty: medium
+gold_sha256: 0803a73d40bcce61c07950d509d023d40ccc896fff3ca57571a4194377678235
+eval_clean_hashes:
+- 0803a73d40bcce61c07950d509d023d40ccc896fff3ca57571a4194377678235

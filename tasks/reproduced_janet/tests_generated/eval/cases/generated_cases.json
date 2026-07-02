@@ -1,0 +1,3078 @@
+[
+  {
+    "id": "seed_arrays_and_tables",
+    "args": [
+      "--eval",
+      "(print (string/join [\"a\" \"b\" \"c\"] \":\")) (print (get @{ :x 10 :y 20 } :y))"
+    ],
+    "returncode": 0,
+    "stdout": "a:b:c\n20\n",
+    "stderr": ""
+  },
+  {
+    "id": "seed_buffer_format",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"value=%04d\" 23)) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "value=0023\n",
+    "stderr": ""
+  },
+  {
+    "id": "seed_marshal_roundtrip",
+    "args": [
+      "--eval",
+      "(def x @{:a @[1 2 3] :b \"str\"}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "seed_date_format_utc",
+    "args": [
+      "--eval",
+      "(print (os/strftime \"%Y-%m-%dT%H:%M:%S\" 1388608200))"
+    ],
+    "returncode": 0,
+    "stdout": "2014-01-01T20:30:00\n",
+    "stderr": ""
+  },
+  {
+    "id": "seed_parse_multiple_values",
+    "args": [
+      "--eval",
+      "(def forms (parse-all \"(+ 1 2) :kw [a b]\")) (print (length forms)) (print (in forms 1))"
+    ],
+    "returncode": 0,
+    "stdout": "3\nkw\n",
+    "stderr": ""
+  },
+  {
+    "id": "seed_sequence_filter_map",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 0 16))) \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "1,3,5,7,9,11,13,15\n",
+    "stderr": ""
+  },
+  {
+    "id": "seed_fiber_resume_status",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield :pause) :done))) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "pause\ndone\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "seed_mutable_table_slots",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 11) (put t :beta 22) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "1122\n",
+    "stderr": ""
+  },
+  {
+    "id": "seed_try_catches_error_value",
+    "args": [
+      "--eval",
+      "(print (try (error \"ouch\") ([e] (string/has-prefix? \"ouch\" e))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_00",
+    "args": [
+      "--eval",
+      "(print (+ 2 1 0)) (print (* 2 5))"
+    ],
+    "returncode": 0,
+    "stdout": "3\n10\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_00",
+    "args": [
+      "--eval",
+      "(print (- (* 2 1) 0)) (print (/ (* 2 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "2\n8\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_00",
+    "args": [
+      "--eval",
+      "(print (math/pow 2 3)) (print (string/format \"case-00:%04d\" (+ 2 1)))"
+    ],
+    "returncode": 0,
+    "stdout": "8\ncase-00:0003\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_01",
+    "args": [
+      "--eval",
+      "(print (+ 3 4 1)) (print (* 3 6))"
+    ],
+    "returncode": 0,
+    "stdout": "8\n18\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_01",
+    "args": [
+      "--eval",
+      "(print (- (* 3 4) 1)) (print (/ (* 3 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "11\n12\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_01",
+    "args": [
+      "--eval",
+      "(print (math/pow 3 3)) (print (string/format \"case-01:%04d\" (+ 3 4)))"
+    ],
+    "returncode": 0,
+    "stdout": "27\ncase-01:0007\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_02",
+    "args": [
+      "--eval",
+      "(print (+ 4 7 2)) (print (* 4 7))"
+    ],
+    "returncode": 0,
+    "stdout": "13\n28\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_02",
+    "args": [
+      "--eval",
+      "(print (- (* 4 7) 2)) (print (/ (* 4 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "26\n16\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_02",
+    "args": [
+      "--eval",
+      "(print (math/pow 4 3)) (print (string/format \"case-02:%04d\" (+ 4 7)))"
+    ],
+    "returncode": 0,
+    "stdout": "64\ncase-02:0011\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_03",
+    "args": [
+      "--eval",
+      "(print (+ 5 10 3)) (print (* 5 8))"
+    ],
+    "returncode": 0,
+    "stdout": "18\n40\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_03",
+    "args": [
+      "--eval",
+      "(print (- (* 5 10) 3)) (print (/ (* 5 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "47\n20\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_03",
+    "args": [
+      "--eval",
+      "(print (math/pow 5 3)) (print (string/format \"case-03:%04d\" (+ 5 10)))"
+    ],
+    "returncode": 0,
+    "stdout": "125\ncase-03:0015\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_04",
+    "args": [
+      "--eval",
+      "(print (+ 6 13 4)) (print (* 6 9))"
+    ],
+    "returncode": 0,
+    "stdout": "23\n54\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_04",
+    "args": [
+      "--eval",
+      "(print (- (* 6 13) 4)) (print (/ (* 6 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "74\n24\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_04",
+    "args": [
+      "--eval",
+      "(print (math/pow 6 3)) (print (string/format \"case-04:%04d\" (+ 6 13)))"
+    ],
+    "returncode": 0,
+    "stdout": "216\ncase-04:0019\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_05",
+    "args": [
+      "--eval",
+      "(print (+ 7 16 5)) (print (* 7 10))"
+    ],
+    "returncode": 0,
+    "stdout": "28\n70\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_05",
+    "args": [
+      "--eval",
+      "(print (- (* 7 16) 5)) (print (/ (* 7 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "107\n28\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_05",
+    "args": [
+      "--eval",
+      "(print (math/pow 7 3)) (print (string/format \"case-05:%04d\" (+ 7 16)))"
+    ],
+    "returncode": 0,
+    "stdout": "343\ncase-05:0023\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_06",
+    "args": [
+      "--eval",
+      "(print (+ 8 19 6)) (print (* 8 11))"
+    ],
+    "returncode": 0,
+    "stdout": "33\n88\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_06",
+    "args": [
+      "--eval",
+      "(print (- (* 8 19) 6)) (print (/ (* 8 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "146\n32\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_06",
+    "args": [
+      "--eval",
+      "(print (math/pow 8 3)) (print (string/format \"case-06:%04d\" (+ 8 19)))"
+    ],
+    "returncode": 0,
+    "stdout": "512\ncase-06:0027\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_07",
+    "args": [
+      "--eval",
+      "(print (+ 9 22 7)) (print (* 9 12))"
+    ],
+    "returncode": 0,
+    "stdout": "38\n108\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_07",
+    "args": [
+      "--eval",
+      "(print (- (* 9 22) 7)) (print (/ (* 9 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "191\n36\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_07",
+    "args": [
+      "--eval",
+      "(print (math/pow 2 3)) (print (string/format \"case-07:%04d\" (+ 9 22)))"
+    ],
+    "returncode": 0,
+    "stdout": "8\ncase-07:0031\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_08",
+    "args": [
+      "--eval",
+      "(print (+ 10 25 8)) (print (* 10 13))"
+    ],
+    "returncode": 0,
+    "stdout": "43\n130\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_08",
+    "args": [
+      "--eval",
+      "(print (- (* 10 25) 8)) (print (/ (* 10 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "242\n40\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_08",
+    "args": [
+      "--eval",
+      "(print (math/pow 3 3)) (print (string/format \"case-08:%04d\" (+ 10 25)))"
+    ],
+    "returncode": 0,
+    "stdout": "27\ncase-08:0035\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_09",
+    "args": [
+      "--eval",
+      "(print (+ 11 28 9)) (print (* 11 14))"
+    ],
+    "returncode": 0,
+    "stdout": "48\n154\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_09",
+    "args": [
+      "--eval",
+      "(print (- (* 11 28) 9)) (print (/ (* 11 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "299\n44\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_09",
+    "args": [
+      "--eval",
+      "(print (math/pow 4 3)) (print (string/format \"case-09:%04d\" (+ 11 28)))"
+    ],
+    "returncode": 0,
+    "stdout": "64\ncase-09:0039\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_10",
+    "args": [
+      "--eval",
+      "(print (+ 12 31 10)) (print (* 12 15))"
+    ],
+    "returncode": 0,
+    "stdout": "53\n180\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_10",
+    "args": [
+      "--eval",
+      "(print (- (* 12 31) 10)) (print (/ (* 12 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "362\n48\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_10",
+    "args": [
+      "--eval",
+      "(print (math/pow 5 3)) (print (string/format \"case-10:%04d\" (+ 12 31)))"
+    ],
+    "returncode": 0,
+    "stdout": "125\ncase-10:0043\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_11",
+    "args": [
+      "--eval",
+      "(print (+ 13 34 11)) (print (* 13 16))"
+    ],
+    "returncode": 0,
+    "stdout": "58\n208\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_11",
+    "args": [
+      "--eval",
+      "(print (- (* 13 34) 11)) (print (/ (* 13 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "431\n52\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_11",
+    "args": [
+      "--eval",
+      "(print (math/pow 6 3)) (print (string/format \"case-11:%04d\" (+ 13 34)))"
+    ],
+    "returncode": 0,
+    "stdout": "216\ncase-11:0047\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_12",
+    "args": [
+      "--eval",
+      "(print (+ 14 37 12)) (print (* 14 17))"
+    ],
+    "returncode": 0,
+    "stdout": "63\n238\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_12",
+    "args": [
+      "--eval",
+      "(print (- (* 14 37) 12)) (print (/ (* 14 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "506\n56\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_12",
+    "args": [
+      "--eval",
+      "(print (math/pow 7 3)) (print (string/format \"case-12:%04d\" (+ 14 37)))"
+    ],
+    "returncode": 0,
+    "stdout": "343\ncase-12:0051\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_13",
+    "args": [
+      "--eval",
+      "(print (+ 15 40 13)) (print (* 15 18))"
+    ],
+    "returncode": 0,
+    "stdout": "68\n270\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_13",
+    "args": [
+      "--eval",
+      "(print (- (* 15 40) 13)) (print (/ (* 15 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "587\n60\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_13",
+    "args": [
+      "--eval",
+      "(print (math/pow 8 3)) (print (string/format \"case-13:%04d\" (+ 15 40)))"
+    ],
+    "returncode": 0,
+    "stdout": "512\ncase-13:0055\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_14",
+    "args": [
+      "--eval",
+      "(print (+ 16 43 14)) (print (* 16 19))"
+    ],
+    "returncode": 0,
+    "stdout": "73\n304\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_14",
+    "args": [
+      "--eval",
+      "(print (- (* 16 43) 14)) (print (/ (* 16 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "674\n64\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_14",
+    "args": [
+      "--eval",
+      "(print (math/pow 2 3)) (print (string/format \"case-14:%04d\" (+ 16 43)))"
+    ],
+    "returncode": 0,
+    "stdout": "8\ncase-14:0059\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_15",
+    "args": [
+      "--eval",
+      "(print (+ 17 46 15)) (print (* 17 20))"
+    ],
+    "returncode": 0,
+    "stdout": "78\n340\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_15",
+    "args": [
+      "--eval",
+      "(print (- (* 17 46) 15)) (print (/ (* 17 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "767\n68\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_15",
+    "args": [
+      "--eval",
+      "(print (math/pow 3 3)) (print (string/format \"case-15:%04d\" (+ 17 46)))"
+    ],
+    "returncode": 0,
+    "stdout": "27\ncase-15:0063\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_16",
+    "args": [
+      "--eval",
+      "(print (+ 18 49 16)) (print (* 18 21))"
+    ],
+    "returncode": 0,
+    "stdout": "83\n378\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_16",
+    "args": [
+      "--eval",
+      "(print (- (* 18 49) 16)) (print (/ (* 18 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "866\n72\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_16",
+    "args": [
+      "--eval",
+      "(print (math/pow 4 3)) (print (string/format \"case-16:%04d\" (+ 18 49)))"
+    ],
+    "returncode": 0,
+    "stdout": "64\ncase-16:0067\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_17",
+    "args": [
+      "--eval",
+      "(print (+ 19 52 17)) (print (* 19 22))"
+    ],
+    "returncode": 0,
+    "stdout": "88\n418\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_17",
+    "args": [
+      "--eval",
+      "(print (- (* 19 52) 17)) (print (/ (* 19 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "971\n76\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_17",
+    "args": [
+      "--eval",
+      "(print (math/pow 5 3)) (print (string/format \"case-17:%04d\" (+ 19 52)))"
+    ],
+    "returncode": 0,
+    "stdout": "125\ncase-17:0071\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_18",
+    "args": [
+      "--eval",
+      "(print (+ 20 55 18)) (print (* 20 23))"
+    ],
+    "returncode": 0,
+    "stdout": "93\n460\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_18",
+    "args": [
+      "--eval",
+      "(print (- (* 20 55) 18)) (print (/ (* 20 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "1082\n80\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_18",
+    "args": [
+      "--eval",
+      "(print (math/pow 6 3)) (print (string/format \"case-18:%04d\" (+ 20 55)))"
+    ],
+    "returncode": 0,
+    "stdout": "216\ncase-18:0075\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_19",
+    "args": [
+      "--eval",
+      "(print (+ 21 58 19)) (print (* 21 24))"
+    ],
+    "returncode": 0,
+    "stdout": "98\n504\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_19",
+    "args": [
+      "--eval",
+      "(print (- (* 21 58) 19)) (print (/ (* 21 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "1199\n84\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_19",
+    "args": [
+      "--eval",
+      "(print (math/pow 7 3)) (print (string/format \"case-19:%04d\" (+ 21 58)))"
+    ],
+    "returncode": 0,
+    "stdout": "343\ncase-19:0079\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_20",
+    "args": [
+      "--eval",
+      "(print (+ 22 61 20)) (print (* 22 25))"
+    ],
+    "returncode": 0,
+    "stdout": "103\n550\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_20",
+    "args": [
+      "--eval",
+      "(print (- (* 22 61) 20)) (print (/ (* 22 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "1322\n88\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_20",
+    "args": [
+      "--eval",
+      "(print (math/pow 8 3)) (print (string/format \"case-20:%04d\" (+ 22 61)))"
+    ],
+    "returncode": 0,
+    "stdout": "512\ncase-20:0083\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_21",
+    "args": [
+      "--eval",
+      "(print (+ 23 64 21)) (print (* 23 26))"
+    ],
+    "returncode": 0,
+    "stdout": "108\n598\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_21",
+    "args": [
+      "--eval",
+      "(print (- (* 23 64) 21)) (print (/ (* 23 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "1451\n92\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_21",
+    "args": [
+      "--eval",
+      "(print (math/pow 2 3)) (print (string/format \"case-21:%04d\" (+ 23 64)))"
+    ],
+    "returncode": 0,
+    "stdout": "8\ncase-21:0087\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_22",
+    "args": [
+      "--eval",
+      "(print (+ 24 67 22)) (print (* 24 27))"
+    ],
+    "returncode": 0,
+    "stdout": "113\n648\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_22",
+    "args": [
+      "--eval",
+      "(print (- (* 24 67) 22)) (print (/ (* 24 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "1586\n96\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_22",
+    "args": [
+      "--eval",
+      "(print (math/pow 3 3)) (print (string/format \"case-22:%04d\" (+ 24 67)))"
+    ],
+    "returncode": 0,
+    "stdout": "27\ncase-22:0091\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_23",
+    "args": [
+      "--eval",
+      "(print (+ 25 70 23)) (print (* 25 28))"
+    ],
+    "returncode": 0,
+    "stdout": "118\n700\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_23",
+    "args": [
+      "--eval",
+      "(print (- (* 25 70) 23)) (print (/ (* 25 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "1727\n100\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_23",
+    "args": [
+      "--eval",
+      "(print (math/pow 4 3)) (print (string/format \"case-23:%04d\" (+ 25 70)))"
+    ],
+    "returncode": 0,
+    "stdout": "64\ncase-23:0095\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_24",
+    "args": [
+      "--eval",
+      "(print (+ 26 73 24)) (print (* 26 29))"
+    ],
+    "returncode": 0,
+    "stdout": "123\n754\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_24",
+    "args": [
+      "--eval",
+      "(print (- (* 26 73) 24)) (print (/ (* 26 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "1874\n104\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_24",
+    "args": [
+      "--eval",
+      "(print (math/pow 5 3)) (print (string/format \"case-24:%04d\" (+ 26 73)))"
+    ],
+    "returncode": 0,
+    "stdout": "125\ncase-24:0099\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_25",
+    "args": [
+      "--eval",
+      "(print (+ 27 76 25)) (print (* 27 30))"
+    ],
+    "returncode": 0,
+    "stdout": "128\n810\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_25",
+    "args": [
+      "--eval",
+      "(print (- (* 27 76) 25)) (print (/ (* 27 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "2027\n108\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_25",
+    "args": [
+      "--eval",
+      "(print (math/pow 6 3)) (print (string/format \"case-25:%04d\" (+ 27 76)))"
+    ],
+    "returncode": 0,
+    "stdout": "216\ncase-25:0103\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_26",
+    "args": [
+      "--eval",
+      "(print (+ 28 79 26)) (print (* 28 31))"
+    ],
+    "returncode": 0,
+    "stdout": "133\n868\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_26",
+    "args": [
+      "--eval",
+      "(print (- (* 28 79) 26)) (print (/ (* 28 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "2186\n112\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_26",
+    "args": [
+      "--eval",
+      "(print (math/pow 7 3)) (print (string/format \"case-26:%04d\" (+ 28 79)))"
+    ],
+    "returncode": 0,
+    "stdout": "343\ncase-26:0107\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_27",
+    "args": [
+      "--eval",
+      "(print (+ 29 82 27)) (print (* 29 32))"
+    ],
+    "returncode": 0,
+    "stdout": "138\n928\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_27",
+    "args": [
+      "--eval",
+      "(print (- (* 29 82) 27)) (print (/ (* 29 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "2351\n116\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_27",
+    "args": [
+      "--eval",
+      "(print (math/pow 8 3)) (print (string/format \"case-27:%04d\" (+ 29 82)))"
+    ],
+    "returncode": 0,
+    "stdout": "512\ncase-27:0111\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_28",
+    "args": [
+      "--eval",
+      "(print (+ 30 85 28)) (print (* 30 33))"
+    ],
+    "returncode": 0,
+    "stdout": "143\n990\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_28",
+    "args": [
+      "--eval",
+      "(print (- (* 30 85) 28)) (print (/ (* 30 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "2522\n120\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_28",
+    "args": [
+      "--eval",
+      "(print (math/pow 2 3)) (print (string/format \"case-28:%04d\" (+ 30 85)))"
+    ],
+    "returncode": 0,
+    "stdout": "8\ncase-28:0115\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_29",
+    "args": [
+      "--eval",
+      "(print (+ 31 88 29)) (print (* 31 34))"
+    ],
+    "returncode": 0,
+    "stdout": "148\n1054\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_29",
+    "args": [
+      "--eval",
+      "(print (- (* 31 88) 29)) (print (/ (* 31 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "2699\n124\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_29",
+    "args": [
+      "--eval",
+      "(print (math/pow 3 3)) (print (string/format \"case-29:%04d\" (+ 31 88)))"
+    ],
+    "returncode": 0,
+    "stdout": "27\ncase-29:0119\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_30",
+    "args": [
+      "--eval",
+      "(print (+ 32 91 30)) (print (* 32 35))"
+    ],
+    "returncode": 0,
+    "stdout": "153\n1120\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_30",
+    "args": [
+      "--eval",
+      "(print (- (* 32 91) 30)) (print (/ (* 32 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "2882\n128\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_30",
+    "args": [
+      "--eval",
+      "(print (math/pow 4 3)) (print (string/format \"case-30:%04d\" (+ 32 91)))"
+    ],
+    "returncode": 0,
+    "stdout": "64\ncase-30:0123\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_31",
+    "args": [
+      "--eval",
+      "(print (+ 33 94 31)) (print (* 33 36))"
+    ],
+    "returncode": 0,
+    "stdout": "158\n1188\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_31",
+    "args": [
+      "--eval",
+      "(print (- (* 33 94) 31)) (print (/ (* 33 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "3071\n132\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_31",
+    "args": [
+      "--eval",
+      "(print (math/pow 5 3)) (print (string/format \"case-31:%04d\" (+ 33 94)))"
+    ],
+    "returncode": 0,
+    "stdout": "125\ncase-31:0127\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_32",
+    "args": [
+      "--eval",
+      "(print (+ 34 97 32)) (print (* 34 37))"
+    ],
+    "returncode": 0,
+    "stdout": "163\n1258\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_32",
+    "args": [
+      "--eval",
+      "(print (- (* 34 97) 32)) (print (/ (* 34 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "3266\n136\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_32",
+    "args": [
+      "--eval",
+      "(print (math/pow 6 3)) (print (string/format \"case-32:%04d\" (+ 34 97)))"
+    ],
+    "returncode": 0,
+    "stdout": "216\ncase-32:0131\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_33",
+    "args": [
+      "--eval",
+      "(print (+ 35 100 33)) (print (* 35 38))"
+    ],
+    "returncode": 0,
+    "stdout": "168\n1330\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_33",
+    "args": [
+      "--eval",
+      "(print (- (* 35 100) 33)) (print (/ (* 35 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "3467\n140\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_33",
+    "args": [
+      "--eval",
+      "(print (math/pow 7 3)) (print (string/format \"case-33:%04d\" (+ 35 100)))"
+    ],
+    "returncode": 0,
+    "stdout": "343\ncase-33:0135\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_34",
+    "args": [
+      "--eval",
+      "(print (+ 36 103 34)) (print (* 36 39))"
+    ],
+    "returncode": 0,
+    "stdout": "173\n1404\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_34",
+    "args": [
+      "--eval",
+      "(print (- (* 36 103) 34)) (print (/ (* 36 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "3674\n144\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_34",
+    "args": [
+      "--eval",
+      "(print (math/pow 8 3)) (print (string/format \"case-34:%04d\" (+ 36 103)))"
+    ],
+    "returncode": 0,
+    "stdout": "512\ncase-34:0139\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_sum_product_35",
+    "args": [
+      "--eval",
+      "(print (+ 37 106 35)) (print (* 37 40))"
+    ],
+    "returncode": 0,
+    "stdout": "178\n1480\n",
+    "stderr": ""
+  },
+  {
+    "id": "arith_difference_ratio_35",
+    "args": [
+      "--eval",
+      "(print (- (* 37 106) 35)) (print (/ (* 37 12) 3))"
+    ],
+    "returncode": 0,
+    "stdout": "3887\n148\n",
+    "stderr": ""
+  },
+  {
+    "id": "math_power_format_35",
+    "args": [
+      "--eval",
+      "(print (math/pow 2 3)) (print (string/format \"case-35:%04d\" (+ 37 106)))"
+    ],
+    "returncode": 0,
+    "stdout": "8\ncase-35:0143\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_00",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Alpha-00\")) (print (string/ascii-lower \"Alpha-00\"))"
+    ],
+    "returncode": 0,
+    "stdout": "ALPHA-00\nalpha-00\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_00",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Alpha\" \"0\" \"done\"] \"|\")) (print (length \"Alpha-00\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Alpha|0|done\n8\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_01",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Beta-01\")) (print (string/ascii-lower \"Beta-01\"))"
+    ],
+    "returncode": 0,
+    "stdout": "BETA-01\nbeta-01\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_01",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Beta\" \"1\" \"done\"] \"|\")) (print (length \"Beta-01\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Beta|1|done\n7\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_02",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Gamma-02\")) (print (string/ascii-lower \"Gamma-02\"))"
+    ],
+    "returncode": 0,
+    "stdout": "GAMMA-02\ngamma-02\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_02",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Gamma\" \"2\" \"done\"] \"|\")) (print (length \"Gamma-02\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Gamma|2|done\n8\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_03",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Delta-03\")) (print (string/ascii-lower \"Delta-03\"))"
+    ],
+    "returncode": 0,
+    "stdout": "DELTA-03\ndelta-03\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_03",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Delta\" \"3\" \"done\"] \"|\")) (print (length \"Delta-03\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Delta|3|done\n8\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_04",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Epsilon-04\")) (print (string/ascii-lower \"Epsilon-04\"))"
+    ],
+    "returncode": 0,
+    "stdout": "EPSILON-04\nepsilon-04\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_04",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Epsilon\" \"4\" \"done\"] \"|\")) (print (length \"Epsilon-04\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Epsilon|4|done\n10\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_05",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Zeta-05\")) (print (string/ascii-lower \"Zeta-05\"))"
+    ],
+    "returncode": 0,
+    "stdout": "ZETA-05\nzeta-05\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_05",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Zeta\" \"5\" \"done\"] \"|\")) (print (length \"Zeta-05\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Zeta|5|done\n7\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_06",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Eta-06\")) (print (string/ascii-lower \"Eta-06\"))"
+    ],
+    "returncode": 0,
+    "stdout": "ETA-06\neta-06\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_06",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Eta\" \"6\" \"done\"] \"|\")) (print (length \"Eta-06\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Eta|6|done\n6\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_07",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Theta-07\")) (print (string/ascii-lower \"Theta-07\"))"
+    ],
+    "returncode": 0,
+    "stdout": "THETA-07\ntheta-07\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_07",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Theta\" \"7\" \"done\"] \"|\")) (print (length \"Theta-07\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Theta|7|done\n8\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_08",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Iota-08\")) (print (string/ascii-lower \"Iota-08\"))"
+    ],
+    "returncode": 0,
+    "stdout": "IOTA-08\niota-08\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_08",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Iota\" \"8\" \"done\"] \"|\")) (print (length \"Iota-08\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Iota|8|done\n7\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_09",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Kappa-09\")) (print (string/ascii-lower \"Kappa-09\"))"
+    ],
+    "returncode": 0,
+    "stdout": "KAPPA-09\nkappa-09\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_09",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Kappa\" \"9\" \"done\"] \"|\")) (print (length \"Kappa-09\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Kappa|9|done\n8\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_10",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Lambda-10\")) (print (string/ascii-lower \"Lambda-10\"))"
+    ],
+    "returncode": 0,
+    "stdout": "LAMBDA-10\nlambda-10\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_10",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Lambda\" \"10\" \"done\"] \"|\")) (print (length \"Lambda-10\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Lambda|10|done\n9\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_11",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Mu-11\")) (print (string/ascii-lower \"Mu-11\"))"
+    ],
+    "returncode": 0,
+    "stdout": "MU-11\nmu-11\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_11",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Mu\" \"11\" \"done\"] \"|\")) (print (length \"Mu-11\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Mu|11|done\n5\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_12",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Nu-12\")) (print (string/ascii-lower \"Nu-12\"))"
+    ],
+    "returncode": 0,
+    "stdout": "NU-12\nnu-12\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_12",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Nu\" \"12\" \"done\"] \"|\")) (print (length \"Nu-12\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Nu|12|done\n5\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_13",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Xi-13\")) (print (string/ascii-lower \"Xi-13\"))"
+    ],
+    "returncode": 0,
+    "stdout": "XI-13\nxi-13\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_13",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Xi\" \"13\" \"done\"] \"|\")) (print (length \"Xi-13\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Xi|13|done\n5\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_14",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Omicron-14\")) (print (string/ascii-lower \"Omicron-14\"))"
+    ],
+    "returncode": 0,
+    "stdout": "OMICRON-14\nomicron-14\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_14",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Omicron\" \"14\" \"done\"] \"|\")) (print (length \"Omicron-14\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Omicron|14|done\n10\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_15",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Pi-15\")) (print (string/ascii-lower \"Pi-15\"))"
+    ],
+    "returncode": 0,
+    "stdout": "PI-15\npi-15\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_15",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Pi\" \"15\" \"done\"] \"|\")) (print (length \"Pi-15\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Pi|15|done\n5\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_16",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Rho-16\")) (print (string/ascii-lower \"Rho-16\"))"
+    ],
+    "returncode": 0,
+    "stdout": "RHO-16\nrho-16\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_16",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Rho\" \"16\" \"done\"] \"|\")) (print (length \"Rho-16\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Rho|16|done\n6\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_17",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Sigma-17\")) (print (string/ascii-lower \"Sigma-17\"))"
+    ],
+    "returncode": 0,
+    "stdout": "SIGMA-17\nsigma-17\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_17",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Sigma\" \"17\" \"done\"] \"|\")) (print (length \"Sigma-17\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Sigma|17|done\n8\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_18",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Tau-18\")) (print (string/ascii-lower \"Tau-18\"))"
+    ],
+    "returncode": 0,
+    "stdout": "TAU-18\ntau-18\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_18",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Tau\" \"18\" \"done\"] \"|\")) (print (length \"Tau-18\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Tau|18|done\n6\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_19",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Upsilon-19\")) (print (string/ascii-lower \"Upsilon-19\"))"
+    ],
+    "returncode": 0,
+    "stdout": "UPSILON-19\nupsilon-19\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_19",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Upsilon\" \"19\" \"done\"] \"|\")) (print (length \"Upsilon-19\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Upsilon|19|done\n10\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_20",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Phi-20\")) (print (string/ascii-lower \"Phi-20\"))"
+    ],
+    "returncode": 0,
+    "stdout": "PHI-20\nphi-20\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_20",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Phi\" \"20\" \"done\"] \"|\")) (print (length \"Phi-20\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Phi|20|done\n6\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_21",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Chi-21\")) (print (string/ascii-lower \"Chi-21\"))"
+    ],
+    "returncode": 0,
+    "stdout": "CHI-21\nchi-21\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_21",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Chi\" \"21\" \"done\"] \"|\")) (print (length \"Chi-21\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Chi|21|done\n6\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_22",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Psi-22\")) (print (string/ascii-lower \"Psi-22\"))"
+    ],
+    "returncode": 0,
+    "stdout": "PSI-22\npsi-22\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_22",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Psi\" \"22\" \"done\"] \"|\")) (print (length \"Psi-22\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Psi|22|done\n6\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_upper_lower_23",
+    "args": [
+      "--eval",
+      "(print (string/ascii-upper \"Omega-23\")) (print (string/ascii-lower \"Omega-23\"))"
+    ],
+    "returncode": 0,
+    "stdout": "OMEGA-23\nomega-23\n",
+    "stderr": ""
+  },
+  {
+    "id": "string_join_length_23",
+    "args": [
+      "--eval",
+      "(print (string/join [\"Omega\" \"23\" \"done\"] \"|\")) (print (length \"Omega-23\"))"
+    ],
+    "returncode": 0,
+    "stdout": "Omega|23|done\n8\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_00",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [1 2 4 8] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "1,4,16,64\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_00",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 0 14))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "1:3:5:7:9:11:13\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_01",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [2 3 5 9] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "4,9,25,81\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_01",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 1 15))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "1:3:5:7:9:11:13\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_02",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [3 4 6 10] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "9,16,36,100\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_02",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 2 16))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "3:5:7:9:11:13:15\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_03",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [4 5 7 11] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "16,25,49,121\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_03",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 3 17))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "3:5:7:9:11:13:15\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_04",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [5 6 8 12] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "25,36,64,144\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_04",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 4 18))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "5:7:9:11:13:15:17\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_05",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [6 7 9 13] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "36,49,81,169\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_05",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 5 19))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "5:7:9:11:13:15:17\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_06",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [7 8 10 14] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "49,64,100,196\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_06",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 6 20))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "7:9:11:13:15:17:19\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_07",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [8 9 11 15] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "64,81,121,225\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_07",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 7 21))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "7:9:11:13:15:17:19\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_08",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [9 10 12 16] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "81,100,144,256\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_08",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 8 22))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "9:11:13:15:17:19:21\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_09",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [10 11 13 17] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "100,121,169,289\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_09",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 9 23))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "9:11:13:15:17:19:21\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_10",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [11 12 14 18] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "121,144,196,324\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_10",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 10 24))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "11:13:15:17:19:21:23\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_11",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [12 13 15 19] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "144,169,225,361\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_11",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 11 25))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "11:13:15:17:19:21:23\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_12",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [13 14 16 20] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "169,196,256,400\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_12",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 12 26))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "13:15:17:19:21:23:25\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_13",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [14 15 17 21] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "196,225,289,441\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_13",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 13 27))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "13:15:17:19:21:23:25\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_14",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [15 16 18 22] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "225,256,324,484\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_14",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 14 28))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "15:17:19:21:23:25:27\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_15",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [16 17 19 23] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "256,289,361,529\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_15",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 15 29))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "15:17:19:21:23:25:27\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_16",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [17 18 20 24] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "289,324,400,576\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_16",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 16 30))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "17:19:21:23:25:27:29\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_17",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [18 19 21 25] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "324,361,441,625\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_17",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 17 31))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "17:19:21:23:25:27:29\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_18",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [19 20 22 26] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "361,400,484,676\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_18",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 18 32))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "19:21:23:25:27:29:31\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_19",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [20 21 23 27] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "400,441,529,729\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_19",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 19 33))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "19:21:23:25:27:29:31\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_20",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [21 22 24 28] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "441,484,576,784\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_20",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 20 34))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "21:23:25:27:29:31:33\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_21",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [22 23 25 29] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "484,529,625,841\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_21",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 21 35))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "21:23:25:27:29:31:33\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_22",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [23 24 26 30] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "529,576,676,900\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_22",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 22 36))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "23:25:27:29:31:33:35\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_23",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [24 25 27 31] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "576,625,729,961\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_23",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 23 37))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "23:25:27:29:31:33:35\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_24",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [25 26 28 32] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "625,676,784,1024\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_24",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 24 38))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "25:27:29:31:33:35:37\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_25",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [26 27 29 33] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "676,729,841,1089\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_25",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 25 39))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "25:27:29:31:33:35:37\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_26",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [27 28 30 34] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "729,784,900,1156\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_26",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 26 40))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "27:29:31:33:35:37:39\n",
+    "stderr": ""
+  },
+  {
+    "id": "array_loop_square_join_27",
+    "args": [
+      "--eval",
+      "(def out @[]) (each x [28 29 31 35] (array/push out (string (* x x)))) (print (string/join out \",\"))"
+    ],
+    "returncode": 0,
+    "stdout": "784,841,961,1225\n",
+    "stderr": ""
+  },
+  {
+    "id": "sequence_range_filter_27",
+    "args": [
+      "--eval",
+      "(print (string/join (map string (filter odd? (range 27 41))) \":\"))"
+    ],
+    "returncode": 0,
+    "stdout": "27:29:31:33:35:37:39\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_00",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 0) (put t :beta 0) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "00\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_00",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 0 (* 0 0))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=000 square=0000\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_01",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 1) (put t :beta 1) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "11\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_01",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 1 (* 1 1))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=001 square=0001\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_02",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 2) (put t :beta 4) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "24\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_02",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 2 (* 2 2))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=002 square=0004\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_03",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 3) (put t :beta 9) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "39\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_03",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 3 (* 3 3))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=003 square=0009\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_04",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 4) (put t :beta 16) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "416\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_04",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 4 (* 4 4))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=004 square=0016\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_05",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 5) (put t :beta 25) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "525\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_05",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 5 (* 5 5))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=005 square=0025\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_06",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 6) (put t :beta 36) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "636\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_06",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 6 (* 6 6))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=006 square=0036\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_07",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 7) (put t :beta 49) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "749\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_07",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 7 (* 7 7))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=007 square=0049\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_08",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 8) (put t :beta 64) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "864\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_08",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 8 (* 8 8))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=008 square=0064\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_09",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 9) (put t :beta 81) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "981\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_09",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 9 (* 9 9))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=009 square=0081\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_10",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 10) (put t :beta 100) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "10100\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_10",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 10 (* 10 10))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=010 square=0100\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_11",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 11) (put t :beta 121) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "11121\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_11",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 11 (* 11 11))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=011 square=0121\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_12",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 12) (put t :beta 144) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "12144\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_12",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 12 (* 12 12))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=012 square=0144\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_13",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 13) (put t :beta 169) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "13169\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_13",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 13 (* 13 13))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=013 square=0169\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_14",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 14) (put t :beta 196) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "14196\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_14",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 14 (* 14 14))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=014 square=0196\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_15",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 15) (put t :beta 225) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "15225\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_15",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 15 (* 15 15))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=015 square=0225\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_16",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 16) (put t :beta 256) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "16256\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_16",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 16 (* 16 16))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=016 square=0256\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_17",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 17) (put t :beta 289) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "17289\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_17",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 17 (* 17 17))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=017 square=0289\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_18",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 18) (put t :beta 324) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "18324\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_18",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 18 (* 18 18))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=018 square=0324\n",
+    "stderr": ""
+  },
+  {
+    "id": "table_put_get_19",
+    "args": [
+      "--eval",
+      "(def t @{}) (put t :alpha 19) (put t :beta 361) (print (get t :alpha) (get t :beta))"
+    ],
+    "returncode": 0,
+    "stdout": "19361\n",
+    "stderr": ""
+  },
+  {
+    "id": "buffer_numeric_format_19",
+    "args": [
+      "--eval",
+      "(def b (buffer/format @\"\" \"n=%03d square=%04d\" 19 (* 19 19))) (print (string b))"
+    ],
+    "returncode": 0,
+    "stdout": "n=019 square=0361\n",
+    "stderr": ""
+  },
+  {
+    "id": "parse_form_count_00",
+    "args": [
+      "--eval",
+      "(def forms (parse-all \"(+ 1 2)\")) (print (length forms)) (print (type (in forms 0)))"
+    ],
+    "returncode": 0,
+    "stdout": "1\ntuple\n",
+    "stderr": ""
+  },
+  {
+    "id": "parse_form_count_01",
+    "args": [
+      "--eval",
+      "(def forms (parse-all \"[:a :b :c]\")) (print (length forms)) (print (type (in forms 0)))"
+    ],
+    "returncode": 0,
+    "stdout": "1\ntuple\n",
+    "stderr": ""
+  },
+  {
+    "id": "parse_form_count_02",
+    "args": [
+      "--eval",
+      "(def forms (parse-all \"{:x 1 :y 2}\")) (print (length forms)) (print (type (in forms 0)))"
+    ],
+    "returncode": 0,
+    "stdout": "1\nstruct\n",
+    "stderr": ""
+  },
+  {
+    "id": "parse_form_count_03",
+    "args": [
+      "--eval",
+      "(def forms (parse-all \"(defn f [x] (* x x))\")) (print (length forms)) (print (type (in forms 0)))"
+    ],
+    "returncode": 0,
+    "stdout": "1\ntuple\n",
+    "stderr": ""
+  },
+  {
+    "id": "parse_form_count_04",
+    "args": [
+      "--eval",
+      "(def forms (parse-all \"(each x [1 2] (print x))\")) (print (length forms)) (print (type (in forms 0)))"
+    ],
+    "returncode": 0,
+    "stdout": "1\ntuple\n",
+    "stderr": ""
+  },
+  {
+    "id": "parse_form_count_05",
+    "args": [
+      "--eval",
+      "(def forms (parse-all \"(try (error :bad) ([e] e))\")) (print (length forms)) (print (type (in forms 0)))"
+    ],
+    "returncode": 0,
+    "stdout": "1\ntuple\n",
+    "stderr": ""
+  },
+  {
+    "id": "parse_form_count_06",
+    "args": [
+      "--eval",
+      "(def forms (parse-all \"(fn [a b] (+ a b))\")) (print (length forms)) (print (type (in forms 0)))"
+    ],
+    "returncode": 0,
+    "stdout": "1\ntuple\n",
+    "stderr": ""
+  },
+  {
+    "id": "parse_form_count_07",
+    "args": [
+      "--eval",
+      "(def forms (parse-all \"(quote (alpha beta gamma))\")) (print (length forms)) (print (type (in forms 0)))"
+    ],
+    "returncode": 0,
+    "stdout": "1\ntuple\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_00",
+    "args": [
+      "--eval",
+      "(def x @{:n 0 :label \"item-00\" :items @[0 1 2]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_00",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 0) (yield 1) 2))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "0\n1\n2\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_01",
+    "args": [
+      "--eval",
+      "(def x @{:n 1 :label \"item-01\" :items @[1 2 3]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_01",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 1) (yield 2) 3))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "1\n2\n3\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_02",
+    "args": [
+      "--eval",
+      "(def x @{:n 2 :label \"item-02\" :items @[2 3 4]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_02",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 2) (yield 3) 4))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "2\n3\n4\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_03",
+    "args": [
+      "--eval",
+      "(def x @{:n 3 :label \"item-03\" :items @[3 4 5]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_03",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 3) (yield 4) 5))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "3\n4\n5\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_04",
+    "args": [
+      "--eval",
+      "(def x @{:n 4 :label \"item-04\" :items @[4 5 6]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_04",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 4) (yield 5) 6))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "4\n5\n6\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_05",
+    "args": [
+      "--eval",
+      "(def x @{:n 5 :label \"item-05\" :items @[5 6 7]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_05",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 5) (yield 6) 7))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "5\n6\n7\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_06",
+    "args": [
+      "--eval",
+      "(def x @{:n 6 :label \"item-06\" :items @[6 7 8]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_06",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 6) (yield 7) 8))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "6\n7\n8\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_07",
+    "args": [
+      "--eval",
+      "(def x @{:n 7 :label \"item-07\" :items @[7 8 9]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_07",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 7) (yield 8) 9))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "7\n8\n9\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_08",
+    "args": [
+      "--eval",
+      "(def x @{:n 8 :label \"item-08\" :items @[8 9 10]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_08",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 8) (yield 9) 10))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "8\n9\n10\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_09",
+    "args": [
+      "--eval",
+      "(def x @{:n 9 :label \"item-09\" :items @[9 10 11]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_09",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 9) (yield 10) 11))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "9\n10\n11\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_10",
+    "args": [
+      "--eval",
+      "(def x @{:n 10 :label \"item-10\" :items @[10 11 12]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_10",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 10) (yield 11) 12))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "10\n11\n12\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_11",
+    "args": [
+      "--eval",
+      "(def x @{:n 11 :label \"item-11\" :items @[11 12 13]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_11",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 11) (yield 12) 13))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "11\n12\n13\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_12",
+    "args": [
+      "--eval",
+      "(def x @{:n 12 :label \"item-12\" :items @[12 13 14]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_12",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 12) (yield 13) 14))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "12\n13\n14\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_13",
+    "args": [
+      "--eval",
+      "(def x @{:n 13 :label \"item-13\" :items @[13 14 15]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_13",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 13) (yield 14) 15))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "13\n14\n15\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_14",
+    "args": [
+      "--eval",
+      "(def x @{:n 14 :label \"item-14\" :items @[14 15 16]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_14",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 14) (yield 15) 16))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "14\n15\n16\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "marshal_roundtrip_table_15",
+    "args": [
+      "--eval",
+      "(def x @{:n 15 :label \"item-15\" :items @[15 16 17]}) (print (deep= x (unmarshal (marshal x))))"
+    ],
+    "returncode": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "id": "fiber_yield_resume_15",
+    "args": [
+      "--eval",
+      "(def f (fiber/new (fn [] (yield 15) (yield 16) 17))) (print (resume f)) (print (resume f)) (print (resume f)) (print (fiber/status f))"
+    ],
+    "returncode": 0,
+    "stdout": "15\n16\n17\ndead\n",
+    "stderr": ""
+  },
+  {
+    "id": "stdin_read_transform_00",
+    "args": [
+      "--eval",
+      "(def s (file/read stdin :all)) (print (length s)) (print (string/ascii-upper s))"
+    ],
+    "returncode": 0,
+    "stdout": "11\nALPHA\nBETA\n\n",
+    "stderr": "",
+    "stdin": "alpha\nbeta\n"
+  },
+  {
+    "id": "stdin_read_transform_01",
+    "args": [
+      "--eval",
+      "(def s (file/read stdin :all)) (print (length s)) (print (string/ascii-upper s))"
+    ],
+    "returncode": 0,
+    "stdout": "11\nMIXED CASE\n\n",
+    "stderr": "",
+    "stdin": "MiXeD Case\n"
+  },
+  {
+    "id": "stdin_read_transform_02",
+    "args": [
+      "--eval",
+      "(def s (file/read stdin :all)) (print (length s)) (print (string/ascii-upper s))"
+    ],
+    "returncode": 0,
+    "stdout": "12\nSYMBOLS !@#\n\n",
+    "stderr": "",
+    "stdin": "symbols !@#\n"
+  },
+  {
+    "id": "stdin_read_transform_03",
+    "args": [
+      "--eval",
+      "(def s (file/read stdin :all)) (print (length s)) (print (string/ascii-upper s))"
+    ],
+    "returncode": 0,
+    "stdout": "12\n12345\n67890\n\n",
+    "stderr": "",
+    "stdin": "12345\n67890\n"
+  },
+  {
+    "id": "stdin_read_transform_04",
+    "args": [
+      "--eval",
+      "(def s (file/read stdin :all)) (print (length s)) (print (string/ascii-upper s))"
+    ],
+    "returncode": 0,
+    "stdout": "18\nSPACED WORDS HERE\n\n",
+    "stderr": "",
+    "stdin": "spaced words here\n"
+  },
+  {
+    "id": "stdin_read_transform_05",
+    "args": [
+      "--eval",
+      "(def s (file/read stdin :all)) (print (length s)) (print (string/ascii-upper s))"
+    ],
+    "returncode": 0,
+    "stdout": "9\nLAST-LINE\n",
+    "stderr": "",
+    "stdin": "last-line"
+  }
+]
