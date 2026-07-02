@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T06:21:14.080227+00:00",
+  "generated_at": "2026-07-01T10:52:48.158682+00:00",
   "status": "passed",
   "failed_blocking_checks": [],
   "catalog": {
@@ -346,9 +346,184 @@
       "status": "passed"
     }
   ],
+  "deterministic_fairness_review": {
+    "verdict": "pass",
+    "blocking_failures": 0,
+    "warnings": 0,
+    "counts": {
+      "generated_case_count": 1306,
+      "upstream_user_suite_file_count": 28,
+      "native_fixture_count": 6
+    },
+    "checks": [
+      {
+        "id": "python_wrappers_have_no_workspace_or_source_leaks",
+        "status": "pass",
+        "evidence": "No forbidden workspace/source strings in pytest wrappers."
+      },
+      {
+        "id": "pytest_tests_use_run_lua_black_box_fixture",
+        "status": "pass",
+        "evidence": "Test wrappers avoid direct subprocess/source inspection and route behavior through run_lua."
+      },
+      {
+        "id": "generated_cases_are_self_contained_eval_invocations",
+        "status": "pass",
+        "evidence": "1306 generated cases use -e with explicit stdout/stderr/returncode and no path/env leaks."
+      },
+      {
+        "id": "fixtures_have_no_workspace_absolute_path_leaks",
+        "status": "pass",
+        "evidence": "No local workspace/gold/_src absolute path leaks in hidden fixture files."
+      },
+      {
+        "id": "native_source_fixtures_are_not_compiled_by_hidden_tests",
+        "status": "pass",
+        "evidence": "6 native fixture files exist but pytest wrappers do not compile or name them."
+      },
+      {
+        "id": "upstream_user_suite_runs_user_mode_without_internal_c_api",
+        "status": "pass",
+        "evidence": "The upstream suite is invoked with _U=true and all.lua disables internal T/C API checks."
+      },
+      {
+        "id": "upstream_fixtures_are_executable_inputs_not_candidate_introspection",
+        "status": "pass",
+        "evidence": "28 upstream Lua scripts are passed to the executable under cwd, not used to inspect candidate source."
+      },
+      {
+        "id": "solver_docs_name_hidden_behavior_families",
+        "status": "pass",
+        "evidence": "USAGE.md names the CLI, language, runtime, and standard-library behavior families covered by hidden tests."
+      },
+      {
+        "id": "solver_docs_explain_allowed_observation_boundary",
+        "status": "pass",
+        "evidence": "USAGE.md explains black-box CLI observation and forbids binary/source shortcuts."
+      },
+      {
+        "id": "solver_docs_explain_self_contained_runtime",
+        "status": "pass",
+        "evidence": "USAGE.md states that hidden scoring runs only the compiled executable and requires a self-contained runtime."
+      },
+      {
+        "id": "cleanroom_image_executes_oracle_without_read_permission",
+        "status": "pass",
+        "evidence": "Cleanroom image root-owns the oracle, grants execute-only permission, preserves it during development builds via ./candidate, strips prebuilt executables from submissions, and solve runs with network disabled."
+      },
+      {
+        "id": "solve_runner_enforces_context_budget_and_oracle_command_guards",
+        "status": "pass",
+        "evidence": "Lua mini-SWE runner applies token/reasoning/observation caps, forces the named bash tool by default, strips Gemini thought metadata, removes commit instructions, enforces source-first/build phases, rejects placeholder submissions, and blocks oracle-inspection/scratchpad/git/network/package/system-search/repeated-command stagnation."
+      },
+      {
+        "id": "test_harness_normalizes_environment_and_avoids_timing_or_seed_exactness",
+        "status": "pass",
+        "evidence": "Harness sets LC_ALL=C/TZ=UTC and checks suite completion without pinning random seed or timing values."
+      }
+    ],
+    "notes": [
+      "This deterministic audit proves the hidden tests are black-box executable interactions, not direct candidate-source checks.",
+      "It cannot prove that a short agent run will infer the full Lua language and standard library; it checks only that the behavior is observable through docs plus normal oracle execution."
+    ],
+    "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/deterministic_fairness_report.json"
+  },
+  "deterministic_fairness_checks": [
+    {
+      "id": "deterministic_fairness_report_present",
+      "blocking": true,
+      "status": "passed",
+      "observed": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/deterministic_fairness_report.json"
+    },
+    {
+      "id": "deterministic_fairness_audit_passed",
+      "blocking": true,
+      "status": "passed",
+      "observed": "pass",
+      "blocking_failures": 0
+    },
+    {
+      "id": "deterministic_python_wrappers_have_no_workspace_or_source_leaks",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "No forbidden workspace/source strings in pytest wrappers."
+    },
+    {
+      "id": "deterministic_pytest_tests_use_run_lua_black_box_fixture",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Test wrappers avoid direct subprocess/source inspection and route behavior through run_lua."
+    },
+    {
+      "id": "deterministic_generated_cases_are_self_contained_eval_invocations",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "1306 generated cases use -e with explicit stdout/stderr/returncode and no path/env leaks."
+    },
+    {
+      "id": "deterministic_fixtures_have_no_workspace_absolute_path_leaks",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "No local workspace/gold/_src absolute path leaks in hidden fixture files."
+    },
+    {
+      "id": "deterministic_native_source_fixtures_are_not_compiled_by_hidden_tests",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "6 native fixture files exist but pytest wrappers do not compile or name them."
+    },
+    {
+      "id": "deterministic_upstream_user_suite_runs_user_mode_without_internal_c_api",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "The upstream suite is invoked with _U=true and all.lua disables internal T/C API checks."
+    },
+    {
+      "id": "deterministic_upstream_fixtures_are_executable_inputs_not_candidate_introspection",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "28 upstream Lua scripts are passed to the executable under cwd, not used to inspect candidate source."
+    },
+    {
+      "id": "deterministic_solver_docs_name_hidden_behavior_families",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "USAGE.md names the CLI, language, runtime, and standard-library behavior families covered by hidden tests."
+    },
+    {
+      "id": "deterministic_solver_docs_explain_allowed_observation_boundary",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "USAGE.md explains black-box CLI observation and forbids binary/source shortcuts."
+    },
+    {
+      "id": "deterministic_solver_docs_explain_self_contained_runtime",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "USAGE.md states that hidden scoring runs only the compiled executable and requires a self-contained runtime."
+    },
+    {
+      "id": "deterministic_cleanroom_image_executes_oracle_without_read_permission",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Cleanroom image root-owns the oracle, grants execute-only permission, preserves it during development builds via ./candidate, strips prebuilt executables from submissions, and solve runs with network disabled."
+    },
+    {
+      "id": "deterministic_solve_runner_enforces_context_budget_and_oracle_command_guards",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Lua mini-SWE runner applies token/reasoning/observation caps, forces the named bash tool by default, strips Gemini thought metadata, removes commit instructions, enforces source-first/build phases, rejects placeholder submissions, and blocks oracle-inspection/scratchpad/git/network/package/system-search/repeated-command stagnation."
+    },
+    {
+      "id": "deterministic_test_harness_normalizes_environment_and_avoids_timing_or_seed_exactness",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Harness sets LC_ALL=C/TZ=UTC and checks suite completion without pinning random seed or timing values."
+    }
+  ],
   "lm_as_judge_review": {
     "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/lm_as_judge_review.json",
-    "generated_at": "2026-06-30T06:08:36Z",
+    "generated_at": "2026-06-30T23:15:59Z",
     "reviewer": "Codex LM-as-judge with independent explorer review",
     "independent_agent": {
       "id": "019f1720-3b3f-7e71-9408-3de2c35f40b1",
@@ -382,7 +557,7 @@
       "previous_wrapper_submission_sha256": "b72484b300f4905e062118eb2054dd0cef44aaf03086a6a9781fef570e45ba0f",
       "solver_env_file_hashes": {
         "task_env/compile.sh": "086f5e38ca3aea9b6b1048fd0e17c2e62a96e0a5dc5efad2e86396381e8cd7af",
-        "task_env/docs/USAGE.md": "0e7f5ee1dce0fc55c583d95c64e5dd1c7fe589607973347f8a2b783cf21cd50b",
+        "task_env/docs/USAGE.md": "0919c36365197f79602a397ba73f80b1ad5acb9263cdd75698663112e82010fe",
         "task_env/docs/help.txt": "aa514ebc7d70d3ab3a88465454afd122f1e9c123d545973fe8081960f3f3e6ba",
         "task_env/executable": "56c87d948e1fa58d5854c40259e15dc974997fdd8515e2353e37a95ef404926a"
       }
@@ -457,6 +632,18 @@
         "evidence": "tests_generated is outside task_env and mounted only by evaluate_submission.sh."
       },
       {
+        "id": "solver_facing_docs_describe_compile_contract",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/task_env/docs/USAGE.md documents offline gcc:13-bookworm compile, network-disabled build, and required ./executable output."
+      },
+      {
+        "id": "solver_facing_docs_describe_behavior_surface",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/task_env/docs/USAGE.md describes CLI options, oracle observation, script/stdin/module/environment/error behavior, and core standard-library behavior families."
+      },
+      {
         "id": "solve_network_disabled",
         "blocking": true,
         "status": "passed",
@@ -503,9 +690,27 @@
         "blocking": false,
         "status": "risk",
         "evidence": "Exact gold-byte and known-string scans are heuristic and should be supplemented by strict packaging."
+      },
+      {
+        "id": "deterministic_fairness_audit_passed",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/deterministic_fairness_report.json"
+      },
+      {
+        "id": "cleanroom_oracle_execute_only_configured",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/build_miniswe_cleanroom_image.sh"
       }
     ],
     "findings": [
+      {
+        "severity": "INFO",
+        "status": "observed",
+        "finding": "Deterministic hidden-test fairness audit now passes before future solve runs.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/deterministic_fairness_report.json"
+      },
       {
         "severity": "HIGH",
         "status": "resolved",
@@ -533,7 +738,7 @@
       {
         "severity": "LOW",
         "status": "accepted",
-        "finding": "Solver-facing docs identify Lua 5.5.1 behavior, which is necessary documentation rather than original source leakage.",
+        "finding": "Solver-facing docs identify Lua 5.5.1 behavior and document the offline compile contract plus end-to-end behavior surface, which is necessary documentation rather than original source leakage.",
         "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/task_env/docs/USAGE.md"
       },
       {
@@ -615,6 +820,18 @@
       "evidence": "tests_generated is outside task_env and mounted only by evaluate_submission.sh."
     },
     {
+      "id": "solver_facing_docs_describe_compile_contract",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/task_env/docs/USAGE.md documents offline gcc:13-bookworm compile, network-disabled build, and required ./executable output."
+    },
+    {
+      "id": "solver_facing_docs_describe_behavior_surface",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/task_env/docs/USAGE.md describes CLI options, oracle observation, script/stdin/module/environment/error behavior, and core standard-library behavior families."
+    },
+    {
       "id": "solve_network_disabled",
       "blocking": true,
       "status": "passed",
@@ -661,6 +878,18 @@
       "blocking": false,
       "status": "risk",
       "evidence": "Exact gold-byte and known-string scans are heuristic and should be supplemented by strict packaging."
+    },
+    {
+      "id": "deterministic_fairness_audit_passed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/deterministic_fairness_report.json"
+    },
+    {
+      "id": "cleanroom_oracle_execute_only_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/build_miniswe_cleanroom_image.sh"
     }
   ],
   "coverage": {
@@ -1458,6 +1687,7 @@
     "coverage_harvested_summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/coverage_harvested/coverage_summary.json",
     "coverage_harvested_full": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/coverage_harvested/coverage.json",
     "coverage_harvested_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/logs/coverage_harvested.log",
+    "deterministic_fairness_report": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/deterministic_fairness_report.json",
     "lm_as_judge_review": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/lm_as_judge_review.json"
   }
 }

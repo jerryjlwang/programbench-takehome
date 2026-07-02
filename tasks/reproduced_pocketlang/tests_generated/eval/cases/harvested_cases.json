@@ -1,0 +1,255 @@
+[
+  {
+    "id": "tests__lang__basics",
+    "source": "tests/lang/basics.pk",
+    "args": [
+      "tests/lang/basics.pk"
+    ],
+    "returncode": 0,
+    "stdout": "All TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__lang__builtin_fn",
+    "source": "tests/lang/builtin_fn.pk",
+    "args": [
+      "tests/lang/builtin_fn.pk"
+    ],
+    "returncode": 0,
+    "stdout": "All TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__lang__builtin_ty",
+    "source": "tests/lang/builtin_ty.pk",
+    "args": [
+      "tests/lang/builtin_ty.pk"
+    ],
+    "returncode": 0,
+    "stdout": "All TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__lang__class",
+    "source": "tests/lang/class.pk",
+    "args": [
+      "tests/lang/class.pk"
+    ],
+    "returncode": 0,
+    "stdout": "['A' instance at 0x<addr>]\nv1 = <1, 2>\nv2 = <3, 4>\nv3 = <4, 6>\nlocal/pocket = \"/usr/local/bin/pocket\"\nA init\nB init\nB foo\nA foo\nB bar\nA bar\nALL TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__lang__closure",
+    "source": "tests/lang/closure.pk",
+    "args": [
+      "tests/lang/closure.pk"
+    ],
+    "returncode": 0,
+    "stdout": "true\nAll TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__lang__controlflow",
+    "source": "tests/lang/controlflow.pk",
+    "args": [
+      "tests/lang/controlflow.pk"
+    ],
+    "returncode": 0,
+    "stdout": "All TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__lang__fibers",
+    "source": "tests/lang/fibers.pk",
+    "args": [
+      "tests/lang/fibers.pk"
+    ],
+    "returncode": 0,
+    "stdout": "All TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__lang__functions",
+    "source": "tests/lang/functions.pk",
+    "args": [
+      "tests/lang/functions.pk"
+    ],
+    "returncode": 0,
+    "stdout": "All TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__lang__import",
+    "source": "tests/lang/import.pk",
+    "args": [
+      "tests/lang/import.pk"
+    ],
+    "returncode": 0,
+    "stdout": "All TESTS PASSED\nAll TESTS PASSED\nAll TESTS PASSED\nbefore cyclic_a\nbefore cyclic_b\nafter  cyclic_b\nafter  cyclic_a\nAll TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__lang__tco",
+    "source": "tests/lang/tco.pk",
+    "args": [
+      "tests/lang/tco.pk"
+    ],
+    "returncode": 3,
+    "stdout": "",
+    "stderr": "Error: 'Module' object has no attribute named 'clock'.\n  @main() [/workspace/fixtures/pocketlang/tests/lang/tco.pk:4]\n",
+    "timeout": 30
+  },
+  {
+    "id": "tests__modules__dummy",
+    "source": "tests/modules/dummy.pk",
+    "args": [
+      "tests/modules/dummy.pk"
+    ],
+    "returncode": 0,
+    "stdout": "['Dummy' instance at 0x<addr>]\na1 = foo, a2 = 42, a3 = false\nAll TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__modules__math",
+    "source": "tests/modules/math.pk",
+    "args": [
+      "tests/modules/math.pk"
+    ],
+    "returncode": 0,
+    "stdout": "All TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__modules__path",
+    "source": "tests/modules/path.pk",
+    "args": [
+      "tests/modules/path.pk"
+    ],
+    "returncode": 0,
+    "stdout": "All TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__modules__json",
+    "source": "tests/modules/json.pk",
+    "args": [
+      "tests/modules/json.pk"
+    ],
+    "returncode": 0,
+    "stdout": "All TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__random__linked_list",
+    "source": "tests/random/linked_list.pk",
+    "args": [
+      "tests/random/linked_list.pk"
+    ],
+    "returncode": 0,
+    "stdout": "(4) --> (6) --> (3) --> (9) --> null\n(9) --> (3) --> (6) --> (4) --> null\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__random__lisp_eval",
+    "source": "tests/random/lisp_eval.pk",
+    "args": [
+      "tests/random/lisp_eval.pk"
+    ],
+    "returncode": 0,
+    "stdout": "ALL TESTS PASSED\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__examples__brainfuck",
+    "source": "tests/examples/brainfuck.pk",
+    "args": [
+      "tests/examples/brainfuck.pk"
+    ],
+    "returncode": 0,
+    "stdout": "Hello World!\n                                *    \n\n                               * *    \n\n                              *   *    \n\n                             * * * *    \n\n                            *       *    \n\n                           * *     * *    \n\n                          *   *   *   *    \n\n                         * * * * * * * *    \n\n                        *               *    \n\n                       * *             * *    \n\n                      *   *           *   *    \n\n                     * * * *         * * * *    \n\n                    *       *       *       *    \n\n                   * *     * *     * *     * *    \n\n                  *   *   *   *   *   *   *   *    \n\n                 * * * * * * * * * * * * * * * *    \n\n                *                               *    \n\n               * *                             * *    \n\n              *   *                           *   *    \n\n             * * * *                         * * * *    \n\n            *       *                       *       *    \n\n           * *     * *                     * *     * *    \n\n          *   *   *   *                   *   *   *   *    \n\n         * * * * * * * *                 * * * * * * * *    \n\n        *               *               *               *    \n\n       * *             * *             * *             * *    \n\n      *   *           *   *           *   *           *   *    \n\n     * * * *         * * * *         * * * *         * * * *    \n\n    *       *       *       *       *       *       *       *    \n\n   * *     * *     * *     * *     * *     * *     * *     * *    \n\n  *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *    \n\n * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *    \n\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__examples__fib",
+    "source": "tests/examples/fib.pk",
+    "args": [
+      "tests/examples/fib.pk"
+    ],
+    "returncode": 0,
+    "stdout": "fibs = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__examples__fizzbuzz",
+    "source": "tests/examples/fizzbuzz.pk",
+    "args": [
+      "tests/examples/fizzbuzz.pk"
+    ],
+    "returncode": 0,
+    "stdout": "1\n2\nfizz\n4\nbuzz\nfizz\n7\n8\nfizz\nbuzz\n11\nfizz\n13\n14\nfizzbuzz\n16\n17\nfizz\n19\nbuzz\nfizz\n22\n23\nfizz\nbuzz\n26\nfizz\n28\n29\nfizzbuzz\n31\n32\nfizz\n34\nbuzz\nfizz\n37\n38\nfizz\nbuzz\n41\nfizz\n43\n44\nfizzbuzz\n46\n47\nfizz\n49\nbuzz\nfizz\n52\n53\nfizz\nbuzz\n56\nfizz\n58\n59\nfizzbuzz\n61\n62\nfizz\n64\nbuzz\nfizz\n67\n68\nfizz\nbuzz\n71\nfizz\n73\n74\nfizzbuzz\n76\n77\nfizz\n79\nbuzz\nfizz\n82\n83\nfizz\nbuzz\n86\nfizz\n88\n89\nfizzbuzz\n91\n92\nfizz\n94\nbuzz\nfizz\n97\n98\nfizz\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__examples__helloworld",
+    "source": "tests/examples/helloworld.pk",
+    "args": [
+      "tests/examples/helloworld.pk"
+    ],
+    "returncode": 0,
+    "stdout": "Hello world!\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__examples__matrix",
+    "source": "tests/examples/matrix.pk",
+    "args": [
+      "tests/examples/matrix.pk"
+    ],
+    "returncode": 0,
+    "stdout": "[38, 20, 30, 18]\n[92, 59, 66, 42]\n[146, 98, 102, 66]\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__examples__pi",
+    "source": "tests/examples/pi.pk",
+    "args": [
+      "tests/examples/pi.pk"
+    ],
+    "returncode": 0,
+    "stdout": "PI = 3.14160265368972\n",
+    "stderr": "",
+    "timeout": 30
+  },
+  {
+    "id": "tests__examples__prime",
+    "source": "tests/examples/prime.pk",
+    "args": [
+      "tests/examples/prime.pk"
+    ],
+    "returncode": 0,
+    "stdout": "primes = [2, 3, 5, 7, 11, 13, 17, 19]\n",
+    "stderr": "",
+    "timeout": 30
+  }
+]

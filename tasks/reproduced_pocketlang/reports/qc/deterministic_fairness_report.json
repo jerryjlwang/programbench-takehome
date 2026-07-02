@@ -1,0 +1,63 @@
+{
+  "task": "reproduced_pocketlang",
+  "status": "pass",
+  "passed": 9,
+  "failed": 0,
+  "metrics": {
+    "harvested_case_count": 23,
+    "generated_case_count": 396,
+    "gold_passed": 421,
+    "dummy_passed": 0,
+    "harvested_line_percent": 68.0,
+    "harvested_branch_percent": 59.6,
+    "generated_line_percent": 72.7,
+    "generated_branch_percent": 62.3
+  },
+  "checks": [
+    {
+      "id": "task_env_contains_only_solver_facing_files",
+      "status": "pass",
+      "evidence": "task_env contains only executable, compile.sh, and docs."
+    },
+    {
+      "id": "solver_docs_cover_hidden_behavior_families",
+      "status": "pass",
+      "evidence": "USAGE.md names the CLI, language, standard-library, error, and runtime boundaries covered by hidden tests."
+    },
+    {
+      "id": "solver_docs_explain_black_box_observation_boundary",
+      "status": "pass",
+      "evidence": "USAGE.md forbids binary/source shortcuts and limits observation to CLI behavior."
+    },
+    {
+      "id": "pytest_wrappers_have_no_workspace_source_leaks",
+      "status": "pass",
+      "evidence": "No local workspace, source, gold, repository URL, or commit leaks in pytest wrappers."
+    },
+    {
+      "id": "pytest_tests_route_behavior_through_run_pocket",
+      "status": "pass",
+      "evidence": "Test wrappers avoid direct subprocess/source inspection and route behavior through the run_pocket fixture."
+    },
+    {
+      "id": "pytest_assertions_compare_exact_observable_behavior",
+      "status": "pass",
+      "evidence": "Wrappers assert exact return code, stdout, and stderr instead of broad substring checks."
+    },
+    {
+      "id": "case_manifests_are_exact_self_contained_and_large_enough",
+      "status": "pass",
+      "evidence": "23 harvested cases and 396 generated cases have exact outputs, unique ids, no local path leaks, and non-empty observable behavior."
+    },
+    {
+      "id": "quality_gate_gold_passes_dummy_rejected",
+      "status": "pass",
+      "evidence": "Gold passed 421 tests with 0 failures; dummy passed 0 and failed 421."
+    },
+    {
+      "id": "generated_suite_preserves_or_improves_coverage",
+      "status": "pass",
+      "evidence": "Harvested coverage 68.0% line/59.6% branch; generated coverage 72.7% line/62.3% branch."
+    }
+  ]
+}

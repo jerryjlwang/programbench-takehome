@@ -1,0 +1,81 @@
+{
+  "verdict": "pass",
+  "blocking_failures": 0,
+  "warnings": 0,
+  "counts": {
+    "generated_case_count": 1306,
+    "upstream_user_suite_file_count": 28,
+    "native_fixture_count": 6
+  },
+  "checks": [
+    {
+      "id": "python_wrappers_have_no_workspace_or_source_leaks",
+      "status": "pass",
+      "evidence": "No forbidden workspace/source strings in pytest wrappers."
+    },
+    {
+      "id": "pytest_tests_use_run_lua_black_box_fixture",
+      "status": "pass",
+      "evidence": "Test wrappers avoid direct subprocess/source inspection and route behavior through run_lua."
+    },
+    {
+      "id": "generated_cases_are_self_contained_eval_invocations",
+      "status": "pass",
+      "evidence": "1306 generated cases use -e with explicit stdout/stderr/returncode and no path/env leaks."
+    },
+    {
+      "id": "fixtures_have_no_workspace_absolute_path_leaks",
+      "status": "pass",
+      "evidence": "No local workspace/gold/_src absolute path leaks in hidden fixture files."
+    },
+    {
+      "id": "native_source_fixtures_are_not_compiled_by_hidden_tests",
+      "status": "pass",
+      "evidence": "6 native fixture files exist but pytest wrappers do not compile or name them."
+    },
+    {
+      "id": "upstream_user_suite_runs_user_mode_without_internal_c_api",
+      "status": "pass",
+      "evidence": "The upstream suite is invoked with _U=true and all.lua disables internal T/C API checks."
+    },
+    {
+      "id": "upstream_fixtures_are_executable_inputs_not_candidate_introspection",
+      "status": "pass",
+      "evidence": "28 upstream Lua scripts are passed to the executable under cwd, not used to inspect candidate source."
+    },
+    {
+      "id": "solver_docs_name_hidden_behavior_families",
+      "status": "pass",
+      "evidence": "USAGE.md names the CLI, language, runtime, and standard-library behavior families covered by hidden tests."
+    },
+    {
+      "id": "solver_docs_explain_allowed_observation_boundary",
+      "status": "pass",
+      "evidence": "USAGE.md explains black-box CLI observation and forbids binary/source shortcuts."
+    },
+    {
+      "id": "solver_docs_explain_self_contained_runtime",
+      "status": "pass",
+      "evidence": "USAGE.md states that hidden scoring runs only the compiled executable and requires a self-contained runtime."
+    },
+    {
+      "id": "cleanroom_image_executes_oracle_without_read_permission",
+      "status": "pass",
+      "evidence": "Cleanroom image root-owns the oracle, grants execute-only permission, preserves it during development builds via ./candidate, strips prebuilt executables from submissions, and solve runs with network disabled."
+    },
+    {
+      "id": "solve_runner_enforces_context_budget_and_oracle_command_guards",
+      "status": "pass",
+      "evidence": "Lua mini-SWE runner applies token/reasoning/observation caps, forces the named bash tool by default, strips Gemini thought metadata, removes commit instructions, enforces source-first/build phases, rejects placeholder submissions, and blocks oracle-inspection/scratchpad/git/network/package/system-search/repeated-command stagnation."
+    },
+    {
+      "id": "test_harness_normalizes_environment_and_avoids_timing_or_seed_exactness",
+      "status": "pass",
+      "evidence": "Harness sets LC_ALL=C/TZ=UTC and checks suite completion without pinning random seed or timing values."
+    }
+  ],
+  "notes": [
+    "This deterministic audit proves the hidden tests are black-box executable interactions, not direct candidate-source checks.",
+    "It cannot prove that a short agent run will infer the full Lua language and standard library; it checks only that the behavior is observable through docs plus normal oracle execution."
+  ]
+}

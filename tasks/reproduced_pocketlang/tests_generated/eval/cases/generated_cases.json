@@ -1,0 +1,4564 @@
+[
+  {
+    "id": "arith_precedence_00",
+    "args": [
+      "-c",
+      "print((3 + 5) * 2); print(3 ** 2); print(5 % 2)"
+    ],
+    "returncode": 0,
+    "stdout": "16\n9\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_00",
+    "args": [
+      "-c",
+      "x = 51; print((x & 45) | 2); print((x ^ 5) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "35\n27\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_01",
+    "args": [
+      "-c",
+      "print((4 + 7) * 3); print(4 ** 2); print(7 % 3)"
+    ],
+    "returncode": 0,
+    "stdout": "33\n16\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_01",
+    "args": [
+      "-c",
+      "x = 68; print((x & 63) | 3); print((x ^ 7) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "7\n33\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_02",
+    "args": [
+      "-c",
+      "print((5 + 9) * 4); print(5 ** 2); print(9 % 4)"
+    ],
+    "returncode": 0,
+    "stdout": "56\n25\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_02",
+    "args": [
+      "-c",
+      "x = 85; print((x & 81) | 4); print((x ^ 9) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "85\n46\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_03",
+    "args": [
+      "-c",
+      "print((6 + 11) * 5); print(6 ** 2); print(11 % 5)"
+    ],
+    "returncode": 0,
+    "stdout": "85\n36\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_03",
+    "args": [
+      "-c",
+      "x = 102; print((x & 99) | 5); print((x ^ 11) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "103\n54\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_04",
+    "args": [
+      "-c",
+      "print((7 + 13) * 6); print(7 ** 2); print(13 % 6)"
+    ],
+    "returncode": 0,
+    "stdout": "120\n49\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_04",
+    "args": [
+      "-c",
+      "x = 119; print((x & 117) | 6); print((x ^ 13) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "119\n61\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_05",
+    "args": [
+      "-c",
+      "print((8 + 15) * 7); print(8 ** 2); print(15 % 7)"
+    ],
+    "returncode": 0,
+    "stdout": "161\n64\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_05",
+    "args": [
+      "-c",
+      "x = 136; print((x & 135) | 7); print((x ^ 15) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "135\n67\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_06",
+    "args": [
+      "-c",
+      "print((9 + 17) * 8); print(9 ** 2); print(17 % 8)"
+    ],
+    "returncode": 0,
+    "stdout": "208\n81\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_06",
+    "args": [
+      "-c",
+      "x = 153; print((x & 153) | 8); print((x ^ 17) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "153\n68\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_07",
+    "args": [
+      "-c",
+      "print((10 + 19) * 2); print(10 ** 2); print(19 % 2)"
+    ],
+    "returncode": 0,
+    "stdout": "58\n100\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_07",
+    "args": [
+      "-c",
+      "x = 170; print((x & 171) | 2); print((x ^ 19) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "170\n92\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_08",
+    "args": [
+      "-c",
+      "print((11 + 21) * 3); print(11 ** 2); print(21 % 3)"
+    ],
+    "returncode": 0,
+    "stdout": "96\n121\n0\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_08",
+    "args": [
+      "-c",
+      "x = 187; print((x & 189) | 3); print((x ^ 21) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "187\n87\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_09",
+    "args": [
+      "-c",
+      "print((12 + 23) * 4); print(12 ** 2); print(23 % 4)"
+    ],
+    "returncode": 0,
+    "stdout": "140\n144\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_09",
+    "args": [
+      "-c",
+      "x = 204; print((x & 207) | 4); print((x ^ 23) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "204\n109\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_10",
+    "args": [
+      "-c",
+      "print((13 + 25) * 5); print(13 ** 2); print(25 % 5)"
+    ],
+    "returncode": 0,
+    "stdout": "190\n169\n0\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_10",
+    "args": [
+      "-c",
+      "x = 221; print((x & 225) | 5); print((x ^ 25) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "197\n98\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_11",
+    "args": [
+      "-c",
+      "print((14 + 27) * 6); print(14 ** 2); print(27 % 6)"
+    ],
+    "returncode": 0,
+    "stdout": "246\n196\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_11",
+    "args": [
+      "-c",
+      "x = 238; print((x & 243) | 6); print((x ^ 27) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "230\n122\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_12",
+    "args": [
+      "-c",
+      "print((15 + 29) * 7); print(15 ** 2); print(29 % 7)"
+    ],
+    "returncode": 0,
+    "stdout": "308\n225\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_12",
+    "args": [
+      "-c",
+      "x = 255; print((x & 261) | 7); print((x ^ 29) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "7\n113\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_13",
+    "args": [
+      "-c",
+      "print((16 + 31) * 8); print(16 ** 2); print(31 % 8)"
+    ],
+    "returncode": 0,
+    "stdout": "376\n256\n7\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_13",
+    "args": [
+      "-c",
+      "x = 272; print((x & 279) | 8); print((x ^ 31) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "280\n135\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_14",
+    "args": [
+      "-c",
+      "print((17 + 33) * 2); print(17 ** 2); print(33 % 2)"
+    ],
+    "returncode": 0,
+    "stdout": "100\n289\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_14",
+    "args": [
+      "-c",
+      "x = 289; print((x & 297) | 2); print((x ^ 33) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "291\n128\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_15",
+    "args": [
+      "-c",
+      "print((18 + 35) * 3); print(18 ** 2); print(35 % 3)"
+    ],
+    "returncode": 0,
+    "stdout": "159\n324\n2\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_15",
+    "args": [
+      "-c",
+      "x = 306; print((x & 315) | 3); print((x ^ 35) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "307\n136\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_16",
+    "args": [
+      "-c",
+      "print((19 + 37) * 4); print(19 ** 2); print(37 % 4)"
+    ],
+    "returncode": 0,
+    "stdout": "224\n361\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_16",
+    "args": [
+      "-c",
+      "x = 323; print((x & 333) | 4); print((x ^ 37) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "325\n179\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_17",
+    "args": [
+      "-c",
+      "print((20 + 39) * 5); print(20 ** 2); print(39 % 5)"
+    ],
+    "returncode": 0,
+    "stdout": "295\n400\n4\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_17",
+    "args": [
+      "-c",
+      "x = 340; print((x & 351) | 5); print((x ^ 39) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "341\n185\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_18",
+    "args": [
+      "-c",
+      "print((21 + 41) * 6); print(21 ** 2); print(41 % 6)"
+    ],
+    "returncode": 0,
+    "stdout": "372\n441\n5\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_18",
+    "args": [
+      "-c",
+      "x = 357; print((x & 369) | 6); print((x ^ 41) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "359\n166\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_19",
+    "args": [
+      "-c",
+      "print((22 + 43) * 7); print(22 ** 2); print(43 % 7)"
+    ],
+    "returncode": 0,
+    "stdout": "455\n484\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_19",
+    "args": [
+      "-c",
+      "x = 374; print((x & 387) | 7); print((x ^ 43) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "263\n174\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_20",
+    "args": [
+      "-c",
+      "print((23 + 45) * 8); print(23 ** 2); print(45 % 8)"
+    ],
+    "returncode": 0,
+    "stdout": "544\n529\n5\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_20",
+    "args": [
+      "-c",
+      "x = 391; print((x & 405) | 8); print((x ^ 45) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "397\n213\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_21",
+    "args": [
+      "-c",
+      "print((24 + 47) * 2); print(24 ** 2); print(47 % 2)"
+    ],
+    "returncode": 0,
+    "stdout": "142\n576\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_21",
+    "args": [
+      "-c",
+      "x = 408; print((x & 423) | 2); print((x ^ 47) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "386\n219\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_22",
+    "args": [
+      "-c",
+      "print((25 + 49) * 3); print(25 ** 2); print(49 % 3)"
+    ],
+    "returncode": 0,
+    "stdout": "222\n625\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_22",
+    "args": [
+      "-c",
+      "x = 425; print((x & 441) | 3); print((x ^ 49) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "427\n204\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_23",
+    "args": [
+      "-c",
+      "print((26 + 51) * 4); print(26 ** 2); print(51 % 4)"
+    ],
+    "returncode": 0,
+    "stdout": "308\n676\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_23",
+    "args": [
+      "-c",
+      "x = 442; print((x & 459) | 4); print((x ^ 51) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "398\n196\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_24",
+    "args": [
+      "-c",
+      "print((27 + 53) * 5); print(27 ** 2); print(53 % 5)"
+    ],
+    "returncode": 0,
+    "stdout": "400\n729\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_24",
+    "args": [
+      "-c",
+      "x = 459; print((x & 477) | 5); print((x ^ 53) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "461\n255\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_25",
+    "args": [
+      "-c",
+      "print((28 + 55) * 6); print(28 ** 2); print(55 % 6)"
+    ],
+    "returncode": 0,
+    "stdout": "498\n784\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_25",
+    "args": [
+      "-c",
+      "x = 476; print((x & 495) | 6); print((x ^ 55) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "462\n245\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_26",
+    "args": [
+      "-c",
+      "print((29 + 57) * 7); print(29 ** 2); print(57 % 7)"
+    ],
+    "returncode": 0,
+    "stdout": "602\n841\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_26",
+    "args": [
+      "-c",
+      "x = 493; print((x & 513) | 7); print((x ^ 57) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "7\n234\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_27",
+    "args": [
+      "-c",
+      "print((30 + 59) * 8); print(30 ** 2); print(59 % 8)"
+    ],
+    "returncode": 0,
+    "stdout": "712\n900\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_27",
+    "args": [
+      "-c",
+      "x = 510; print((x & 531) | 8); print((x ^ 59) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "26\n226\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_28",
+    "args": [
+      "-c",
+      "print((31 + 61) * 2); print(31 ** 2); print(61 % 2)"
+    ],
+    "returncode": 0,
+    "stdout": "184\n961\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_28",
+    "args": [
+      "-c",
+      "x = 527; print((x & 549) | 2); print((x ^ 61) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "519\n281\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_29",
+    "args": [
+      "-c",
+      "print((32 + 63) * 3); print(32 ** 2); print(63 % 3)"
+    ],
+    "returncode": 0,
+    "stdout": "285\n1024\n0\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_29",
+    "args": [
+      "-c",
+      "x = 544; print((x & 567) | 3); print((x ^ 63) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "547\n271\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_30",
+    "args": [
+      "-c",
+      "print((33 + 65) * 4); print(33 ** 2); print(65 % 4)"
+    ],
+    "returncode": 0,
+    "stdout": "392\n1089\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_30",
+    "args": [
+      "-c",
+      "x = 561; print((x & 585) | 4); print((x ^ 65) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "517\n312\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_31",
+    "args": [
+      "-c",
+      "print((34 + 67) * 5); print(34 ** 2); print(67 % 5)"
+    ],
+    "returncode": 0,
+    "stdout": "505\n1156\n2\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_31",
+    "args": [
+      "-c",
+      "x = 578; print((x & 603) | 5); print((x ^ 67) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "583\n256\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_32",
+    "args": [
+      "-c",
+      "print((35 + 69) * 6); print(35 ** 2); print(69 % 6)"
+    ],
+    "returncode": 0,
+    "stdout": "624\n1225\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_32",
+    "args": [
+      "-c",
+      "x = 595; print((x & 621) | 6); print((x ^ 69) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "583\n267\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_33",
+    "args": [
+      "-c",
+      "print((36 + 71) * 7); print(36 ** 2); print(71 % 7)"
+    ],
+    "returncode": 0,
+    "stdout": "749\n1296\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_33",
+    "args": [
+      "-c",
+      "x = 612; print((x & 639) | 7); print((x ^ 71) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "615\n273\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_34",
+    "args": [
+      "-c",
+      "print((37 + 73) * 8); print(37 ** 2); print(73 % 8)"
+    ],
+    "returncode": 0,
+    "stdout": "880\n1369\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_34",
+    "args": [
+      "-c",
+      "x = 629; print((x & 657) | 8); print((x ^ 73) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "537\n286\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_35",
+    "args": [
+      "-c",
+      "print((38 + 75) * 2); print(38 ** 2); print(75 % 2)"
+    ],
+    "returncode": 0,
+    "stdout": "226\n1444\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_35",
+    "args": [
+      "-c",
+      "x = 646; print((x & 675) | 2); print((x ^ 75) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "642\n358\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_36",
+    "args": [
+      "-c",
+      "print((39 + 77) * 3); print(39 ** 2); print(77 % 3)"
+    ],
+    "returncode": 0,
+    "stdout": "348\n1521\n2\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_36",
+    "args": [
+      "-c",
+      "x = 663; print((x & 693) | 3); print((x ^ 77) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "663\n365\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_37",
+    "args": [
+      "-c",
+      "print((40 + 79) * 4); print(40 ** 2); print(79 % 4)"
+    ],
+    "returncode": 0,
+    "stdout": "476\n1600\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_37",
+    "args": [
+      "-c",
+      "x = 680; print((x & 711) | 4); print((x ^ 79) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "644\n371\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_38",
+    "args": [
+      "-c",
+      "print((41 + 81) * 5); print(41 ** 2); print(81 % 5)"
+    ],
+    "returncode": 0,
+    "stdout": "610\n1681\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_38",
+    "args": [
+      "-c",
+      "x = 697; print((x & 729) | 5); print((x ^ 81) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "669\n372\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_39",
+    "args": [
+      "-c",
+      "print((42 + 83) * 6); print(42 ** 2); print(83 % 6)"
+    ],
+    "returncode": 0,
+    "stdout": "750\n1764\n5\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_39",
+    "args": [
+      "-c",
+      "x = 714; print((x & 747) | 6); print((x ^ 83) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "718\n332\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_40",
+    "args": [
+      "-c",
+      "print((43 + 85) * 7); print(43 ** 2); print(85 % 7)"
+    ],
+    "returncode": 0,
+    "stdout": "896\n1849\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_40",
+    "args": [
+      "-c",
+      "x = 731; print((x & 765) | 7); print((x ^ 85) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "735\n327\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_41",
+    "args": [
+      "-c",
+      "print((44 + 87) * 8); print(44 ** 2); print(87 % 8)"
+    ],
+    "returncode": 0,
+    "stdout": "1048\n1936\n7\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_41",
+    "args": [
+      "-c",
+      "x = 748; print((x & 783) | 8); print((x ^ 87) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "524\n349\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_42",
+    "args": [
+      "-c",
+      "print((45 + 89) * 2); print(45 ** 2); print(89 % 2)"
+    ],
+    "returncode": 0,
+    "stdout": "268\n2025\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_42",
+    "args": [
+      "-c",
+      "x = 765; print((x & 801) | 2); print((x ^ 89) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "547\n338\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_43",
+    "args": [
+      "-c",
+      "print((46 + 91) * 3); print(46 ** 2); print(91 % 3)"
+    ],
+    "returncode": 0,
+    "stdout": "411\n2116\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_43",
+    "args": [
+      "-c",
+      "x = 782; print((x & 819) | 3); print((x ^ 91) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "771\n426\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_44",
+    "args": [
+      "-c",
+      "print((47 + 93) * 4); print(47 ** 2); print(93 % 4)"
+    ],
+    "returncode": 0,
+    "stdout": "560\n2209\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_44",
+    "args": [
+      "-c",
+      "x = 799; print((x & 837) | 4); print((x ^ 93) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "773\n417\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_45",
+    "args": [
+      "-c",
+      "print((48 + 95) * 5); print(48 ** 2); print(95 % 5)"
+    ],
+    "returncode": 0,
+    "stdout": "715\n2304\n0\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_45",
+    "args": [
+      "-c",
+      "x = 816; print((x & 855) | 5); print((x ^ 95) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "789\n439\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_46",
+    "args": [
+      "-c",
+      "print((49 + 97) * 6); print(49 ** 2); print(97 % 6)"
+    ],
+    "returncode": 0,
+    "stdout": "876\n2401\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_46",
+    "args": [
+      "-c",
+      "x = 833; print((x & 873) | 6); print((x ^ 97) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "839\n400\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_47",
+    "args": [
+      "-c",
+      "print((50 + 99) * 7); print(50 ** 2); print(99 % 7)"
+    ],
+    "returncode": 0,
+    "stdout": "1043\n2500\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_47",
+    "args": [
+      "-c",
+      "x = 850; print((x & 891) | 7); print((x ^ 99) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "855\n408\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_48",
+    "args": [
+      "-c",
+      "print((51 + 101) * 8); print(51 ** 2); print(101 % 8)"
+    ],
+    "returncode": 0,
+    "stdout": "1216\n2601\n5\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_48",
+    "args": [
+      "-c",
+      "x = 867; print((x & 909) | 8); print((x ^ 101) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "777\n387\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_49",
+    "args": [
+      "-c",
+      "print((52 + 103) * 2); print(52 ** 2); print(103 % 2)"
+    ],
+    "returncode": 0,
+    "stdout": "310\n2704\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_49",
+    "args": [
+      "-c",
+      "x = 884; print((x & 927) | 2); print((x ^ 103) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "790\n393\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_50",
+    "args": [
+      "-c",
+      "print((53 + 105) * 3); print(53 ** 2); print(105 % 3)"
+    ],
+    "returncode": 0,
+    "stdout": "474\n2809\n0\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_50",
+    "args": [
+      "-c",
+      "x = 901; print((x & 945) | 3); print((x ^ 105) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "899\n502\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_51",
+    "args": [
+      "-c",
+      "print((54 + 107) * 4); print(54 ** 2); print(107 % 4)"
+    ],
+    "returncode": 0,
+    "stdout": "644\n2916\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_51",
+    "args": [
+      "-c",
+      "x = 918; print((x & 963) | 4); print((x ^ 107) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "902\n510\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_52",
+    "args": [
+      "-c",
+      "print((55 + 109) * 5); print(55 ** 2); print(109 % 5)"
+    ],
+    "returncode": 0,
+    "stdout": "820\n3025\n4\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_52",
+    "args": [
+      "-c",
+      "x = 935; print((x & 981) | 5); print((x ^ 109) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "901\n485\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_53",
+    "args": [
+      "-c",
+      "print((56 + 111) * 6); print(56 ** 2); print(111 % 6)"
+    ],
+    "returncode": 0,
+    "stdout": "1002\n3136\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_53",
+    "args": [
+      "-c",
+      "x = 952; print((x & 999) | 6); print((x ^ 111) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "934\n491\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_54",
+    "args": [
+      "-c",
+      "print((57 + 113) * 7); print(57 ** 2); print(113 % 7)"
+    ],
+    "returncode": 0,
+    "stdout": "1190\n3249\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_54",
+    "args": [
+      "-c",
+      "x = 969; print((x & 1017) | 7); print((x ^ 113) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "975\n476\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_55",
+    "args": [
+      "-c",
+      "print((58 + 115) * 8); print(58 ** 2); print(115 % 8)"
+    ],
+    "returncode": 0,
+    "stdout": "1384\n3364\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_55",
+    "args": [
+      "-c",
+      "x = 986; print((x & 1035) | 8); print((x ^ 115) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "10\n468\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_56",
+    "args": [
+      "-c",
+      "print((59 + 117) * 2); print(59 ** 2); print(117 % 2)"
+    ],
+    "returncode": 0,
+    "stdout": "352\n3481\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_56",
+    "args": [
+      "-c",
+      "x = 1003; print((x & 1053) | 2); print((x ^ 117) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "11\n463\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_57",
+    "args": [
+      "-c",
+      "print((60 + 119) * 3); print(60 ** 2); print(119 % 3)"
+    ],
+    "returncode": 0,
+    "stdout": "537\n3600\n2\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_57",
+    "args": [
+      "-c",
+      "x = 1020; print((x & 1071) | 3); print((x ^ 119) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "47\n453\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_58",
+    "args": [
+      "-c",
+      "print((61 + 121) * 4); print(61 ** 2); print(121 % 4)"
+    ],
+    "returncode": 0,
+    "stdout": "728\n3721\n1\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_58",
+    "args": [
+      "-c",
+      "x = 1037; print((x & 1089) | 4); print((x ^ 121) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "1029\n570\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "arith_precedence_59",
+    "args": [
+      "-c",
+      "print((62 + 123) * 5); print(62 ** 2); print(123 % 5)"
+    ],
+    "returncode": 0,
+    "stdout": "925\n3844\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "bitwise_combo_59",
+    "args": [
+      "-c",
+      "x = 1054; print((x & 1107) | 5); print((x ^ 123) >> 1)"
+    ],
+    "returncode": 0,
+    "stdout": "1047\n562\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_00",
+    "args": [
+      "-c",
+      "s = 'alpha-00'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "ALPHA-00\nalpha-00\nalpha:00\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_00",
+    "args": [
+      "-c",
+      "s = 'alpha'; print(s[0..2]); print('item-${0 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "alp\nitem-7:alpha\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_01",
+    "args": [
+      "-c",
+      "s = 'beta-01'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "BETA-01\nbeta-01\nbeta:01\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_01",
+    "args": [
+      "-c",
+      "s = 'beta'; print(s[0..2]); print('item-${1 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "bet\nitem-8:beta\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_02",
+    "args": [
+      "-c",
+      "s = 'gamma-02'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "GAMMA-02\ngamma-02\ngamma:02\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_02",
+    "args": [
+      "-c",
+      "s = 'gamma'; print(s[0..2]); print('item-${2 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "gam\nitem-9:gamma\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_03",
+    "args": [
+      "-c",
+      "s = 'delta-03'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "DELTA-03\ndelta-03\ndelta:03\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_03",
+    "args": [
+      "-c",
+      "s = 'delta'; print(s[0..2]); print('item-${3 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "del\nitem-10:delta\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_04",
+    "args": [
+      "-c",
+      "s = 'epsilon-04'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "EPSILON-04\nepsilon-04\nepsilon:04\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_04",
+    "args": [
+      "-c",
+      "s = 'epsilon'; print(s[0..2]); print('item-${4 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "eps\nitem-11:epsilon\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_05",
+    "args": [
+      "-c",
+      "s = 'zeta-05'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "ZETA-05\nzeta-05\nzeta:05\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_05",
+    "args": [
+      "-c",
+      "s = 'zeta'; print(s[0..2]); print('item-${5 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "zet\nitem-12:zeta\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_06",
+    "args": [
+      "-c",
+      "s = 'eta-06'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "ETA-06\neta-06\neta:06\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_06",
+    "args": [
+      "-c",
+      "s = 'eta'; print(s[0..2]); print('item-${6 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "eta\nitem-13:eta\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_07",
+    "args": [
+      "-c",
+      "s = 'theta-07'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "THETA-07\ntheta-07\ntheta:07\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_07",
+    "args": [
+      "-c",
+      "s = 'theta'; print(s[0..2]); print('item-${7 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "the\nitem-14:theta\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_08",
+    "args": [
+      "-c",
+      "s = 'iota-08'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "IOTA-08\niota-08\niota:08\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_08",
+    "args": [
+      "-c",
+      "s = 'iota'; print(s[0..2]); print('item-${8 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "iot\nitem-15:iota\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_09",
+    "args": [
+      "-c",
+      "s = 'kappa-09'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "KAPPA-09\nkappa-09\nkappa:09\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_09",
+    "args": [
+      "-c",
+      "s = 'kappa'; print(s[0..2]); print('item-${9 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "kap\nitem-16:kappa\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_10",
+    "args": [
+      "-c",
+      "s = 'lambda-10'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "LAMBDA-10\nlambda-10\nlambda:10\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_10",
+    "args": [
+      "-c",
+      "s = 'lambda'; print(s[0..2]); print('item-${10 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "lam\nitem-17:lambda\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_11",
+    "args": [
+      "-c",
+      "s = 'mu-11'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "MU-11\nmu-11\nmu:11\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_12",
+    "args": [
+      "-c",
+      "s = 'nu-12'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "NU-12\nnu-12\nnu:12\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_13",
+    "args": [
+      "-c",
+      "s = 'xi-13'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "XI-13\nxi-13\nxi:13\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_14",
+    "args": [
+      "-c",
+      "s = 'omicron-14'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "OMICRON-14\nomicron-14\nomicron:14\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_14",
+    "args": [
+      "-c",
+      "s = 'omicron'; print(s[0..2]); print('item-${14 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "omi\nitem-21:omicron\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_15",
+    "args": [
+      "-c",
+      "s = 'pi-15'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "PI-15\npi-15\npi:15\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_16",
+    "args": [
+      "-c",
+      "s = 'rho-16'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "RHO-16\nrho-16\nrho:16\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_16",
+    "args": [
+      "-c",
+      "s = 'rho'; print(s[0..2]); print('item-${16 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "rho\nitem-23:rho\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_17",
+    "args": [
+      "-c",
+      "s = 'sigma-17'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "SIGMA-17\nsigma-17\nsigma:17\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_17",
+    "args": [
+      "-c",
+      "s = 'sigma'; print(s[0..2]); print('item-${17 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "sig\nitem-24:sigma\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_18",
+    "args": [
+      "-c",
+      "s = 'tau-18'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "TAU-18\ntau-18\ntau:18\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_18",
+    "args": [
+      "-c",
+      "s = 'tau'; print(s[0..2]); print('item-${18 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "tau\nitem-25:tau\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_19",
+    "args": [
+      "-c",
+      "s = 'upsilon-19'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "UPSILON-19\nupsilon-19\nupsilon:19\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_19",
+    "args": [
+      "-c",
+      "s = 'upsilon'; print(s[0..2]); print('item-${19 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "ups\nitem-26:upsilon\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_20",
+    "args": [
+      "-c",
+      "s = 'phi-20'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "PHI-20\nphi-20\nphi:20\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_20",
+    "args": [
+      "-c",
+      "s = 'phi'; print(s[0..2]); print('item-${20 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "phi\nitem-27:phi\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_21",
+    "args": [
+      "-c",
+      "s = 'chi-21'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "CHI-21\nchi-21\nchi:21\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_21",
+    "args": [
+      "-c",
+      "s = 'chi'; print(s[0..2]); print('item-${21 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "chi\nitem-28:chi\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_22",
+    "args": [
+      "-c",
+      "s = 'psi-22'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "PSI-22\npsi-22\npsi:22\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_22",
+    "args": [
+      "-c",
+      "s = 'psi'; print(s[0..2]); print('item-${22 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "psi\nitem-29:psi\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_methods_23",
+    "args": [
+      "-c",
+      "s = 'omega-23'; print(s.upper()); print(s.lower()); print(s.replace('-', ':'))"
+    ],
+    "returncode": 0,
+    "stdout": "OMEGA-23\nomega-23\nomega:23\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "string_slice_interpolation_23",
+    "args": [
+      "-c",
+      "s = 'omega'; print(s[0..2]); print('item-${23 + 7}:$s')"
+    ],
+    "returncode": 0,
+    "stdout": "ome\nitem-30:omega\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_00",
+    "args": [
+      "-c",
+      "l = [1, 2, 4, 8]; l.append(0); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n0\n2\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_00",
+    "args": [
+      "-c",
+      "m = {'a': 0, 'b': 0}; print(m['a'] + m['b']); print(m.get('z', 11))"
+    ],
+    "returncode": 0,
+    "stdout": "0\n11\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_01",
+    "args": [
+      "-c",
+      "l = [2, 3, 5, 9]; l.append(3); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n3\n3\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_01",
+    "args": [
+      "-c",
+      "m = {'a': 1, 'b': 1}; print(m['a'] + m['b']); print(m.get('z', 12))"
+    ],
+    "returncode": 0,
+    "stdout": "2\n12\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_02",
+    "args": [
+      "-c",
+      "l = [3, 4, 6, 10]; l.append(6); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n6\n4\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_02",
+    "args": [
+      "-c",
+      "m = {'a': 2, 'b': 4}; print(m['a'] + m['b']); print(m.get('z', 13))"
+    ],
+    "returncode": 0,
+    "stdout": "6\n13\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_03",
+    "args": [
+      "-c",
+      "l = [4, 5, 7, 11]; l.append(9); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n9\n5\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_03",
+    "args": [
+      "-c",
+      "m = {'a': 3, 'b': 9}; print(m['a'] + m['b']); print(m.get('z', 14))"
+    ],
+    "returncode": 0,
+    "stdout": "12\n14\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_04",
+    "args": [
+      "-c",
+      "l = [5, 6, 8, 12]; l.append(12); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n12\n6\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_04",
+    "args": [
+      "-c",
+      "m = {'a': 4, 'b': 16}; print(m['a'] + m['b']); print(m.get('z', 15))"
+    ],
+    "returncode": 0,
+    "stdout": "20\n15\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_05",
+    "args": [
+      "-c",
+      "l = [6, 7, 9, 13]; l.append(15); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n15\n7\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_05",
+    "args": [
+      "-c",
+      "m = {'a': 5, 'b': 25}; print(m['a'] + m['b']); print(m.get('z', 16))"
+    ],
+    "returncode": 0,
+    "stdout": "30\n16\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_06",
+    "args": [
+      "-c",
+      "l = [7, 8, 10, 14]; l.append(18); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n18\n8\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_06",
+    "args": [
+      "-c",
+      "m = {'a': 6, 'b': 36}; print(m['a'] + m['b']); print(m.get('z', 17))"
+    ],
+    "returncode": 0,
+    "stdout": "42\n17\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_07",
+    "args": [
+      "-c",
+      "l = [8, 9, 11, 15]; l.append(21); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n21\n9\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_07",
+    "args": [
+      "-c",
+      "m = {'a': 7, 'b': 49}; print(m['a'] + m['b']); print(m.get('z', 18))"
+    ],
+    "returncode": 0,
+    "stdout": "56\n18\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_08",
+    "args": [
+      "-c",
+      "l = [9, 10, 12, 16]; l.append(24); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n24\n10\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_08",
+    "args": [
+      "-c",
+      "m = {'a': 8, 'b': 64}; print(m['a'] + m['b']); print(m.get('z', 19))"
+    ],
+    "returncode": 0,
+    "stdout": "72\n19\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_09",
+    "args": [
+      "-c",
+      "l = [10, 11, 13, 17]; l.append(27); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n27\n11\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_09",
+    "args": [
+      "-c",
+      "m = {'a': 9, 'b': 81}; print(m['a'] + m['b']); print(m.get('z', 20))"
+    ],
+    "returncode": 0,
+    "stdout": "90\n20\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_10",
+    "args": [
+      "-c",
+      "l = [11, 12, 14, 18]; l.append(30); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n30\n12\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_10",
+    "args": [
+      "-c",
+      "m = {'a': 10, 'b': 100}; print(m['a'] + m['b']); print(m.get('z', 21))"
+    ],
+    "returncode": 0,
+    "stdout": "110\n21\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_11",
+    "args": [
+      "-c",
+      "l = [12, 13, 15, 19]; l.append(33); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n33\n13\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_11",
+    "args": [
+      "-c",
+      "m = {'a': 11, 'b': 121}; print(m['a'] + m['b']); print(m.get('z', 22))"
+    ],
+    "returncode": 0,
+    "stdout": "132\n22\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_12",
+    "args": [
+      "-c",
+      "l = [13, 14, 16, 20]; l.append(36); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n36\n14\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_12",
+    "args": [
+      "-c",
+      "m = {'a': 12, 'b': 144}; print(m['a'] + m['b']); print(m.get('z', 23))"
+    ],
+    "returncode": 0,
+    "stdout": "156\n23\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_13",
+    "args": [
+      "-c",
+      "l = [14, 15, 17, 21]; l.append(39); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n39\n15\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_13",
+    "args": [
+      "-c",
+      "m = {'a': 13, 'b': 169}; print(m['a'] + m['b']); print(m.get('z', 24))"
+    ],
+    "returncode": 0,
+    "stdout": "182\n24\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_14",
+    "args": [
+      "-c",
+      "l = [15, 16, 18, 22]; l.append(42); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n42\n16\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_14",
+    "args": [
+      "-c",
+      "m = {'a': 14, 'b': 196}; print(m['a'] + m['b']); print(m.get('z', 25))"
+    ],
+    "returncode": 0,
+    "stdout": "210\n25\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_15",
+    "args": [
+      "-c",
+      "l = [16, 17, 19, 23]; l.append(45); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n45\n17\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_15",
+    "args": [
+      "-c",
+      "m = {'a': 15, 'b': 225}; print(m['a'] + m['b']); print(m.get('z', 26))"
+    ],
+    "returncode": 0,
+    "stdout": "240\n26\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_16",
+    "args": [
+      "-c",
+      "l = [17, 18, 20, 24]; l.append(48); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n48\n18\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_16",
+    "args": [
+      "-c",
+      "m = {'a': 16, 'b': 256}; print(m['a'] + m['b']); print(m.get('z', 27))"
+    ],
+    "returncode": 0,
+    "stdout": "272\n27\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_17",
+    "args": [
+      "-c",
+      "l = [18, 19, 21, 25]; l.append(51); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n51\n19\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_17",
+    "args": [
+      "-c",
+      "m = {'a': 17, 'b': 289}; print(m['a'] + m['b']); print(m.get('z', 28))"
+    ],
+    "returncode": 0,
+    "stdout": "306\n28\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_18",
+    "args": [
+      "-c",
+      "l = [19, 20, 22, 26]; l.append(54); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n54\n20\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_18",
+    "args": [
+      "-c",
+      "m = {'a': 18, 'b': 324}; print(m['a'] + m['b']); print(m.get('z', 29))"
+    ],
+    "returncode": 0,
+    "stdout": "342\n29\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_19",
+    "args": [
+      "-c",
+      "l = [20, 21, 23, 27]; l.append(57); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n57\n21\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_19",
+    "args": [
+      "-c",
+      "m = {'a': 19, 'b': 361}; print(m['a'] + m['b']); print(m.get('z', 30))"
+    ],
+    "returncode": 0,
+    "stdout": "380\n30\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_20",
+    "args": [
+      "-c",
+      "l = [21, 22, 24, 28]; l.append(60); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n60\n22\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_20",
+    "args": [
+      "-c",
+      "m = {'a': 20, 'b': 400}; print(m['a'] + m['b']); print(m.get('z', 31))"
+    ],
+    "returncode": 0,
+    "stdout": "420\n31\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_21",
+    "args": [
+      "-c",
+      "l = [22, 23, 25, 29]; l.append(63); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n63\n23\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_21",
+    "args": [
+      "-c",
+      "m = {'a': 21, 'b': 441}; print(m['a'] + m['b']); print(m.get('z', 32))"
+    ],
+    "returncode": 0,
+    "stdout": "462\n32\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_22",
+    "args": [
+      "-c",
+      "l = [23, 24, 26, 30]; l.append(66); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n66\n24\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_22",
+    "args": [
+      "-c",
+      "m = {'a': 22, 'b': 484}; print(m['a'] + m['b']); print(m.get('z', 33))"
+    ],
+    "returncode": 0,
+    "stdout": "506\n33\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_23",
+    "args": [
+      "-c",
+      "l = [24, 25, 27, 31]; l.append(69); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n69\n25\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_23",
+    "args": [
+      "-c",
+      "m = {'a': 23, 'b': 529}; print(m['a'] + m['b']); print(m.get('z', 34))"
+    ],
+    "returncode": 0,
+    "stdout": "552\n34\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_24",
+    "args": [
+      "-c",
+      "l = [25, 26, 28, 32]; l.append(72); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n72\n26\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_24",
+    "args": [
+      "-c",
+      "m = {'a': 24, 'b': 576}; print(m['a'] + m['b']); print(m.get('z', 35))"
+    ],
+    "returncode": 0,
+    "stdout": "600\n35\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_25",
+    "args": [
+      "-c",
+      "l = [26, 27, 29, 33]; l.append(75); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n75\n27\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_25",
+    "args": [
+      "-c",
+      "m = {'a': 25, 'b': 625}; print(m['a'] + m['b']); print(m.get('z', 36))"
+    ],
+    "returncode": 0,
+    "stdout": "650\n36\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_26",
+    "args": [
+      "-c",
+      "l = [27, 28, 30, 34]; l.append(78); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n78\n28\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_26",
+    "args": [
+      "-c",
+      "m = {'a': 26, 'b': 676}; print(m['a'] + m['b']); print(m.get('z', 37))"
+    ],
+    "returncode": 0,
+    "stdout": "702\n37\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_27",
+    "args": [
+      "-c",
+      "l = [28, 29, 31, 35]; l.append(81); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n81\n29\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_27",
+    "args": [
+      "-c",
+      "m = {'a': 27, 'b': 729}; print(m['a'] + m['b']); print(m.get('z', 38))"
+    ],
+    "returncode": 0,
+    "stdout": "756\n38\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_28",
+    "args": [
+      "-c",
+      "l = [29, 30, 32, 36]; l.append(84); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n84\n30\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_28",
+    "args": [
+      "-c",
+      "m = {'a': 28, 'b': 784}; print(m['a'] + m['b']); print(m.get('z', 39))"
+    ],
+    "returncode": 0,
+    "stdout": "812\n39\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_29",
+    "args": [
+      "-c",
+      "l = [30, 31, 33, 37]; l.append(87); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n87\n31\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_29",
+    "args": [
+      "-c",
+      "m = {'a': 29, 'b': 841}; print(m['a'] + m['b']); print(m.get('z', 40))"
+    ],
+    "returncode": 0,
+    "stdout": "870\n40\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_30",
+    "args": [
+      "-c",
+      "l = [31, 32, 34, 38]; l.append(90); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n90\n32\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_30",
+    "args": [
+      "-c",
+      "m = {'a': 30, 'b': 900}; print(m['a'] + m['b']); print(m.get('z', 41))"
+    ],
+    "returncode": 0,
+    "stdout": "930\n41\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_31",
+    "args": [
+      "-c",
+      "l = [32, 33, 35, 39]; l.append(93); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n93\n33\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_31",
+    "args": [
+      "-c",
+      "m = {'a': 31, 'b': 961}; print(m['a'] + m['b']); print(m.get('z', 42))"
+    ],
+    "returncode": 0,
+    "stdout": "992\n42\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_32",
+    "args": [
+      "-c",
+      "l = [33, 34, 36, 40]; l.append(96); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n96\n34\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_32",
+    "args": [
+      "-c",
+      "m = {'a': 32, 'b': 1024}; print(m['a'] + m['b']); print(m.get('z', 43))"
+    ],
+    "returncode": 0,
+    "stdout": "1056\n43\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_33",
+    "args": [
+      "-c",
+      "l = [34, 35, 37, 41]; l.append(99); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n99\n35\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_33",
+    "args": [
+      "-c",
+      "m = {'a': 33, 'b': 1089}; print(m['a'] + m['b']); print(m.get('z', 44))"
+    ],
+    "returncode": 0,
+    "stdout": "1122\n44\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_34",
+    "args": [
+      "-c",
+      "l = [35, 36, 38, 42]; l.append(102); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n102\n36\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_34",
+    "args": [
+      "-c",
+      "m = {'a': 34, 'b': 1156}; print(m['a'] + m['b']); print(m.get('z', 45))"
+    ],
+    "returncode": 0,
+    "stdout": "1190\n45\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_35",
+    "args": [
+      "-c",
+      "l = [36, 37, 39, 43]; l.append(105); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n105\n37\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_35",
+    "args": [
+      "-c",
+      "m = {'a': 35, 'b': 1225}; print(m['a'] + m['b']); print(m.get('z', 46))"
+    ],
+    "returncode": 0,
+    "stdout": "1260\n46\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_36",
+    "args": [
+      "-c",
+      "l = [37, 38, 40, 44]; l.append(108); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n108\n38\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_36",
+    "args": [
+      "-c",
+      "m = {'a': 36, 'b': 1296}; print(m['a'] + m['b']); print(m.get('z', 47))"
+    ],
+    "returncode": 0,
+    "stdout": "1332\n47\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_37",
+    "args": [
+      "-c",
+      "l = [38, 39, 41, 45]; l.append(111); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n111\n39\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_37",
+    "args": [
+      "-c",
+      "m = {'a': 37, 'b': 1369}; print(m['a'] + m['b']); print(m.get('z', 48))"
+    ],
+    "returncode": 0,
+    "stdout": "1406\n48\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_38",
+    "args": [
+      "-c",
+      "l = [39, 40, 42, 46]; l.append(114); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n114\n40\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_38",
+    "args": [
+      "-c",
+      "m = {'a': 38, 'b': 1444}; print(m['a'] + m['b']); print(m.get('z', 49))"
+    ],
+    "returncode": 0,
+    "stdout": "1482\n49\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_39",
+    "args": [
+      "-c",
+      "l = [40, 41, 43, 47]; l.append(117); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n117\n41\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_39",
+    "args": [
+      "-c",
+      "m = {'a': 39, 'b': 1521}; print(m['a'] + m['b']); print(m.get('z', 50))"
+    ],
+    "returncode": 0,
+    "stdout": "1560\n50\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_40",
+    "args": [
+      "-c",
+      "l = [41, 42, 44, 48]; l.append(120); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n120\n42\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_40",
+    "args": [
+      "-c",
+      "m = {'a': 40, 'b': 1600}; print(m['a'] + m['b']); print(m.get('z', 51))"
+    ],
+    "returncode": 0,
+    "stdout": "1640\n51\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_41",
+    "args": [
+      "-c",
+      "l = [42, 43, 45, 49]; l.append(123); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n123\n43\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_41",
+    "args": [
+      "-c",
+      "m = {'a': 41, 'b': 1681}; print(m['a'] + m['b']); print(m.get('z', 52))"
+    ],
+    "returncode": 0,
+    "stdout": "1722\n52\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_42",
+    "args": [
+      "-c",
+      "l = [43, 44, 46, 50]; l.append(126); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n126\n44\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_42",
+    "args": [
+      "-c",
+      "m = {'a': 42, 'b': 1764}; print(m['a'] + m['b']); print(m.get('z', 53))"
+    ],
+    "returncode": 0,
+    "stdout": "1806\n53\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_43",
+    "args": [
+      "-c",
+      "l = [44, 45, 47, 51]; l.append(129); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n129\n45\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_43",
+    "args": [
+      "-c",
+      "m = {'a': 43, 'b': 1849}; print(m['a'] + m['b']); print(m.get('z', 54))"
+    ],
+    "returncode": 0,
+    "stdout": "1892\n54\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "list_append_pop_44",
+    "args": [
+      "-c",
+      "l = [45, 46, 48, 52]; l.append(132); print(l.length); print(l.pop()); print(l[1])"
+    ],
+    "returncode": 0,
+    "stdout": "5\n132\n46\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "map_lookup_default_44",
+    "args": [
+      "-c",
+      "m = {'a': 44, 'b': 1936}; print(m['a'] + m['b']); print(m.get('z', 55))"
+    ],
+    "returncode": 0,
+    "stdout": "1980\n55\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_00",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(0) + Box(5))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(5)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_01",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(1) + Box(6))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(7)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_02",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(2) + Box(7))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(9)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_03",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(3) + Box(8))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(11)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_04",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(4) + Box(9))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(13)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_05",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(5) + Box(10))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(15)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_06",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(6) + Box(11))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(17)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_07",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(7) + Box(12))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(19)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_08",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(8) + Box(13))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(21)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_09",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(9) + Box(14))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(23)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_10",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(10) + Box(15))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(25)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_11",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(11) + Box(16))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(27)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_12",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(12) + Box(17))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(29)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_13",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(13) + Box(18))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(31)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_14",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(14) + Box(19))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(33)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_15",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(15) + Box(20))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(35)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_16",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(16) + Box(21))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(37)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_17",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(17) + Box(22))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(39)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_18",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(18) + Box(23))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(41)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_19",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(19) + Box(24))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(43)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_20",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(20) + Box(25))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(45)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_21",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(21) + Box(26))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(47)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_22",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(22) + Box(27))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(49)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_23",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(23) + Box(28))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(51)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_24",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(24) + Box(29))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(53)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_25",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(25) + Box(30))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(55)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_26",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(26) + Box(31))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(57)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "class_operator_27",
+    "args": [
+      "-c",
+      "class Box\n  def _init(v) self.v = v end\n  def +(other) return Box(self.v + other.v) end\n  def _str return 'Box(${self.v})' end\nend\nprint(Box(27) + Box(32))"
+    ],
+    "returncode": 0,
+    "stdout": "Box(59)\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "script_fibonacci_00",
+    "args": [
+      "script_case_00.pk"
+    ],
+    "returncode": 0,
+    "stdout": "1\nfile-case-00\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_00.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(2))\nprint('file-case-00')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_01",
+    "args": [
+      "script_case_01.pk"
+    ],
+    "returncode": 0,
+    "stdout": "2\nfile-case-01\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_01.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(3))\nprint('file-case-01')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_02",
+    "args": [
+      "script_case_02.pk"
+    ],
+    "returncode": 0,
+    "stdout": "3\nfile-case-02\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_02.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(4))\nprint('file-case-02')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_03",
+    "args": [
+      "script_case_03.pk"
+    ],
+    "returncode": 0,
+    "stdout": "5\nfile-case-03\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_03.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(5))\nprint('file-case-03')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_04",
+    "args": [
+      "script_case_04.pk"
+    ],
+    "returncode": 0,
+    "stdout": "8\nfile-case-04\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_04.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(6))\nprint('file-case-04')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_05",
+    "args": [
+      "script_case_05.pk"
+    ],
+    "returncode": 0,
+    "stdout": "13\nfile-case-05\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_05.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(7))\nprint('file-case-05')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_06",
+    "args": [
+      "script_case_06.pk"
+    ],
+    "returncode": 0,
+    "stdout": "21\nfile-case-06\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_06.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(8))\nprint('file-case-06')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_07",
+    "args": [
+      "script_case_07.pk"
+    ],
+    "returncode": 0,
+    "stdout": "34\nfile-case-07\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_07.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(9))\nprint('file-case-07')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_08",
+    "args": [
+      "script_case_08.pk"
+    ],
+    "returncode": 0,
+    "stdout": "55\nfile-case-08\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_08.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(10))\nprint('file-case-08')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_09",
+    "args": [
+      "script_case_09.pk"
+    ],
+    "returncode": 0,
+    "stdout": "1\nfile-case-09\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_09.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(2))\nprint('file-case-09')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_10",
+    "args": [
+      "script_case_10.pk"
+    ],
+    "returncode": 0,
+    "stdout": "2\nfile-case-10\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_10.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(3))\nprint('file-case-10')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_11",
+    "args": [
+      "script_case_11.pk"
+    ],
+    "returncode": 0,
+    "stdout": "3\nfile-case-11\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_11.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(4))\nprint('file-case-11')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_12",
+    "args": [
+      "script_case_12.pk"
+    ],
+    "returncode": 0,
+    "stdout": "5\nfile-case-12\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_12.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(5))\nprint('file-case-12')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_13",
+    "args": [
+      "script_case_13.pk"
+    ],
+    "returncode": 0,
+    "stdout": "8\nfile-case-13\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_13.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(6))\nprint('file-case-13')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_14",
+    "args": [
+      "script_case_14.pk"
+    ],
+    "returncode": 0,
+    "stdout": "13\nfile-case-14\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_14.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(7))\nprint('file-case-14')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_15",
+    "args": [
+      "script_case_15.pk"
+    ],
+    "returncode": 0,
+    "stdout": "21\nfile-case-15\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_15.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(8))\nprint('file-case-15')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_16",
+    "args": [
+      "script_case_16.pk"
+    ],
+    "returncode": 0,
+    "stdout": "34\nfile-case-16\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_16.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(9))\nprint('file-case-16')\n"
+    }
+  },
+  {
+    "id": "script_fibonacci_17",
+    "args": [
+      "script_case_17.pk"
+    ],
+    "returncode": 0,
+    "stdout": "55\nfile-case-17\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "script_case_17.pk": "def fib(n)\n  if n < 2 then return n end\n  return fib(n-1) + fib(n-2)\nend\nprint(fib(10))\nprint('file-case-17')\n"
+    }
+  },
+  {
+    "id": "script_control_flow_00",
+    "args": [
+      "control_case_00.pk"
+    ],
+    "returncode": 0,
+    "stdout": "0\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_00.pk": "total = 0\nfor i in 0..4 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_01",
+    "args": [
+      "control_case_01.pk"
+    ],
+    "returncode": 0,
+    "stdout": "16\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_01.pk": "total = 0\nfor i in 0..5 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_02",
+    "args": [
+      "control_case_02.pk"
+    ],
+    "returncode": 0,
+    "stdout": "11\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_02.pk": "total = 0\nfor i in 0..6 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_03",
+    "args": [
+      "control_case_03.pk"
+    ],
+    "returncode": 0,
+    "stdout": "47\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_03.pk": "total = 0\nfor i in 0..7 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_04",
+    "args": [
+      "control_case_04.pk"
+    ],
+    "returncode": 0,
+    "stdout": "40\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_04.pk": "total = 0\nfor i in 0..8 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_05",
+    "args": [
+      "control_case_05.pk"
+    ],
+    "returncode": 0,
+    "stdout": "104\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_05.pk": "total = 0\nfor i in 0..9 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_06",
+    "args": [
+      "control_case_06.pk"
+    ],
+    "returncode": 0,
+    "stdout": "95\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_06.pk": "total = 0\nfor i in 0..10 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_07",
+    "args": [
+      "control_case_07.pk"
+    ],
+    "returncode": 0,
+    "stdout": "195\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_07.pk": "total = 0\nfor i in 0..11 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_08",
+    "args": [
+      "control_case_08.pk"
+    ],
+    "returncode": 0,
+    "stdout": "184\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_08.pk": "total = 0\nfor i in 0..12 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_09",
+    "args": [
+      "control_case_09.pk"
+    ],
+    "returncode": 0,
+    "stdout": "328\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_09.pk": "total = 0\nfor i in 0..13 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_10",
+    "args": [
+      "control_case_10.pk"
+    ],
+    "returncode": 0,
+    "stdout": "315\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_10.pk": "total = 0\nfor i in 0..14 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_11",
+    "args": [
+      "control_case_11.pk"
+    ],
+    "returncode": 0,
+    "stdout": "511\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_11.pk": "total = 0\nfor i in 0..15 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_12",
+    "args": [
+      "control_case_12.pk"
+    ],
+    "returncode": 0,
+    "stdout": "496\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_12.pk": "total = 0\nfor i in 0..16 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_13",
+    "args": [
+      "control_case_13.pk"
+    ],
+    "returncode": 0,
+    "stdout": "0\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_13.pk": "total = 0\nfor i in 0..4 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_14",
+    "args": [
+      "control_case_14.pk"
+    ],
+    "returncode": 0,
+    "stdout": "16\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_14.pk": "total = 0\nfor i in 0..5 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_15",
+    "args": [
+      "control_case_15.pk"
+    ],
+    "returncode": 0,
+    "stdout": "11\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_15.pk": "total = 0\nfor i in 0..6 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_16",
+    "args": [
+      "control_case_16.pk"
+    ],
+    "returncode": 0,
+    "stdout": "47\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_16.pk": "total = 0\nfor i in 0..7 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_17",
+    "args": [
+      "control_case_17.pk"
+    ],
+    "returncode": 0,
+    "stdout": "40\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_17.pk": "total = 0\nfor i in 0..8 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_18",
+    "args": [
+      "control_case_18.pk"
+    ],
+    "returncode": 0,
+    "stdout": "104\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_18.pk": "total = 0\nfor i in 0..9 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_19",
+    "args": [
+      "control_case_19.pk"
+    ],
+    "returncode": 0,
+    "stdout": "95\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_19.pk": "total = 0\nfor i in 0..10 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_20",
+    "args": [
+      "control_case_20.pk"
+    ],
+    "returncode": 0,
+    "stdout": "195\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_20.pk": "total = 0\nfor i in 0..11 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_21",
+    "args": [
+      "control_case_21.pk"
+    ],
+    "returncode": 0,
+    "stdout": "184\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_21.pk": "total = 0\nfor i in 0..12 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_22",
+    "args": [
+      "control_case_22.pk"
+    ],
+    "returncode": 0,
+    "stdout": "328\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_22.pk": "total = 0\nfor i in 0..13 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_23",
+    "args": [
+      "control_case_23.pk"
+    ],
+    "returncode": 0,
+    "stdout": "315\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_23.pk": "total = 0\nfor i in 0..14 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_24",
+    "args": [
+      "control_case_24.pk"
+    ],
+    "returncode": 0,
+    "stdout": "511\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_24.pk": "total = 0\nfor i in 0..15 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_25",
+    "args": [
+      "control_case_25.pk"
+    ],
+    "returncode": 0,
+    "stdout": "496\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_25.pk": "total = 0\nfor i in 0..16 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_26",
+    "args": [
+      "control_case_26.pk"
+    ],
+    "returncode": 0,
+    "stdout": "0\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_26.pk": "total = 0\nfor i in 0..4 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_27",
+    "args": [
+      "control_case_27.pk"
+    ],
+    "returncode": 0,
+    "stdout": "16\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_27.pk": "total = 0\nfor i in 0..5 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_28",
+    "args": [
+      "control_case_28.pk"
+    ],
+    "returncode": 0,
+    "stdout": "11\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_28.pk": "total = 0\nfor i in 0..6 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_29",
+    "args": [
+      "control_case_29.pk"
+    ],
+    "returncode": 0,
+    "stdout": "47\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_29.pk": "total = 0\nfor i in 0..7 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_30",
+    "args": [
+      "control_case_30.pk"
+    ],
+    "returncode": 0,
+    "stdout": "40\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_30.pk": "total = 0\nfor i in 0..8 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_31",
+    "args": [
+      "control_case_31.pk"
+    ],
+    "returncode": 0,
+    "stdout": "104\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_31.pk": "total = 0\nfor i in 0..9 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_32",
+    "args": [
+      "control_case_32.pk"
+    ],
+    "returncode": 0,
+    "stdout": "95\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_32.pk": "total = 0\nfor i in 0..10 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_33",
+    "args": [
+      "control_case_33.pk"
+    ],
+    "returncode": 0,
+    "stdout": "195\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_33.pk": "total = 0\nfor i in 0..11 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_34",
+    "args": [
+      "control_case_34.pk"
+    ],
+    "returncode": 0,
+    "stdout": "184\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_34.pk": "total = 0\nfor i in 0..12 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_35",
+    "args": [
+      "control_case_35.pk"
+    ],
+    "returncode": 0,
+    "stdout": "328\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_35.pk": "total = 0\nfor i in 0..13 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_36",
+    "args": [
+      "control_case_36.pk"
+    ],
+    "returncode": 0,
+    "stdout": "315\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_36.pk": "total = 0\nfor i in 0..14 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_37",
+    "args": [
+      "control_case_37.pk"
+    ],
+    "returncode": 0,
+    "stdout": "511\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_37.pk": "total = 0\nfor i in 0..15 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_38",
+    "args": [
+      "control_case_38.pk"
+    ],
+    "returncode": 0,
+    "stdout": "496\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_38.pk": "total = 0\nfor i in 0..16 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_control_flow_39",
+    "args": [
+      "control_case_39.pk"
+    ],
+    "returncode": 0,
+    "stdout": "0\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "control_case_39.pk": "total = 0\nfor i in 0..4 do\n  if i % 2 == 0 then\n    total += i * i\n  else\n    total -= i\n  end\nend\nprint(total)\n"
+    }
+  },
+  {
+    "id": "script_closure_return_00",
+    "args": [
+      "function_case_00.pk"
+    ],
+    "returncode": 0,
+    "stdout": "6\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_00.pk": "def make(base)\n  return fn(x)\n    return base * x + 0\n  end\nend\nf = make(2)\nprint(f(3))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_01",
+    "args": [
+      "function_case_01.pk"
+    ],
+    "returncode": 0,
+    "stdout": "13\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_01.pk": "def make(base)\n  return fn(x)\n    return base * x + 1\n  end\nend\nf = make(3)\nprint(f(4))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_02",
+    "args": [
+      "function_case_02.pk"
+    ],
+    "returncode": 0,
+    "stdout": "22\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_02.pk": "def make(base)\n  return fn(x)\n    return base * x + 2\n  end\nend\nf = make(4)\nprint(f(5))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_03",
+    "args": [
+      "function_case_03.pk"
+    ],
+    "returncode": 0,
+    "stdout": "33\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_03.pk": "def make(base)\n  return fn(x)\n    return base * x + 3\n  end\nend\nf = make(5)\nprint(f(6))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_04",
+    "args": [
+      "function_case_04.pk"
+    ],
+    "returncode": 0,
+    "stdout": "46\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_04.pk": "def make(base)\n  return fn(x)\n    return base * x + 4\n  end\nend\nf = make(6)\nprint(f(7))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_05",
+    "args": [
+      "function_case_05.pk"
+    ],
+    "returncode": 0,
+    "stdout": "61\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_05.pk": "def make(base)\n  return fn(x)\n    return base * x + 5\n  end\nend\nf = make(7)\nprint(f(8))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_06",
+    "args": [
+      "function_case_06.pk"
+    ],
+    "returncode": 0,
+    "stdout": "78\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_06.pk": "def make(base)\n  return fn(x)\n    return base * x + 6\n  end\nend\nf = make(8)\nprint(f(9))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_07",
+    "args": [
+      "function_case_07.pk"
+    ],
+    "returncode": 0,
+    "stdout": "27\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_07.pk": "def make(base)\n  return fn(x)\n    return base * x + 7\n  end\nend\nf = make(2)\nprint(f(10))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_08",
+    "args": [
+      "function_case_08.pk"
+    ],
+    "returncode": 0,
+    "stdout": "41\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_08.pk": "def make(base)\n  return fn(x)\n    return base * x + 8\n  end\nend\nf = make(3)\nprint(f(11))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_09",
+    "args": [
+      "function_case_09.pk"
+    ],
+    "returncode": 0,
+    "stdout": "21\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_09.pk": "def make(base)\n  return fn(x)\n    return base * x + 9\n  end\nend\nf = make(4)\nprint(f(3))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_10",
+    "args": [
+      "function_case_10.pk"
+    ],
+    "returncode": 0,
+    "stdout": "30\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_10.pk": "def make(base)\n  return fn(x)\n    return base * x + 10\n  end\nend\nf = make(5)\nprint(f(4))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_11",
+    "args": [
+      "function_case_11.pk"
+    ],
+    "returncode": 0,
+    "stdout": "41\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_11.pk": "def make(base)\n  return fn(x)\n    return base * x + 11\n  end\nend\nf = make(6)\nprint(f(5))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_12",
+    "args": [
+      "function_case_12.pk"
+    ],
+    "returncode": 0,
+    "stdout": "54\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_12.pk": "def make(base)\n  return fn(x)\n    return base * x + 12\n  end\nend\nf = make(7)\nprint(f(6))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_13",
+    "args": [
+      "function_case_13.pk"
+    ],
+    "returncode": 0,
+    "stdout": "69\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_13.pk": "def make(base)\n  return fn(x)\n    return base * x + 13\n  end\nend\nf = make(8)\nprint(f(7))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_14",
+    "args": [
+      "function_case_14.pk"
+    ],
+    "returncode": 0,
+    "stdout": "30\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_14.pk": "def make(base)\n  return fn(x)\n    return base * x + 14\n  end\nend\nf = make(2)\nprint(f(8))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_15",
+    "args": [
+      "function_case_15.pk"
+    ],
+    "returncode": 0,
+    "stdout": "42\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_15.pk": "def make(base)\n  return fn(x)\n    return base * x + 15\n  end\nend\nf = make(3)\nprint(f(9))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_16",
+    "args": [
+      "function_case_16.pk"
+    ],
+    "returncode": 0,
+    "stdout": "56\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_16.pk": "def make(base)\n  return fn(x)\n    return base * x + 16\n  end\nend\nf = make(4)\nprint(f(10))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_17",
+    "args": [
+      "function_case_17.pk"
+    ],
+    "returncode": 0,
+    "stdout": "72\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_17.pk": "def make(base)\n  return fn(x)\n    return base * x + 17\n  end\nend\nf = make(5)\nprint(f(11))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_18",
+    "args": [
+      "function_case_18.pk"
+    ],
+    "returncode": 0,
+    "stdout": "36\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_18.pk": "def make(base)\n  return fn(x)\n    return base * x + 18\n  end\nend\nf = make(6)\nprint(f(3))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_19",
+    "args": [
+      "function_case_19.pk"
+    ],
+    "returncode": 0,
+    "stdout": "47\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_19.pk": "def make(base)\n  return fn(x)\n    return base * x + 19\n  end\nend\nf = make(7)\nprint(f(4))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_20",
+    "args": [
+      "function_case_20.pk"
+    ],
+    "returncode": 0,
+    "stdout": "60\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_20.pk": "def make(base)\n  return fn(x)\n    return base * x + 20\n  end\nend\nf = make(8)\nprint(f(5))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_21",
+    "args": [
+      "function_case_21.pk"
+    ],
+    "returncode": 0,
+    "stdout": "33\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_21.pk": "def make(base)\n  return fn(x)\n    return base * x + 21\n  end\nend\nf = make(2)\nprint(f(6))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_22",
+    "args": [
+      "function_case_22.pk"
+    ],
+    "returncode": 0,
+    "stdout": "43\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_22.pk": "def make(base)\n  return fn(x)\n    return base * x + 22\n  end\nend\nf = make(3)\nprint(f(7))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_23",
+    "args": [
+      "function_case_23.pk"
+    ],
+    "returncode": 0,
+    "stdout": "55\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_23.pk": "def make(base)\n  return fn(x)\n    return base * x + 23\n  end\nend\nf = make(4)\nprint(f(8))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_24",
+    "args": [
+      "function_case_24.pk"
+    ],
+    "returncode": 0,
+    "stdout": "69\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_24.pk": "def make(base)\n  return fn(x)\n    return base * x + 24\n  end\nend\nf = make(5)\nprint(f(9))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_25",
+    "args": [
+      "function_case_25.pk"
+    ],
+    "returncode": 0,
+    "stdout": "85\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_25.pk": "def make(base)\n  return fn(x)\n    return base * x + 25\n  end\nend\nf = make(6)\nprint(f(10))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_26",
+    "args": [
+      "function_case_26.pk"
+    ],
+    "returncode": 0,
+    "stdout": "103\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_26.pk": "def make(base)\n  return fn(x)\n    return base * x + 26\n  end\nend\nf = make(7)\nprint(f(11))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_27",
+    "args": [
+      "function_case_27.pk"
+    ],
+    "returncode": 0,
+    "stdout": "51\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_27.pk": "def make(base)\n  return fn(x)\n    return base * x + 27\n  end\nend\nf = make(8)\nprint(f(3))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_28",
+    "args": [
+      "function_case_28.pk"
+    ],
+    "returncode": 0,
+    "stdout": "36\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_28.pk": "def make(base)\n  return fn(x)\n    return base * x + 28\n  end\nend\nf = make(2)\nprint(f(4))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_29",
+    "args": [
+      "function_case_29.pk"
+    ],
+    "returncode": 0,
+    "stdout": "44\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_29.pk": "def make(base)\n  return fn(x)\n    return base * x + 29\n  end\nend\nf = make(3)\nprint(f(5))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_30",
+    "args": [
+      "function_case_30.pk"
+    ],
+    "returncode": 0,
+    "stdout": "54\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_30.pk": "def make(base)\n  return fn(x)\n    return base * x + 30\n  end\nend\nf = make(4)\nprint(f(6))\n"
+    }
+  },
+  {
+    "id": "script_closure_return_31",
+    "args": [
+      "function_case_31.pk"
+    ],
+    "returncode": 0,
+    "stdout": "66\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "function_case_31.pk": "def make(base)\n  return fn(x)\n    return base * x + 31\n  end\nend\nf = make(5)\nprint(f(7))\n"
+    }
+  },
+  {
+    "id": "module_types_hash",
+    "args": [
+      "module_types_hash.pk"
+    ],
+    "returncode": 0,
+    "stdout": "true\ntrue\nfalse\n440920331\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "module_types_hash.pk": "import types\nprint(types.hashable(123))\nprint(types.hashable('abc'))\nprint(types.hashable([1, 2]))\nprint(types.hash('abc'))\n"
+    }
+  },
+  {
+    "id": "module_bytebuffer_basic",
+    "args": [
+      "module_bytebuffer_basic.pk"
+    ],
+    "returncode": 0,
+    "stdout": "1\n1\n2\n4\nABCD\n66\nAZCD\n0\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "module_bytebuffer_basic.pk": "import types\nb = types.ByteBuffer()\nprint(b.write(65))\nprint(b.write(66))\nprint(b.write('CD'))\nprint(b.count())\nprint(b.string())\nprint(b[1])\nb[1] = 90\nprint(b.string())\nb.clear()\nprint(b.count())\n"
+    }
+  },
+  {
+    "id": "module_bytebuffer_fill",
+    "args": [
+      "module_bytebuffer_fill.pk"
+    ],
+    "returncode": 0,
+    "stdout": "3\n3\n3\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "module_bytebuffer_fill.pk": "import types\nb = types.ByteBuffer()\nb.reserve(8)\nb.fill(3, 88)\nprint(b.count())\nprint(b[0])\nprint(b[2])\n"
+    }
+  },
+  {
+    "id": "module_vector_accessors",
+    "args": [
+      "module_vector_accessors.pk"
+    ],
+    "returncode": 0,
+    "stdout": "[1, 2, 3]\n6\n[1, 10, 11]\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "module_vector_accessors.pk": "from types import Vector\nv = Vector(1, 2, 3)\nprint(v)\nprint(v.x + v.y + v.z)\nv.y = 10\nv.z = v.x + v.y\nprint(v)\n"
+    }
+  },
+  {
+    "id": "module_os_files",
+    "args": [
+      "module_os_files.pk"
+    ],
+    "returncode": 0,
+    "stdout": "linux\npocket-env\nnull\n7\n<tmp>/tmpdir\n<executable>\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "module_os_files.pk": "import os\nprint(os.NAME)\nprint(os.getenv('PB_TEST_ENV'))\nprint(os.getenv('PB_MISSING_ENV'))\nprint(os.filesize('data.txt'))\nos.mkdir('tmpdir')\nos.chdir('tmpdir')\nprint(os.getcwd())\nos.chdir('..')\nos.rmdir('tmpdir')\nprint(os.exepath())\n",
+      "data.txt": "abcdef\n"
+    },
+    "env": {
+      "PB_TEST_ENV": "pocket-env"
+    }
+  },
+  {
+    "id": "module_os_unlink_moditime",
+    "args": [
+      "module_os_unlink_moditime.pk"
+    ],
+    "returncode": 0,
+    "stdout": "10\ntrue\n0\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "module_os_unlink_moditime.pk": "import os\nprint(os.filesize('payload.bin'))\nprint(os.moditime('payload.bin') > 0)\nos.unlink('payload.bin')\nprint(os.moditime('payload.bin'))\n",
+      "payload.bin": "0123456789"
+    }
+  },
+  {
+    "id": "module_time_sleep",
+    "args": [
+      "module_time_sleep.pk"
+    ],
+    "returncode": 0,
+    "stdout": "sleep-ok\n",
+    "stderr": "",
+    "timeout": 15,
+    "files": {
+      "module_time_sleep.pk": "from time import sleep\nsleep(0)\nprint('sleep-ok')\n"
+    }
+  },
+  {
+    "id": "module_types_hash_error",
+    "args": [
+      "module_types_hash_error.pk"
+    ],
+    "returncode": 3,
+    "stdout": "",
+    "stderr": "Error: Type 'List' is not hashable.\n  @main() [<tmp>/module_types_hash_error.pk:2]\n",
+    "timeout": 15,
+    "files": {
+      "module_types_hash_error.pk": "import types\nprint(types.hash([1, 2, 3]))\n"
+    }
+  },
+  {
+    "id": "module_bytebuffer_index_error",
+    "args": [
+      "module_bytebuffer_index_error.pk"
+    ],
+    "returncode": 3,
+    "stdout": "",
+    "stderr": "Error: Index out of bound\n  @main() [<tmp>/module_bytebuffer_index_error.pk:4]\n",
+    "timeout": 15,
+    "files": {
+      "module_bytebuffer_index_error.pk": "import types\nb = types.ByteBuffer()\nb.write(65)\nprint(b[4])\n"
+    }
+  },
+  {
+    "id": "module_bytebuffer_value_error",
+    "args": [
+      "module_bytebuffer_value_error.pk"
+    ],
+    "returncode": 3,
+    "stdout": "",
+    "stderr": "Error: Value should be in range 0x<addr> to 0x<addr>.\n  @main() [<tmp>/module_bytebuffer_value_error.pk:4]\n",
+    "timeout": 15,
+    "files": {
+      "module_bytebuffer_value_error.pk": "import types\nb = types.ByteBuffer()\nb.write(65)\nb[0] = 999\n"
+    }
+  },
+  {
+    "id": "module_vector_arity_error",
+    "args": [
+      "module_vector_arity_error.pk"
+    ],
+    "returncode": 3,
+    "stdout": "",
+    "stderr": "Error: Expected at most %s argument(s).\n  @main() [<tmp>/module_vector_arity_error.pk:2]\n",
+    "timeout": 15,
+    "files": {
+      "module_vector_arity_error.pk": "from types import Vector\nprint(Vector(1, 2, 3, 4))\n"
+    }
+  },
+  {
+    "id": "module_os_filesize_error",
+    "args": [
+      "module_os_filesize_error.pk"
+    ],
+    "returncode": 3,
+    "stdout": "",
+    "stderr": "Error: Path 'missing.txt' wasn't a file.\n  @main() [<tmp>/module_os_filesize_error.pk:2]\n",
+    "timeout": 15,
+    "files": {
+      "module_os_filesize_error.pk": "import os\nprint(os.filesize('missing.txt'))\n"
+    }
+  },
+  {
+    "id": "cli_long_cmd_option",
+    "args": [
+      "--cmd",
+      "print('long-cmd'); print(6 * 7)"
+    ],
+    "returncode": 0,
+    "stdout": "long-cmd\n42\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "cli_debug_long_cmd_option",
+    "args": [
+      "--debug",
+      "--cmd",
+      "print('debug-long-cmd')"
+    ],
+    "returncode": 0,
+    "stdout": "debug-long-cmd\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "cli_version_option",
+    "args": [
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "pocketlang 0.1.0\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "cli_help_option",
+    "args": [
+      "--help"
+    ],
+    "returncode": 0,
+    "stdout": "Usage: pocket ... [-c cmd | file] ...\n    -c, --cmd=<str>   Evaluate and run the passed string.\n    -d, --debug       Compile and run the debug version.\n    -h, --help        Prints this help message and exit.\n    -q, --quiet       Don't print version and copyright statement on REPL startup.\n    -v, --version     Prints the pocketlang version and exit.\n",
+    "stderr": "",
+    "timeout": 15
+  },
+  {
+    "id": "cli_missing_file_error",
+    "args": [
+      "missing_script.pk"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "Error finding script at \"missing_script.pk\"\n",
+    "timeout": 15
+  },
+  {
+    "id": "cli_invalid_option_error",
+    "args": [
+      "--not-an-option"
+    ],
+    "returncode": 1,
+    "stdout": "Usage: pocket ... [-c cmd | file] ...\n    -c, --cmd=<str>   Evaluate and run the passed string.\n    -d, --debug       Compile and run the debug version.\n    -h, --help        Prints this help message and exit.\n    -q, --quiet       Don't print version and copyright statement on REPL startup.\n    -v, --version     Prints the pocketlang version and exit.\n",
+    "stderr": "error: unknown option `--not-an-option`\n",
+    "timeout": 15
+  },
+  {
+    "id": "error_diagnostic_00",
+    "args": [
+      "-c",
+      "print(1 + )"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "@(String):1 error: Expected an expression.\n    1 | print(1 + )\n      |           ~\n",
+    "timeout": 15
+  },
+  {
+    "id": "error_diagnostic_01",
+    "args": [
+      "-c",
+      "assert(false, 'generated failure')"
+    ],
+    "returncode": 3,
+    "stdout": "",
+    "stderr": "Error: Assertion failed: 'generated failure'.\n  @main() [@(String):1]\n",
+    "timeout": 15
+  },
+  {
+    "id": "error_diagnostic_02",
+    "args": [
+      "-c",
+      "missing_name + 1"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "@(String):1 error: Name 'missing_name' is not defined.\n    1 | missing_name + 1\n      | ~~~~~~~~~~~~\n",
+    "timeout": 15
+  },
+  {
+    "id": "error_diagnostic_03",
+    "args": [
+      "-c",
+      "l = [1, 2]; print(l[9])"
+    ],
+    "returncode": 3,
+    "stdout": "",
+    "stderr": "Error: List index out of bound.\n  @main() [@(String):1]\n",
+    "timeout": 15
+  },
+  {
+    "id": "error_diagnostic_04",
+    "args": [
+      "-c",
+      "class Bad is MissingParent end"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "@(String):1 error: Name 'MissingParent' is not defined.\n    1 | class Bad is MissingParent end\n      |              ~~~~~~~~~~~~~\n",
+    "timeout": 15
+  },
+  {
+    "id": "error_diagnostic_05",
+    "args": [
+      "-c",
+      "def broken(x) if x then print(x) end"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "@(String):1 error: Expected 'end' after function definition end.\n    1 | def broken(x) if x then print(x) end\n      |                                     ~\n",
+    "timeout": 15
+  }
+]

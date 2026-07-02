@@ -1,0 +1,8 @@
+repository: ThakeeNathees/pocketlang
+commit: cc73ca61b113d48ee130d837a7a8b145e41de5ce
+instance_id: thakeenathees__pocketlang.cc73ca6
+language: c
+difficulty: medium
+gold_sha256: 2b6f181a9a47f7faee03f6171835abf3b5fca6532fc78bd6953a5af218e10a94
+eval_clean_hashes:
+- 2b6f181a9a47f7faee03f6171835abf3b5fca6532fc78bd6953a5af218e10a94

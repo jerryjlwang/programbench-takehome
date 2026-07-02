@@ -18,8 +18,10 @@ black-box behavioral tests, validate them against the gold executable, run an
 assertion-quality gate, revise flagged tests, then iteratively add tests guided
 by source line coverage of the gold implementation.
 
-The fairness/non-leakage audit is intentionally left for the next pass, per the
-current request.
+The fairness/non-leakage audit now includes solver-facing package isolation,
+offline solve/compile/scoring checks, wrapper/oracle rejection, trajectory
+review of the latest mini-SWE run, and documentation sufficiency for the compile
+contract plus end-to-end behavior surface.
 
 ## ProgramBench catalog target
 
@@ -163,6 +165,32 @@ Logging behavior:
   linter check catalog and all findings.
 - `logs/coverage_harvested.log` and `logs/coverage_generated.log` include the
   gcovr line-coverage tables in addition to the JSON/HTML coverage artifacts.
+
+## mini-SWE solve run record
+
+Representative low-reasoning mini-SWE run:
+
+- Run: `runs/lua_miniswe_20260701_033746`
+- Model: `gemini/gemini-3.5-flash`
+- Reasoning effort: `low`
+- Max tokens per call: `4096`
+- Exit status: `Submitted`
+- API calls: `154`
+- Estimated cost: `$2.4256686000000003`
+- Format errors: `1`, recovered
+- Guard blocks: `11`
+- Hardened eval: `180/1338` tests passed, `1158` failed, `0` errors
+- Candidate hash:
+  `ef09a27e010a75dfac4339d6557b3cfdd50dd682e66a3a0ce5ec3d0ba9fb03ce`
+- Report:
+  `tasks/reproduced_lua/reports/evals/lua_miniswe_20260701_033746/submission_report.md`
+
+This is kept as the current representative lightweight-agent run. It completed
+a nontrivial cleanroom implementation attempt without the previous overwritten
+oracle spiral or repeated-format abort. The result is not a successful solve,
+but it is a useful ProgramBench-style submission artifact for this take-home:
+the candidate compiled, was not rejected as an oracle wrapper, and passed 180
+behavioral tests under the hardened evaluator.
 
 ## Coverage results
 

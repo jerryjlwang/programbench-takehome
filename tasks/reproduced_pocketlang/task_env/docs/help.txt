@@ -1,0 +1,6 @@
+Usage: pocket ... [-c cmd | file] ...
+    -c, --cmd=<str>   Evaluate and run the passed string.
+    -d, --debug       Compile and run the debug version.
+    -h, --help        Prints this help message and exit.
+    -q, --quiet       Don't print version and copyright statement on REPL startup.
+    -v, --version     Prints the pocketlang version and exit.

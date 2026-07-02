@@ -1,0 +1,25 @@
+rm -rf ./build/
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c cli/main.c -o build/Release/obj/./cli/main.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/core/compiler.c -o build/Release/obj/./src/core/compiler.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/core/core.c -o build/Release/obj/./src/core/core.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/core/debug.c -o build/Release/obj/./src/core/debug.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/core/public.c -o build/Release/obj/./src/core/public.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/core/utils.c -o build/Release/obj/./src/core/utils.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/core/value.c -o build/Release/obj/./src/core/value.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/core/vm.c -o build/Release/obj/./src/core/vm.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/libs.c -o build/Release/obj/./src/libs/libs.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/std_dummy.c -o build/Release/obj/./src/libs/std_dummy.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/std_io.c -o build/Release/obj/./src/libs/std_io.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/std_json.c -o build/Release/obj/./src/libs/std_json.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/std_math.c -o build/Release/obj/./src/libs/std_math.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/std_os.c -o build/Release/obj/./src/libs/std_os.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/std_path.c -o build/Release/obj/./src/libs/std_path.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/std_term.c -o build/Release/obj/./src/libs/std_term.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/std_time.c -o build/Release/obj/./src/libs/std_time.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/std_types.c -o build/Release/obj/./src/libs/std_types.o
+gcc build/Release/obj/./cli/main.o build/Release/obj/./src/core/compiler.o build/Release/obj/./src/core/core.o build/Release/obj/./src/core/debug.o build/Release/obj/./src/core/public.o build/Release/obj/./src/core/utils.o build/Release/obj/./src/core/value.o build/Release/obj/./src/core/vm.o build/Release/obj/./src/libs/libs.o build/Release/obj/./src/libs/std_dummy.o build/Release/obj/./src/libs/std_io.o build/Release/obj/./src/libs/std_json.o build/Release/obj/./src/libs/std_math.o build/Release/obj/./src/libs/std_os.o build/Release/obj/./src/libs/std_path.o build/Release/obj/./src/libs/std_term.o build/Release/obj/./src/libs/std_time.o build/Release/obj/./src/libs/std_types.o -o build/Release/bin/pocket -lm -ldl
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/thirdparty/cJSON/cJSON.c -o build/Release/obj/./src/libs/thirdparty/cJSON/cJSON.o
+gcc -I./src/include/ -MMD -MP -fPIC -g -O3 -c src/libs/thirdparty/cwalk/cwalk.c -o build/Release/obj/./src/libs/thirdparty/cwalk/cwalk.o
+ar rcs build/Release/lib/libpocketlang.a build/Release/obj/./src/core/compiler.o build/Release/obj/./src/core/core.o build/Release/obj/./src/core/debug.o build/Release/obj/./src/core/public.o build/Release/obj/./src/core/utils.o build/Release/obj/./src/core/value.o build/Release/obj/./src/core/vm.o build/Release/obj/./src/libs/libs.o build/Release/obj/./src/libs/std_dummy.o build/Release/obj/./src/libs/std_io.o build/Release/obj/./src/libs/std_json.o build/Release/obj/./src/libs/std_math.o build/Release/obj/./src/libs/std_os.o build/Release/obj/./src/libs/std_path.o build/Release/obj/./src/libs/std_term.o build/Release/obj/./src/libs/std_time.o build/Release/obj/./src/libs/std_types.o build/Release/obj/./src/libs/thirdparty/cJSON/cJSON.o build/Release/obj/./src/libs/thirdparty/cwalk/cwalk.o
+2b6f181a9a47f7faee03f6171835abf3b5fca6532fc78bd6953a5af218e10a94  /out/pocket
+/out/pocket: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, with debug_info, not stripped

@@ -1,0 +1,158 @@
+{
+  "static_check_catalog": [
+    {
+      "id": "no_assertions",
+      "severity": "HIGH",
+      "description": "Test function contains no pytest assertions.",
+      "blocking": true
+    },
+    {
+      "id": "trivially_true",
+      "severity": "HIGH",
+      "description": "Assertion is always true, such as assert True or assert X or True.",
+      "blocking": true
+    },
+    {
+      "id": "sole_returncode",
+      "severity": "HIGH",
+      "description": "Only assertion checks returncode == 0.",
+      "blocking": true
+    },
+    {
+      "id": "returncode_in_list",
+      "severity": "HIGH",
+      "description": "Assertion allows non-zero exits with returncode in a list.",
+      "blocking": true
+    },
+    {
+      "id": "pass_body",
+      "severity": "HIGH",
+      "description": "Test body is just pass.",
+      "blocking": true
+    },
+    {
+      "id": "assertion_disjunction",
+      "severity": "HIGH",
+      "description": "Assertion uses A or B instead of asserting an exact outcome.",
+      "blocking": true
+    },
+    {
+      "id": "if_no_else",
+      "severity": "HIGH",
+      "description": "If branch asserts with no else, silently passing when false.",
+      "blocking": true
+    },
+    {
+      "id": "if_else_both_assert",
+      "severity": "HIGH",
+      "description": "Both if and else branches assert, suggesting non-deterministic behavior.",
+      "blocking": true
+    },
+    {
+      "id": "try_except_swallow",
+      "severity": "HIGH",
+      "description": "Except handler with pass swallows failures.",
+      "blocking": true
+    },
+    {
+      "id": "all_assertions_weak",
+      "severity": "HIGH",
+      "description": "All assertions only check returncode, len, or isdigit.",
+      "blocking": true
+    },
+    {
+      "id": "short_substring",
+      "severity": "HIGH",
+      "description": "Substring check is shorter than 15 characters.",
+      "blocking": true
+    },
+    {
+      "id": "golden_written_in_test",
+      "severity": "HIGH",
+      "description": "Test writes to its own golden file.",
+      "blocking": true
+    },
+    {
+      "id": "golden_no_equality",
+      "severity": "HIGH",
+      "description": "Golden file is referenced in docstring but never compared with ==.",
+      "blocking": true
+    },
+    {
+      "id": "golden_docstring",
+      "severity": "HIGH",
+      "description": "Golden file is mentioned in docstring but not found in the test body.",
+      "blocking": true
+    },
+    {
+      "id": "for_no_guard",
+      "severity": "MED",
+      "description": "Loop-only assertions have no pre-loop length check.",
+      "blocking": true
+    },
+    {
+      "id": "weak_sole_assertion",
+      "severity": "MED",
+      "description": "Sole assertion is len(x) > N.",
+      "blocking": true
+    },
+    {
+      "id": "relative_length_assertion",
+      "severity": "MED",
+      "description": "Assertion uses len(x) >= N, a relative bound that verifies no content.",
+      "blocking": true
+    },
+    {
+      "id": "any_all_no_guard",
+      "severity": "MED",
+      "description": "any()/all() assertion has no non-empty guard.",
+      "blocking": true
+    },
+    {
+      "id": "file_exists_no_content",
+      "severity": "MED",
+      "description": "path.exists() assertion has no content assertion.",
+      "blocking": true
+    },
+    {
+      "id": "only_negative_assertions",
+      "severity": "MED",
+      "description": "All assertions are negative checks such as not in or !=.",
+      "blocking": true
+    },
+    {
+      "id": "catches",
+      "severity": "LOW",
+      "description": "Missing or too-short CATCHES docstring.",
+      "blocking": false
+    }
+  ],
+  "dynamic_check_catalog": [
+    {
+      "id": "gold_suite_passes",
+      "description": "Every generated test passes against the gold executable.",
+      "blocking": true
+    },
+    {
+      "id": "dummy_suite_rejects",
+      "description": "No generated test passes against a dummy executable.",
+      "blocking": true
+    }
+  ],
+  "static_findings": [],
+  "blocking_static_findings": [],
+  "gold": {
+    "returncode": 0,
+    "passed": 421,
+    "failed": 0,
+    "failed_tests": [],
+    "output_tail": "........................................................................ [ 17%]\n........................................................................ [ 34%]\n........................................................................ [ 51%]\n........................................................................ [ 68%]\n........................................................................ [ 85%]\n.............................................................            [100%]\n421 passed in 7.57s\n"
+  },
+  "dummy": {
+    "returncode": 1,
+    "passed": 0,
+    "failed": 421,
+    "passed_tests": [],
+    "output_tail": "ses.py::test_generated_behavior_case[module_os_filesize_error]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_long_cmd_option]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_debug_long_cmd_option]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_version_option]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_help_option]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_missing_file_error]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_invalid_option_error]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_00]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_01]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_02]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_03]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_04]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_05]\nFAILED workspace/eval/tests/test_harvested_cli.py::test_version_and_help_text\nFAILED workspace/eval/tests/test_harvested_cli.py::test_command_string_and_script_file_execution\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__basics]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__builtin_fn]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__builtin_ty]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__class]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__closure]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__controlflow]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__fibers]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__functions]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__import]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__tco]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__dummy]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__math]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__path]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__json]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__random__linked_list]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__random__lisp_eval]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__brainfuck]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__fib]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__fizzbuzz]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__helloworld]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__matrix]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__pi]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__prime]\n421 failed in 9.07s\n"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/lm_as_judge_review.json",
-  "generated_at": "2026-06-30T06:08:36Z",
+  "generated_at": "2026-06-30T23:15:59Z",
   "reviewer": "Codex LM-as-judge with independent explorer review",
   "independent_agent": {
     "id": "019f1720-3b3f-7e71-9408-3de2c35f40b1",
@@ -34,7 +34,7 @@
     "previous_wrapper_submission_sha256": "b72484b300f4905e062118eb2054dd0cef44aaf03086a6a9781fef570e45ba0f",
     "solver_env_file_hashes": {
       "task_env/compile.sh": "086f5e38ca3aea9b6b1048fd0e17c2e62a96e0a5dc5efad2e86396381e8cd7af",
-      "task_env/docs/USAGE.md": "0e7f5ee1dce0fc55c583d95c64e5dd1c7fe589607973347f8a2b783cf21cd50b",
+      "task_env/docs/USAGE.md": "0919c36365197f79602a397ba73f80b1ad5acb9263cdd75698663112e82010fe",
       "task_env/docs/help.txt": "aa514ebc7d70d3ab3a88465454afd122f1e9c123d545973fe8081960f3f3e6ba",
       "task_env/executable": "56c87d948e1fa58d5854c40259e15dc974997fdd8515e2353e37a95ef404926a"
     }
@@ -50,7 +50,17 @@
       "id": "unsuccessful_local_source_discovery_probe",
       "severity": "MED",
       "status": "warning",
-      "message_indexes": [24, 32, 42, 56, 62, 84, 98, 165, 173],
+      "message_indexes": [
+        24,
+        32,
+        42,
+        56,
+        62,
+        84,
+        98,
+        165,
+        173
+      ],
       "evidence": "/Users/jerrywang/programbench-takehome/runs/lua_miniswe_20260629_225007/lua__lua.c6b4848/lua__lua.c6b4848.traj.json",
       "details": "The trajectory contains unsuccessful checks for installed Lua commands, headers, packages, and local source locations. The judge did not find evidence that source was found or used."
     }
@@ -99,6 +109,18 @@
       "evidence": "tests_generated is outside task_env and mounted only by evaluate_submission.sh."
     },
     {
+      "id": "solver_facing_docs_describe_compile_contract",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/task_env/docs/USAGE.md documents offline gcc:13-bookworm compile, network-disabled build, and required ./executable output."
+    },
+    {
+      "id": "solver_facing_docs_describe_behavior_surface",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/task_env/docs/USAGE.md describes CLI options, oracle observation, script/stdin/module/environment/error behavior, and core standard-library behavior families."
+    },
+    {
       "id": "solve_network_disabled",
       "blocking": true,
       "status": "passed",
@@ -145,9 +167,27 @@
       "blocking": false,
       "status": "risk",
       "evidence": "Exact gold-byte and known-string scans are heuristic and should be supplemented by strict packaging."
+    },
+    {
+      "id": "deterministic_fairness_audit_passed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/deterministic_fairness_report.json"
+    },
+    {
+      "id": "cleanroom_oracle_execute_only_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/scripts/build_miniswe_cleanroom_image.sh"
     }
   ],
   "findings": [
+    {
+      "severity": "INFO",
+      "status": "observed",
+      "finding": "Deterministic hidden-test fairness audit now passes before future solve runs.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/reports/qc/deterministic_fairness_report.json"
+    },
     {
       "severity": "HIGH",
       "status": "resolved",
@@ -175,7 +215,7 @@
     {
       "severity": "LOW",
       "status": "accepted",
-      "finding": "Solver-facing docs identify Lua 5.5.1 behavior, which is necessary documentation rather than original source leakage.",
+      "finding": "Solver-facing docs identify Lua 5.5.1 behavior and document the offline compile contract plus end-to-end behavior surface, which is necessary documentation rather than original source leakage.",
       "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_lua/task_env/docs/USAGE.md"
     },
     {

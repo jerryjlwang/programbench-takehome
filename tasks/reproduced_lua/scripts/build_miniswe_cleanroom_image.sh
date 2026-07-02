@@ -27,10 +27,15 @@ RUN apt-get update \
   && chown agent:agent /workspace
 
 WORKDIR /workspace
-COPY --chown=agent:agent task_env/ /workspace/
+COPY task_env/ /workspace/
 
-RUN chmod +x /workspace/executable /workspace/compile.sh \
-  && printf 'executable\n*.o\n*.a\n*.so\n*.dylib\n*.out\n' > /workspace/.gitignore \
+RUN chown -R agent:agent /workspace \
+  && chown root:agent /workspace \
+  && chmod 1775 /workspace \
+  && chown root:root /workspace/executable \
+  && chmod 0111 /workspace/executable \
+  && chmod +x /workspace/compile.sh \
+  && printf 'executable\ncandidate\n*.o\n*.a\n*.so\n*.dylib\n*.out\n' > /workspace/.gitignore \
   && chown agent:agent /workspace/.gitignore
 
 USER agent

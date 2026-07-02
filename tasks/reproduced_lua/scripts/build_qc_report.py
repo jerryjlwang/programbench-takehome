@@ -182,6 +182,53 @@ def build_coverage_checks(root: Path, harvested: dict, generated: dict, line_tar
     ]
 
 
+def normalize_audit_status(status: str) -> str:
+    return {
+        "pass": "passed",
+        "fail": "failed",
+        "warn": "warning",
+    }.get(status, status)
+
+
+def build_deterministic_fairness_checks(review: dict | None) -> list[dict]:
+    if review is None:
+        return [
+            {
+                "id": "deterministic_fairness_report_present",
+                "blocking": True,
+                "status": "failed",
+                "observed": "missing",
+            }
+        ]
+
+    checks = [
+        {
+            "id": "deterministic_fairness_report_present",
+            "blocking": True,
+            "status": "passed",
+            "observed": review["source"],
+        },
+        {
+            "id": "deterministic_fairness_audit_passed",
+            "blocking": True,
+            "status": check_status(review.get("verdict") == "pass"),
+            "observed": review.get("verdict", "missing"),
+            "blocking_failures": review.get("blocking_failures"),
+        },
+    ]
+    for check in review.get("checks", []):
+        status = normalize_audit_status(check["status"])
+        checks.append(
+            {
+                "id": f"deterministic_{check['id']}",
+                "blocking": check["status"] == "fail",
+                "status": status,
+                "evidence": check.get("evidence", ""),
+            }
+        )
+    return checks
+
+
 def build_lm_judge_checks(review: dict | None) -> list[dict]:
     if review is None:
         return [
@@ -238,6 +285,23 @@ def markdown(report: dict) -> str:
         observed = check.get("observed_line_percent", check.get("generated_line_percent", check.get("files", "")))
         target = check.get("target_line_percent", "")
         lines.append(f"| {check['id']} | {check['status']} | {observed} | {target} |")
+
+    deterministic = report["deterministic_fairness_review"]
+    lines.extend(
+        [
+            "",
+            "## Deterministic Fairness Review",
+            "",
+            f"- Verdict: `{deterministic['verdict']}`",
+            f"- Blocking failures: `{deterministic['blocking_failures']}`",
+            f"- Warnings: `{deterministic['warnings']}`",
+            "",
+            "| Check | Status | Evidence |",
+            "| --- | --- | --- |",
+        ]
+    )
+    for check in deterministic.get("checks", []):
+        lines.append(f"| {check['id']} | {check['status']} | `{check.get('evidence', '')}` |")
 
     lines.extend(
         [
@@ -314,20 +378,31 @@ def main() -> int:
     harvested_coverage_path = base / "reports/coverage_harvested/coverage_summary.json"
     generated_coverage_path = base / "reports/coverage_generated/coverage_summary.json"
     catalog_path = root / "programbench/src/programbench/data/tasks/lua__lua.c6b4848/tests.json"
+    deterministic_fairness_path = base / "reports/qc/deterministic_fairness_report.json"
     lm_judge_path = base / "reports/qc/lm_as_judge_review.json"
 
     quality = load_json(quality_path)
     harvested = coverage_snapshot(harvested_coverage_path)
     generated = coverage_snapshot(generated_coverage_path)
+    deterministic_fairness_review = load_optional_json(deterministic_fairness_path)
+    if deterministic_fairness_review is not None:
+        deterministic_fairness_review.setdefault("source", str(deterministic_fairness_path))
     lm_judge_review = load_optional_json(lm_judge_path)
     linter_checks = build_linter_checks(quality)
     dynamic_checks = build_dynamic_checks(quality)
     coverage_checks = build_coverage_checks(root, harvested, generated, args.line_target)
+    deterministic_fairness_checks = build_deterministic_fairness_checks(deterministic_fairness_review)
     lm_judge_checks = build_lm_judge_checks(lm_judge_review)
 
     blocking_checks = [
         check
-        for check in [*linter_checks, *dynamic_checks, *coverage_checks, *lm_judge_checks]
+        for check in [
+            *linter_checks,
+            *dynamic_checks,
+            *coverage_checks,
+            *deterministic_fairness_checks,
+            *lm_judge_checks,
+        ]
         if check.get("blocking")
     ]
     failed_blocking = [check for check in blocking_checks if check["status"] != "passed"]
@@ -347,6 +422,17 @@ def main() -> int:
         "linter_checks": linter_checks,
         "dynamic_checks": dynamic_checks,
         "coverage_line_checks": coverage_checks,
+        "deterministic_fairness_review": deterministic_fairness_review
+        or {
+            "source": str(deterministic_fairness_path),
+            "verdict": "missing",
+            "blocking_failures": 1,
+            "warnings": 0,
+            "counts": {},
+            "checks": [],
+            "notes": [],
+        },
+        "deterministic_fairness_checks": deterministic_fairness_checks,
         "lm_as_judge_review": lm_judge_review
         or {
             "source": str(lm_judge_path),
@@ -371,6 +457,7 @@ def main() -> int:
             "coverage_harvested_summary": str(harvested_coverage_path),
             "coverage_harvested_full": str(base / "reports/coverage_harvested/coverage.json"),
             "coverage_harvested_log": str(base / "logs/coverage_harvested.log"),
+            "deterministic_fairness_report": str(deterministic_fairness_path),
             "lm_as_judge_review": str(lm_judge_path),
         },
     }

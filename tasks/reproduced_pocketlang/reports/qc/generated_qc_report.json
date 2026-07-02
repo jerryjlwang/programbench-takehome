@@ -1,0 +1,1382 @@
+{
+  "generated_at": "2026-07-02T06:45:56.126628+00:00",
+  "status": "passed",
+  "failed_blocking_checks": [],
+  "catalog": {
+    "source": "local PocketLang recreation; no ProgramBench catalog entry",
+    "catalog_task": false,
+    "generated_cases": 396,
+    "active": 421,
+    "listed": 421,
+    "ignored": 0
+  },
+  "quality": {
+    "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/quality_generated/quality_report.json",
+    "gold": {
+      "returncode": 0,
+      "passed": 421,
+      "failed": 0,
+      "failed_tests": [],
+      "output_tail": "........................................................................ [ 17%]\n........................................................................ [ 34%]\n........................................................................ [ 51%]\n........................................................................ [ 68%]\n........................................................................ [ 85%]\n.............................................................            [100%]\n421 passed in 7.57s\n"
+    },
+    "dummy": {
+      "returncode": 1,
+      "passed": 0,
+      "failed": 421,
+      "passed_tests": [],
+      "output_tail": "ses.py::test_generated_behavior_case[module_os_filesize_error]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_long_cmd_option]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_debug_long_cmd_option]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_version_option]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_help_option]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_missing_file_error]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_invalid_option_error]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_00]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_01]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_02]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_03]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_04]\nFAILED workspace/eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_05]\nFAILED workspace/eval/tests/test_harvested_cli.py::test_version_and_help_text\nFAILED workspace/eval/tests/test_harvested_cli.py::test_command_string_and_script_file_execution\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__basics]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__builtin_fn]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__builtin_ty]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__class]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__closure]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__controlflow]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__fibers]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__functions]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__import]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__tco]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__dummy]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__math]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__path]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__json]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__random__linked_list]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__random__lisp_eval]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__brainfuck]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__fib]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__fizzbuzz]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__helloworld]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__matrix]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__pi]\nFAILED workspace/eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__prime]\n421 failed in 9.07s\n"
+    },
+    "static_findings": [],
+    "blocking_static_findings": []
+  },
+  "linter_checks": [
+    {
+      "id": "no_assertions",
+      "severity": "HIGH",
+      "description": "Test function contains no pytest assertions.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "trivially_true",
+      "severity": "HIGH",
+      "description": "Assertion is always true, such as assert True or assert X or True.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "sole_returncode",
+      "severity": "HIGH",
+      "description": "Only assertion checks returncode == 0.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "returncode_in_list",
+      "severity": "HIGH",
+      "description": "Assertion allows non-zero exits with returncode in a list.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "pass_body",
+      "severity": "HIGH",
+      "description": "Test body is just pass.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "assertion_disjunction",
+      "severity": "HIGH",
+      "description": "Assertion uses A or B instead of asserting an exact outcome.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "if_no_else",
+      "severity": "HIGH",
+      "description": "If branch asserts with no else, silently passing when false.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "if_else_both_assert",
+      "severity": "HIGH",
+      "description": "Both if and else branches assert, suggesting non-deterministic behavior.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "try_except_swallow",
+      "severity": "HIGH",
+      "description": "Except handler with pass swallows failures.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "all_assertions_weak",
+      "severity": "HIGH",
+      "description": "All assertions only check returncode, len, or isdigit.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "short_substring",
+      "severity": "HIGH",
+      "description": "Substring check is shorter than 15 characters.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "golden_written_in_test",
+      "severity": "HIGH",
+      "description": "Test writes to its own golden file.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "golden_no_equality",
+      "severity": "HIGH",
+      "description": "Golden file is referenced in docstring but never compared with ==.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "golden_docstring",
+      "severity": "HIGH",
+      "description": "Golden file is mentioned in docstring but not found in the test body.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "for_no_guard",
+      "severity": "MED",
+      "description": "Loop-only assertions have no pre-loop length check.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "weak_sole_assertion",
+      "severity": "MED",
+      "description": "Sole assertion is len(x) > N.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "relative_length_assertion",
+      "severity": "MED",
+      "description": "Assertion uses len(x) >= N, a relative bound that verifies no content.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "any_all_no_guard",
+      "severity": "MED",
+      "description": "any()/all() assertion has no non-empty guard.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "file_exists_no_content",
+      "severity": "MED",
+      "description": "path.exists() assertion has no content assertion.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "only_negative_assertions",
+      "severity": "MED",
+      "description": "All assertions are negative checks such as not in or !=.",
+      "blocking": true,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "passed"
+    },
+    {
+      "id": "catches",
+      "severity": "LOW",
+      "description": "Missing or too-short CATCHES docstring.",
+      "blocking": false,
+      "findings": 0,
+      "blocking_findings": 0,
+      "status": "informational"
+    }
+  ],
+  "dynamic_checks": [
+    {
+      "id": "no_blocking_static_linter_findings",
+      "blocking": true,
+      "status": "passed",
+      "observed": 0
+    },
+    {
+      "id": "gold_suite_passes",
+      "blocking": true,
+      "status": "passed",
+      "passed": 421,
+      "failed": 0,
+      "returncode": 0
+    },
+    {
+      "id": "dummy_suite_rejects",
+      "blocking": true,
+      "status": "passed",
+      "passed": 0,
+      "failed": 421,
+      "returncode": 1
+    }
+  ],
+  "coverage_line_checks": [
+    {
+      "id": "generated_line_coverage_meets_local_target",
+      "blocking": true,
+      "target_line_percent": 72.0,
+      "observed_line_percent": 72.7,
+      "status": "passed"
+    },
+    {
+      "id": "generated_line_coverage_not_lower_than_harvested",
+      "blocking": true,
+      "harvested_line_percent": 68.0,
+      "generated_line_percent": 72.7,
+      "delta_line_percent": 4.7,
+      "status": "passed"
+    },
+    {
+      "id": "generated_file_line_metrics_logged",
+      "blocking": true,
+      "files": 20,
+      "status": "passed"
+    },
+    {
+      "id": "generated_full_line_coverage_json_logged",
+      "blocking": true,
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/coverage_generated/coverage.json",
+      "status": "passed"
+    },
+    {
+      "id": "harvested_full_line_coverage_json_logged",
+      "blocking": true,
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/coverage_harvested/coverage.json",
+      "status": "passed"
+    }
+  ],
+  "fairness_report_checks": [
+    {
+      "id": "fairness_report_present",
+      "blocking": true,
+      "status": "passed",
+      "observed": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/fairness_lm_judge.md"
+    }
+  ],
+  "deterministic_fairness_review": {
+    "task": "reproduced_pocketlang",
+    "status": "pass",
+    "passed": 9,
+    "failed": 0,
+    "metrics": {
+      "harvested_case_count": 23,
+      "generated_case_count": 396,
+      "gold_passed": 421,
+      "dummy_passed": 0,
+      "harvested_line_percent": 68.0,
+      "harvested_branch_percent": 59.6,
+      "generated_line_percent": 72.7,
+      "generated_branch_percent": 62.3
+    },
+    "checks": [
+      {
+        "id": "task_env_contains_only_solver_facing_files",
+        "status": "pass",
+        "evidence": "task_env contains only executable, compile.sh, and docs."
+      },
+      {
+        "id": "solver_docs_cover_hidden_behavior_families",
+        "status": "pass",
+        "evidence": "USAGE.md names the CLI, language, standard-library, error, and runtime boundaries covered by hidden tests."
+      },
+      {
+        "id": "solver_docs_explain_black_box_observation_boundary",
+        "status": "pass",
+        "evidence": "USAGE.md forbids binary/source shortcuts and limits observation to CLI behavior."
+      },
+      {
+        "id": "pytest_wrappers_have_no_workspace_source_leaks",
+        "status": "pass",
+        "evidence": "No local workspace, source, gold, repository URL, or commit leaks in pytest wrappers."
+      },
+      {
+        "id": "pytest_tests_route_behavior_through_run_pocket",
+        "status": "pass",
+        "evidence": "Test wrappers avoid direct subprocess/source inspection and route behavior through the run_pocket fixture."
+      },
+      {
+        "id": "pytest_assertions_compare_exact_observable_behavior",
+        "status": "pass",
+        "evidence": "Wrappers assert exact return code, stdout, and stderr instead of broad substring checks."
+      },
+      {
+        "id": "case_manifests_are_exact_self_contained_and_large_enough",
+        "status": "pass",
+        "evidence": "23 harvested cases and 396 generated cases have exact outputs, unique ids, no local path leaks, and non-empty observable behavior."
+      },
+      {
+        "id": "quality_gate_gold_passes_dummy_rejected",
+        "status": "pass",
+        "evidence": "Gold passed 421 tests with 0 failures; dummy passed 0 and failed 421."
+      },
+      {
+        "id": "generated_suite_preserves_or_improves_coverage",
+        "status": "pass",
+        "evidence": "Harvested coverage 68.0% line/59.6% branch; generated coverage 72.7% line/62.3% branch."
+      }
+    ],
+    "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/deterministic_fairness_report.json",
+    "verdict": "pass",
+    "blocking_failures": 0,
+    "warnings": 0
+  },
+  "deterministic_fairness_checks": [
+    {
+      "id": "deterministic_fairness_report_present",
+      "blocking": true,
+      "status": "passed",
+      "observed": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/deterministic_fairness_report.json"
+    },
+    {
+      "id": "deterministic_fairness_audit_passed",
+      "blocking": true,
+      "status": "passed",
+      "observed": "pass",
+      "blocking_failures": 0
+    },
+    {
+      "id": "deterministic_task_env_contains_only_solver_facing_files",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "task_env contains only executable, compile.sh, and docs."
+    },
+    {
+      "id": "deterministic_solver_docs_cover_hidden_behavior_families",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "USAGE.md names the CLI, language, standard-library, error, and runtime boundaries covered by hidden tests."
+    },
+    {
+      "id": "deterministic_solver_docs_explain_black_box_observation_boundary",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "USAGE.md forbids binary/source shortcuts and limits observation to CLI behavior."
+    },
+    {
+      "id": "deterministic_pytest_wrappers_have_no_workspace_source_leaks",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "No local workspace, source, gold, repository URL, or commit leaks in pytest wrappers."
+    },
+    {
+      "id": "deterministic_pytest_tests_route_behavior_through_run_pocket",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Test wrappers avoid direct subprocess/source inspection and route behavior through the run_pocket fixture."
+    },
+    {
+      "id": "deterministic_pytest_assertions_compare_exact_observable_behavior",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Wrappers assert exact return code, stdout, and stderr instead of broad substring checks."
+    },
+    {
+      "id": "deterministic_case_manifests_are_exact_self_contained_and_large_enough",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "23 harvested cases and 396 generated cases have exact outputs, unique ids, no local path leaks, and non-empty observable behavior."
+    },
+    {
+      "id": "deterministic_quality_gate_gold_passes_dummy_rejected",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Gold passed 421 tests with 0 failures; dummy passed 0 and failed 421."
+    },
+    {
+      "id": "deterministic_generated_suite_preserves_or_improves_coverage",
+      "blocking": false,
+      "status": "passed",
+      "evidence": "Harvested coverage 68.0% line/59.6% branch; generated coverage 72.7% line/62.3% branch."
+    }
+  ],
+  "lm_as_judge_review": {
+    "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/lm_as_judge_review.json",
+    "generated_at": "2026-07-02T06:45:56Z",
+    "reviewer": "Codex LM-as-judge local fairness audit",
+    "subject_run": "pre_agent_empty_stub_smoke",
+    "verdict": "pre_agent_task_fairness_and_evaluator_checks_passed",
+    "latest_eval": {
+      "run": "pocketlang_empty_stub",
+      "status": "failed",
+      "returncode": 1,
+      "tests": 421,
+      "passed": 0,
+      "failures": 421,
+      "errors": 0,
+      "skipped": 0,
+      "findings_count": 0,
+      "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/evals/pocketlang_empty_stub/summary.json",
+      "pytest_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/evals/pocketlang_empty_stub/pytest.log",
+      "trajectory": "not-run",
+      "submission": "/tmp/pocketlang_empty_stub.tar.gz"
+    },
+    "hashes": {
+      "gold_hash": "2b6f181a9a47f7faee03f6171835abf3b5fca6532fc78bd6953a5af218e10a94",
+      "solver_env_file_hashes": {
+        "task_env/compile.sh": "ebca9bf06a4bfb44bcf6784d03eacffe0b5284e22ac7cf15fa9caf62a9395ab5",
+        "task_env/docs/USAGE.md": "745dc811f65f9c7e05be6798ee3fbbd78ccb94f19284f43954fd3a7237ac12e0",
+        "task_env/docs/help.txt": "e1e29429995df70a9334ddd9bc4ce9f42a8b639f9371198d22d81e0c18f8137b",
+        "task_env/executable": "2b6f181a9a47f7faee03f6171835abf3b5fca6532fc78bd6953a5af218e10a94"
+      }
+    },
+    "solver_env_manifest": [
+      "task_env/compile.sh",
+      "task_env/docs/USAGE.md",
+      "task_env/docs/help.txt",
+      "task_env/executable"
+    ],
+    "strict_trace_warnings": [],
+    "checks": [
+      {
+        "id": "local_lm_as_judge_review_completed",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "Codex reviewed the PocketLang task recreation artifacts, deterministic fairness report, cleanroom image, generated suite, hardened evaluator, mini-SWE runner, and bad-stub eval."
+      },
+      {
+        "id": "deterministic_fairness_audit_passed",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/deterministic_fairness_report.json"
+      },
+      {
+        "id": "generated_quality_gate_gold_passes_dummy_rejects",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "Gold passed 421/421 generated-suite tests; dummy passed 0/421."
+      },
+      {
+        "id": "generated_suite_above_programbench_minimum",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "421 total generated-suite pytest tests and 396 generated exact-output cases; above the 224-test ProgramBench minimum referenced by the project."
+      },
+      {
+        "id": "bad_stub_behavioral_eval_recorded",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/evals/pocketlang_empty_stub/summary.json: empty stub scored 0/421 and failed."
+      },
+      {
+        "id": "solver_facing_task_env_has_no_tests_or_source",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "task_env contains only compile.sh, docs, and executable."
+      },
+      {
+        "id": "solver_facing_task_env_has_no_git_directory",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "find/rg scan of task_env found no .git paths."
+      },
+      {
+        "id": "test_suite_not_solver_facing",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "tests_harvested and tests_generated are outside task_env and mounted only by evaluation/coverage scripts."
+      },
+      {
+        "id": "task_env_path_leak_scan_clean",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "Deterministic audit found no local workspace, source, gold, repository URL, commit, hidden-test, coverage, or report leaks in solver-facing wrappers/manifests."
+      },
+      {
+        "id": "solver_facing_docs_describe_compile_contract",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/task_env/docs/USAGE.md"
+      },
+      {
+        "id": "solver_facing_docs_describe_behavior_surface",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/task_env/docs/USAGE.md"
+      },
+      {
+        "id": "cleanroom_oracle_execute_only_configured",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/build_miniswe_cleanroom_image.sh"
+      },
+      {
+        "id": "cleanroom_image_smoke_checked_network_none",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "programbench-pocketlang-cleanroom:local was rebuilt and smoke-checked with --network none; only expected workspace files were present."
+      },
+      {
+        "id": "solve_network_disabled",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/run_miniswe_pocketlang.py"
+      },
+      {
+        "id": "compile_network_disabled",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "test_network_disabled",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "prebuilt_submission_executable_ignored_before_compile",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "stale_junit_results_removed_before_scoring",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "exact_gold_hash_rejection_configured",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "embedded_gold_oracle_scan_configured",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+      },
+      {
+        "id": "downstream_miniswe_runner_imports_and_help_work",
+        "blocking": true,
+        "status": "passed",
+        "evidence": "/tmp/pocketlang_miniswe_help.log"
+      },
+      {
+        "id": "downstream_miniswe_solve_not_yet_run",
+        "blocking": false,
+        "status": "not_applicable",
+        "evidence": "PocketLang mini-SWE solve is ready but has not been started."
+      }
+    ],
+    "findings": [
+      {
+        "severity": "INFO",
+        "status": "observed",
+        "finding": "Deterministic hidden-test fairness audit passes for the PocketLang generated suite and checks black-box test structure plus documentation sufficiency.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/deterministic_fairness_report.json"
+      },
+      {
+        "severity": "INFO",
+        "status": "observed",
+        "finding": "The solver-facing PocketLang task_env contains only compile.sh, docs, and the oracle executable; hidden tests and source are outside the solve container.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/task_env"
+      },
+      {
+        "severity": "INFO",
+        "status": "observed",
+        "finding": "Generated tests are exact-output behavioral tests that run the candidate executable via pytest wrappers and reject a dummy implementation.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/quality_generated/quality_report.json"
+      },
+      {
+        "severity": "INFO",
+        "status": "observed",
+        "finding": "The hardened evaluator compiles offline with --network none, removes prebuilt executables, rejects gold hash/embedded oracle bytes, and scored an empty stub at 0/421.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/evals/pocketlang_empty_stub/summary.json"
+      },
+      {
+        "severity": "LOW",
+        "status": "accepted",
+        "finding": "Solver-facing docs identify PocketLang 0.1.0 behavior, the offline compile contract, the oracle observation boundary, and the end-to-end behavior surface.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/task_env/docs/USAGE.md"
+      },
+      {
+        "severity": "INFO",
+        "status": "pending",
+        "finding": "No PocketLang mini-SWE solve trajectory exists yet; trajectory-specific fairness checks should be rerun after the first solve/eval.",
+        "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/run_miniswe_pocketlang.py"
+      }
+    ],
+    "recommended_qc_fields": [
+      "solve_run_id",
+      "trajectory_path",
+      "submission_sha256",
+      "candidate_executable_hash",
+      "gold_hash",
+      "eval_status",
+      "tests_total",
+      "failures",
+      "errors",
+      "skipped",
+      "wrapper_or_oracle_findings",
+      "strict_trace_warnings",
+      "solver_env_manifest",
+      "solver_env_file_hashes",
+      "deterministic_fairness_verdict",
+      "compile_network_disabled",
+      "test_network_disabled",
+      "test_suite_mount_scope",
+      "fairness_judge_verdict"
+    ]
+  },
+  "lm_as_judge_checks": [
+    {
+      "id": "lm_as_judge_review_present",
+      "blocking": true,
+      "status": "passed",
+      "observed": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/lm_as_judge_review.json"
+    },
+    {
+      "id": "local_lm_as_judge_review_completed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Codex reviewed the PocketLang task recreation artifacts, deterministic fairness report, cleanroom image, generated suite, hardened evaluator, mini-SWE runner, and bad-stub eval."
+    },
+    {
+      "id": "deterministic_fairness_audit_passed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/deterministic_fairness_report.json"
+    },
+    {
+      "id": "generated_quality_gate_gold_passes_dummy_rejects",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Gold passed 421/421 generated-suite tests; dummy passed 0/421."
+    },
+    {
+      "id": "generated_suite_above_programbench_minimum",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "421 total generated-suite pytest tests and 396 generated exact-output cases; above the 224-test ProgramBench minimum referenced by the project."
+    },
+    {
+      "id": "bad_stub_behavioral_eval_recorded",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/evals/pocketlang_empty_stub/summary.json: empty stub scored 0/421 and failed."
+    },
+    {
+      "id": "solver_facing_task_env_has_no_tests_or_source",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "task_env contains only compile.sh, docs, and executable."
+    },
+    {
+      "id": "solver_facing_task_env_has_no_git_directory",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "find/rg scan of task_env found no .git paths."
+    },
+    {
+      "id": "test_suite_not_solver_facing",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "tests_harvested and tests_generated are outside task_env and mounted only by evaluation/coverage scripts."
+    },
+    {
+      "id": "task_env_path_leak_scan_clean",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Deterministic audit found no local workspace, source, gold, repository URL, commit, hidden-test, coverage, or report leaks in solver-facing wrappers/manifests."
+    },
+    {
+      "id": "solver_facing_docs_describe_compile_contract",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/task_env/docs/USAGE.md"
+    },
+    {
+      "id": "solver_facing_docs_describe_behavior_surface",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/task_env/docs/USAGE.md"
+    },
+    {
+      "id": "cleanroom_oracle_execute_only_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/build_miniswe_cleanroom_image.sh"
+    },
+    {
+      "id": "cleanroom_image_smoke_checked_network_none",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "programbench-pocketlang-cleanroom:local was rebuilt and smoke-checked with --network none; only expected workspace files were present."
+    },
+    {
+      "id": "solve_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/run_miniswe_pocketlang.py"
+    },
+    {
+      "id": "compile_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "test_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "prebuilt_submission_executable_ignored_before_compile",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "stale_junit_results_removed_before_scoring",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "exact_gold_hash_rejection_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "embedded_gold_oracle_scan_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "downstream_miniswe_runner_imports_and_help_work",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/tmp/pocketlang_miniswe_help.log"
+    },
+    {
+      "id": "downstream_miniswe_solve_not_yet_run",
+      "blocking": false,
+      "status": "not_applicable",
+      "evidence": "PocketLang mini-SWE solve is ready but has not been started."
+    }
+  ],
+  "coverage": {
+    "harvested": {
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/coverage_harvested/coverage_summary.json",
+      "missing": false,
+      "line_percent": 68.0,
+      "line_covered": 4690,
+      "line_total": 6900,
+      "branch_percent": 59.6,
+      "branch_covered": 1998,
+      "branch_total": 3350,
+      "files": [
+        {
+          "filename": "cli/argparse.h",
+          "line_percent": 54.6,
+          "line_covered": 125,
+          "line_total": 229,
+          "branch_percent": 51.1,
+          "branch_covered": 68,
+          "branch_total": 133
+        },
+        {
+          "filename": "cli/main.c",
+          "line_percent": 87.9,
+          "line_covered": 29,
+          "line_total": 33,
+          "branch_percent": 72.7,
+          "branch_covered": 8,
+          "branch_total": 11
+        },
+        {
+          "filename": "src/core/compiler.c",
+          "line_percent": 87.2,
+          "line_covered": 1229,
+          "line_total": 1410,
+          "branch_percent": 78.4,
+          "branch_covered": 576,
+          "branch_total": 735
+        },
+        {
+          "filename": "src/core/core.c",
+          "line_percent": 64.1,
+          "line_covered": 752,
+          "line_total": 1173,
+          "branch_percent": 53.3,
+          "branch_covered": 442,
+          "branch_total": 829
+        },
+        {
+          "filename": "src/core/debug.c",
+          "line_percent": 8.8,
+          "line_covered": 31,
+          "line_total": 352,
+          "branch_percent": 9.2,
+          "branch_covered": 7,
+          "branch_total": 76
+        },
+        {
+          "filename": "src/core/public.c",
+          "line_percent": 61.6,
+          "line_covered": 297,
+          "line_total": 482,
+          "branch_percent": 45.1,
+          "branch_covered": 64,
+          "branch_total": 142
+        },
+        {
+          "filename": "src/core/utils.c",
+          "line_percent": 57.7,
+          "line_covered": 97,
+          "line_total": 168,
+          "branch_percent": 54.1,
+          "branch_covered": 79,
+          "branch_total": 146
+        },
+        {
+          "filename": "src/core/value.c",
+          "line_percent": 81.3,
+          "line_covered": 799,
+          "line_total": 983,
+          "branch_percent": 74.5,
+          "branch_covered": 351,
+          "branch_total": 471
+        },
+        {
+          "filename": "src/core/vm.c",
+          "line_percent": 80.8,
+          "line_covered": 717,
+          "line_total": 887,
+          "branch_percent": 66.5,
+          "branch_covered": 268,
+          "branch_total": 403
+        },
+        {
+          "filename": "src/libs/gen/nativeapi.h",
+          "line_percent": 0.0,
+          "line_covered": 0,
+          "line_total": 60,
+          "branch_percent": null,
+          "branch_covered": 0,
+          "branch_total": 0
+        },
+        {
+          "filename": "src/libs/libs.c",
+          "line_percent": 100.0,
+          "line_covered": 14,
+          "line_total": 14,
+          "branch_percent": null,
+          "branch_covered": 0,
+          "branch_total": 0
+        },
+        {
+          "filename": "src/libs/std_dummy.c",
+          "line_percent": 100.0,
+          "line_covered": 76,
+          "line_total": 76,
+          "branch_percent": 50.0,
+          "branch_covered": 16,
+          "branch_total": 32
+        },
+        {
+          "filename": "src/libs/std_io.c",
+          "line_percent": 44.0,
+          "line_covered": 96,
+          "line_total": 218,
+          "branch_percent": 24.7,
+          "branch_covered": 23,
+          "branch_total": 93
+        },
+        {
+          "filename": "src/libs/std_json.c",
+          "line_percent": 73.3,
+          "line_covered": 88,
+          "line_total": 120,
+          "branch_percent": 54.5,
+          "branch_covered": 36,
+          "branch_total": 66
+        },
+        {
+          "filename": "src/libs/std_math.c",
+          "line_percent": 77.7,
+          "line_covered": 73,
+          "line_total": 94,
+          "branch_percent": 43.5,
+          "branch_covered": 20,
+          "branch_total": 46
+        },
+        {
+          "filename": "src/libs/std_os.c",
+          "line_percent": 26.1,
+          "line_covered": 24,
+          "line_total": 92,
+          "branch_percent": 0.0,
+          "branch_covered": 0,
+          "branch_total": 21
+        },
+        {
+          "filename": "src/libs/std_path.c",
+          "line_percent": 68.6,
+          "line_covered": 105,
+          "line_total": 153,
+          "branch_percent": 52.7,
+          "branch_covered": 39,
+          "branch_total": 74
+        },
+        {
+          "filename": "src/libs/std_term.c",
+          "line_percent": 59.4,
+          "line_covered": 107,
+          "line_total": 180,
+          "branch_percent": 3.8,
+          "branch_covered": 1,
+          "branch_total": 26
+        },
+        {
+          "filename": "src/libs/std_time.c",
+          "line_percent": 53.3,
+          "line_covered": 8,
+          "line_total": 15,
+          "branch_percent": null,
+          "branch_covered": 0,
+          "branch_total": 0
+        },
+        {
+          "filename": "src/libs/std_types.c",
+          "line_percent": 14.3,
+          "line_covered": 23,
+          "line_total": 161,
+          "branch_percent": 0.0,
+          "branch_covered": 0,
+          "branch_total": 46
+        }
+      ],
+      "lowest_line_files": [
+        {
+          "filename": "src/libs/gen/nativeapi.h",
+          "line_percent": 0.0,
+          "line_covered": 0,
+          "line_total": 60,
+          "branch_percent": null,
+          "branch_covered": 0,
+          "branch_total": 0
+        },
+        {
+          "filename": "src/core/debug.c",
+          "line_percent": 8.8,
+          "line_covered": 31,
+          "line_total": 352,
+          "branch_percent": 9.2,
+          "branch_covered": 7,
+          "branch_total": 76
+        },
+        {
+          "filename": "src/libs/std_types.c",
+          "line_percent": 14.3,
+          "line_covered": 23,
+          "line_total": 161,
+          "branch_percent": 0.0,
+          "branch_covered": 0,
+          "branch_total": 46
+        },
+        {
+          "filename": "src/libs/std_os.c",
+          "line_percent": 26.1,
+          "line_covered": 24,
+          "line_total": 92,
+          "branch_percent": 0.0,
+          "branch_covered": 0,
+          "branch_total": 21
+        },
+        {
+          "filename": "src/libs/std_io.c",
+          "line_percent": 44.0,
+          "line_covered": 96,
+          "line_total": 218,
+          "branch_percent": 24.7,
+          "branch_covered": 23,
+          "branch_total": 93
+        },
+        {
+          "filename": "src/libs/std_time.c",
+          "line_percent": 53.3,
+          "line_covered": 8,
+          "line_total": 15,
+          "branch_percent": null,
+          "branch_covered": 0,
+          "branch_total": 0
+        },
+        {
+          "filename": "cli/argparse.h",
+          "line_percent": 54.6,
+          "line_covered": 125,
+          "line_total": 229,
+          "branch_percent": 51.1,
+          "branch_covered": 68,
+          "branch_total": 133
+        },
+        {
+          "filename": "src/core/utils.c",
+          "line_percent": 57.7,
+          "line_covered": 97,
+          "line_total": 168,
+          "branch_percent": 54.1,
+          "branch_covered": 79,
+          "branch_total": 146
+        },
+        {
+          "filename": "src/libs/std_term.c",
+          "line_percent": 59.4,
+          "line_covered": 107,
+          "line_total": 180,
+          "branch_percent": 3.8,
+          "branch_covered": 1,
+          "branch_total": 26
+        },
+        {
+          "filename": "src/core/public.c",
+          "line_percent": 61.6,
+          "line_covered": 297,
+          "line_total": 482,
+          "branch_percent": 45.1,
+          "branch_covered": 64,
+          "branch_total": 142
+        }
+      ]
+    },
+    "generated": {
+      "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/coverage_generated/coverage_summary.json",
+      "missing": false,
+      "line_percent": 72.7,
+      "line_covered": 5026,
+      "line_total": 6912,
+      "branch_percent": 62.3,
+      "branch_covered": 2144,
+      "branch_total": 3444,
+      "files": [
+        {
+          "filename": "cli/argparse.h",
+          "line_percent": 58.1,
+          "line_covered": 133,
+          "line_total": 229,
+          "branch_percent": 53.4,
+          "branch_covered": 71,
+          "branch_total": 133
+        },
+        {
+          "filename": "cli/main.c",
+          "line_percent": 87.9,
+          "line_covered": 29,
+          "line_total": 33,
+          "branch_percent": 72.7,
+          "branch_covered": 8,
+          "branch_total": 11
+        },
+        {
+          "filename": "src/core/compiler.c",
+          "line_percent": 89.1,
+          "line_covered": 1257,
+          "line_total": 1410,
+          "branch_percent": 79.9,
+          "branch_covered": 591,
+          "branch_total": 740
+        },
+        {
+          "filename": "src/core/core.c",
+          "line_percent": 65.9,
+          "line_covered": 773,
+          "line_total": 1173,
+          "branch_percent": 54.2,
+          "branch_covered": 452,
+          "branch_total": 834
+        },
+        {
+          "filename": "src/core/debug.c",
+          "line_percent": 30.7,
+          "line_covered": 108,
+          "line_total": 352,
+          "branch_percent": 34.7,
+          "branch_covered": 33,
+          "branch_total": 95
+        },
+        {
+          "filename": "src/core/public.c",
+          "line_percent": 66.6,
+          "line_covered": 323,
+          "line_total": 485,
+          "branch_percent": 49.7,
+          "branch_covered": 73,
+          "branch_total": 147
+        },
+        {
+          "filename": "src/core/utils.c",
+          "line_percent": 57.7,
+          "line_covered": 97,
+          "line_total": 168,
+          "branch_percent": 54.1,
+          "branch_covered": 79,
+          "branch_total": 146
+        },
+        {
+          "filename": "src/core/value.c",
+          "line_percent": 82.3,
+          "line_covered": 809,
+          "line_total": 983,
+          "branch_percent": 75.5,
+          "branch_covered": 357,
+          "branch_total": 473
+        },
+        {
+          "filename": "src/core/vm.c",
+          "line_percent": 81.1,
+          "line_covered": 719,
+          "line_total": 887,
+          "branch_percent": 67.6,
+          "branch_covered": 273,
+          "branch_total": 404
+        },
+        {
+          "filename": "src/libs/gen/nativeapi.h",
+          "line_percent": 0.0,
+          "line_covered": 0,
+          "line_total": 60,
+          "branch_percent": null,
+          "branch_covered": 0,
+          "branch_total": 0
+        },
+        {
+          "filename": "src/libs/libs.c",
+          "line_percent": 100.0,
+          "line_covered": 14,
+          "line_total": 14,
+          "branch_percent": null,
+          "branch_covered": 0,
+          "branch_total": 0
+        },
+        {
+          "filename": "src/libs/std_dummy.c",
+          "line_percent": 100.0,
+          "line_covered": 76,
+          "line_total": 76,
+          "branch_percent": 50.0,
+          "branch_covered": 16,
+          "branch_total": 32
+        },
+        {
+          "filename": "src/libs/std_io.c",
+          "line_percent": 44.0,
+          "line_covered": 96,
+          "line_total": 218,
+          "branch_percent": 24.7,
+          "branch_covered": 23,
+          "branch_total": 93
+        },
+        {
+          "filename": "src/libs/std_json.c",
+          "line_percent": 73.3,
+          "line_covered": 88,
+          "line_total": 120,
+          "branch_percent": 54.5,
+          "branch_covered": 36,
+          "branch_total": 66
+        },
+        {
+          "filename": "src/libs/std_math.c",
+          "line_percent": 77.7,
+          "line_covered": 73,
+          "line_total": 94,
+          "branch_percent": 43.5,
+          "branch_covered": 20,
+          "branch_total": 46
+        },
+        {
+          "filename": "src/libs/std_os.c",
+          "line_percent": 65.6,
+          "line_covered": 61,
+          "line_total": 93,
+          "branch_percent": 51.4,
+          "branch_covered": 19,
+          "branch_total": 37
+        },
+        {
+          "filename": "src/libs/std_path.c",
+          "line_percent": 68.6,
+          "line_covered": 105,
+          "line_total": 153,
+          "branch_percent": 55.4,
+          "branch_covered": 41,
+          "branch_total": 74
+        },
+        {
+          "filename": "src/libs/std_term.c",
+          "line_percent": 59.4,
+          "line_covered": 107,
+          "line_total": 180,
+          "branch_percent": 3.8,
+          "branch_covered": 1,
+          "branch_total": 26
+        },
+        {
+          "filename": "src/libs/std_time.c",
+          "line_percent": 75.0,
+          "line_covered": 12,
+          "line_total": 16,
+          "branch_percent": null,
+          "branch_covered": 0,
+          "branch_total": 0
+        },
+        {
+          "filename": "src/libs/std_types.c",
+          "line_percent": 86.9,
+          "line_covered": 146,
+          "line_total": 168,
+          "branch_percent": 58.6,
+          "branch_covered": 51,
+          "branch_total": 87
+        }
+      ],
+      "lowest_line_files": [
+        {
+          "filename": "src/libs/gen/nativeapi.h",
+          "line_percent": 0.0,
+          "line_covered": 0,
+          "line_total": 60,
+          "branch_percent": null,
+          "branch_covered": 0,
+          "branch_total": 0
+        },
+        {
+          "filename": "src/core/debug.c",
+          "line_percent": 30.7,
+          "line_covered": 108,
+          "line_total": 352,
+          "branch_percent": 34.7,
+          "branch_covered": 33,
+          "branch_total": 95
+        },
+        {
+          "filename": "src/libs/std_io.c",
+          "line_percent": 44.0,
+          "line_covered": 96,
+          "line_total": 218,
+          "branch_percent": 24.7,
+          "branch_covered": 23,
+          "branch_total": 93
+        },
+        {
+          "filename": "src/core/utils.c",
+          "line_percent": 57.7,
+          "line_covered": 97,
+          "line_total": 168,
+          "branch_percent": 54.1,
+          "branch_covered": 79,
+          "branch_total": 146
+        },
+        {
+          "filename": "cli/argparse.h",
+          "line_percent": 58.1,
+          "line_covered": 133,
+          "line_total": 229,
+          "branch_percent": 53.4,
+          "branch_covered": 71,
+          "branch_total": 133
+        },
+        {
+          "filename": "src/libs/std_term.c",
+          "line_percent": 59.4,
+          "line_covered": 107,
+          "line_total": 180,
+          "branch_percent": 3.8,
+          "branch_covered": 1,
+          "branch_total": 26
+        },
+        {
+          "filename": "src/libs/std_os.c",
+          "line_percent": 65.6,
+          "line_covered": 61,
+          "line_total": 93,
+          "branch_percent": 51.4,
+          "branch_covered": 19,
+          "branch_total": 37
+        },
+        {
+          "filename": "src/core/core.c",
+          "line_percent": 65.9,
+          "line_covered": 773,
+          "line_total": 1173,
+          "branch_percent": 54.2,
+          "branch_covered": 452,
+          "branch_total": 834
+        },
+        {
+          "filename": "src/core/public.c",
+          "line_percent": 66.6,
+          "line_covered": 323,
+          "line_total": 485,
+          "branch_percent": 49.7,
+          "branch_covered": 73,
+          "branch_total": 147
+        },
+        {
+          "filename": "src/libs/std_path.c",
+          "line_percent": 68.6,
+          "line_covered": 105,
+          "line_total": 153,
+          "branch_percent": 55.4,
+          "branch_covered": 41,
+          "branch_total": 74
+        }
+      ]
+    }
+  },
+  "artifacts": {
+    "quality_report": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/quality_generated/quality_report.json",
+    "quality_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/logs/quality_generated.log",
+    "gold_junit": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/quality_generated/gold_results.xml",
+    "dummy_junit": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/quality_generated/dummy_results.xml",
+    "coverage_generated_summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/coverage_generated/coverage_summary.json",
+    "coverage_generated_full": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/coverage_generated/coverage.json",
+    "coverage_generated_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/logs/coverage_generated.log",
+    "coverage_harvested_summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/coverage_harvested/coverage_summary.json",
+    "coverage_harvested_full": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/coverage_harvested/coverage.json",
+    "coverage_harvested_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/logs/coverage_harvested.log",
+    "fairness_report": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/fairness_lm_judge.md",
+    "deterministic_fairness_report": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/deterministic_fairness_report.json",
+    "lm_as_judge_review": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/lm_as_judge_review.json"
+  }
+}

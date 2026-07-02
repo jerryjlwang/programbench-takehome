@@ -1,0 +1,3379 @@
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF [ 17%]
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF [ 34%]
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF [ 51%]
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF [ 68%]
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF [ 85%]
+FFFFFFFFFFFFFFFFFFFFFFFFFF..FFFFFFFF.FFFFFFFFFFFFFFFFFFFFFFFF            [100%]
+=================================== FAILURES ===================================
+______________ test_generated_behavior_case[arith_precedence_00] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '16\n9\n1\n'
+E     
+E     - 16
+E     - 9
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_00] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '35\n27\n'
+E     
+E     - 35
+E     - 27
+______________ test_generated_behavior_case[arith_precedence_01] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '33\n16\n1\n'
+E     
+E     - 33
+E     - 16
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_01] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '7\n33\n'
+E     
+E     - 7
+E     - 33
+______________ test_generated_behavior_case[arith_precedence_02] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '56\n25\n1\n'
+E     
+E     - 56
+E     - 25
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_02] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '85\n46\n'
+E     
+E     - 85
+E     - 46
+______________ test_generated_behavior_case[arith_precedence_03] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '85\n36\n1\n'
+E     
+E     - 85
+E     - 36
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_03] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '103\n54\n'
+E     
+E     - 103
+E     - 54
+______________ test_generated_behavior_case[arith_precedence_04] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '120\n49\n1\n'
+E     
+E     - 120
+E     - 49
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_04] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '119\n61\n'
+E     
+E     - 119
+E     - 61
+______________ test_generated_behavior_case[arith_precedence_05] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '161\n64\n1\n'
+E     
+E     - 161
+E     - 64
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_05] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '135\n67\n'
+E     
+E     - 135
+E     - 67
+______________ test_generated_behavior_case[arith_precedence_06] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '208\n81\n1\n'
+E     
+E     - 208
+E     - 81
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_06] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '153\n68\n'
+E     
+E     - 153
+E     - 68
+______________ test_generated_behavior_case[arith_precedence_07] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '58\n100\n1\n'
+E     
+E     - 58
+E     - 100
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_07] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '170\n92\n'
+E     
+E     - 170
+E     - 92
+______________ test_generated_behavior_case[arith_precedence_08] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '96\n121\n0\n'
+E     
+E     - 96
+E     - 121
+E     - 0
+________________ test_generated_behavior_case[bitwise_combo_08] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '187\n87\n'
+E     
+E     - 187
+E     - 87
+______________ test_generated_behavior_case[arith_precedence_09] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '140\n144\n3\n'
+E     
+E     - 140
+E     - 144
+E     - 3
+________________ test_generated_behavior_case[bitwise_combo_09] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '204\n109\n'
+E     
+E     - 204
+E     - 109
+______________ test_generated_behavior_case[arith_precedence_10] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '190\n169\n0\n'
+E     
+E     - 190
+E     - 169
+E     - 0
+________________ test_generated_behavior_case[bitwise_combo_10] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '197\n98\n'
+E     
+E     - 197
+E     - 98
+______________ test_generated_behavior_case[arith_precedence_11] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '246\n196\n3\n'
+E     
+E     - 246
+E     - 196
+E     - 3
+________________ test_generated_behavior_case[bitwise_combo_11] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '230\n122\n'
+E     
+E     - 230
+E     - 122
+______________ test_generated_behavior_case[arith_precedence_12] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '308\n225\n1\n'
+E     
+E     - 308
+E     - 225
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_12] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '7\n113\n'
+E     
+E     - 7
+E     - 113
+______________ test_generated_behavior_case[arith_precedence_13] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '376\n256\n7\n'
+E     
+E     - 376
+E     - 256
+E     - 7
+________________ test_generated_behavior_case[bitwise_combo_13] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '280\n135\n'
+E     
+E     - 280
+E     - 135
+______________ test_generated_behavior_case[arith_precedence_14] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '100\n289\n1\n'
+E     
+E     - 100
+E     - 289
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_14] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '291\n128\n'
+E     
+E     - 291
+E     - 128
+______________ test_generated_behavior_case[arith_precedence_15] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '159\n324\n2\n'
+E     
+E     - 159
+E     - 324
+E     - 2
+________________ test_generated_behavior_case[bitwise_combo_15] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '307\n136\n'
+E     
+E     - 307
+E     - 136
+______________ test_generated_behavior_case[arith_precedence_16] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '224\n361\n1\n'
+E     
+E     - 224
+E     - 361
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_16] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '325\n179\n'
+E     
+E     - 325
+E     - 179
+______________ test_generated_behavior_case[arith_precedence_17] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '295\n400\n4\n'
+E     
+E     - 295
+E     - 400
+E     - 4
+________________ test_generated_behavior_case[bitwise_combo_17] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '341\n185\n'
+E     
+E     - 341
+E     - 185
+______________ test_generated_behavior_case[arith_precedence_18] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '372\n441\n5\n'
+E     
+E     - 372
+E     - 441
+E     - 5
+________________ test_generated_behavior_case[bitwise_combo_18] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '359\n166\n'
+E     
+E     - 359
+E     - 166
+______________ test_generated_behavior_case[arith_precedence_19] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '455\n484\n1\n'
+E     
+E     - 455
+E     - 484
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_19] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '263\n174\n'
+E     
+E     - 263
+E     - 174
+______________ test_generated_behavior_case[arith_precedence_20] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '544\n529\n5\n'
+E     
+E     - 544
+E     - 529
+E     - 5
+________________ test_generated_behavior_case[bitwise_combo_20] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '397\n213\n'
+E     
+E     - 397
+E     - 213
+______________ test_generated_behavior_case[arith_precedence_21] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '142\n576\n1\n'
+E     
+E     - 142
+E     - 576
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_21] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '386\n219\n'
+E     
+E     - 386
+E     - 219
+______________ test_generated_behavior_case[arith_precedence_22] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '222\n625\n1\n'
+E     
+E     - 222
+E     - 625
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_22] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '427\n204\n'
+E     
+E     - 427
+E     - 204
+______________ test_generated_behavior_case[arith_precedence_23] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '308\n676\n3\n'
+E     
+E     - 308
+E     - 676
+E     - 3
+________________ test_generated_behavior_case[bitwise_combo_23] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '398\n196\n'
+E     
+E     - 398
+E     - 196
+______________ test_generated_behavior_case[arith_precedence_24] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '400\n729\n3\n'
+E     
+E     - 400
+E     - 729
+E     - 3
+________________ test_generated_behavior_case[bitwise_combo_24] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '461\n255\n'
+E     
+E     - 461
+E     - 255
+______________ test_generated_behavior_case[arith_precedence_25] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '498\n784\n1\n'
+E     
+E     - 498
+E     - 784
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_25] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '462\n245\n'
+E     
+E     - 462
+E     - 245
+______________ test_generated_behavior_case[arith_precedence_26] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '602\n841\n1\n'
+E     
+E     - 602
+E     - 841
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_26] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '7\n234\n'
+E     
+E     - 7
+E     - 234
+______________ test_generated_behavior_case[arith_precedence_27] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '712\n900\n3\n'
+E     
+E     - 712
+E     - 900
+E     - 3
+________________ test_generated_behavior_case[bitwise_combo_27] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '26\n226\n'
+E     
+E     - 26
+E     - 226
+______________ test_generated_behavior_case[arith_precedence_28] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '184\n961\n1\n'
+E     
+E     - 184
+E     - 961
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_28] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '519\n281\n'
+E     
+E     - 519
+E     - 281
+______________ test_generated_behavior_case[arith_precedence_29] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '285\n1024\n0\n'
+E     
+E     - 285
+E     - 1024
+E     - 0
+________________ test_generated_behavior_case[bitwise_combo_29] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '547\n271\n'
+E     
+E     - 547
+E     - 271
+______________ test_generated_behavior_case[arith_precedence_30] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '392\n1089\n1\n'
+E     
+E     - 392
+E     - 1089
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_30] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '517\n312\n'
+E     
+E     - 517
+E     - 312
+______________ test_generated_behavior_case[arith_precedence_31] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '505\n1156\n2\n'
+E     
+E     - 505
+E     - 1156
+E     - 2
+________________ test_generated_behavior_case[bitwise_combo_31] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '583\n256\n'
+E     
+E     - 583
+E     - 256
+______________ test_generated_behavior_case[arith_precedence_32] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '624\n1225\n3\n'
+E     
+E     - 624
+E     - 1225
+E     - 3
+________________ test_generated_behavior_case[bitwise_combo_32] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '583\n267\n'
+E     
+E     - 583
+E     - 267
+______________ test_generated_behavior_case[arith_precedence_33] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '749\n1296\n1\n'
+E     
+E     - 749
+E     - 1296
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_33] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '615\n273\n'
+E     
+E     - 615
+E     - 273
+______________ test_generated_behavior_case[arith_precedence_34] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '880\n1369\n1\n'
+E     
+E     - 880
+E     - 1369
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_34] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '537\n286\n'
+E     
+E     - 537
+E     - 286
+______________ test_generated_behavior_case[arith_precedence_35] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '226\n1444\n1\n'
+E     
+E     - 226
+E     - 1444
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_35] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '642\n358\n'
+E     
+E     - 642
+E     - 358
+______________ test_generated_behavior_case[arith_precedence_36] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '348\n1521\n2\n'
+E     
+E     - 348
+E     - 1521
+E     - 2
+________________ test_generated_behavior_case[bitwise_combo_36] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '663\n365\n'
+E     
+E     - 663
+E     - 365
+______________ test_generated_behavior_case[arith_precedence_37] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '476\n1600\n3\n'
+E     
+E     - 476
+E     - 1600
+E     - 3
+________________ test_generated_behavior_case[bitwise_combo_37] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '644\n371\n'
+E     
+E     - 644
+E     - 371
+______________ test_generated_behavior_case[arith_precedence_38] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '610\n1681\n1\n'
+E     
+E     - 610
+E     - 1681
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_38] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '669\n372\n'
+E     
+E     - 669
+E     - 372
+______________ test_generated_behavior_case[arith_precedence_39] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '750\n1764\n5\n'
+E     
+E     - 750
+E     - 1764
+E     - 5
+________________ test_generated_behavior_case[bitwise_combo_39] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '718\n332\n'
+E     
+E     - 718
+E     - 332
+______________ test_generated_behavior_case[arith_precedence_40] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '896\n1849\n1\n'
+E     
+E     - 896
+E     - 1849
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_40] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '735\n327\n'
+E     
+E     - 735
+E     - 327
+______________ test_generated_behavior_case[arith_precedence_41] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1048\n1936\n7\n'
+E     
+E     - 1048
+E     - 1936
+E     - 7
+________________ test_generated_behavior_case[bitwise_combo_41] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '524\n349\n'
+E     
+E     - 524
+E     - 349
+______________ test_generated_behavior_case[arith_precedence_42] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '268\n2025\n1\n'
+E     
+E     - 268
+E     - 2025
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_42] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '547\n338\n'
+E     
+E     - 547
+E     - 338
+______________ test_generated_behavior_case[arith_precedence_43] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '411\n2116\n1\n'
+E     
+E     - 411
+E     - 2116
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_43] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '771\n426\n'
+E     
+E     - 771
+E     - 426
+______________ test_generated_behavior_case[arith_precedence_44] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '560\n2209\n1\n'
+E     
+E     - 560
+E     - 2209
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_44] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '773\n417\n'
+E     
+E     - 773
+E     - 417
+______________ test_generated_behavior_case[arith_precedence_45] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '715\n2304\n0\n'
+E     
+E     - 715
+E     - 2304
+E     - 0
+________________ test_generated_behavior_case[bitwise_combo_45] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '789\n439\n'
+E     
+E     - 789
+E     - 439
+______________ test_generated_behavior_case[arith_precedence_46] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '876\n2401\n1\n'
+E     
+E     - 876
+E     - 2401
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_46] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '839\n400\n'
+E     
+E     - 839
+E     - 400
+______________ test_generated_behavior_case[arith_precedence_47] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1043\n2500\n1\n'
+E     
+E     - 1043
+E     - 2500
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_47] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '855\n408\n'
+E     
+E     - 855
+E     - 408
+______________ test_generated_behavior_case[arith_precedence_48] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1216\n2601\n5\n'
+E     
+E     - 1216
+E     - 2601
+E     - 5
+________________ test_generated_behavior_case[bitwise_combo_48] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '777\n387\n'
+E     
+E     - 777
+E     - 387
+______________ test_generated_behavior_case[arith_precedence_49] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '310\n2704\n1\n'
+E     
+E     - 310
+E     - 2704
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_49] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '790\n393\n'
+E     
+E     - 790
+E     - 393
+______________ test_generated_behavior_case[arith_precedence_50] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '474\n2809\n0\n'
+E     
+E     - 474
+E     - 2809
+E     - 0
+________________ test_generated_behavior_case[bitwise_combo_50] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '899\n502\n'
+E     
+E     - 899
+E     - 502
+______________ test_generated_behavior_case[arith_precedence_51] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '644\n2916\n3\n'
+E     
+E     - 644
+E     - 2916
+E     - 3
+________________ test_generated_behavior_case[bitwise_combo_51] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '902\n510\n'
+E     
+E     - 902
+E     - 510
+______________ test_generated_behavior_case[arith_precedence_52] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '820\n3025\n4\n'
+E     
+E     - 820
+E     - 3025
+E     - 4
+________________ test_generated_behavior_case[bitwise_combo_52] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '901\n485\n'
+E     
+E     - 901
+E     - 485
+______________ test_generated_behavior_case[arith_precedence_53] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1002\n3136\n3\n'
+E     
+E     - 1002
+E     - 3136
+E     - 3
+________________ test_generated_behavior_case[bitwise_combo_53] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '934\n491\n'
+E     
+E     - 934
+E     - 491
+______________ test_generated_behavior_case[arith_precedence_54] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1190\n3249\n1\n'
+E     
+E     - 1190
+E     - 3249
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_54] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '975\n476\n'
+E     
+E     - 975
+E     - 476
+______________ test_generated_behavior_case[arith_precedence_55] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1384\n3364\n3\n'
+E     
+E     - 1384
+E     - 3364
+E     - 3
+________________ test_generated_behavior_case[bitwise_combo_55] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '10\n468\n'
+E     
+E     - 10
+E     - 468
+______________ test_generated_behavior_case[arith_precedence_56] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '352\n3481\n1\n'
+E     
+E     - 352
+E     - 3481
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_56] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '11\n463\n'
+E     
+E     - 11
+E     - 463
+______________ test_generated_behavior_case[arith_precedence_57] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '537\n3600\n2\n'
+E     
+E     - 537
+E     - 3600
+E     - 2
+________________ test_generated_behavior_case[bitwise_combo_57] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '47\n453\n'
+E     
+E     - 47
+E     - 453
+______________ test_generated_behavior_case[arith_precedence_58] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '728\n3721\n1\n'
+E     
+E     - 728
+E     - 3721
+E     - 1
+________________ test_generated_behavior_case[bitwise_combo_58] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1029\n570\n'
+E     
+E     - 1029
+E     - 570
+______________ test_generated_behavior_case[arith_precedence_59] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '925\n3844\n3\n'
+E     
+E     - 925
+E     - 3844
+E     - 3
+________________ test_generated_behavior_case[bitwise_combo_59] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1047\n562\n'
+E     
+E     - 1047
+E     - 562
+_______________ test_generated_behavior_case[string_methods_00] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'ALPHA-00\nal...0\nalpha:00\n'
+E     
+E     - ALPHA-00
+E     - alpha-00
+E     - alpha:00
+_________ test_generated_behavior_case[string_slice_interpolation_00] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'alp\nitem-7:alpha\n'
+E     
+E     - alp
+E     - item-7:alpha
+_______________ test_generated_behavior_case[string_methods_01] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'BETA-01\nbeta-01\nbeta:01\n'
+E     
+E     - BETA-01
+E     - beta-01
+E     - beta:01
+_________ test_generated_behavior_case[string_slice_interpolation_01] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'bet\nitem-8:beta\n'
+E     
+E     - bet
+E     - item-8:beta
+_______________ test_generated_behavior_case[string_methods_02] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'GAMMA-02\nga...2\ngamma:02\n'
+E     
+E     - GAMMA-02
+E     - gamma-02
+E     - gamma:02
+_________ test_generated_behavior_case[string_slice_interpolation_02] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'gam\nitem-9:gamma\n'
+E     
+E     - gam
+E     - item-9:gamma
+_______________ test_generated_behavior_case[string_methods_03] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'DELTA-03\nde...3\ndelta:03\n'
+E     
+E     - DELTA-03
+E     - delta-03
+E     - delta:03
+_________ test_generated_behavior_case[string_slice_interpolation_03] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'del\nitem-10:delta\n'
+E     
+E     - del
+E     - item-10:delta
+_______________ test_generated_behavior_case[string_methods_04] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'EPSILON-04\n...nepsilon:04\n'
+E     
+E     - EPSILON-04
+E     - epsilon-04
+E     - epsilon:04
+_________ test_generated_behavior_case[string_slice_interpolation_04] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'eps\nitem-11:epsilon\n'
+E     
+E     - eps
+E     - item-11:epsilon
+_______________ test_generated_behavior_case[string_methods_05] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'ZETA-05\nzeta-05\nzeta:05\n'
+E     
+E     - ZETA-05
+E     - zeta-05
+E     - zeta:05
+_________ test_generated_behavior_case[string_slice_interpolation_05] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'zet\nitem-12:zeta\n'
+E     
+E     - zet
+E     - item-12:zeta
+_______________ test_generated_behavior_case[string_methods_06] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'ETA-06\neta-06\neta:06\n'
+E     
+E     - ETA-06
+E     - eta-06
+E     - eta:06
+_________ test_generated_behavior_case[string_slice_interpolation_06] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'eta\nitem-13:eta\n'
+E     
+E     - eta
+E     - item-13:eta
+_______________ test_generated_behavior_case[string_methods_07] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'THETA-07\nth...7\ntheta:07\n'
+E     
+E     - THETA-07
+E     - theta-07
+E     - theta:07
+_________ test_generated_behavior_case[string_slice_interpolation_07] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'the\nitem-14:theta\n'
+E     
+E     - the
+E     - item-14:theta
+_______________ test_generated_behavior_case[string_methods_08] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'IOTA-08\niota-08\niota:08\n'
+E     
+E     - IOTA-08
+E     - iota-08
+E     - iota:08
+_________ test_generated_behavior_case[string_slice_interpolation_08] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'iot\nitem-15:iota\n'
+E     
+E     - iot
+E     - item-15:iota
+_______________ test_generated_behavior_case[string_methods_09] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'KAPPA-09\nka...9\nkappa:09\n'
+E     
+E     - KAPPA-09
+E     - kappa-09
+E     - kappa:09
+_________ test_generated_behavior_case[string_slice_interpolation_09] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'kap\nitem-16:kappa\n'
+E     
+E     - kap
+E     - item-16:kappa
+_______________ test_generated_behavior_case[string_methods_10] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'LAMBDA-10\nl...\nlambda:10\n'
+E     
+E     - LAMBDA-10
+E     - lambda-10
+E     - lambda:10
+_________ test_generated_behavior_case[string_slice_interpolation_10] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'lam\nitem-17:lambda\n'
+E     
+E     - lam
+E     - item-17:lambda
+_______________ test_generated_behavior_case[string_methods_11] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'MU-11\nmu-11\nmu:11\n'
+E     
+E     - MU-11
+E     - mu-11
+E     - mu:11
+_______________ test_generated_behavior_case[string_methods_12] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'NU-12\nnu-12\nnu:12\n'
+E     
+E     - NU-12
+E     - nu-12
+E     - nu:12
+_______________ test_generated_behavior_case[string_methods_13] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'XI-13\nxi-13\nxi:13\n'
+E     
+E     - XI-13
+E     - xi-13
+E     - xi:13
+_______________ test_generated_behavior_case[string_methods_14] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'OMICRON-14\n...nomicron:14\n'
+E     
+E     - OMICRON-14
+E     - omicron-14
+E     - omicron:14
+_________ test_generated_behavior_case[string_slice_interpolation_14] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'omi\nitem-21:omicron\n'
+E     
+E     - omi
+E     - item-21:omicron
+_______________ test_generated_behavior_case[string_methods_15] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'PI-15\npi-15\npi:15\n'
+E     
+E     - PI-15
+E     - pi-15
+E     - pi:15
+_______________ test_generated_behavior_case[string_methods_16] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'RHO-16\nrho-16\nrho:16\n'
+E     
+E     - RHO-16
+E     - rho-16
+E     - rho:16
+_________ test_generated_behavior_case[string_slice_interpolation_16] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'rho\nitem-23:rho\n'
+E     
+E     - rho
+E     - item-23:rho
+_______________ test_generated_behavior_case[string_methods_17] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'SIGMA-17\nsi...7\nsigma:17\n'
+E     
+E     - SIGMA-17
+E     - sigma-17
+E     - sigma:17
+_________ test_generated_behavior_case[string_slice_interpolation_17] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'sig\nitem-24:sigma\n'
+E     
+E     - sig
+E     - item-24:sigma
+_______________ test_generated_behavior_case[string_methods_18] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'TAU-18\ntau-18\ntau:18\n'
+E     
+E     - TAU-18
+E     - tau-18
+E     - tau:18
+_________ test_generated_behavior_case[string_slice_interpolation_18] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'tau\nitem-25:tau\n'
+E     
+E     - tau
+E     - item-25:tau
+_______________ test_generated_behavior_case[string_methods_19] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'UPSILON-19\n...nupsilon:19\n'
+E     
+E     - UPSILON-19
+E     - upsilon-19
+E     - upsilon:19
+_________ test_generated_behavior_case[string_slice_interpolation_19] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'ups\nitem-26:upsilon\n'
+E     
+E     - ups
+E     - item-26:upsilon
+_______________ test_generated_behavior_case[string_methods_20] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'PHI-20\nphi-20\nphi:20\n'
+E     
+E     - PHI-20
+E     - phi-20
+E     - phi:20
+_________ test_generated_behavior_case[string_slice_interpolation_20] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'phi\nitem-27:phi\n'
+E     
+E     - phi
+E     - item-27:phi
+_______________ test_generated_behavior_case[string_methods_21] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'CHI-21\nchi-21\nchi:21\n'
+E     
+E     - CHI-21
+E     - chi-21
+E     - chi:21
+_________ test_generated_behavior_case[string_slice_interpolation_21] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'chi\nitem-28:chi\n'
+E     
+E     - chi
+E     - item-28:chi
+_______________ test_generated_behavior_case[string_methods_22] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'PSI-22\npsi-22\npsi:22\n'
+E     
+E     - PSI-22
+E     - psi-22
+E     - psi:22
+_________ test_generated_behavior_case[string_slice_interpolation_22] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'psi\nitem-29:psi\n'
+E     
+E     - psi
+E     - item-29:psi
+_______________ test_generated_behavior_case[string_methods_23] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'OMEGA-23\nom...3\nomega:23\n'
+E     
+E     - OMEGA-23
+E     - omega-23
+E     - omega:23
+_________ test_generated_behavior_case[string_slice_interpolation_23] __________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'ome\nitem-30:omega\n'
+E     
+E     - ome
+E     - item-30:omega
+_______________ test_generated_behavior_case[list_append_pop_00] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n0\n2\n'
+E     
+E     - 5
+E     - 0
+E     - 2
+_____________ test_generated_behavior_case[map_lookup_default_00] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '0\n11\n'
+E     
+E     - 0
+E     - 11
+_______________ test_generated_behavior_case[list_append_pop_01] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n3\n3\n'
+E     
+E     - 5
+E     - 3
+E     - 3
+_____________ test_generated_behavior_case[map_lookup_default_01] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '2\n12\n'
+E     
+E     - 2
+E     - 12
+_______________ test_generated_behavior_case[list_append_pop_02] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n6\n4\n'
+E     
+E     - 5
+E     - 6
+E     - 4
+_____________ test_generated_behavior_case[map_lookup_default_02] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '6\n13\n'
+E     
+E     - 6
+E     - 13
+_______________ test_generated_behavior_case[list_append_pop_03] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n9\n5\n'
+E     
+E     - 5
+E     - 9
+E     - 5
+_____________ test_generated_behavior_case[map_lookup_default_03] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '12\n14\n'
+E     
+E     - 12
+E     - 14
+_______________ test_generated_behavior_case[list_append_pop_04] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n12\n6\n'
+E     
+E     - 5
+E     - 12
+E     - 6
+_____________ test_generated_behavior_case[map_lookup_default_04] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '20\n15\n'
+E     
+E     - 20
+E     - 15
+_______________ test_generated_behavior_case[list_append_pop_05] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n15\n7\n'
+E     
+E     - 5
+E     - 15
+E     - 7
+_____________ test_generated_behavior_case[map_lookup_default_05] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '30\n16\n'
+E     
+E     - 30
+E     - 16
+_______________ test_generated_behavior_case[list_append_pop_06] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n18\n8\n'
+E     
+E     - 5
+E     - 18
+E     - 8
+_____________ test_generated_behavior_case[map_lookup_default_06] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '42\n17\n'
+E     
+E     - 42
+E     - 17
+_______________ test_generated_behavior_case[list_append_pop_07] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n21\n9\n'
+E     
+E     - 5
+E     - 21
+E     - 9
+_____________ test_generated_behavior_case[map_lookup_default_07] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '56\n18\n'
+E     
+E     - 56
+E     - 18
+_______________ test_generated_behavior_case[list_append_pop_08] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n24\n10\n'
+E     
+E     - 5
+E     - 24
+E     - 10
+_____________ test_generated_behavior_case[map_lookup_default_08] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '72\n19\n'
+E     
+E     - 72
+E     - 19
+_______________ test_generated_behavior_case[list_append_pop_09] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n27\n11\n'
+E     
+E     - 5
+E     - 27
+E     - 11
+_____________ test_generated_behavior_case[map_lookup_default_09] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '90\n20\n'
+E     
+E     - 90
+E     - 20
+_______________ test_generated_behavior_case[list_append_pop_10] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n30\n12\n'
+E     
+E     - 5
+E     - 30
+E     - 12
+_____________ test_generated_behavior_case[map_lookup_default_10] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '110\n21\n'
+E     
+E     - 110
+E     - 21
+_______________ test_generated_behavior_case[list_append_pop_11] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n33\n13\n'
+E     
+E     - 5
+E     - 33
+E     - 13
+_____________ test_generated_behavior_case[map_lookup_default_11] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '132\n22\n'
+E     
+E     - 132
+E     - 22
+_______________ test_generated_behavior_case[list_append_pop_12] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n36\n14\n'
+E     
+E     - 5
+E     - 36
+E     - 14
+_____________ test_generated_behavior_case[map_lookup_default_12] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '156\n23\n'
+E     
+E     - 156
+E     - 23
+_______________ test_generated_behavior_case[list_append_pop_13] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n39\n15\n'
+E     
+E     - 5
+E     - 39
+E     - 15
+_____________ test_generated_behavior_case[map_lookup_default_13] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '182\n24\n'
+E     
+E     - 182
+E     - 24
+_______________ test_generated_behavior_case[list_append_pop_14] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n42\n16\n'
+E     
+E     - 5
+E     - 42
+E     - 16
+_____________ test_generated_behavior_case[map_lookup_default_14] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '210\n25\n'
+E     
+E     - 210
+E     - 25
+_______________ test_generated_behavior_case[list_append_pop_15] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n45\n17\n'
+E     
+E     - 5
+E     - 45
+E     - 17
+_____________ test_generated_behavior_case[map_lookup_default_15] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '240\n26\n'
+E     
+E     - 240
+E     - 26
+_______________ test_generated_behavior_case[list_append_pop_16] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n48\n18\n'
+E     
+E     - 5
+E     - 48
+E     - 18
+_____________ test_generated_behavior_case[map_lookup_default_16] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '272\n27\n'
+E     
+E     - 272
+E     - 27
+_______________ test_generated_behavior_case[list_append_pop_17] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n51\n19\n'
+E     
+E     - 5
+E     - 51
+E     - 19
+_____________ test_generated_behavior_case[map_lookup_default_17] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '306\n28\n'
+E     
+E     - 306
+E     - 28
+_______________ test_generated_behavior_case[list_append_pop_18] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n54\n20\n'
+E     
+E     - 5
+E     - 54
+E     - 20
+_____________ test_generated_behavior_case[map_lookup_default_18] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '342\n29\n'
+E     
+E     - 342
+E     - 29
+_______________ test_generated_behavior_case[list_append_pop_19] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n57\n21\n'
+E     
+E     - 5
+E     - 57
+E     - 21
+_____________ test_generated_behavior_case[map_lookup_default_19] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '380\n30\n'
+E     
+E     - 380
+E     - 30
+_______________ test_generated_behavior_case[list_append_pop_20] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n60\n22\n'
+E     
+E     - 5
+E     - 60
+E     - 22
+_____________ test_generated_behavior_case[map_lookup_default_20] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '420\n31\n'
+E     
+E     - 420
+E     - 31
+_______________ test_generated_behavior_case[list_append_pop_21] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n63\n23\n'
+E     
+E     - 5
+E     - 63
+E     - 23
+_____________ test_generated_behavior_case[map_lookup_default_21] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '462\n32\n'
+E     
+E     - 462
+E     - 32
+_______________ test_generated_behavior_case[list_append_pop_22] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n66\n24\n'
+E     
+E     - 5
+E     - 66
+E     - 24
+_____________ test_generated_behavior_case[map_lookup_default_22] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '506\n33\n'
+E     
+E     - 506
+E     - 33
+_______________ test_generated_behavior_case[list_append_pop_23] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n69\n25\n'
+E     
+E     - 5
+E     - 69
+E     - 25
+_____________ test_generated_behavior_case[map_lookup_default_23] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '552\n34\n'
+E     
+E     - 552
+E     - 34
+_______________ test_generated_behavior_case[list_append_pop_24] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n72\n26\n'
+E     
+E     - 5
+E     - 72
+E     - 26
+_____________ test_generated_behavior_case[map_lookup_default_24] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '600\n35\n'
+E     
+E     - 600
+E     - 35
+_______________ test_generated_behavior_case[list_append_pop_25] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n75\n27\n'
+E     
+E     - 5
+E     - 75
+E     - 27
+_____________ test_generated_behavior_case[map_lookup_default_25] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '650\n36\n'
+E     
+E     - 650
+E     - 36
+_______________ test_generated_behavior_case[list_append_pop_26] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n78\n28\n'
+E     
+E     - 5
+E     - 78
+E     - 28
+_____________ test_generated_behavior_case[map_lookup_default_26] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '702\n37\n'
+E     
+E     - 702
+E     - 37
+_______________ test_generated_behavior_case[list_append_pop_27] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n81\n29\n'
+E     
+E     - 5
+E     - 81
+E     - 29
+_____________ test_generated_behavior_case[map_lookup_default_27] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '756\n38\n'
+E     
+E     - 756
+E     - 38
+_______________ test_generated_behavior_case[list_append_pop_28] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n84\n30\n'
+E     
+E     - 5
+E     - 84
+E     - 30
+_____________ test_generated_behavior_case[map_lookup_default_28] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '812\n39\n'
+E     
+E     - 812
+E     - 39
+_______________ test_generated_behavior_case[list_append_pop_29] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n87\n31\n'
+E     
+E     - 5
+E     - 87
+E     - 31
+_____________ test_generated_behavior_case[map_lookup_default_29] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '870\n40\n'
+E     
+E     - 870
+E     - 40
+_______________ test_generated_behavior_case[list_append_pop_30] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n90\n32\n'
+E     
+E     - 5
+E     - 90
+E     - 32
+_____________ test_generated_behavior_case[map_lookup_default_30] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '930\n41\n'
+E     
+E     - 930
+E     - 41
+_______________ test_generated_behavior_case[list_append_pop_31] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n93\n33\n'
+E     
+E     - 5
+E     - 93
+E     - 33
+_____________ test_generated_behavior_case[map_lookup_default_31] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '992\n42\n'
+E     
+E     - 992
+E     - 42
+_______________ test_generated_behavior_case[list_append_pop_32] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n96\n34\n'
+E     
+E     - 5
+E     - 96
+E     - 34
+_____________ test_generated_behavior_case[map_lookup_default_32] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1056\n43\n'
+E     
+E     - 1056
+E     - 43
+_______________ test_generated_behavior_case[list_append_pop_33] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n99\n35\n'
+E     
+E     - 5
+E     - 99
+E     - 35
+_____________ test_generated_behavior_case[map_lookup_default_33] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1122\n44\n'
+E     
+E     - 1122
+E     - 44
+_______________ test_generated_behavior_case[list_append_pop_34] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n102\n36\n'
+E     
+E     - 5
+E     - 102
+E     - 36
+_____________ test_generated_behavior_case[map_lookup_default_34] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1190\n45\n'
+E     
+E     - 1190
+E     - 45
+_______________ test_generated_behavior_case[list_append_pop_35] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n105\n37\n'
+E     
+E     - 5
+E     - 105
+E     - 37
+_____________ test_generated_behavior_case[map_lookup_default_35] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1260\n46\n'
+E     
+E     - 1260
+E     - 46
+_______________ test_generated_behavior_case[list_append_pop_36] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n108\n38\n'
+E     
+E     - 5
+E     - 108
+E     - 38
+_____________ test_generated_behavior_case[map_lookup_default_36] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1332\n47\n'
+E     
+E     - 1332
+E     - 47
+_______________ test_generated_behavior_case[list_append_pop_37] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n111\n39\n'
+E     
+E     - 5
+E     - 111
+E     - 39
+_____________ test_generated_behavior_case[map_lookup_default_37] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1406\n48\n'
+E     
+E     - 1406
+E     - 48
+_______________ test_generated_behavior_case[list_append_pop_38] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n114\n40\n'
+E     
+E     - 5
+E     - 114
+E     - 40
+_____________ test_generated_behavior_case[map_lookup_default_38] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1482\n49\n'
+E     
+E     - 1482
+E     - 49
+_______________ test_generated_behavior_case[list_append_pop_39] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n117\n41\n'
+E     
+E     - 5
+E     - 117
+E     - 41
+_____________ test_generated_behavior_case[map_lookup_default_39] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1560\n50\n'
+E     
+E     - 1560
+E     - 50
+_______________ test_generated_behavior_case[list_append_pop_40] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n120\n42\n'
+E     
+E     - 5
+E     - 120
+E     - 42
+_____________ test_generated_behavior_case[map_lookup_default_40] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1640\n51\n'
+E     
+E     - 1640
+E     - 51
+_______________ test_generated_behavior_case[list_append_pop_41] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n123\n43\n'
+E     
+E     - 5
+E     - 123
+E     - 43
+_____________ test_generated_behavior_case[map_lookup_default_41] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1722\n52\n'
+E     
+E     - 1722
+E     - 52
+_______________ test_generated_behavior_case[list_append_pop_42] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n126\n44\n'
+E     
+E     - 5
+E     - 126
+E     - 44
+_____________ test_generated_behavior_case[map_lookup_default_42] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1806\n53\n'
+E     
+E     - 1806
+E     - 53
+_______________ test_generated_behavior_case[list_append_pop_43] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n129\n45\n'
+E     
+E     - 5
+E     - 129
+E     - 45
+_____________ test_generated_behavior_case[map_lookup_default_43] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1892\n54\n'
+E     
+E     - 1892
+E     - 54
+_______________ test_generated_behavior_case[list_append_pop_44] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\n132\n46\n'
+E     
+E     - 5
+E     - 132
+E     - 46
+_____________ test_generated_behavior_case[map_lookup_default_44] ______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1980\n55\n'
+E     
+E     - 1980
+E     - 55
+_______________ test_generated_behavior_case[class_operator_00] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(5)\n'
+E     
+E     - Box(5)
+_______________ test_generated_behavior_case[class_operator_01] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(7)\n'
+E     
+E     - Box(7)
+_______________ test_generated_behavior_case[class_operator_02] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(9)\n'
+E     
+E     - Box(9)
+_______________ test_generated_behavior_case[class_operator_03] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(11)\n'
+E     
+E     - Box(11)
+_______________ test_generated_behavior_case[class_operator_04] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(13)\n'
+E     
+E     - Box(13)
+_______________ test_generated_behavior_case[class_operator_05] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(15)\n'
+E     
+E     - Box(15)
+_______________ test_generated_behavior_case[class_operator_06] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(17)\n'
+E     
+E     - Box(17)
+_______________ test_generated_behavior_case[class_operator_07] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(19)\n'
+E     
+E     - Box(19)
+_______________ test_generated_behavior_case[class_operator_08] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(21)\n'
+E     
+E     - Box(21)
+_______________ test_generated_behavior_case[class_operator_09] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(23)\n'
+E     
+E     - Box(23)
+_______________ test_generated_behavior_case[class_operator_10] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(25)\n'
+E     
+E     - Box(25)
+_______________ test_generated_behavior_case[class_operator_11] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(27)\n'
+E     
+E     - Box(27)
+_______________ test_generated_behavior_case[class_operator_12] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(29)\n'
+E     
+E     - Box(29)
+_______________ test_generated_behavior_case[class_operator_13] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(31)\n'
+E     
+E     - Box(31)
+_______________ test_generated_behavior_case[class_operator_14] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(33)\n'
+E     
+E     - Box(33)
+_______________ test_generated_behavior_case[class_operator_15] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(35)\n'
+E     
+E     - Box(35)
+_______________ test_generated_behavior_case[class_operator_16] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(37)\n'
+E     
+E     - Box(37)
+_______________ test_generated_behavior_case[class_operator_17] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(39)\n'
+E     
+E     - Box(39)
+_______________ test_generated_behavior_case[class_operator_18] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(41)\n'
+E     
+E     - Box(41)
+_______________ test_generated_behavior_case[class_operator_19] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(43)\n'
+E     
+E     - Box(43)
+_______________ test_generated_behavior_case[class_operator_20] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(45)\n'
+E     
+E     - Box(45)
+_______________ test_generated_behavior_case[class_operator_21] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(47)\n'
+E     
+E     - Box(47)
+_______________ test_generated_behavior_case[class_operator_22] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(49)\n'
+E     
+E     - Box(49)
+_______________ test_generated_behavior_case[class_operator_23] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(51)\n'
+E     
+E     - Box(51)
+_______________ test_generated_behavior_case[class_operator_24] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(53)\n'
+E     
+E     - Box(53)
+_______________ test_generated_behavior_case[class_operator_25] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(55)\n'
+E     
+E     - Box(55)
+_______________ test_generated_behavior_case[class_operator_26] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(57)\n'
+E     
+E     - Box(57)
+_______________ test_generated_behavior_case[class_operator_27] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'Box(59)\n'
+E     
+E     - Box(59)
+______________ test_generated_behavior_case[script_fibonacci_00] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1\nfile-case-00\n'
+E     
+E     - 1
+E     - file-case-00
+______________ test_generated_behavior_case[script_fibonacci_01] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '2\nfile-case-01\n'
+E     
+E     - 2
+E     - file-case-01
+______________ test_generated_behavior_case[script_fibonacci_02] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '3\nfile-case-02\n'
+E     
+E     - 3
+E     - file-case-02
+______________ test_generated_behavior_case[script_fibonacci_03] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\nfile-case-03\n'
+E     
+E     - 5
+E     - file-case-03
+______________ test_generated_behavior_case[script_fibonacci_04] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '8\nfile-case-04\n'
+E     
+E     - 8
+E     - file-case-04
+______________ test_generated_behavior_case[script_fibonacci_05] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '13\nfile-case-05\n'
+E     
+E     - 13
+E     - file-case-05
+______________ test_generated_behavior_case[script_fibonacci_06] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '21\nfile-case-06\n'
+E     
+E     - 21
+E     - file-case-06
+______________ test_generated_behavior_case[script_fibonacci_07] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '34\nfile-case-07\n'
+E     
+E     - 34
+E     - file-case-07
+______________ test_generated_behavior_case[script_fibonacci_08] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '55\nfile-case-08\n'
+E     
+E     - 55
+E     - file-case-08
+______________ test_generated_behavior_case[script_fibonacci_09] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1\nfile-case-09\n'
+E     
+E     - 1
+E     - file-case-09
+______________ test_generated_behavior_case[script_fibonacci_10] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '2\nfile-case-10\n'
+E     
+E     - 2
+E     - file-case-10
+______________ test_generated_behavior_case[script_fibonacci_11] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '3\nfile-case-11\n'
+E     
+E     - 3
+E     - file-case-11
+______________ test_generated_behavior_case[script_fibonacci_12] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '5\nfile-case-12\n'
+E     
+E     - 5
+E     - file-case-12
+______________ test_generated_behavior_case[script_fibonacci_13] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '8\nfile-case-13\n'
+E     
+E     - 8
+E     - file-case-13
+______________ test_generated_behavior_case[script_fibonacci_14] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '13\nfile-case-14\n'
+E     
+E     - 13
+E     - file-case-14
+______________ test_generated_behavior_case[script_fibonacci_15] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '21\nfile-case-15\n'
+E     
+E     - 21
+E     - file-case-15
+______________ test_generated_behavior_case[script_fibonacci_16] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '34\nfile-case-16\n'
+E     
+E     - 34
+E     - file-case-16
+______________ test_generated_behavior_case[script_fibonacci_17] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '55\nfile-case-17\n'
+E     
+E     - 55
+E     - file-case-17
+_____________ test_generated_behavior_case[script_control_flow_00] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '0\n'
+E     
+E     - 0
+_____________ test_generated_behavior_case[script_control_flow_01] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '16\n'
+E     
+E     - 16
+_____________ test_generated_behavior_case[script_control_flow_02] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '11\n'
+E     
+E     - 11
+_____________ test_generated_behavior_case[script_control_flow_03] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '47\n'
+E     
+E     - 47
+_____________ test_generated_behavior_case[script_control_flow_04] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '40\n'
+E     
+E     - 40
+_____________ test_generated_behavior_case[script_control_flow_05] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '104\n'
+E     
+E     - 104
+_____________ test_generated_behavior_case[script_control_flow_06] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '95\n'
+E     
+E     - 95
+_____________ test_generated_behavior_case[script_control_flow_07] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '195\n'
+E     
+E     - 195
+_____________ test_generated_behavior_case[script_control_flow_08] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '184\n'
+E     
+E     - 184
+_____________ test_generated_behavior_case[script_control_flow_09] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '328\n'
+E     
+E     - 328
+_____________ test_generated_behavior_case[script_control_flow_10] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '315\n'
+E     
+E     - 315
+_____________ test_generated_behavior_case[script_control_flow_11] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '511\n'
+E     
+E     - 511
+_____________ test_generated_behavior_case[script_control_flow_12] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '496\n'
+E     
+E     - 496
+_____________ test_generated_behavior_case[script_control_flow_13] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '0\n'
+E     
+E     - 0
+_____________ test_generated_behavior_case[script_control_flow_14] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '16\n'
+E     
+E     - 16
+_____________ test_generated_behavior_case[script_control_flow_15] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '11\n'
+E     
+E     - 11
+_____________ test_generated_behavior_case[script_control_flow_16] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '47\n'
+E     
+E     - 47
+_____________ test_generated_behavior_case[script_control_flow_17] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '40\n'
+E     
+E     - 40
+_____________ test_generated_behavior_case[script_control_flow_18] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '104\n'
+E     
+E     - 104
+_____________ test_generated_behavior_case[script_control_flow_19] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '95\n'
+E     
+E     - 95
+_____________ test_generated_behavior_case[script_control_flow_20] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '195\n'
+E     
+E     - 195
+_____________ test_generated_behavior_case[script_control_flow_21] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '184\n'
+E     
+E     - 184
+_____________ test_generated_behavior_case[script_control_flow_22] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '328\n'
+E     
+E     - 328
+_____________ test_generated_behavior_case[script_control_flow_23] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '315\n'
+E     
+E     - 315
+_____________ test_generated_behavior_case[script_control_flow_24] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '511\n'
+E     
+E     - 511
+_____________ test_generated_behavior_case[script_control_flow_25] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '496\n'
+E     
+E     - 496
+_____________ test_generated_behavior_case[script_control_flow_26] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '0\n'
+E     
+E     - 0
+_____________ test_generated_behavior_case[script_control_flow_27] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '16\n'
+E     
+E     - 16
+_____________ test_generated_behavior_case[script_control_flow_28] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '11\n'
+E     
+E     - 11
+_____________ test_generated_behavior_case[script_control_flow_29] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '47\n'
+E     
+E     - 47
+_____________ test_generated_behavior_case[script_control_flow_30] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '40\n'
+E     
+E     - 40
+_____________ test_generated_behavior_case[script_control_flow_31] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '104\n'
+E     
+E     - 104
+_____________ test_generated_behavior_case[script_control_flow_32] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '95\n'
+E     
+E     - 95
+_____________ test_generated_behavior_case[script_control_flow_33] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '195\n'
+E     
+E     - 195
+_____________ test_generated_behavior_case[script_control_flow_34] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '184\n'
+E     
+E     - 184
+_____________ test_generated_behavior_case[script_control_flow_35] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '328\n'
+E     
+E     - 328
+_____________ test_generated_behavior_case[script_control_flow_36] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '315\n'
+E     
+E     - 315
+_____________ test_generated_behavior_case[script_control_flow_37] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '511\n'
+E     
+E     - 511
+_____________ test_generated_behavior_case[script_control_flow_38] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '496\n'
+E     
+E     - 496
+_____________ test_generated_behavior_case[script_control_flow_39] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '0\n'
+E     
+E     - 0
+____________ test_generated_behavior_case[script_closure_return_00] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '6\n'
+E     
+E     - 6
+____________ test_generated_behavior_case[script_closure_return_01] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '13\n'
+E     
+E     - 13
+____________ test_generated_behavior_case[script_closure_return_02] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '22\n'
+E     
+E     - 22
+____________ test_generated_behavior_case[script_closure_return_03] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '33\n'
+E     
+E     - 33
+____________ test_generated_behavior_case[script_closure_return_04] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '46\n'
+E     
+E     - 46
+____________ test_generated_behavior_case[script_closure_return_05] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '61\n'
+E     
+E     - 61
+____________ test_generated_behavior_case[script_closure_return_06] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '78\n'
+E     
+E     - 78
+____________ test_generated_behavior_case[script_closure_return_07] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '27\n'
+E     
+E     - 27
+____________ test_generated_behavior_case[script_closure_return_08] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '41\n'
+E     
+E     - 41
+____________ test_generated_behavior_case[script_closure_return_09] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '21\n'
+E     
+E     - 21
+____________ test_generated_behavior_case[script_closure_return_10] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '30\n'
+E     
+E     - 30
+____________ test_generated_behavior_case[script_closure_return_11] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '41\n'
+E     
+E     - 41
+____________ test_generated_behavior_case[script_closure_return_12] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '54\n'
+E     
+E     - 54
+____________ test_generated_behavior_case[script_closure_return_13] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '69\n'
+E     
+E     - 69
+____________ test_generated_behavior_case[script_closure_return_14] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '30\n'
+E     
+E     - 30
+____________ test_generated_behavior_case[script_closure_return_15] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '42\n'
+E     
+E     - 42
+____________ test_generated_behavior_case[script_closure_return_16] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '56\n'
+E     
+E     - 56
+____________ test_generated_behavior_case[script_closure_return_17] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '72\n'
+E     
+E     - 72
+____________ test_generated_behavior_case[script_closure_return_18] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '36\n'
+E     
+E     - 36
+____________ test_generated_behavior_case[script_closure_return_19] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '47\n'
+E     
+E     - 47
+____________ test_generated_behavior_case[script_closure_return_20] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '60\n'
+E     
+E     - 60
+____________ test_generated_behavior_case[script_closure_return_21] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '33\n'
+E     
+E     - 33
+____________ test_generated_behavior_case[script_closure_return_22] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '43\n'
+E     
+E     - 43
+____________ test_generated_behavior_case[script_closure_return_23] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '55\n'
+E     
+E     - 55
+____________ test_generated_behavior_case[script_closure_return_24] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '69\n'
+E     
+E     - 69
+____________ test_generated_behavior_case[script_closure_return_25] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '85\n'
+E     
+E     - 85
+____________ test_generated_behavior_case[script_closure_return_26] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '103\n'
+E     
+E     - 103
+____________ test_generated_behavior_case[script_closure_return_27] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '51\n'
+E     
+E     - 51
+____________ test_generated_behavior_case[script_closure_return_28] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '36\n'
+E     
+E     - 36
+____________ test_generated_behavior_case[script_closure_return_29] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '44\n'
+E     
+E     - 44
+____________ test_generated_behavior_case[script_closure_return_30] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '54\n'
+E     
+E     - 54
+____________ test_generated_behavior_case[script_closure_return_31] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '66\n'
+E     
+E     - 66
+_______________ test_generated_behavior_case[module_types_hash] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'true\ntrue\n...\n440920331\n'
+E     
+E     - true
+E     - true
+E     - false
+E     - 440920331
+____________ test_generated_behavior_case[module_bytebuffer_basic] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '1\n1\n2\n4\n...66\nAZCD\n0\n'
+E     
+E     - 1
+E     - 1
+E     - 2
+E     - 4
+E     - ABCD
+E     - 66
+E     - AZCD
+E     - 0
+_____________ test_generated_behavior_case[module_bytebuffer_fill] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '3\n3\n3\n'
+E     
+E     - 3
+E     - 3
+E     - 3
+____________ test_generated_behavior_case[module_vector_accessors] _____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '[1, 2, 3]\n6\n[1, 10, 11]\n'
+E     
+E     - [1, 2, 3]
+E     - 6
+E     - [1, 10, 11]
+________________ test_generated_behavior_case[module_os_files] _________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'linux\npocke...executable>\n'
+E     
+E     - linux
+E     - pocket-env
+E     - null
+E     - 7
+E     - <tmp>/tmpdir
+E     - <executable>
+___________ test_generated_behavior_case[module_os_unlink_moditime] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == '10\ntrue\n0\n'
+E     
+E     - 10
+E     - true
+E     - 0
+_______________ test_generated_behavior_case[module_time_sleep] ________________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'sleep-ok\n'
+E     
+E     - sleep-ok
+____________ test_generated_behavior_case[module_types_hash_error] _____________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 3
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', 'module_types_hash_error.pk'], returncode=0, stdout='', stderr='').returncode
+_________ test_generated_behavior_case[module_bytebuffer_index_error] __________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 3
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', 'module_bytebuffer_index_error.pk'], returncode=0, stdout='', stderr='').returncode
+_________ test_generated_behavior_case[module_bytebuffer_value_error] __________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 3
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', 'module_bytebuffer_value_error.pk'], returncode=0, stdout='', stderr='').returncode
+___________ test_generated_behavior_case[module_vector_arity_error] ____________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 3
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', 'module_vector_arity_error.pk'], returncode=0, stdout='', stderr='').returncode
+____________ test_generated_behavior_case[module_os_filesize_error] ____________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 3
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', 'module_os_filesize_error.pk'], returncode=0, stdout='', stderr='').returncode
+______________ test_generated_behavior_case[cli_long_cmd_option] _______________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'long-cmd\n42\n'
+E     
+E     - long-cmd
+E     - 42
+___________ test_generated_behavior_case[cli_debug_long_cmd_option] ____________
+eval/tests/test_generated_cases.py:36: in test_generated_behavior_case
+    assert normalize_output(result.stdout, tmp_path, executable) == case["stdout"]
+E   AssertionError: assert '' == 'debug-long-cmd\n'
+E     
+E     - debug-long-cmd
+_____________ test_generated_behavior_case[cli_missing_file_error] _____________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 2
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', 'missing_script.pk'], returncode=0, stdout='', stderr='').returncode
+____________ test_generated_behavior_case[cli_invalid_option_error] ____________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 1
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', '--not-an-option'], returncode=0, stdout='', stderr='').returncode
+______________ test_generated_behavior_case[error_diagnostic_00] _______________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 2
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', '-c', 'print(1 + )'], returncode=0, stdout='', stderr='').returncode
+______________ test_generated_behavior_case[error_diagnostic_01] _______________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   assert 0 == 3
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', '-c', "assert(false, 'generated failure')"], returncode=0, stdout='', stderr='').returncode
+______________ test_generated_behavior_case[error_diagnostic_02] _______________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 2
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', '-c', 'missing_name + 1'], returncode=0, stdout='', stderr='').returncode
+______________ test_generated_behavior_case[error_diagnostic_03] _______________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 3
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', '-c', 'l = [1, 2]; print(l[9])'], returncode=0, stdout='', stderr='').returncode
+______________ test_generated_behavior_case[error_diagnostic_04] _______________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 2
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', '-c', 'class Bad is MissingParent end'], returncode=0, stdout='', stderr='').returncode
+______________ test_generated_behavior_case[error_diagnostic_05] _______________
+eval/tests/test_generated_cases.py:35: in test_generated_behavior_case
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 2
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', '-c', 'def broken(x) if x then print(x) end'], returncode=0, stdout='', stderr='').returncode
+________________ test_command_string_and_script_file_execution _________________
+eval/tests/test_harvested_cli.py:25: in test_command_string_and_script_file_execution
+    assert command.stdout == "7\npocket:42\n"
+E   AssertionError: assert '' == '7\npocket:42\n'
+E     
+E     - 7
+E     - pocket:42
+______________ test_upstream_script_behavior[tests__lang__basics] ______________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'All TESTS PASSED\n'
+E     
+E     - All TESTS PASSED
+____________ test_upstream_script_behavior[tests__lang__builtin_fn] ____________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'All TESTS PASSED\n'
+E     
+E     - All TESTS PASSED
+____________ test_upstream_script_behavior[tests__lang__builtin_ty] ____________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'All TESTS PASSED\n'
+E     
+E     - All TESTS PASSED
+______________ test_upstream_script_behavior[tests__lang__class] _______________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   assert '' == "['A' instanc...ESTS PASSED\n"
+E     
+E     - ['A' instance at 0x<addr>]
+E     - v1 = <1, 2>
+E     - v2 = <3, 4>
+E     - v3 = <4, 6>
+E     - local/pocket = "/usr/local/bin/pocket"
+E     - A init...
+E     
+E     ...Full output truncated (6 lines hidden), use '-vv' to show
+_____________ test_upstream_script_behavior[tests__lang__closure] ______________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'true\nAll TESTS PASSED\n'
+E     
+E     - true
+E     - All TESTS PASSED
+___________ test_upstream_script_behavior[tests__lang__controlflow] ____________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'All TESTS PASSED\n'
+E     
+E     - All TESTS PASSED
+______________ test_upstream_script_behavior[tests__lang__fibers] ______________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'All TESTS PASSED\n'
+E     
+E     - All TESTS PASSED
+____________ test_upstream_script_behavior[tests__lang__functions] _____________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'All TESTS PASSED\n'
+E     
+E     - All TESTS PASSED
+______________ test_upstream_script_behavior[tests__lang__import] ______________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'All TESTS PA...ESTS PASSED\n'
+E     
+E     - All TESTS PASSED
+E     - All TESTS PASSED
+E     - All TESTS PASSED
+E     - before cyclic_a
+E     - before cyclic_b
+E     - after  cyclic_b
+E     - after  cyclic_a
+E     - All TESTS PASSED
+_______________ test_upstream_script_behavior[tests__lang__tco] ________________
+eval/tests/test_upstream_manifest.py:28: in test_upstream_script_behavior
+    assert result.returncode == case["returncode"]
+E   AssertionError: assert 0 == 3
+E    +  where 0 = CompletedProcess(args=['/workspace/executable', 'tests/lang/tco.pk'], returncode=0, stdout='', stderr='').returncode
+_____________ test_upstream_script_behavior[tests__modules__dummy] _____________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   assert '' == "['Dummy' ins...ESTS PASSED\n"
+E     
+E     - ['Dummy' instance at 0x<addr>]
+E     - a1 = foo, a2 = 42, a3 = false
+E     - All TESTS PASSED
+_____________ test_upstream_script_behavior[tests__modules__math] ______________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'All TESTS PASSED\n'
+E     
+E     - All TESTS PASSED
+_____________ test_upstream_script_behavior[tests__modules__path] ______________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'All TESTS PASSED\n'
+E     
+E     - All TESTS PASSED
+_____________ test_upstream_script_behavior[tests__modules__json] ______________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'All TESTS PASSED\n'
+E     
+E     - All TESTS PASSED
+__________ test_upstream_script_behavior[tests__random__linked_list] ___________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == '(4) --> (6) ...4) --> null\n'
+E     
+E     - (4) --> (6) --> (3) --> (9) --> null
+E     - (9) --> (3) --> (6) --> (4) --> null
+___________ test_upstream_script_behavior[tests__random__lisp_eval] ____________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'ALL TESTS PASSED\n'
+E     
+E     - ALL TESTS PASSED
+__________ test_upstream_script_behavior[tests__examples__brainfuck] ___________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'Hello World!...* * *    \n\n'
+E     
+E     - Hello World!
+E     -                                 *    
+E     - 
+E     -                                * *    
+E     - 
+E     -                               *   *    ...
+E     
+E     ...Full output truncated (59 lines hidden), use '-vv' to show
+_____________ test_upstream_script_behavior[tests__examples__fib] ______________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'fibs = [0, 1...13, 21, 34]\n'
+E     
+E     - fibs = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+___________ test_upstream_script_behavior[tests__examples__fizzbuzz] ___________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == '1\n2\nfizz\n...7\n98\nfizz\n'
+E     
+E     - 1
+E     - 2
+E     - fizz
+E     - 4
+E     - buzz
+E     - fizz...
+E     
+E     ...Full output truncated (93 lines hidden), use '-vv' to show
+__________ test_upstream_script_behavior[tests__examples__helloworld] __________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'Hello world!\n'
+E     
+E     - Hello world!
+____________ test_upstream_script_behavior[tests__examples__matrix] ____________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == '[38, 20, 30,...8, 102, 66]\n'
+E     
+E     - [38, 20, 30, 18]
+E     - [92, 59, 66, 42]
+E     - [146, 98, 102, 66]
+______________ test_upstream_script_behavior[tests__examples__pi] ______________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'PI = 3.14160265368972\n'
+E     
+E     - PI = 3.14160265368972
+____________ test_upstream_script_behavior[tests__examples__prime] _____________
+eval/tests/test_upstream_manifest.py:29: in test_upstream_script_behavior
+    assert normalize_output(result.stdout, pocket_fixture) == case["stdout"]
+E   AssertionError: assert '' == 'primes = [2,...13, 17, 19]\n'
+E     
+E     - primes = [2, 3, 5, 7, 11, 13, 17, 19]
+=========================== short test summary info ============================
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_00]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_00]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_01]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_01]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_02]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_02]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_03]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_03]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_04]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_04]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_05]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_05]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_06]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_06]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_07]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_07]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_08]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_08]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_09]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_09]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_10]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_10]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_11]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_11]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_12]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_12]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_13]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_13]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_14]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_14]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_15]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_15]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_16]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_16]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_17]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_17]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_18]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_18]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_19]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_19]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_20]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_20]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_21]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_21]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_22]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_22]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_23]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_23]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_24]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_24]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_25]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_25]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_26]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_26]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_27]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_27]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_28]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_28]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_29]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_29]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_30]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_30]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_31]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_31]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_32]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_32]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_33]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_33]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_34]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_34]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_35]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_35]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_36]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_36]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_37]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_37]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_38]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_38]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_39]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_39]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_40]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_40]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_41]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_41]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_42]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_42]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_43]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_43]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_44]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_44]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_45]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_45]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_46]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_46]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_47]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_47]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_48]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_48]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_49]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_49]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_50]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_50]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_51]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_51]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_52]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_52]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_53]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_53]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_54]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_54]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_55]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_55]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_56]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_56]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_57]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_57]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_58]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_58]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[arith_precedence_59]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[bitwise_combo_59]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_00]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_00]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_01]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_01]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_02]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_02]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_03]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_03]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_04]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_04]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_05]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_05]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_06]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_06]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_07]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_07]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_08]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_08]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_09]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_09]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_10]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_10]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_11]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_12]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_13]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_14]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_14]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_15]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_16]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_16]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_17]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_17]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_18]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_18]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_19]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_19]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_20]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_20]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_21]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_21]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_22]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_22]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_methods_23]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[string_slice_interpolation_23]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_00]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_00]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_01]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_01]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_02]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_02]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_03]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_03]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_04]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_04]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_05]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_05]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_06]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_06]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_07]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_07]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_08]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_08]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_09]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_09]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_10]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_10]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_11]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_11]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_12]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_12]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_13]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_13]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_14]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_14]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_15]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_15]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_16]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_16]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_17]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_17]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_18]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_18]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_19]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_19]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_20]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_20]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_21]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_21]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_22]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_22]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_23]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_23]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_24]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_24]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_25]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_25]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_26]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_26]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_27]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_27]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_28]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_28]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_29]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_29]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_30]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_30]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_31]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_31]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_32]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_32]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_33]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_33]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_34]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_34]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_35]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_35]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_36]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_36]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_37]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_37]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_38]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_38]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_39]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_39]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_40]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_40]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_41]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_41]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_42]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_42]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_43]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_43]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[list_append_pop_44]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[map_lookup_default_44]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_00]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_01]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_02]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_03]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_04]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_05]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_06]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_07]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_08]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_09]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_10]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_11]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_12]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_13]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_14]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_15]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_16]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_17]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_18]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_19]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_20]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_21]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_22]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_23]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_24]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_25]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_26]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[class_operator_27]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_00]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_01]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_02]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_03]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_04]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_05]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_06]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_07]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_08]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_09]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_10]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_11]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_12]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_13]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_14]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_15]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_16]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_fibonacci_17]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_00]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_01]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_02]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_03]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_04]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_05]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_06]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_07]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_08]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_09]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_10]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_11]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_12]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_13]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_14]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_15]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_16]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_17]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_18]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_19]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_20]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_21]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_22]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_23]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_24]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_25]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_26]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_27]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_28]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_29]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_30]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_31]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_32]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_33]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_34]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_35]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_36]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_37]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_38]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_control_flow_39]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_00]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_01]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_02]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_03]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_04]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_05]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_06]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_07]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_08]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_09]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_10]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_11]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_12]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_13]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_14]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_15]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_16]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_17]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_18]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_19]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_20]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_21]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_22]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_23]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_24]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_25]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_26]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_27]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_28]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_29]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_30]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[script_closure_return_31]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_types_hash]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_bytebuffer_basic]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_bytebuffer_fill]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_vector_accessors]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_os_files]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_os_unlink_moditime]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_time_sleep]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_types_hash_error]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_bytebuffer_index_error]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_bytebuffer_value_error]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_vector_arity_error]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[module_os_filesize_error]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_long_cmd_option]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_debug_long_cmd_option]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_missing_file_error]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[cli_invalid_option_error]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_00]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_01]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_02]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_03]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_04]
+FAILED eval/tests/test_generated_cases.py::test_generated_behavior_case[error_diagnostic_05]
+FAILED eval/tests/test_harvested_cli.py::test_command_string_and_script_file_execution
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__basics]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__builtin_fn]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__builtin_ty]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__class]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__closure]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__controlflow]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__fibers]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__functions]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__import]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__lang__tco]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__dummy]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__math]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__path]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__modules__json]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__random__linked_list]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__random__lisp_eval]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__brainfuck]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__fib]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__fizzbuzz]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__helloworld]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__matrix]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__pi]
+FAILED eval/tests/test_upstream_manifest.py::test_upstream_script_behavior[tests__examples__prime]
+418 failed, 3 passed in 7.51s

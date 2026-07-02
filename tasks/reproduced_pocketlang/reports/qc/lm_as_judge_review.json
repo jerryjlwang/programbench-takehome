@@ -1,0 +1,231 @@
+{
+  "source": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/lm_as_judge_review.json",
+  "generated_at": "2026-07-02T06:45:56Z",
+  "reviewer": "Codex LM-as-judge local fairness audit",
+  "subject_run": "pre_agent_empty_stub_smoke",
+  "verdict": "pre_agent_task_fairness_and_evaluator_checks_passed",
+  "latest_eval": {
+    "run": "pocketlang_empty_stub",
+    "status": "failed",
+    "returncode": 1,
+    "tests": 421,
+    "passed": 0,
+    "failures": 421,
+    "errors": 0,
+    "skipped": 0,
+    "findings_count": 0,
+    "summary": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/evals/pocketlang_empty_stub/summary.json",
+    "pytest_log": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/evals/pocketlang_empty_stub/pytest.log",
+    "trajectory": "not-run",
+    "submission": "/tmp/pocketlang_empty_stub.tar.gz"
+  },
+  "hashes": {
+    "gold_hash": "2b6f181a9a47f7faee03f6171835abf3b5fca6532fc78bd6953a5af218e10a94",
+    "solver_env_file_hashes": {
+      "task_env/compile.sh": "ebca9bf06a4bfb44bcf6784d03eacffe0b5284e22ac7cf15fa9caf62a9395ab5",
+      "task_env/docs/USAGE.md": "745dc811f65f9c7e05be6798ee3fbbd78ccb94f19284f43954fd3a7237ac12e0",
+      "task_env/docs/help.txt": "e1e29429995df70a9334ddd9bc4ce9f42a8b639f9371198d22d81e0c18f8137b",
+      "task_env/executable": "2b6f181a9a47f7faee03f6171835abf3b5fca6532fc78bd6953a5af218e10a94"
+    }
+  },
+  "solver_env_manifest": [
+    "task_env/compile.sh",
+    "task_env/docs/USAGE.md",
+    "task_env/docs/help.txt",
+    "task_env/executable"
+  ],
+  "strict_trace_warnings": [],
+  "checks": [
+    {
+      "id": "local_lm_as_judge_review_completed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Codex reviewed the PocketLang task recreation artifacts, deterministic fairness report, cleanroom image, generated suite, hardened evaluator, mini-SWE runner, and bad-stub eval."
+    },
+    {
+      "id": "deterministic_fairness_audit_passed",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/deterministic_fairness_report.json"
+    },
+    {
+      "id": "generated_quality_gate_gold_passes_dummy_rejects",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Gold passed 421/421 generated-suite tests; dummy passed 0/421."
+    },
+    {
+      "id": "generated_suite_above_programbench_minimum",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "421 total generated-suite pytest tests and 396 generated exact-output cases; above the 224-test ProgramBench minimum referenced by the project."
+    },
+    {
+      "id": "bad_stub_behavioral_eval_recorded",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/evals/pocketlang_empty_stub/summary.json: empty stub scored 0/421 and failed."
+    },
+    {
+      "id": "solver_facing_task_env_has_no_tests_or_source",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "task_env contains only compile.sh, docs, and executable."
+    },
+    {
+      "id": "solver_facing_task_env_has_no_git_directory",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "find/rg scan of task_env found no .git paths."
+    },
+    {
+      "id": "test_suite_not_solver_facing",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "tests_harvested and tests_generated are outside task_env and mounted only by evaluation/coverage scripts."
+    },
+    {
+      "id": "task_env_path_leak_scan_clean",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "Deterministic audit found no local workspace, source, gold, repository URL, commit, hidden-test, coverage, or report leaks in solver-facing wrappers/manifests."
+    },
+    {
+      "id": "solver_facing_docs_describe_compile_contract",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/task_env/docs/USAGE.md"
+    },
+    {
+      "id": "solver_facing_docs_describe_behavior_surface",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/task_env/docs/USAGE.md"
+    },
+    {
+      "id": "cleanroom_oracle_execute_only_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/build_miniswe_cleanroom_image.sh"
+    },
+    {
+      "id": "cleanroom_image_smoke_checked_network_none",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "programbench-pocketlang-cleanroom:local was rebuilt and smoke-checked with --network none; only expected workspace files were present."
+    },
+    {
+      "id": "solve_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/run_miniswe_pocketlang.py"
+    },
+    {
+      "id": "compile_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "test_network_disabled",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "prebuilt_submission_executable_ignored_before_compile",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "stale_junit_results_removed_before_scoring",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "exact_gold_hash_rejection_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "embedded_gold_oracle_scan_configured",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/evaluate_submission.sh"
+    },
+    {
+      "id": "downstream_miniswe_runner_imports_and_help_work",
+      "blocking": true,
+      "status": "passed",
+      "evidence": "/tmp/pocketlang_miniswe_help.log"
+    },
+    {
+      "id": "downstream_miniswe_solve_not_yet_run",
+      "blocking": false,
+      "status": "not_applicable",
+      "evidence": "PocketLang mini-SWE solve is ready but has not been started."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "status": "observed",
+      "finding": "Deterministic hidden-test fairness audit passes for the PocketLang generated suite and checks black-box test structure plus documentation sufficiency.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/qc/deterministic_fairness_report.json"
+    },
+    {
+      "severity": "INFO",
+      "status": "observed",
+      "finding": "The solver-facing PocketLang task_env contains only compile.sh, docs, and the oracle executable; hidden tests and source are outside the solve container.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/task_env"
+    },
+    {
+      "severity": "INFO",
+      "status": "observed",
+      "finding": "Generated tests are exact-output behavioral tests that run the candidate executable via pytest wrappers and reject a dummy implementation.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/quality_generated/quality_report.json"
+    },
+    {
+      "severity": "INFO",
+      "status": "observed",
+      "finding": "The hardened evaluator compiles offline with --network none, removes prebuilt executables, rejects gold hash/embedded oracle bytes, and scored an empty stub at 0/421.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/reports/evals/pocketlang_empty_stub/summary.json"
+    },
+    {
+      "severity": "LOW",
+      "status": "accepted",
+      "finding": "Solver-facing docs identify PocketLang 0.1.0 behavior, the offline compile contract, the oracle observation boundary, and the end-to-end behavior surface.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/task_env/docs/USAGE.md"
+    },
+    {
+      "severity": "INFO",
+      "status": "pending",
+      "finding": "No PocketLang mini-SWE solve trajectory exists yet; trajectory-specific fairness checks should be rerun after the first solve/eval.",
+      "evidence": "/Users/jerrywang/programbench-takehome/tasks/reproduced_pocketlang/scripts/run_miniswe_pocketlang.py"
+    }
+  ],
+  "recommended_qc_fields": [
+    "solve_run_id",
+    "trajectory_path",
+    "submission_sha256",
+    "candidate_executable_hash",
+    "gold_hash",
+    "eval_status",
+    "tests_total",
+    "failures",
+    "errors",
+    "skipped",
+    "wrapper_or_oracle_findings",
+    "strict_trace_warnings",
+    "solver_env_manifest",
+    "solver_env_file_hashes",
+    "deterministic_fairness_verdict",
+    "compile_network_disabled",
+    "test_network_disabled",
+    "test_suite_mount_scope",
+    "fairness_judge_verdict"
+  ]
+}
